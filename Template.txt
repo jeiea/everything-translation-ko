@@ -1641,7 +1641,7 @@ INSTALLER_AUTOMATICALLY_INDEX_FIXED_NTFS_VOLUMES = "Automatically index fixed NT
 
 // end of 1.3.4.686 changes
 
-COPYRIGHT = "Copyright © 2015 David Carpenter" 
+COPYRIGHT = "Copyright © 2016 David Carpenter" 
 
 HELP_SEARCH_SYNTAX_TEXT = "Operators:\r\n" 
 	"\tspace\tAND\r\n"
@@ -1910,7 +1910,31 @@ HELP_COMMAND_LINE_OPTIONS_TEXT = "Everything.exe [filename] [options]\r\n"
 	"-ww\tEnable match whole word."
 
 // See http://en.wikipedia.org/wiki/MIT_License for existing translations
-INSTALLER_LICENSE = "Copyright (C) 2015 David Carpenter\n\nPermission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\n\nThe above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\n\nTHE SOFTWARE IS PROVIDED \"AS IS\"WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE."
+INSTALLER_LICENSE = 
+
+		"Everything\r\n"
+		"\r\n"
+		"Copyright (c) 2005-2016 David Carpenter\r\n"
+		"\r\n"
+		"Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n"
+		"\r\n"
+		"The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n"
+		"\r\n"
+		"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\r\n"
+		"\r\n"
+		"Perl-Compatible Regular Expressions\r\n"
+		"\r\n"
+		"Copyright (c) 1997-2012 University of Cambridge\r\n"
+		"\r\n"
+		"Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\r\n"
+		"\r\n"
+		"* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\r\n"
+		"\r\n"
+		"* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\r\n"
+		"\r\n"
+		"* Neither the name of the University of Cambridge nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\r\n"
+		"\r\n"
+		"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n"
 
 VIEW_DETAILS_MENU = "&Details"
 VIEW_DETAILS_MENU_HELP = "Displays information about each item in the window."
@@ -2269,3 +2293,187 @@ EXCLUDE_EDIT_BUTTON = "E&dit..."
 EXCLUDE_EDIT_BUTTON_HELP = "Modify the selected exclude folder or filter."
 	
 // end of 1.4.0.713 changes
+
+FILE_OPEN_MOST_RUN = "Open most run"
+UNABLE_TO_SAVE_CONFIG = "Unable to save settings.\n\nStore settings and data in %APPDATA%\\Everything?"
+SEARCH_HISTORY_KEEP_FOREVER_HELP = "Enable to keep search history for the specified number of days.\nDisable to keep search history forever."
+RUN_HISTORY_KEEP_FOREVER_HELP = "Enable to keep run history for the specified number of days.\nDisable to keep run history forever."
+	
+DB_ENABLE_RECENT_CHANGES = "Index recent changes"
+DB_ENABLE_RECENT_CHANGES_HELP = "Keep a list of changes to the Everything database.\nAllows searching and sorting by Date recently changed.\nEnabling may reduce the performance of Everything.\nRecent changes indexing is similar to Date Modified indexing except only recently modified files are indexed.\n"
+	
+ADVANCED_SEARCH_ADDITIONAL_SEARCH_STATIC = "Additional search options:"
+ADVANCED_SEARCH_ADDITIONAL_SEARCH_HELP = "Include additional search options at the end of the advanced search."
+
+SEARCH_HISTORY_SORT_BY = "Sort all search history results by:"
+SEARCH_HISTORY_SORT_BY_HELP = "When clicking on the drop down button on the search edit, show all search results by this sort type."
+SEARCH_HISTORY_SORT_BY_SEARCH_DATE = "Date searched"
+SEARCH_HISTORY_SORT_BY_SEARCH_COUNT = "Search count"
+SEARCH_HISTORY_SORT_BY_SEARCH = "Search"
+		
+RENAME_REPLACE_CAPTION = "Replace"
+RENAME_EDIT_HELP = "A list of file names.\nEach line represents one file.\nThe number of lines must match the initial number of files."
+RENAME_REPLACE_BUTTON = "&Replace..."
+RENAME_REPLACE_BUTTON_HELP = "Find and replace text."
+		
+EDIT_COPY_TO = "Copy to &Folder..."
+EDIT_COPY_TO_HELP = "Copy the selected files to another location."
+EDIT_MOVE_TO = "Mo&ve to Folder..."
+EDIT_MOVE_TO_HELP = "Move the selected files to another location."
+	
+COPY_TO_CAPTION = "Copy To"
+MOVE_TO_CAPTION = "Move To"
+	
+KEYBOARD_USEIN_PREVIEW = "Preview"
+PREVIEW_FOCUS = "Focus Preview"
+	
+ABOUT_LICENSE_BUTTON = "&License"
+LICENSE_CAPTION = "License - Everything"
+	
+LICENSE =  
+
+		"\r\n"
+		"Everything\r\n"
+		"\r\n"
+		"\tCopyright (c) 2005-2016 David Carpenter\r\n"
+		"\t\r\n"
+		"\tPermission is hereby granted, free of charge, to any person obtaining a copy of\r\n"
+		"\tthis software and associated documentation files (the \"Software\"), to deal in \r\n"
+		"\tthe Software without restriction, including without limitation the rights to \r\n"
+		"\tuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\r\n"
+		"\tof the Software, and to permit persons to whom the Software is furnished to do\r\n"
+		"\tso, subject to the following conditions:\r\n"
+		"\t\r\n"
+		"\tThe above copyright notice and this permission notice shall be included in all\r\n"
+		"\tcopies or substantial portions of the Software.\r\n"
+		"\t\r\n"
+		"\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \r\n"
+		"\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \r\n"
+		"\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE \r\n"
+		"\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \r\n"
+		"\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, \r\n"
+		"\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE \r\n"
+		"\tSOFTWARE.\r\n"
+		"\r\n"
+		"Perl-Compatible Regular Expressions\r\n"
+		"\r\n"
+		"\tCopyright (c) 1997-2012 University of Cambridge\r\n"
+		"\t\r\n"
+		"\tRedistribution and use in source and binary forms, with or without\r\n"
+		"\tmodification, are permitted provided that the following conditions are met:\r\n"
+		"\t\r\n"
+		"\t* Redistributions of source code must retain the above copyright notice,\r\n"
+		"\t  this list of conditions and the following disclaimer.\r\n"
+		"\t\r\n"
+		"\t* Redistributions in binary form must reproduce the above copyright\r\n"
+		"\t  notice, this list of conditions and the following disclaimer in the\r\n"
+		"\t  documentation and/or other materials provided with the distribution.\r\n"
+		"\t\r\n"
+		"\t* Neither the name of the University of Cambridge nor the names of its\r\n"
+		"\t  contributors may be used to endorse or promote products derived from\r\n"
+		"\t  this software without specific prior written permission.\r\n"
+		"\t\r\n"
+		"\tTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\r\n"
+		"\tAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\r\n"
+		"\tIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\r\n"
+		"\tARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE\r\n"
+		"\tLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\r\n"
+		"\tCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\r\n"
+		"\tSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\r\n"
+		"\tINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\r\n"
+		"\tCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\r\n"
+		"\tARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\r\n"
+		"\tPOSSIBILITY OF SUCH DAMAGE.\r\n"
+		
+RENAME_REPLACE_MATCH_CASE = "Match &case"
+RENAME_REPLACE_MATCH_CASE_HELP = "Match case or ignore case.\nThe generated old format is always case sensitive."
+RENAME_REPLACE_REGEX = "&Regex"
+RENAME_REPLACE_REGEX_HELP = "Enable regular expressions.\nOld format will be regenerated when toggled."
+	
+RENAME_OLD_FORMAT_REGEX_HELP =  
+		"Regular expression to match old filenames.\n" 
+		"All matches in the filename will be replaced.\n"
+	
+RENAME_NEW_FORMAT_REGEX_HELP =  
+		"Filenames that match the expression in old format are replaced with this expression.\n"
+		"Changing the new format will generate new filenames.\n"
+	
+FOLDER_UPDATING_FORMAT = "%s [Updating]"
+HOME_VIEW = "&View:"
+HOME_VIEW_HELP = "Use this view when opening a new search window."
+	
+EDIT_ADVANCED_MENU = "Advanc&ed"
+EDIT_ADVANCED_MENU_HELP = "Contains advanced commands."
+
+EDIT_ADVANCED_COPY_TO = "Advanced Copy to &Folder..."
+EDIT_ADVANCED_COPY_TO_HELP = "Copy the selected files to another location."
+EDIT_ADVANCED_MOVE_TO = "Advanced Mo&ve to Folder..."
+EDIT_ADVANCED_MOVE_TO_HELP = "Move the selected files to another location."
+	
+FOLDERS_BUFFER_SIZE = "Buffer &size:"
+FOLDERS_BUFFER_SIZE_HELP = "The size of the buffer for storing changes made to this folder, subfolder and files.\nChanges will be missed if Everything is unable to process this buffer fast enough.\nNetwork drives are limited to 64 KB."
+FOLDERS_RESCAN_FULL_BUFFER = "Rescan on full &buffer"
+FOLDERS_RESCAN_FULL_BUFFER_HELP = "Rescan the entire folder, subfolders and files if the change buffer is full because too many changes occurred too quickly."
+	
+RENAME_BROWSE_FOR_FOLDER_CATPION = "Browse for folder"
+RENAME_BROWSE_FOR_FOLDER = "Browse for folder..."
+	
+RENAME_OLD_REGEX_LAZY = "(.*?) Match and save any number of characters (lazy)"
+RENAME_OLD_REGEX_GREEDY = "(.*)  Match and save any number of characters (greedy)"
+RENAME_OLD_REGEX_DOT = ".    Any single character"
+RENAME_OLD_REGEX_STAR = "*    Zero or more times"
+RENAME_OLD_REGEX_PLUS = "+    One or more times"
+RENAME_OLD_REGEX_START = "^    Beginning of filename"
+RENAME_OLD_REGEX_END = "$    End of filename"
+RENAME_OLD_REGEX_WORD = "\\b   Word boundary"
+RENAME_OLD_REGEX_SET = "[ ]  Any one character in the set"
+RENAME_OLD_REGEX_NOTSET = "[^ ] Any one character not in the set"
+RENAME_OLD_REGEX_OR = "|    Or"
+RENAME_REGEX_ESCAPE = "\\    Escape special character"
+RENAME_OLD_REGEX_SUBEXPR = "( )  Save the subexpression match"
+RENAME_OLD_REGEX_HELP = "Help...\tF1"
+RENAME_NEW_REGEX_VAR0 = "\\0   Text matched in old format"
+RENAME_NEW_REGEX_VARX = "\\%d   Saved match %d"
+RENAME_NEW_REGEX_HELP = "Help...\tF1"
+RENAME_OLD_VARX = "%%%d   Match any number of characters and save the match in variable %d"
+RENAME_OLD_PERCENT = "%%   Match a single literal %"
+RENAME_NEW_VARX = "%%%d   replace with saved match in variable %d"
+RENAME_NEW_PATHPART = "$pathpart(x)   Path part of x"
+RENAME_NEW_STRIPPATH = "$strippath(x)   Remove the path part of x"
+RENAME_NEW_STRIPROOT = "$striproot(x)   Remove the root of x"
+RENAME_NEW_UPPERCASE = "$uppercase(x)   Convert x to uppercase"
+RENAME_NEW_LOWERCASE = "$lowercase(x)   Convert x to lowercase"
+RENAME_NEW_TITLECASE = "$titlecase(x)   Convert x to titlecase"
+RENAME_NEW_PERCENT = "%%   A single literal %"
+RENAME_NEW_DOLLAR = "$$   A single literal $"
+RENAME_NEW_OPEN_BRACKET = "$(   A single literal ("
+RENAME_NEW_CLOSE_BRACKET = "$)   A single literal )"
+
+// set these to 1 to show Right to Left, otherwise they will be shown Left to Right
+HELP_REGEX_SYNTAX_RTL = ""
+HELP_SEARCH_SYNTAX_RTL = ""
+HELP_COMMAND_LINE_OPTIONS_RTL = ""
+LICENSE_RTL = ""
+
+// end of 1.4.1.747 changes
+
+FILE_OPEN_LAST_RUN = "Open last run"
+OFFLINE_DISK = "Offline Disk"
+FORMAT_FILETIME_FORMAT = "%S %S"
+
+// end of 1.4.1.767 changes
+
+ADVANCED_COPYMOVE_TO_OLD_FORMAT	="Old &format:"
+ADVANCED_COPYMOVE_TO_OLD_FORMAT_HELP = "Format to match old full paths and filenames.\nThe whole full path and filename is matched"
+ADVANCED_COPYMOVE_TO_NEW_FORMAT	= "New for&mat:"
+ADVANCED_COPYMOVE_TO_NEW_FORMAT_HELP = "Format for the new full paths and filenames.\nFull paths and filenames that do not match the old format are not effected by the new format.\nChanging the new format will generate new full paths and filenames."
+ADVANCED_COPYMOVE_TO_OLD_FILENAMES = "&Old full paths and filenames:"
+ADVANCED_COPYMOVE_TO_OLD_FILENAMES_HELP = "List of the original full paths and filenames."
+ADVANCED_COPYMOVE_TO_NEW_FILENAMES = "&New full paths and filenames:"
+ADVANCED_COPYMOVE_TO_NEW_FILENAMES_HELP = "List of new full paths and filenames generated from the new format."
+	
+// end of 1.4.1.772 changes
+
+FORMAT_FILETIME_TIME_DATE_FORMAT = "%S %S"
+
+// end of 1.4.1.801 changes
