@@ -1,0 +1,305 @@
+=KNOWNFOLDERID=
+
+Use with the <code>shell:<name></code> search function.
+Replace <code><name></code> with one of the following:
+{|
+! Name
+! Path
+|-
+| AccountPictures
+| %APPDATA%\Microsoft\Windows\AccountPictures
+|-
+| AdminTools
+| %APPDATA%\Microsoft\Windows\Start Menu\Programs\Administrative Tools
+|-
+| ApplicationShortcuts
+| %LOCALAPPDATA%\Microsoft\Windows\Application Shortcuts
+|-
+| CameraRoll
+| %USERPROFILE%\Pictures\Camera Roll
+|-
+| CDBurning
+| %LOCALAPPDATA%\Microsoft\Windows\Burn\Burn
+|-
+| CommonAdminTools
+| %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools
+|-
+| CommonOEMLinks
+| %ALLUSERSPROFILE%\OEM Links
+|-
+| CommonPrograms
+| %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs
+|-
+| CommonStartMenu
+| %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu
+|-
+| CommonStartup
+| %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp
+|-
+| CommonTemplates
+| %ALLUSERSPROFILE%\Microsoft\Windows\Templates
+|-
+| Contacts
+| %USERPROFILE%\Contacts
+|-
+| Cookies
+| %APPDATA%\Microsoft\Windows\Cookies
+|-
+| Desktop
+| %USERPROFILE%\Desktop
+|-
+| DeviceMetadataStore
+| %ALLUSERSPROFILE%\Microsoft\Windows\DeviceMetadataStore
+|-
+| Documents
+| %USERPROFILE%\Documents
+|-
+| DocumentsLibrary
+| %APPDATA%\Microsoft\Windows\Libraries\Documents.library-ms
+|-
+| Downloads
+| %USERPROFILE%\Downloads
+|-
+| Favorites
+| %USERPROFILE%\Favorites
+|-
+| Fonts
+| %windir%\Fonts
+|-
+| GameTasks
+| %LOCALAPPDATA%\Microsoft\Windows\GameExplorer
+|-
+| History
+| %LOCALAPPDATA%\Microsoft\Windows\History
+|-
+| ImplicitAppShortcuts
+| %APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\ImplicitAppShortcuts
+|-
+| InternetCache
+| %LOCALAPPDATA%\Microsoft\Windows\Temporary Internet Files
+|-
+| Libraries
+| %APPDATA%\Microsoft\Windows\Libraries
+|-
+| Links
+| %USERPROFILE%\Links
+|-
+| LocalAppData
+| %LOCALAPPDATA% (%USERPROFILE%\AppData\Local)
+|-
+| LocalAppDataLow
+| %USERPROFILE%\AppData\LocalLow
+|-
+| LocalizedResourcesDir
+| %windir%\resources\0409 (code page)
+|-
+| Music
+| %USERPROFILE%\Music
+|-
+| MusicLibrary
+| %APPDATA%\Microsoft\Windows\Libraries\Music.library-ms
+|-
+| NetHood
+| %APPDATA%\Microsoft\Windows\Network Shortcuts
+|-
+| OriginalImages
+| %LOCALAPPDATA%\Microsoft\Windows Photo Gallery\Original Images
+|-
+| PhotoAlbums
+| %USERPROFILE%\Pictures\Slide Shows
+|-
+| PicturesLibrary
+| %APPDATA%\Microsoft\Windows\Libraries\Pictures.library-ms
+|-
+| Pictures
+| %USERPROFILE%\Pictures
+|-
+| Playlists
+| %USERPROFILE%\Music\Playlists
+|-
+| PrintHood
+| %APPDATA%\Microsoft\Windows\Printer Shortcuts
+|-
+| Profile
+| %USERPROFILE% (%SystemDrive%\Users\%USERNAME%)
+|-
+| ProgramData
+| %ALLUSERSPROFILE% (%ProgramData%, %SystemDrive%\ProgramData)
+|-
+| ProgramFiles
+| %ProgramFiles% (%SystemDrive%\Program Files)
+|-
+| ProgramFilesX64
+| %ProgramFiles% (%SystemDrive%\Program Files)
+|-
+| ProgramFilesX86
+| %ProgramFiles% (%SystemDrive%\Program Files)
+|-
+| ProgramFilesCommon
+| %ProgramFiles%\Common Files
+|-
+| ProgramFilesCommonX64
+| %ProgramFiles%\Common Files
+|-
+| ProgramFilesCommonX86
+| %ProgramFiles%\Common Files
+|-
+| Programs
+| %APPDATA%\Microsoft\Windows\Start Menu\Programs
+|-
+| Public
+| %PUBLIC% (%SystemDrive%\Users\Public)
+|-
+| PublicDesktop
+| %PUBLIC%\Desktop
+|-
+| PublicDocuments
+| %PUBLIC%\Documents
+|-
+| PublicDownloads
+| %PUBLIC%\Downloads
+|-
+| PublicGameTasks
+| %ALLUSERSPROFILE%\Microsoft\Windows\GameExplorer
+|-
+| PublicLibraries
+| %ALLUSERSPROFILE%\Microsoft\Windows\Libraries
+|-
+| PublicMusic
+| %PUBLIC%\Music
+|-
+| PublicPictures
+| %PUBLIC%\Pictures
+|-
+| PublicRingtones
+| %ALLUSERSPROFILE%\Microsoft\Windows\Ringtones
+|-
+| PublicUserTiles
+| %PUBLIC%\AccountPictures
+|-
+| PublicVideos
+| %PUBLIC%\Videos
+|-
+| QuickLaunch
+| %APPDATA%\Microsoft\Internet Explorer\Quick Launch
+|-
+| Recent
+| %APPDATA%\Microsoft\Windows\Recent
+|-
+| RecordedTVLibrary
+| %PUBLIC%\RecordedTV.library-ms
+|-
+| ResourceDir
+| %windir%\Resources
+|-
+| Ringtones
+| %LOCALAPPDATA%\Microsoft\Windows\Ringtones
+|-
+| RoamingAppData
+| %APPDATA% (%USERPROFILE%\AppData\Roaming)
+|-
+| RoamedTileImages
+| %LOCALAPPDATA%\Microsoft\Windows\RoamedTileImages
+|-
+| RoamingTiles
+| %LOCALAPPDATA%\Microsoft\Windows\RoamingTiles
+|-
+| SampleMusic
+| %PUBLIC%\Music\Sample Music
+|-
+| SamplePictures
+| %PUBLIC%\Pictures\Sample Pictures
+|-
+| SamplePlaylists
+| %PUBLIC%\Music\Sample Playlists
+|-
+| SampleVideos
+| %PUBLIC%\Videos\Sample Videos
+|-
+| SavedGames
+| %USERPROFILE%\Saved Games
+|-
+| SavedPictures
+| %USERPROFILE%\Pictures\Saved Pictures
+|-
+| SavedPicturesLibrary
+| %APPDATE%\Microsoft\Windows\Libraries\SavedPictures.library-ms
+|-
+| SavedSearches
+| %USERPROFILE%\Searches
+|-
+| Screenshots
+| %USERPROFILE%\Pictures\Screenshots 
+|-
+| SearchHistory
+| %LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\History
+|-
+| SearchTemplates
+| %LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\Templates
+|-
+| SendTo
+| %APPDATA%\Microsoft\Windows\SendTo
+|-
+| SidebarDefaultParts
+| %ProgramFiles%\Windows Sidebar\Gadgets
+|-
+| SidebarParts
+| %LOCALAPPDATA%\Microsoft\Windows Sidebar\Gadgets
+|-
+| SkyDrive
+| %USERPROFILE%\OneDrive
+|-
+| SkyDriveCameraRoll
+| %USERPROFILE%\OneDrive\Pictures\Camera Roll
+|-
+| SkyDriveDocuments
+| %USERPROFILE%\OneDrive\Documents
+|-
+| SkyDrivePictures
+| %USERPROFILE%\OneDrive\Pictures
+|-
+| StartMenu
+| %APPDATA%\Microsoft\Windows\Start Menu
+|-
+| Startup
+| %APPDATA%\Microsoft\Windows\Start Menu\Programs\StartUp
+|-
+| System
+| %windir%\system32
+|-
+| SystemX86
+| %windir%\system32
+|-
+| Templates
+| %APPDATA%\Microsoft\Windows\Templates
+|-
+| UserPinned
+| %APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned
+|-
+| UserProfiles
+| %SystemDrive%\Users
+|-
+| UserProgramFiles
+| %LOCALAPPDATA%\Programs
+|-
+| UserProgramFilesCommon
+| %LOCALAPPDATA%\Programs\Common
+|-
+| Videos
+| %USERPROFILE%\Videos
+|-
+| VideosLibrary
+| %APPDATA%\Microsoft\Windows\Libraries\Videos.library-ms
+|-
+| Windows
+| %windir%
+|-
+| ProgramFiles
+| depends on caller
+|-
+| ProgramFilesCommon
+| depends on caller
+|-
+| System
+| depends on caller
+|}
