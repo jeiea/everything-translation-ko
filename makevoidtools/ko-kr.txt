@@ -1,0 +1,143 @@
+﻿
+
+// Please rename this en-US.txt file and the en-US sub folder to your language-region code, eg: es-ES.txt and es-ES for the folder.
+// For a list of codes, please see:
+// http://www.i18nguy.com/unicode/language-identifiers.html
+
+// Please make sure to edit and save as UTF-8
+
+// Put the name of the Language (Region) here
+_LANGUAGE_NAME = "한국어 (대한민국)"
+
+// Put the English name of the Language (Region) here 
+_LANGUAGE_ENGLISH_NAME = "Korean (Korea, Republic of)"
+
+// Put your name here so I can credit you.
+_LANGUAGE_TRANSLATOR = "jeiea"
+
+// a link to your email or website [optional]
+_LANGUAGE_TRANSLATOR_LINK = "http://ddwroom.tistory.com"
+
+// Syntax.
+// key = "value"
+// two forward slashes is a comment, comments are ignored by makevoidtools.
+// {{MACRO}} = built-in macro
+// [[url|text]] = url displayed as text. links to url. |text is optional, if omitted, the full url is displayed. relative urls are relative to the localization root, eg: http://www.voidtools.com/en-us
+
+// page titles
+
+HOME="Home"
+DOWNLOADS="Downloads"
+FAQ="FAQ"
+SUPPORT="Support"
+FORUMS="Forums"
+DONATE="Donate"
+CONTACT="Contact"
+PRIVACY="Privacy"
+ERROR404="Error 404"
+ABOUT="About voidtools"
+LANGUAGE="Language"
+DONATED="Donated"
+CONTACTOK="Contact Successful"
+CONTACTERROR="Contact Error"
+UPDATE="Update"
+MAINTENANCE="Maintenance"
+
+// page template files.
+// these should be lowercase and easy to type.
+// no spaces, no special characters
+//
+// page templates use basic wikipedia markup:
+// https://en.wikipedia.org/wiki/Help:Wiki_markup
+
+HOME_TEMPLATE="home.txt"
+DOWNLOADS_TEMPLATE="downloads.txt"
+FAQ_TEMPLATE="faq.txt"
+DONATE_TEMPLATE="donate.txt"
+CONTACT_TEMPLATE="contact.txt"
+PRIVACY_TEMPLATE="privacy.txt"
+ABOUT_TEMPLATE="about.txt"
+LANGUAGE_TEMPLATE="language.txt"
+DONATED_TEMPLATE="donated.txt"
+CONTACTOK_TEMPLATE="contactok.txt"
+CONTACTERROR_TEMPLATE="contacterror.txt"
+UPDATE_TEMPLATE="update.txt"
+MAINTENANCE_TEMPLATE="maintenance.txt"
+ERROR404_TEMPLATE="error404.txt"
+
+// support wiki
+// these should be lowercase and easy to type.
+// no spaces, no special characters
+
+SUPPORT_FOLDER="support"
+
+// License
+// This file is copied as is.
+
+LICENSE_TEMPLATE="License.txt"
+
+// URLS
+
+FORUMS_URL="/forum"
+SUPPORT_URL="support/everything"
+
+// title format
+// please change voidtools to: voidtools United States
+// where United States is your region.
+HOME_TITLE = "voidtools"
+TITLE_FORMAT = "{{TITLE}} - voidtools" // {{TITLE}} = current page title
+
+// Download page
+
+DOWNLOAD_EVERYTHING_HEADER = "Everything {{VERSION}} 다운로드" // {{VERSION}} = 1.3.4.686
+EVERYTHING_CHANGES = "[[{{CHANGES}}|Changes]]" // {{CHANGES}} = /Changes-1.3.4.686.txt
+EVERYTHING_OLDER_VERSIONS = "[[support/everything/previous_versions|Older Versions]]"
+EVERYTHING_LICENSE = "[[License.txt|License]]"
+EVERYTHING_MD5 = "[[{{MD5}}|MD5]]" // {{MD5}} = /Changes-1.3.4.686.md5
+EVERYTHING_SUPPORTED_LANGUAGES = "[[support/everything/supported_languages|Supported Languages]]" 
+EVERYTHING_HELP = "[[support/everything/installing_everything|Help]]"
+
+DOWNLOAD_EVERYTHING_BETA_HEADER = "Download Everything {{VERSION}} Beta" // {{VERSION}} = 1.4.1.867b
+EVERYTHING_BETA_WHATS_NEW = "[[support/everything/whats_new|What's New]]"
+
+DOWNLOAD_INSTALLER = "Download Installer"
+DOWNLOAD_INSTALLER_X64 = "Download Installer 64-bit"
+DOWNLOAD_PORTABLE_ZIP = "Download Portable Zip"
+DOWNLOAD_PORTABLE_ZIP_X64 = "Download Portable Zip 64-bit"
+
+ALL_EVERYTHING_DOWNLOADS_HEADER = "All Everything Downloads"
+INSTALLER = "Installer"
+PORTABLE = "Portable"
+MULTILINGUAL = "[[support/everything/supported_languages|Multilingual]]"
+KB = "KB"
+
+DOWNLOAD_EVERYTHING_LANGUAGE_PACK_HEADER = "Download Everything Language Pack"
+EVERYTHING_LANGUAGE_PACK_HELP = "[[support/everything/supported_languages/#installing_the_language_pack|Help]]"
+
+DOWNLOAD_EVERYTHING_COMMAND_LINE_INTERFACE_HEADER = "Download Everything Command-line Interface"
+EVERYTHING_COMMAND_LINE_INTERFACE_HELP = "[[support/everything/command_line_interface|Help]]"
+
+DOWNLOAD_EVERYTHING_SDK_HEADER = "Download Everything SDK"
+EVERYTHING_SDK_HELP = "[[support/everything/SDK|Help]]"
+
+// footer
+
+COPYRIGHT = "&copy; {{YEAR}} - " // {{YEAR}} = current year.
+
+// donate
+DONATE_FORM_NAME = "Name (optional, name will be published below, leave blank for an anonymous donation):"
+DONATE_FORM_COMMENT = "Comment (optional, 200 characters max):"
+DONATE_FORM_BUTTON_IMAGE = "paypal.donate.png"
+DONATE_FORM_DONATE = "Donate with PayPal"
+DONATE_HISTORY = "Donation History"
+DONATE_HISTORY_NAME = "Name"
+DONATE_HISTORY_COMMENT = "Comment"
+DONATE_HISTORY_AMOUNT = "Amount"
+
+// contact
+
+CONTACT_FORM_MESSAGE = "Message:"
+CONTACT_FORM_EMAIL = "Email (optional):"
+CONTACT_FORM_SEND = "Send"
+
+
