@@ -1237,7 +1237,7 @@ HELP_REGEX_SYNTAX_TEXT = "\r\n"
 		"{x}\tMatches the preceding element x times\r\n"
 		"{x,}\tMatches the preceding element x or more times\r\n"
 		"{x,y}\tMatches the preceding element between x and y times\r\n"
-		"\\\tEscape special character\r\n",
+		"\\\tEscape special character\r\n"
 
 HELP_SEARCH_SYNTAX_CAPTION = "Search Syntax - Everything"
 
@@ -1558,7 +1558,7 @@ HELP_COMMAND_LINE_OPTIONS_TEXT = "\r\n"
 		"-url <[es:]search>\tSet the search from an ES: URL.\r\n"
 		"-verbose\tDisplay all debug messages.\r\n"
 		"-wholeword\tEnable match whole word.\r\n"
-		"-ww\tEnable match whole word.",
+		"-ww\tEnable match whole word."
 			
 TOGGLE_WINDOW_HOTKEY = "&Toggle window Hotkey:"
 TOGGLE_WINDOW_HOTKEY_HELP = "Press a new keyboard shortcut to toggle the search window.\nIf a search window does not exist a new window is created.\nPress Backspace to clear."
@@ -2176,12 +2176,12 @@ FAST_EXTENSION_SORT_HELP = "Allow instant sorting by extension. Requires an addi
 RENAME_CAPTION = "Rename"
 RENAME_OLD_FORMAT = "Old &Format:"
 RENAME_OLD_FORMAT_HELP = "Format to match old filenames.\n"
-		"The whole filename is matched",
+		"The whole filename is matched"
 	
 RENAME_NEW_FORMAT = "New For&mat:"
 RENAME_NEW_FORMAT_HELP = "Format for the new filenames.\n"
 		"Filenames that do not match the old format are not effected by the new format.\n"
-		"Changing the new format will generate new filenames.",
+		"Changing the new format will generate new filenames."
 		
 RENAME_OLD_FILENAMES = "&Old Filenames:"
 RENAME_OLD_FILENAMES_HELP = "List of the original filenames."
@@ -2449,7 +2449,7 @@ LICENSE = "\r\n"
 		"\tINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\r\n"
 		"\tCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\r\n"
 		"\tARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\r\n"
-		"\tPOSSIBILITY OF SUCH DAMAGE.\r\n",
+		"\tPOSSIBILITY OF SUCH DAMAGE.\r\n"
 		
 RENAME_REPLACE_MATCH_CASE = "Match &case"
 RENAME_REPLACE_MATCH_CASE_HELP = "Match case or ignore case.\nThe generated old format is always case sensitive."
@@ -2457,11 +2457,11 @@ RENAME_REPLACE_REGEX = "&Regex"
 RENAME_REPLACE_REGEX_HELP = "Enable regular expressions.\nOld format will be regenerated when toggled."
 	
 RENAME_OLD_FORMAT_REGEX_HELP = "Regular expression to match old filenames.\n" 
-		"All matches in the filename will be replaced.\n",
+		"All matches in the filename will be replaced.\n"
 	
 RENAME_NEW_FORMAT_REGEX_HELP = 
 		"Filenames that match the expression in old format are replaced with this expression.\n"
-		"Changing the new format will generate new filenames.\n",
+		"Changing the new format will generate new filenames.\n"
 	
 FOLDER_UPDATING_FORMAT = "%s [Rescanning]"
 HOME_VIEW = "&View:"
@@ -2531,13 +2531,13 @@ FORMAT_FILETIME_FORMAT = "%S %S"
 ADVANCED_COPYMOVE_TO_OLD_FORMAT = "Old &format:"
 ADVANCED_COPYMOVE_TO_OLD_FORMAT_HELP = 
 		"Format to match old full paths and filenames.\n"
-		"The whole full paths and filename is matched",
+		"The whole full paths and filename is matched"
 	
 ADVANCED_COPYMOVE_TO_NEW_FORMAT = "New for&mat:"
 ADVANCED_COPYMOVE_TO_NEW_FORMAT_HELP = 
 		"Format for the new full paths and filenames.\n"
 		"Full paths and filenames that do not match the old format are not effected by the new format.\n"
-		"Changing the new format will generate new full paths and filenames.",
+		"Changing the new format will generate new full paths and filenames."
 		
 ADVANCED_COPYMOVE_TO_OLD_FILENAMES = "&Old full paths and filenames:"
 ADVANCED_COPYMOVE_TO_OLD_FILENAMES_HELP = "List of the original full paths and filenames."
