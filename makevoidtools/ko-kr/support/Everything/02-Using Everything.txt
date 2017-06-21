@@ -1,0 +1,119 @@
+=Everything 사용하기=
+Everything 기본 사용법입니다.
+
+[[File:support/everything/Everything.Search.Window.png|alt=Everything 검색 창]]
+
+Everything 검색 창은 여러 부분으로 나뉩니다.
+
+<dl>
+;메뉴
+메뉴는 Everything 검색 창, 결과, 보기, 검색, 책갈피, 도구, 도움말과 관련한 명령을 제공합니다.
+
+;검색 줄
+파일이나 폴더를 이름의 일부분을 입력해 찾을 수 있습니다.
+복잡한 검색을 하려면 검색 메뉴에 있는 [[support/everything/searching#advanced_search|고급 검색]]을 써 보세요.
+검색 문법을 알고 싶다면 [[support/everything/searching|검색]]페이지를 참고하세요.
+기본적인 검색 문법은 Everything 도움말 메뉴에서도 볼 수 있습니다.
+
+;검색 결과 열 머리
+열 머리를 클릭하면 그 열을 기준으로 정렬합니다. 이미 정렬한 열을 클릭하면 반대로 정렬합니다.
+열을 숨기거나 표시하려면 우클릭하면 됩니다.
+
+;검색 결과
+항목을 열려면 더블클릭하거나 선택한 상태에서 엔터를 누르면 됩니다.
+항목은 다른 프로그램으로 드래그할 수 있습니다.
+선택한 항목에 쓸 수 있는 기능을 보고 싶으면 그 항목을 우클릭하면 됩니다.
+
+자세한 건 [[support/everything/Results|결과]]를 참고하세요.
+
+;상태 표시줄
+Everything의 현재 상태와 검색 옵션을 보여줍니다.
+상태 표시줄을 우클릭해서 검색 옵션을 바꿀 수 있습니다.
+켜진 검색 옵션을 더블 클릭해서 끌 수 있습니다.
+</dl>
+
+==Everything 검색 창 띄우기==
+Everything 검색 창을 보려면
+<ul>
+* [[support/everything/options#Show tray icon|Everything 트레이 아이콘]]을 더블클릭하거나.
+
+* [[support/everything/Keyboard Shortcuts#Hotkeys|단축키]]를 쓰거나.
+
+* Everything 바탕화면, 시작메뉴, 빠른 실행 바로가기에 단축키를 할당해 실행하는 방법이 있습니다.
+</ul>
+
+기본적으로 Everything은 검색 창을 하나만 씁니다.
+여러 검색 창을 쓰려면 [[support/everything/options#Create a new window from the system tray|트레이 아이콘으로 새 창 열기]]나 [[support/everything/options#Create a new window when running Everything|여러 창 사용]] 설정을 켜면 됩니다.
+
+==최근에 수정된 파일을 간단히 찾고 파일 시스템 변경을 실시간 감시하기==
+오늘 수정된 파일을 찾으려면 '''dm:today'''를 검색하면 됩니다.
+
+검색 결과의 빈 공간을 우클릭해서 정렬 - 수정한 날짜를 클릭하면 파일 변화를 실시간으로 볼 수 있습니다.
+
+ * Everything 1.4 이상이 필요합니다.
+
+==자주 실행하는 파일을 간단히 열기==
+검색 줄에서 엔터를 누르면 가장 많이 실행한 항목을 선택합니다.
+항목을 우클릭하면 실행 횟수를 재설정할 수 있습니다.
+자세한 건 [[support/everything/Run history|실행 기록]]을 참고하세요.
+
+실행 횟수로 정렬하려면 검색 결과의 빈 공간을 우클릭 - 정렬 - 실행 횟수를 클릭하면 됩니다.
+
+==결과 내보내기==
+검색 결과는 csv, txt, [[support/everything/file lists|efu]] 파일로 내보낼 수 있습니다.
+결과를 내보내려면 '''파일''' 메뉴 - '''내보내기...'''를 클릭하면 됩니다.
+
+==필터==
+필터는 음악 혹은 비디오같은 것들을 찾도록 미리 정의한 검색입니다.
+검색 메뉴에서 필터를 선택할 수 있습니다. 선택할 필터는 상태 표시줄에 나오는데 그걸 더블 클릭해서 필터를 끌 수 있습니다.
+필터바를 보려면 보기 메뉴 - 필터를 체크하세요.
+자세한 건 [[support/everything/searching#filters|필터 설정]]을 살펴보세요.
+
+==책갈피==
+나중에 쉽게 검색하도록 현재 검색어, 필터, 정렬, 검색 대상을 저장합니다.
+더 자세한 정보는 [[support/everything/searching#Bookmarks|책갈피]]를 참고하세요.
+
+==웹 브라우저에서 Everything에 접속하기==
+당신의 폰이나 다른 장치에서 접속하도록 Everything 웹 서버를 돌릴 수 있습니다.
+자세한 건  [[support/everything/http|HTTP 서버]]를 참고하세요.
+
+==다른 컴퓨터에서 Everything 접속하기==
+다른 컴퓨터에서 파일을 볼 수 있도록 ETP 서버를 돌릴 수 있습니다.
+자세한 건 [[support/everything/ETP|ETP 서버]]를 참고하세요.
+
+==글꼴 및 색상 변경==
+검색 결과의 글꼴과 색은 [[support/everything/options#fonts and colors|Everything 설정]]에서 바꿀 수 있습니다.
+더 많은 폰트와 색상을 바꾸려면 [[support/everything/ini#Fonts and colors|Everything.ini]]를 참고하세요.
+
+==외부 파일 관리자==
+토탈 커맨더같은 프로그램으로 폴더를 열고 싶다면  [[support/everything/customizing#External File Manager|외부 파일 관리자]]를 참고하세요.
+
+==키보드 단축키==
+기존 키보드 단축키 목록은 [[support/everything/keyboard shortcuts|키보드 단축키]]를 참고하세요.
+자세한 건 [[support/everything/keyboard shortcuts#Customizing|단축키 설정]]을 참고하세요.
+
+==색인==
+로컬 NTFS 볼륨이나, 폴더, 파일 목록을 색인에 포함합니다.
+자세한 건 [[support/everything/indexes|색인]]을 참고하세요.
+
+==파일 목록==
+NAS, CD, DVD, 블루레이에 있는 파일 목록을 떠서 색인에 추가합니다.
+내장 파일 목록 편집기는 도구 메뉴 - 파일목록 편집기에서 열 수 있습니다.
+자세한 건 [[support/everything/file lists|파일 목록]]을 참고하세요.
+
+==설정==
+Everything 설치 옵션이나 UI, 처음 검색화면, 검색 설정, 결과 표시 방식, 우클릭 메뉴, 글꼴 및 색상, 단축키, 검색 및 실행 히스토리, NTFS 볼륨, 폴더 색인, 파일 목록, 폴더나 파일 형식 제외, ETP/HTTP 서버를 설정하려면 [[support/everything/options|Everything 설정]]을 참고하세요.
+
+==Everything 종료==
+Everything 창을 닫으면 백그라운드에서 계속 돌아갑니다.
+완전히 종료하려면 파일 메뉴 - 끝내기를 클릭하거나 트레이 아이콘 우클릭 - 끝내기를 클릭하면 됩니다.
+
+Everything 창을 닫을 때 완전히 종료되도록 하려면
+Everything '''도구''' 메뉴 - '''설정''' - '''인터페이스''' - '''[[support/everything/options#run in background|종료해도 남아있기]]'''를 해제하고 '''확인'''을 클릭합니다.
+
+==볼만한 것==
+<ul>
+*[[support/everything/Searching|검색]]
+*[[support/everything/Results|검색 결과]]
+*[[support/everything/Indexes|색인]]
+</ul>

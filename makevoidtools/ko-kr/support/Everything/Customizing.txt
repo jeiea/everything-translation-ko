@@ -1,0 +1,225 @@
+=입맛 맞추기=
+Everything을 Everything.ini나 레지스트리, 설정 대화상자로 튜닝할 수 있습니다.
+이 도움말은 Everything을 길들이는 걸 도와줄 겁니다.
+
+==창 제목==
+Everything 검색 창, HTTP 서버, 트레이 아이콘 알림 제목을 설정하려면
+<ul>
+* Everything을 종료하고
+* [[support/everything/ini|Everything.ini]] 파일을 열어서.
+* 다음 줄을 수정합니다
+<pre>
+window_title_format=$s?{$s - }$t$i?{ ($i)}
+http_title_format=$s?{$s - }$t
+taskbar_notification_title_format=$t$i?{ ($i)}
+</pre>
+
+* 아래 변수를 쓸 수 있습니다.
+{| class="wikitable"
+! 변수
+! 설명
+|-
+| <code>$s</code>
+| 현재 검색어
+|-
+| <code>$t</code>
+| Everything (번역 이름)
+|-
+| <code>$i</code>
+| 인스턴스 이름
+|}
+* 부가적으로 텍스트를 표시하고 싶을 땐 다음 형식을 사용하세요.
+{| class="wikitable"
+! 구문
+! 설명
+|-
+| <code>$x?{텍스트}</code>
+| $x가 비어있지 않을 때만 '''텍스트'''를 보여줍니다.
+|}
+* Everything.ini를 저장하고 닫으세요.
+* Everything을 재시작하세요.
+</ul>
+
+예제:
+{| class="wikitable"
+! 형식
+! 검색어
+! 제목
+|-
+| $s?{$s - }My DB
+| apples
+| apples - My DB
+|-
+| $s?{$s - }My DB
+| 
+| My DB
+|}
+
+참고: window_title_format을 바꾸면 작업 표시줄에 뜨는 제목도 바뀝니다.
+
+==아이콘==
+Everything 아이콘을 바꾸려면 사용할 아이콘 파일을 <code>%APPDATA%\Everything\Everything.ico</code>로 복사합니다.
+
+만약 [[support/everything/options#Store settings and data in %APPDATA%\Everything|APPDATA 폴더에 Everything 설정 저장]]을
+해제했다면, 아이콘 파일을 Everything.exe가 있는 폴더에 Everything.ico로 복사해야 합니다.
+Everything을 완전히 종료하고 재시작하면 적용됩니다.
+
+화려한 Everything [[/Everything-Icons.zip|아이콘 팩.zip]]을 받아보세요.
+
+==작업 표시줄 ==
+작업 표시줄 그룹 아이콘을 바꾸는 건 Everything 설정이 아니라 탐색기 설정입니다.
+<ul>
+* Everything 작업 표시줄 버튼은 우클릭합니다.
+* Everything Search를 시프트 우클릭합니다.
+* '''속성'''을 클릭합니다.
+[[File:support/everything/right.click.taskbar.shift.right.click.search.everything.properties.png|alt=위를 따라한 그림]]
+
+* '''아이콘 변경''' - '''찾아보기''' - 새 아이콘을 선택하고 '''열기''' - '''확인''' - '''확인'''
+[[File:support/everything/change.icon.green.icon.png|alt=녹색 아이콘으로 변경]]
+
+* 아이콘 캐시 재구축:
+* 시작 메뉴에서 <code>cmd</code>를 입력하고 엔터를 누릅니다.
+[[File:support/everything/start.search.cmd.png|alt=Start search cmd]]
+
+* 명령 프롬프트에서 <code>cd %localappdata%</code><엔터>를 입력해 로컬 앱 데이터 폴더로 들어갑니다.
+
+* <code>del /f iconcache.db</code><엔터>를 입력해 아이콘 캐시 DB를 삭제합니다.
+
+* <code>taskkill /f /im explorer.exe & explorer</code><엔터>를 입력해 탐색기를 재시작합니다.
+
+[[File:support/everything/rebuild.icon.cache.png|alt=아이콘 캐시 재구축]]
+</ul>
+
+==외부 파일 관리자==
+외부 파일 관리자로 경로를 열려면:
+<ul>
+* Everything '''도구''' - '''설정''' - '''우클릭 메뉴''' - '''경로 열기'''를 선택합니다.
+* 작업을 <code>$exec("C:\ExternalFileManager\ExternalFileManager.exe" "%1")</code>같은 식으로 설정합니다.
+* $, %, (, )를 쓰려면 $$, $%, $(, $)를 쓰면 됩니다.
+* 필요한 명령 인자는 해당 파일 관리자 도움말을 확인하세요..
+* 확인을 클릭합니다.
+</ul>
+
+==날짜 형식==
+Everything에서 사용자 정의 날짜 형식을 쓰려면 Everything을 종료하고
+[[support/everything/INI|Everything.ini]]을 열어 <code>date_format=</code>로 시작하는 줄을 바꿉니다.
+
+아래 코드를 날짜 형식에 쓸 수 있습니다.
+{|
+! 코드
+! 설명
+|-
+| d 
+| 1~31까지의 일을 표시합니다.
+|-
+| dd 
+| 01~31까지의 일을 표시합니다.
+|-
+| ddd 
+| 일~토까지의 요일을 표시합니다.
+|-
+| dddd 
+| 일요일~토요일까지의 요일을 표시합니다. 
+|-
+| M 
+| 1~12까지의 월을 표시합니다.
+|-
+| MM 
+| 01~12까지의 월을 표시합니다. 
+|-
+| MMM 
+| M과 동일합니다. 영어에선 Jan~Dec였습니다.
+|-
+| MMMM 
+| M월입니다. 영어에선 January~December였습니다.
+|-
+| y 
+| 0~99까지의 년도 뒤 두 글자를 표시합니다.
+|-
+| yy 
+| 00~99까지의 년도 뒤 두 글자를 표시합니다.
+|-
+| yyyy 
+| 온전한 4자리로 년도를 표시합니다. 
+|-
+| gg 
+| '서기'가 출력됩니다. 시대같은 걸 의미합니다. 
+|}
+Everything.ini을 저장하고 Everything을 재시작합니다.
+
+
+==시간 형식==
+Everything에서 사용자 정의 시간 형식을 쓰려면 Everything을 종료하고
+[[support/everything/INI|Everything.ini]]를 열어 <code>time_format=</code>로 시작하는 줄을 바꿉니다.
+
+아래 코드를 시간 형식에 쓸 수 있습니다.
+{|
+! 코드
+! 설명
+|-
+| h 
+| 0~12까지의 시를 표시합니다.
+|-
+| hh 
+| 00~12까지의 시를 표시합니다.
+|-
+| H 
+| 0~24까지의 시를 표시합니다.
+|-
+| HH 
+| 00~24까지의 시를 표시합니다.
+|-
+| m 
+| 0~59까지의 분을 표시합니다.
+|-
+| mm 
+| 00~59까지의 분을 표시합니다.
+|-
+| s 
+| 0~59까지의 초를 표시합니다. 
+|-
+| ss 
+| 00~59까지의 초를 표시합니다. 
+|-
+| t 
+| 영어에선 A/P 였는데... '오'라고만 출력됩니다.
+|-
+| tt 
+| 오전/오후를 출력합니다. 
+|-
+| SSS
+| 소수점 아래 밀리초를 표시합니다. 맨 마지막으로 써야 합니다.
+|}
+Everything.ini를 저장하고 Everything을 재시작합니다.
+
+==선택 영역 색상==
+투명도를 바꾸려면 [[support/everything/ini#translucent_selection_rectangle_alpha|translucent_selection_rectangle_alpha]]
+배경색을 바꾸려면 [[support/everything/ini#translucent_selection_rectangle_background_color|translucent_selection_rectangle_background_color]]
+테두리 색을 바꾸려면 [[support/everything/ini#translucent_selection_rectangle_border_color|translucent_selection_rectangle_border_color]]을 참고하세요
+
+==기본 검색어와 설정 바꾸기==
+[[support/everything/options#home|검색 창]]을 참고하세요.
+
+==글꼴과 색상==
+검색 결과 글꼴을 바꾸려면 [[support/everything/options#fonts_and_colors|Fonts and colors]]
+검색 줄 글꼴을 바꾸려면 [[support/everything/ini#search_edit_font|search_edit_font_size]] and [[support/everything/ini#search_edit_font|search_edit_font_size]]
+상태 표시줄 글꼴을 바꾸려면 [[support/everything/ini#status_bar_font|status_bar_font]] and [[support/everything/ini#status_bar_font_size|status_bar_font_size]]
+검색 결과 헤더 글꼴을 바꾸려면 [[support/everything/ini#header_font|header_font]] and [[support/everything/ini#header_font_size|header_font_size]]
+
+==상태 표시줄 형식==
+상태 표시줄 형식을 바꾸려면 [[support/everything/ini#status_bar_format|status_bar_format]]를 참고하세요.
+
+==HTTP 서버==
+[[support/everything/http#Change the default HTTP files|기본 HTTP 파일 바꾸기]]를 참고하세요.
+
+==ETP/FTP 환영 문구==
+Everything.ini의 [[support/everything/ini#etp_server_welcome_message|etp_server_welcome_message]]를 참고하세요.
+
+==볼만한 것==
+<ul>
+*[[support/Everything/Ini]]
+*[[support/Everything/번역]]
+*[[support/Everything/색인]]
+*[[support/Everything/검색]]
+*[[support/Everything/명령행 인자]]
+</ul>

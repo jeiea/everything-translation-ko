@@ -1,0 +1,7 @@
+﻿=voidtools 정보=
+
+이 사이트는 [[contact|David Carpenter]]가 Everything을 제공하기 위해 만들었습니다.
+Everything 도움말과 커뮤니티 포럼은 voidtools에서 호스팅합니다.
+
+==Everything==
+윈도 데스크탑 검색 엔진 프로그램 Everything의 공식 홈페이지입니다.

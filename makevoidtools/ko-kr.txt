@@ -26,22 +26,22 @@ _LANGUAGE_TRANSLATOR_LINK = "http://ddwroom.tistory.com"
 
 // page titles
 
-HOME="Home"
-DOWNLOADS="Downloads"
-FAQ="FAQ"
-SUPPORT="Support"
-FORUMS="Forums"
-DONATE="Donate"
-CONTACT="Contact"
-PRIVACY="Privacy"
-ERROR404="Error 404"
-ABOUT="About voidtools"
-LANGUAGE="Language"
-DONATED="Donated"
-CONTACTOK="Contact Successful"
-CONTACTERROR="Contact Error"
-UPDATE="Update"
-MAINTENANCE="Maintenance"
+HOME="홈"
+DOWNLOADS="다운로드"
+FAQ="자주 묻는 질문"
+SUPPORT="도움말"
+FORUMS="포럼"
+DONATE="기부"
+CONTACT="연락"
+PRIVACY="개인정보 보호"
+ERROR404="404 에러"
+ABOUT="voidtools 정보"
+LANGUAGE="언어"
+DONATED="기부 완료"
+CONTACTOK="연락 완료"
+CONTACTERROR="연락 실패"
+UPDATE="업데이트"
+MAINTENANCE="보수 중"
 
 // page template files.
 // these should be lowercase and easy to type.
@@ -90,54 +90,54 @@ TITLE_FORMAT = "{{TITLE}} - voidtools" // {{TITLE}} = current page title
 // Download page
 
 DOWNLOAD_EVERYTHING_HEADER = "Everything {{VERSION}} 다운로드" // {{VERSION}} = 1.3.4.686
-EVERYTHING_CHANGES = "[[{{CHANGES}}|Changes]]" // {{CHANGES}} = /Changes-1.3.4.686.txt
-EVERYTHING_OLDER_VERSIONS = "[[support/everything/previous_versions|Older Versions]]"
-EVERYTHING_LICENSE = "[[License.txt|License]]"
+EVERYTHING_CHANGES = "[[{{CHANGES}}|변경 이력]]" // {{CHANGES}} = /Changes-1.3.4.686.txt
+EVERYTHING_OLDER_VERSIONS = "[[support/everything/previous_versions|구버전]]"
+EVERYTHING_LICENSE = "[[License.txt|라이선스]]"
 EVERYTHING_MD5 = "[[{{MD5}}|MD5]]" // {{MD5}} = /Changes-1.3.4.686.md5
-EVERYTHING_SUPPORTED_LANGUAGES = "[[support/everything/supported_languages|Supported Languages]]" 
-EVERYTHING_HELP = "[[support/everything/installing_everything|Help]]"
+EVERYTHING_SUPPORTED_LANGUAGES = "[[support/everything/supported_languages|지원 언어]]" 
+EVERYTHING_HELP = "[[support/everything/installing_everything|도움말]]"
 
-DOWNLOAD_EVERYTHING_BETA_HEADER = "Download Everything {{VERSION}} Beta" // {{VERSION}} = 1.4.1.867b
-EVERYTHING_BETA_WHATS_NEW = "[[support/everything/whats_new|What's New]]"
+DOWNLOAD_EVERYTHING_BETA_HEADER = "Everything {{VERSION}} 베타 다운로드" // {{VERSION}} = 1.4.1.867b
+EVERYTHING_BETA_WHATS_NEW = "[[support/everything/whats_new|새 기능]]"
 
-DOWNLOAD_INSTALLER = "Download Installer"
-DOWNLOAD_INSTALLER_X64 = "Download Installer 64-bit"
-DOWNLOAD_PORTABLE_ZIP = "Download Portable Zip"
-DOWNLOAD_PORTABLE_ZIP_X64 = "Download Portable Zip 64-bit"
+DOWNLOAD_INSTALLER = "32비트 설치파일"
+DOWNLOAD_INSTALLER_X64 = "64비트 설치파일"
+DOWNLOAD_PORTABLE_ZIP = "32비트 휴대용 압축파일"
+DOWNLOAD_PORTABLE_ZIP_X64 = "64비트 휴대용 압축파일"
 
-ALL_EVERYTHING_DOWNLOADS_HEADER = "All Everything Downloads"
-INSTALLER = "Installer"
-PORTABLE = "Portable"
-MULTILINGUAL = "[[support/everything/supported_languages|Multilingual]]"
+ALL_EVERYTHING_DOWNLOADS_HEADER = "모든 Everything 다운로드"
+INSTALLER = "설치파일"
+PORTABLE = "휴대용"
+MULTILINGUAL = "[[support/everything/supported_languages|다국어 지원]]"
 KB = "KB"
 
-DOWNLOAD_EVERYTHING_LANGUAGE_PACK_HEADER = "Download Everything Language Pack"
-EVERYTHING_LANGUAGE_PACK_HELP = "[[support/everything/supported_languages/#installing_the_language_pack|Help]]"
+DOWNLOAD_EVERYTHING_LANGUAGE_PACK_HEADER = "Everything 언어팩 다운로드"
+EVERYTHING_LANGUAGE_PACK_HELP = "[[support/everything/supported_languages/#installing_the_language_pack|도움말]]"
 
-DOWNLOAD_EVERYTHING_COMMAND_LINE_INTERFACE_HEADER = "Download Everything Command-line Interface"
-EVERYTHING_COMMAND_LINE_INTERFACE_HELP = "[[support/everything/command_line_interface|Help]]"
+DOWNLOAD_EVERYTHING_COMMAND_LINE_INTERFACE_HEADER = "Everything 커맨드 인터페이스 다운로드"
+EVERYTHING_COMMAND_LINE_INTERFACE_HELP = "[[support/everything/command_line_interface|도움말]]"
 
-DOWNLOAD_EVERYTHING_SDK_HEADER = "Download Everything SDK"
-EVERYTHING_SDK_HELP = "[[support/everything/SDK|Help]]"
+DOWNLOAD_EVERYTHING_SDK_HEADER = "Everything SDK 다운로드"
+EVERYTHING_SDK_HELP = "[[support/everything/SDK|도움말]]"
 
 // footer
 
 COPYRIGHT = "&copy; {{YEAR}} - " // {{YEAR}} = current year.
 
 // donate
-DONATE_FORM_NAME = "Name (optional, name will be published below, leave blank for an anonymous donation):"
-DONATE_FORM_COMMENT = "Comment (optional, 200 characters max):"
+DONATE_FORM_NAME = "이름 (선택사항, 이름은 아래에 공개되며, 익명을 원할 시 비워두시면 됩니다):"
+DONATE_FORM_COMMENT = "댓글 (선택사항, 최대 200자):"
 DONATE_FORM_BUTTON_IMAGE = "paypal.donate.png"
-DONATE_FORM_DONATE = "Donate with PayPal"
-DONATE_HISTORY = "Donation History"
-DONATE_HISTORY_NAME = "Name"
-DONATE_HISTORY_COMMENT = "Comment"
-DONATE_HISTORY_AMOUNT = "Amount"
+DONATE_FORM_DONATE = "PayPal로 기부"
+DONATE_HISTORY = "기부 이력"
+DONATE_HISTORY_NAME = "이름"
+DONATE_HISTORY_COMMENT = "댓글"
+DONATE_HISTORY_AMOUNT = "금액"
 
 // contact
 
-CONTACT_FORM_MESSAGE = "Message:"
-CONTACT_FORM_EMAIL = "Email (optional):"
-CONTACT_FORM_SEND = "Send"
+CONTACT_FORM_MESSAGE = "본문:"
+CONTACT_FORM_EMAIL = "이메일 (선택사항):"
+CONTACT_FORM_SEND = "보내기"
 
 

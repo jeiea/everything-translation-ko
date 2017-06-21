@@ -1,0 +1,28 @@
+=C=
+Everything32.lib나 Everything64.lib에 링크됐는지 확인하세요.
+Everything32.dll이나 Everything64.dll을 실행파일 경로에 복사하세요.
+ 
+
+<pre>
+#include <stdio.h>
+#include "Everything.h"
+
+int main(int argc,char **argv)
+{
+	DWORD i;
+	
+	// Set the search string to abc
+	Everything_SetSearch("abc");
+	
+	// Execute the query.
+	Everything_Query(TRUE);
+	
+	// Display results.
+	for(i=0;i<Everything_GetNumResults();i++)
+	{
+		printf("%s [%s]\n",Everything_GetResultFileName(i),Everything_GetResultPath(i));
+	}
+	
+	return 0;
+}
+</pre>

@@ -1,0 +1,16 @@
+﻿=기부하기=
+Everything 사용에 감사드립니다.
+
+당신의 기부는 기억되고 Everything 개발에 도움이 될 것입니다.
+기부는 하드웨어, 소프트웨어, 호스팅 등의 비용에 도움을 줍니다.
+
+지원에 감사드립니다.
+[[contact|David Carpenter]]
+
+{{DONATE_FORM}}
+
+
+
+
+
+{{DONATE_HISTORY}}

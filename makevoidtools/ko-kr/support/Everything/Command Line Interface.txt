@@ -1,0 +1,483 @@
+=명령행 인터페이스=
+ES는 Everything의 CLI 버전입니다.
+
+[[File:support/everything/es-no-shadow.png|alt=Everything ES command line interface]]
+
+==다운로드==
+[[downloads|다운로드 페이지]]에서 ES를 받을 수 있습니다.
+
+==필요조건==
+<ul>
+* 쓰기 전에 Everything을 설치하고 실행해야 합니다.
+</ul>
+
+==사용법==
+<pre>
+es.exe [인자] [검색어]
+</pre>
+
+<dl>
+;[인자]
+선택사항
+
+;<인자>
+필수사항
+</dl>
+
+
+==일반적인 인자==
+
+아래 인자들은 Everything 모든 버전에서 쓸 수 있습니다.
+
+<dl>
+;''-r''
+;''-regex''
+정규식으로 겅색합니다.
+
+;''-i''
+;''-case''
+대소문자를 구분합니다.
+
+;''-w''
+;''-ww''
+;''-whole-word''
+;''-whole-words''
+단어가 온전히 일치하는 경우만 검색합니다.
+
+;''-p''
+;''-match-path''
+파일 이름뿐 아니라 경로에서도 검색합니다.
+
+;''-h''
+;''-help''
+이 도움말을 보여줍니다.
+
+;''-o <n>''
+;''-offset <n>''
+0기준의 n 번째 항목부터 보여줍니다.
+
+;''-n <n>''
+;''-max-results <n>''
+n개까지만 보여줍니다.
+
+;''-s''
+전체 경로로 정렬합니다.
+</dl>        
+
+==Everything 1.4 명령 행 인자 ==
+
+아래 인자들은 Everything 1.4 이상에서만 쓸 수 있습니다.
+
+<dl>    
+;''-a''
+;''-diacritics''
+발음 구별 기호를 구분합니다.
+
+;''-name''
+;''-path-column''
+;''-full-path-and-name''
+;''-filename-column''
+;''-extension''
+;''-ext''
+;''-size''
+;''-date-created''
+;''-dc''
+;''-date-modified''
+;''-dm''
+;''-date-accessed''
+;''-da''
+;''-attributes''
+;''-attribs''
+;''-attrib''
+;''-file-list-file-name''
+;''-run-count''
+;''-date-run''
+;''-date-recently-changed''
+;''-rc''
+지정한 열을 보여줍니다. 경로나 전체 경로, 이름 열을 고르지 않은 경우 전체 경로와 이름 열을 사용합니다. 열을 선택한 순서대로 보여줍니다.
+
+;''-sort name''
+;''-sort path''
+;''-sort size''
+;''-sort extension''
+;''-sort date-created''
+;''-sort date-modified''
+;''-sort date-accessed''
+;''-sort attributes''
+;''-sort file-list-file-name''
+;''-sort run-count''
+;''-sort date-recently-changed''
+;''-sort date-run''
+;''-sort-name''
+;''-sort-path''
+;''-sort-size''
+;''-sort-extension''
+;''-sort-date-created''
+;''-sort-date-modified''
+;''-sort-date-accessed''
+;''-sort-attributes''
+;''-sort-file-list-file-name''
+;''-sort-run-count''
+;''-sort-date-recently-changed''
+;''-sort-date-run''
+;''-sort name-ascending''
+;''-sort name-descending''
+;''-sort path-ascending''
+;''-sort path-descending''
+;''-sort size-ascending''
+;''-sort size-descending''
+;''-sort extension-ascending''
+;''-sort extension-descending''
+;''-sort date-created-ascending''
+;''-sort date-created-descending''
+;''-sort date-modified-ascending''
+;''-sort date-modified-descending''
+;''-sort date-accessed-ascending''
+;''-sort date-accessed-descending''
+;''-sort attributes-ascending''
+;''-sort attributes-descending''
+;''-sort file-list-file-name-ascending''
+;''-sort file-list-file-name-descending''
+;''-sort run-count-ascending''
+;''-sort run-count-descending''
+;''-sort date-recently-changed-ascending''
+;''-sort date-recently-changed-descending''
+;''-sort date-run-ascending''
+;''-sort date-run-descending''
+;''-sort-name-ascending''
+;''-sort-name-descending''
+;''-sort-path-ascending''
+;''-sort-path-descending''
+;''-sort-size-ascending''
+;''-sort-size-descending''
+;''-sort-extension-ascending''
+;''-sort-extension-descending''
+;''-sort-date-created-ascending''
+;''-sort-date-created-descending''
+;''-sort-date-modified-ascending''
+;''-sort-date-modified-descending''
+;''-sort-date-accessed-ascending''
+;''-sort-date-accessed-descending''
+;''-sort-attributes-ascending''
+;''-sort-attributes-descending''
+;''-sort-file-list-file-name-ascending''
+;''-sort-file-list-file-name-descending''
+;''-sort-run-count-ascending''
+;''-sort-run-count-descending''
+;''-sort-date-recently-changed-ascending''
+;''-sort-date-recently-changed-descending''
+;''-sort-date-run-ascending''
+;''-sort-date-run-descending''
+정렬을 지정합니다. 기본값은 이름 오름차순입니다.
+
+;''-sort-ascending''
+;''-sort-descending''
+정렬 순서를 지정합니다. 크기 오름차순으로 정렬하는 건 -sort size -sort-ascending이 됩니다.
+지정하지 않으면 크기, 날짜, 실행 횟수는 내림차순 정렬하고 그 외는 알파벳 오름차순 정렬을 합니다.
+
+;''-instance <이름>''
+Everything 고유 인스턴스에 연결합니다.
+자세한 건 [[support/everything/Multiple Instances|다중 인스턴스]]를 참고하세요.
+
+;''-highlight''
+검색 결과(검색어)에 색을 입힙니다.
+결과가 너무 많으면 Everything의 성능이 떨어질 수 있습니다.
+
+;''-highlight-color <색상>''
+<색상>에 다음 0x00-0xFF까지의 강조색 코드를 넣을 수 있습니다.
+[[File:support/everything/es-colors.png|alt=명령 프롬프트 색상 코드]]
+기본 색상은 0x0a(검정 바탕에 밝은 녹색)입니다.
+
+;''-csv''
+;''-efu''
+;''-txt''
+;''-m3u''
+;''-m3u8''
+출력 형식을 바꿉니다.
+파일에 리다이렉트하려면 >나 파이핑하려면 |를 쓸 수 있습니다.
+파일에 저장하려면 아래 -export 옵션도 살펴보세요.
+
+;''-export-csv <out.csv>''
+;''-export-efu <out.efu>''
+;''-export-txt <out.txt>''
+;''-export-m3u <out.m3u>''
+;''-export-m3u8 <out.m3u8>''
+파일로 결과를 저장합니다. 화면엔 아무것도 출력하지 않습니다.
+        
+;''-size-format <형식>''
+형식엔 다음 값이 들어갈 수 있습니다.
+{|
+! 값
+! 설명
+|-
+| 0
+| 자동
+|-
+| 1
+| 바이트
+|-
+| 2
+| KB
+|-
+| 3
+| MB
+|}
+
+;''-pause''
+;''-more''
+페이지마다 정지합니다.
+
+;''-hide-empty-search-results''
+검색 결과가 0건이면 아무것도 보여주지 않습니다
+
+;''-empty-search-help''
+검색어가 비어있으면 도움말을 보여줍니다.
+
+;''-timeout <밀리초>''
+검색 시 Everything 데이터베이스를 불러오는 시간이 지정 1/1000초를 넘으면 중단합니다.
+
+;''-filename-color <색상>''
+;''-name-color <색상>''
+;''-path-color <색상>''
+;''-extension-color <색상>''
+;''-size-color <색상>''
+;''-date-created-color <색상>''
+;''-dc-color <색상>''
+;''-date-modified-color <색상>''
+;''-dm-color <색상>''
+;''-date-accessed-color <색상>''
+;''-da-color <색상>''
+;''-attributes-color <색상>''
+;''-file-list-filename-color <색상>''
+;''-run-count-color <색상>''
+;''-date-run-color <색상>''
+;''-date-recently-changed-color <색상>''
+;''-rc-color <색상>''
+<색상>에 다음 0x00-0xFF까지의 색상 코드를 넣을 수 있습니다.
+[[File:support/everything/es-colors.png|alt=명령 프롬프트 색상 코드]]
+해당 열의 색상을 0x00-0xFF로 지정합니다.
+        
+;''-filename-width <너비>''
+;''-name-width <너비>''
+;''-path-width <너비>''
+;''-extension-width <너비>''
+;''-size-width <너비>''
+;''-date-created-width <너비>''
+;''-dc-width <너비>''
+;''-date-modified-width <너비>''
+;''-dm-width <너비>''
+;''-date-accessed-width <너비>''
+;''-da-width <너비>''
+;''-attributes-width <너비>''
+;''-file-list-filename-width <너비>''
+;''-run-count-width <너비>''
+;''-date-run-width <너비>''
+;''-date-recently-changed-width <너비>''
+;''-rc-width <너비>''
+열 너비를 0-200 사이에서 조절합니다.
+
+;''-size-leading-zero''
+;''-run-count-leading-zero''
+해당 열 숫자 앞에 0을 붙입니다. -no-digit-grouping과 같이 사용하세요.
+
+;''-no-digit-grouping''
+숫자에 ,를 넣지 않습니다.
+
+;''-path <경로>''
+해당 경로의 하위 폴더와 파일을 검색합니다.
+
+;''-parent-path <경로>''
+해당 경로의 상위 폴더에 있는 하위 폴더와 파일을 검색합니다.
+
+;''-parent <경로>''
+부모가 해당 경로인 파일을 검색합니다.
+
+;''/o[정렬]''
+dir 명령어 방식 정렬입니다.
+[정렬]에 다음 중 하나를 넣습니다.
+{|
+! 정렬
+! 설명
+|-
+| N
+| 이름 오름차순.
+|-
+| -N
+| 이름 내림차순.
+|-
+| S
+| 크기 오름차순.
+|-
+| -S
+| 크기 내림차순.
+|-
+| E
+| 확장자 오름차순.
+|-
+| -E
+| 확장자 내림차.
+|-
+| D
+| 수정한 날짜 오름차순.
+|-
+| -D
+| 수정한 날짜 내림차순.
+|}
+
+;''/ad''
+폴더만 보여준니다.
+
+;''/a-d''
+파일만 보여줍니다.
+
+;''/a[속성]''
+dir 명령어 방식 속성 지정입니다.
+[속성]은 다음 중 1개 이상이 될 수 있습니다.
+{|
+! 속성
+! 설명
+|-
+| R
+| 읽기 전용
+|-
+| H
+| 숨김
+|-
+| S
+| 시스템
+|-
+| D
+| 디렉토리
+|-
+| A
+| 보관
+|-
+| V
+| 장치
+|-
+| N
+| 일반
+|-
+| T
+| 임시
+|-
+| P
+| 미리 할당된 파일
+|-
+| L
+| Reparse point
+|-
+| C
+| 업축됨
+|-
+| O
+| 오프라인
+|-
+| I
+| 색인되지 않음
+|-
+| E
+| 암호화됨
+|}
+-를 앞에 붙여 해당 속성을 제외할 수 있습니다.
+읽기 전용 파일을 제외하려면 <code>es.exe /a-r</code>가 됩니다.
+폴더 속성은 Everything이 해당 항목을 폴더로 간주하는지를 의미합니다.
+실제 폴더를 찾으려면 attributes:d를 검색어에 추가하세요.
+
+;''-set-run-count <파일이름> <횟수>''
+검색하지 않고 해당 파일의 실행 횟수를 설정합니다.
+
+;''-inc-run-count <파일이름>''
+검색하지 않고 해당 파일의 실행 횟수를 1 늘립니다.
+
+;''-get-run-count <파일이름>''
+검색하지 않고 해당 파일의 실행 횟수를 보여줍니다.
+
+;''-save-settings''
+;''-clear-settings''
+검색하지 않고 설정을 저장하거나 초기화합니다.
+설정은 es.exe가 있는 폴더에 es.ini로 저장돼 있습니다.
+</dl>    
+
+==한계==
+ES로 책갈피나 필터를 사용할 순 없습니다.
+
+==예제==
+모든 mp3파일을 mp3.efu Everything 파일 목록으로 저장하기
+<pre>
+es.exe *.mp3 -export-efu mp3.efu
+</pre>
+
+가장 큰 파일 10개 보기
+<pre>
+es.exe -sort size -n 10
+</pre>
+
+가장 최근에 수정한 파일 10개 보기
+<pre>
+es.exe -sort dm -n 10
+</pre>
+
+foo bar 검색어 색칠하기
+<pre>
+es.exe foo bar -highlight
+</pre>
+
+크기, 수정한 시간 열을 보여주고 색상지정한 후 기본 설정으로 만들기
+<pre>
+es.exe -size -dm -sizecolor 0x0d -dmcolor 0x0b -save-settings
+</pre>
+
+==반환 값==
+다음 ERRORLEVEL 값 중 하나를 반환합니다.
+{|
+! ERRORLEVEL
+! 설명
+|-
+| 0
+| 에러 없이 검색 성공
+|-
+| 1
+| 윈도우 클래스 등록 실패
+|-
+| 2
+| 메시지 펌프 창 생성 실패
+|-
+| 3
+| 메모리 부족
+|-
+| 4
+| 지정한 인자에 추가 인자 필요
+|-
+| 5
+| 출력 파일 생성 실패
+|-
+| 6
+| 모르는 인자
+|-
+| 7
+| Everything IPC 쿼리 전송 실패
+|-
+| 8
+| Everything IPC 창 미발견. Everything 프로그램을 먼저 실행하세요.
+|}
+
+==창고==
+인자 안에 있는 -는 생략 가능합니다. 즉 -no-digit-grouping와 -nodigitgrouping은 같습니다
+
+인자는 -말고 /로 시작해도 됩니다.
+
+공백이나 인자를 이스케이핑하려면 큰따옴표를 쓰면 됩니다.
+
+인자는 no-를 붙이는 것으로 끌 수 있습니다. -no-size같은 게 그 예입니다.
+
+\, &, |, >, <, ^를 이스케이핑하려면 ^를 쓰면 됩니다.
+
+ES 소스코드는 다운로드 페이지에 있습니다.
+
+==볼만한 것==
+<ul>
+*[[support/everything/SDK/IPC]]
+*[[support/everything/Multiple Instances]]
+*[[downloads|Downloads]]
+</ul>

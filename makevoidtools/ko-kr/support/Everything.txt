@@ -1,0 +1,22 @@
+﻿=Everything=
+[[File:support/everything/Everything.Search.Window.png|alt=Everything 검색 창]]
+
+''Everything''은 윈도 파일 검색 엔진입니다.
+
+==Everything이 다른 검색엔진과 다른 점==
+<ul>
+* 작은 설치파일
+* 깔끔하고 단순한 UI
+* 빠른 파일 색인
+* 빠른 검색
+* 빠른 시작
+* 최저 자원 사용
+* 작은 디스크 DB 크기
+* 실시간 갱신
+</ul>
+
+==볼만한 것==
+<ul>
+*[[support/everything/Installing Everything|Everything 설치하기]]
+*[[support/everything/Using Everything|Everything 사용하기]]
+</ul>
