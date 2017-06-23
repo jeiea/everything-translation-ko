@@ -1,177 +1,168 @@
 =ETP=
-The Everything ETP/FTP server allows you to search and access your files from an Everything client or FTP client.
+Everything ETP/FTP 서버로 Everything 클라이언트나 FTP 클라이언트로 사용자 파일을 검색하고 접근할 수 있습니다.
 
-==Start an ETP/FTP server==
-To start an ETP/FTP server:
+==ETP/FTP 서버 시작==
+ETP/FTP 서버를 시작하려면:
 <ul>
-*On the computer whose files you wish to share, In '''''"Everything"''''', from the '''Tools''' menu, click '''Options'''.
-*Click the '''''ETP/FTP''''' tab.
-*Check '''Enable ETP/FTP server'''.
-*Click '''OK'''.
+*파일을 공유하려는 컴퓨터에서 '''Everything'''을 켭니다.
+*'''도구''' - '''설정''' - '''ETP/FTP''' 탭으로 들어갑니다.
+*'''ETP/FTP 서버 활성화'''를 체크합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-Please make sure you share each drive on your server as its drive letter.
-For example, share C: drive as: '''C'''
+이 경우 각각의 서버 드라이브를 해당 문자로 공유합니다.
+즉 C: 드라이브를 '''C'''라는 이름으로, 모든 드라이브를 공유합니다.
 
-This will be customizable in a future release of "Everything".
+이건 차기 Everything 버전에서 설정 가능해질 겁니다.
 
-==Connect to an ETP server==
-To connect to an ETP server:
+==ETP 서버 접속==
+ETP 서버에 접속하려면:
 <ul>
-*In '''"Everything"''', from the '''Tools''' menu, click '''connect to ETP server...'''.
-*Type in the '''server name''' or '''IP''' for the host.
-*Click OK.
+*'''Everything''' - '''도구''' - '''ETP 서버에 접속'''을 클릭합니다.
+*서버의 '''호스트'''나 '''IP'''를 호스트 란에 입력합니다.
+*확인을 클릭합니다.
 </ul>
 
-==ETP link types==
-There are four link types that change the way the Everything client accesses files on the ETP server.
-When connecting to an ETP server you can specify the link type.
+==ETP 연결 종류==
+클라이언트가 ETP 서버 파일에 접근하는 걸 지정하는 데 4가지 종류가 있습니다.
+ETP 서버에 접속할 때 연결 종류를 지정합니다
 
 {|
-! Link type
-! Description
+! 연결 종류
+! 설명
 |-
 | C:
-| No change, the paths are the same as they are on the server. This is useful if you index a subst'ed drive on the server and are using mapped network drives on the client.
+| 서버에 보이는 경로 그대로 변경없이 사용합니다. 이건 subst 명령어 드라이브를 서버에서 색인하고 클라이언트에서 네트워크 드라이브를 대응시킬 때 유용합니다.
 |-
 | \\Server\C
-| Use Windows shares (this is the default link type). By default these shares do not exist, you will need to create them on the server if you wish to use this method.
+| 윈도 공유를 사용합니다(이게 기본값입니다). 기본적으로 이 공유는 존재하지 않고, 이 방법을 사용하려면 서버에서 공유를 생성해야 합니다.
 |-
 | \\Server\C$
-| Use the default admin drive shares.
+| 기본 관리자 드라이브 공유를 사용합니다.
 |-
 | ftp://host/C:
-| Use ftp links.
+| ftp 링크를 사용합니다.
 |}
 
-==Username and password==
-To change the ETP/FTP server username and password:
+==계정과 암호==
+ETP/FTP 서버 계정과 암호를 바꾸려면:
 <ul>
-*In '''''"Everything"''''', from the '''Tools''' menu, click '''Options'''.
-*Click the '''ETP/FTP Server''' tab.
-*Type in a new '''username''' and '''password'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''ETP/FTP 서버''' 탭에 들어갑니다.
+*새 '''ETP/FTP 서버 계정이름'''과 '''암호'''를 입력합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Disable file downloading==
-To disable ETP/FTP file downloading:
+==파일 다운로드 끄기==
+ETP/FTP 파일 다운로드를 막으려면:
 <ul>
-*In '''''"Everything"''''', from the '''Tools''' menu, click '''Options'''.
-*Click the '''ETP/FTP Server''' tab.
-*Uncheck '''Allow file download'''.
-*Click '''OK'''
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''ETP/FTP 서버''' 탭에 들어갑니다.
+*'''파일 다운로드 허용'''을 해제합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Different indexes==
-To index different NTFS volumes for the ETP server, see [[support/everything/Multiple Instances]].
+==다른 색인==
+ETP 서버가 다른 NTFS 볼륨을 색인하게 하려면 [[support/everything/Multiple Instances|다중 인스턴스]]를 참고하세요.
 
-==Create a Windows share==
-Everything works best if you share each drive as a single letter, for example, share your C: drive as C, D: drive as D and so on.
+==윈도 공유 생성==
+각 드라이브를 한 글자로 공유할 때 Everything이 가장 잘 동작합니다. 예를 들어 C: 드라이브를 C로, D: 드라이브를 D로 공유하는 걸 말합니다.
 
-To create a windows share for a single folder, please follow the guide below:
+한 폴더에 대한 윈도 공유를 만들 경우, 아래 도움말을 보세요:
 
-For example, we want to host an ETP/FTP server for one folder:
+아래 한 폴더만 ETP/FTP 서버로 공유하려면:
 <pre>
 C:\share
 </pre>
 
-Substitute a drive letter for the local folder c:\share:
+아래 방법으로 c:\share 폴더에 드라이브 이름을 할당합니다:
 <ul>
-*From a command prompt, run:
+*명령 프롬프트에서 아래 명령어를 실행하세요:
 <pre>
 subst H: c:\share
 </pre>
 </ul>
 
-Setup an index to include only the H: drive.
+H: 드라이브만 색인에 포함시킵니다.
 <ul>
-*In '''''"Everything"''''', from the '''Tools''' menu, click '''Options'''.
-*Click the '''NTFS''' tab.
-*Uncheck '''Include in database''' for all volumes, except the H: drive.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''NTFS''' 탭에 들어갑니다.
+*H: 드라이브를 제외한 모든 볼륨에서 '''데이터베이스에 포함'''을 해제합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-Add a share name to c:\share
+c:\share에 공유 이름을 추가합니다.
 <ul>
-*In '''Explorer''', '''right click''' the '''c:\share''' and click '''properties'''.
-*Click the '''Sharing''' tab.
-*Click '''Advanced Sharing...'''.
-*Click '''Add'''.
-*Type in '''H''' for the '''share name'''.
-*Click '''OK'''.
-*Click '''OK'''.
-*Click '''Close'''.
+*'''탐색기'''에서 '''c:\share'''를 '''우클릭'''해 '''속성'''에 들어갑니다.
+*'''공유''' 탭에서 '''고급 공유...'''를 클릭합니다.
+*'''추가'''를 클릭 후 '''공유 이름'''란에 '''H'''를 입력합니다.
+*모든 대화상자를 '''확인''' 또는 '''닫기'''를 클릭해 닫습니다.
 </ul>
 
-Connect to the ETP/FTP server with \\Server\C links.
+\\Server\C 링크로 ETP/FTP 서버에 접속하기.
 
-==Security==
-Every file and folder indexed by Everything can be searched and downloaded via the ETP server.
+==보안==
+Everything이 색인한 모든 파일 및 폴더는 ETP서버를 통해 검색 및 다운로드될 수 있습니다.
 
-To disable file downloading:
+다운로드를 막으려면:
 <ul>
-*In '''''Everything''''', from the '''Tools''' menu, click '''Options'''.
-*Click the '''ETP Server''' tab.
-*Uncheck '''allow file download'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''ETP/FTP 서버''' 탭에 들어갑니다.
+*'''파일 다운로드 허용'''을 해제합니다.
 </ul>
 
-See [[support/everything/etp#disable_etp_ftp_server|Disable ETP/FTP Server]] to remove the ETP server options and prevent the ETP server from starting.
+ETP 서버 옵션을 지우고 ETP 서버를 자동시작되지 않게 하려면 [[support/everything/etp#disable_etp_ftp_server|ETP/FTP 서버 끄기]]를 참고하십시오..
 
-==Disable ETP/FTP Server==
-To disable the ETP/FTP server:
+==ETP/FTP 끄기==
+ETP/FTP 서버를 끄려면:
 <ul>
-*Exit Everything (right click the Everything system tray icon and click Exit)
-*Open your Everything.ini in the same location as your Everything.exe
-*Change the following line:
+*Everything을 종료합니다 (트레이 아이콘을 우클릭해 종료 클릭)
+*Everything.exe가 있는 경로의 Everything.ini를 엽니다.
+*다음 줄을
 <pre>
 allow_etp_server=1
 </pre>
-to:
+아래처럼 바꿉니다.
 <pre>
 allow_etp_server=0
 </pre>
-*Save changes and restart Everything.
+*저장하고 Everything을 재시작합니다.
 </ul>
 
-==ETP Client path rewriting==
-ETP clients can rewrite the ETP server paths so they can be accessed from different shares.
-For example, rewrite the path D:\music to \\server\music and "D:\Install Files" to "\\server\Install Files"
+==ETP 클라이언트 경로 고쳐쓰기==
+ETP 클라이언트는 공유받은 ETP 서버 경로를 고쳐쓰기로 재공유할 수 있습니다.
+예를 들어 D:\music를 \\server\music로, "D:\Install Files"를 "\\server\Install Files"로 고쳐쓰겠습니다.
 
-To rewrite the paths on the ETP client.
+ETP 클라이언트에서 경로를 고쳐쓰려면
 <ul>
-*On the '''''Everything''''' ETP client PC:
-*Completely exit '''''Everything''''' (Right click the '''''Everything''''' system tray icon and click Exit)
-*Open your %APPDATA%\Everything\Everything.ini
-*Change the following lines:
+*'''Everything''' ETP 클라이언트 PC에서
+*Everything을 종료합니다 (트레이 아이콘을 우클릭해 종료 클릭)
+*%APPDATA%\Everything\Everything.ini를 엽니다.
+*다음 줄을
 etp_client_rewrite_patterns=
 etp_client_rewrite_substitutions=
-to:
+아래처럼 바꿉니다
 etp_client_rewrite_patterns=D:\music;"D:\\Install Files"
 etp_client_rewrite_substitutions=\\server\music;"\\\\server\\Install Files"
-*Save changes and restart Everything.
+*저장하고 Everything을 재시작합니다.
 </ul>
 
-The pattern must match the path on the server. It is not effected by the link type.
+저 패턴은 서버의 경로와 일치해야 합니다. 연결 타입에 구애받진 않습니다.
 
-==Trouble Shooting==
-Unable to start ETP server: bind failed 10048
-Please make sure no FTP servers are already running on port 21 or use a different ETP server port.
+==문제 해결==
+ETP 서버를 시작할 수 없습니다: bind failed 10048
+다른 FTP 서버가 이미 21번 포트를 사용하고 있진 않은지 확인하거나 다른 포트를 사용하세요.
 
-To change the ETP server port:
+ETP 서버 포트를 바꾸려면
 <ul>
-*In '''"Everything"''', from the '''Tools''' menu, click '''Options'''.
-*Click the '''ETP/FTP Server''' tab.
-*Change the '''port''' to: '''2121'''
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''ETP/FTP 서버''' 탭에 들어갑니다.
+*'''서버 포트'''를 '''2121'''로 바꿉니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-Please match the same port number when connecting to the ETP server.
+ETP 서버에 접속할 때 포트 번호가 일치하는지 확인하시기 바랍니다.
 
-==See also==
+==볼만한 것==
 <ul>
-*[[support/everything/multiple instances|Multiple Instances]].
-*[[support/everything/command line options#etp|ETP/FTP Server command line options]].
-*[[support/everything/ini#etp|ETP/FTP Server Everything.ini options]].
-*[[support/everything/options#etp/ftp server|ETP/FTP Server options]].
+*[[support/everything/multiple instances|다중 인스턴스]].
+*[[support/everything/command line options#etp|ETP/FTP 서버 명령행 인자]].
+*[[support/everything/ini#etp|ETP/FTP 서버 Everything.ini 옵션]].
+*[[support/everything/options#etp/ftp server|ETP/FTP 서버 옵션]].
 *[[http://en.wikipedia.org/wiki/FTP]]
 </ul>
