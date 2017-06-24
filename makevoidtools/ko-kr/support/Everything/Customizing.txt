@@ -207,7 +207,7 @@ Everything.ini를 저장하고 Everything을 재시작합니다.
 검색 결과 헤더 글꼴을 바꾸려면 [[support/everything/ini#header_font|header_font]] and [[support/everything/ini#header_font_size|header_font_size]]
 
 ==상태 표시줄 형식==
-상태 표시줄 형식을 바꾸려면 [[support/everything/ini#status_bar_format|status_bar_format]]를 참고하세요.
+상태 표시줄 형식을 바꾸려면 [[support/everything/ini#statusbar_selected_item_format|status_bar_format]]를 참고하세요.
 
 ==HTTP 서버==
 [[support/everything/http#Change the default HTTP files|기본 HTTP 파일 바꾸기]]를 참고하세요.

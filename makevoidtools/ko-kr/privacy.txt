@@ -28,8 +28,8 @@ Everything 클라이언트는 다른 개인 정보를 Everythinig.ini나 ETP/FTP
 <ul>
 * 사용자 IP 주소
 * 현재 사용 중인 Everything 버전
-* 위 정보는 최근 1000개 요청까지 유지됩니다.
 </ul>
+위 정보는 최근 1000개 요청까지 유지됩니다.
 
 
 ==ETP/FTP/HTTP 서버==

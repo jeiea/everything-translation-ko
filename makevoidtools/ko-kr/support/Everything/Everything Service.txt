@@ -1,5 +1,5 @@
 =Everything Service=
-The Everything service indexes NTFS volumes and monitor USN Journals.
+The Everything service indexes NTFS volumes and monitors USN Journals.
 This allows the Everything client to run as a standard user.
 
 On XP or earlier the Everything service is not required.
@@ -68,4 +68,9 @@ Simply close the console window to terminate the service application.
 
 ==How many resources does the service use?==
 The Everything service will use about 1MB of RAM and will have none to very little CPU usage.
+
+==Security==
+Any local user can use the Everything Service to create a list of all NTFS filenames. 
+Note: The Everything Service can not be used to access files, only filenames.
+
 

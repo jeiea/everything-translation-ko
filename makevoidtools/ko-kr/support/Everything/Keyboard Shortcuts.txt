@@ -315,8 +315,20 @@ To define a Hotkey to open Everything:
 </ul>
 
 Note: Everything must be running in the background for hotkeys to work.
-
 Note: You can not override any existing hotkey.
+
+To disable a Windows hotkey, such as Win + F:
+<ul>
+*From the Start menu, open regedit
+*In the Registry Editor, navigate to:
+<pre>
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
+</pre>
+*Create a new String Value called '''DisabledHotkeys'''
+*Set the DisabledHotkeys data to the letter you would like freed, for example: '''F'''
+*Restart your computer
+*Apply the (now free) hotkey Win + F in Everything.
+</ul>
 
 
 ==Customizing==

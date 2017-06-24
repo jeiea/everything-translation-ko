@@ -1,11 +1,11 @@
 =Everything_GetResultDateCreated=
-The '''Everything_GetResultDateModified''' function retrieves the modified date of a visible result.
+The '''Everything_GetResultDateCreated''' function retrieves the created date of a visible result.
 
 ==Syntax==
 <pre>
-BOOL Everything_GetResultDateModified(
+BOOL Everything_GetResultDateCreated(
     DWORD dwIndex,
-    FILETIME *lpDateModified
+    FILETIME *lpDateCreated
 );
 </pre>
 
@@ -13,23 +13,23 @@ BOOL Everything_GetResultDateModified(
 <dl>
 ;''dwIndex''
 Zero based index of the visible result.
-;''lpDateModified''
-Pointer to a FILETIME to hold the modified date of the result.
+;''lpDateCreated''
+Pointer to a FILETIME to hold the created date of the result.
 </dl>
 
 ==Return Value==
 The function returns non-zero if successful.
-The function returns 0 if the date modified information is unavailable. To get extended error information, call [[support/everything/SDK/Everything_GetLastError|Everything_GetLastError]]
+The function returns 0 if the date created information is unavailable. To get extended error information, call [[support/everything/SDK/Everything_GetLastError|Everything_GetLastError]]
 
 {|
 ! Error code
 ! Meaning
 |-
 | EVERYTHING_ERROR_INVALIDCALL
-| Call [[support/everything/SDK/Everything_Query|Everything_Query]] before calling Everything_GetResultDateModified.
+| Call [[support/everything/SDK/Everything_Query|Everything_Query]] before calling Everything_GetResultDateCreated.
 |-
 | EVERYTHING_ERROR_INVALIDREQUEST
-| Date modified was not requested or is unavailable, Call [[support/everything/SDK/Everything_SetRequestFlags|Everything_SetRequestFlags]] with EVERYTHING_REQUEST_DATE_MODIFIED before calling [[support/everything/SDK/Everything_Query|Everything_Query]].
+| Date created was not requested or is unavailable, Call [[support/everything/SDK/Everything_SetRequestFlags|Everything_SetRequestFlags]] with EVERYTHING_REQUEST_DATE_CREATED before calling [[support/everything/SDK/Everything_Query|Everything_Query]].
 |-
 | EVERYTHING_ERROR_INVALIDINDEX
 | index must be greater than or equal to 0 and less than the visible number of results.
@@ -40,7 +40,7 @@ dwIndex must be a valid visible result index. To determine if a result index is 
 
 ==Example==
 <pre>
-FILETIME dateModified;
+FILETIME dateCreated;
 
 // set the search text to abc AND 123
 Everything_SetSearch("abc 123");
@@ -48,8 +48,8 @@ Everything_SetSearch("abc 123");
 // execute the query
 Everything_Query(TRUE);
 
-// Get the modified date of the first visible result.
-Everything_GetResultDateModified(0,&dateModified);
+// Get the created date of the first visible result.
+Everything_GetResultDateCreated(0,&dateCreated);
 </pre>
 
 ==Function Information==

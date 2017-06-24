@@ -144,9 +144,22 @@ To disable this feature:
 EFU files are comma-separated values ([[http://en.wikipedia.org/wiki/Comma-separated_values|CSV]]) files.
 A header is required with at least the Filename column specified.
 File size is specified in bytes.
-Dates are FILETIMEs (100-nanosecond intervals since January 1, 1601.) in decimal or ISO 8601 dates.
+Dates are FILETIMEs (100-nanosecond intervals since January 1, 1601.) in decimal or [[http://en.wikipedia.org/wiki/ISO_8601|ISO 8601]] dates.
 Attributes can be zero or more of the [[http://msdn.microsoft.com/en-us/library/windows/desktop/gg258117%28v=vs.85%29.aspx|Windows File Attributes]].
 EFU files are encoded with UTF-8.
+
+==Opening a file list with Excel==
+To open a file list with excel:
+<ul>
+*In '''Excel''', from the '''Data''' menu, from the '''Import External Data''' submenu, click '''Import data...'''.
+*Select your exported csv and click '''Open'''.
+*Change '''File origin''' to '''65001 : Unicode (UTF-8)'''.
+*Click '''Next'''.
+*Check '''Comma'''.
+*Click '''Next'''.
+*Click '''Finish'''.
+*Click '''OK''' to put the data in the existing worksheet at '''$A$1'''.
+</ul>
 
 ==See also==
 <ul>

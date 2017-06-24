@@ -1,11 +1,6 @@
 =Troubleshooting=
 
 ==Missing files==
-Certain files under Windows Vista and Windows 7 are hard links.
-"''Everything''" will not include hard links.
-For example, on Windows 7 C:\windows\notepad.exe is a hard link to c:\windows\system32\notepad.exe
-Only the original file c:\windows\system32\notepad.exe will show in "''Everything''".
-
 Corrupt files and folders are automatically excluded by "''Everything''". Please check your disk(s) for errors.
 
 To check your disk(s) for errors:
@@ -58,9 +53,6 @@ To connect to this server:
 *In your web browser, enter http://localhost:8080
 *Change localhost to the server name for remote access. 
 </ul>
-
-==Everything doesn't save settings==
-Please make sure [[support/everything/options#Store settings and data in %APPDATA%\Everything|Store settings and data in %APPDATA%\Everything]] is enabled or please make sure you have write access to the Everything installation folder.
 
 ==Debug mode.
 The debug console can be toggled with the Ctrl + ` key.

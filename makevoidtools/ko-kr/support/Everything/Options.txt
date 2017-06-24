@@ -19,6 +19,7 @@ Select one of the ''"tabs"'' below:
 *[[#Fonts and Colors|Fonts and Colors]]
 *[[#Keyboard|Keyboard]]
 </ul>
+*[[#History|History]]
 *[[#Indexes|Indexes]]
 <ul>
 *[[#NTFS|NTFS]]
@@ -57,9 +58,6 @@ If enabled and Everything is run with limited privileges, Everything will relaun
 
 ;''Everything service''
 Install the Everything service. The Everything service will allow the Everything search window to read and monitor the USN Journal on all NTFS volumes. Enabling this will allow Everything to run as a standard user.
-
-;''Service port''
-The port the service will listen on.
 
 ;''Show folder context menus''
 Add the '''Search Everything...''' item to folder context menus. The folder context menu is displayed when you right click a folder in Windows. Clicking on the folder context menu item '''Search Everything...''' will launch Everything and populate the search with the selected folder.
@@ -111,9 +109,6 @@ If enabled, always create a new search window from the system tray. If disabled,
 
 ;''Create a new window when running Everything''
 If enabled, always create a new search window when running Everything.exe or an Everything shortcut. If disabled, running Everything.exe or an Everything shortcut will show an existing search window before creating a new search window.
-
-;''Snap to desktop edges at 10 pixels''
-When moving the Everything search window, Snap it to the desktop edges.
 
 ;''Search as you type''
 If enabled, each keystroke you press will update the search results. If disable, you must press enter to update the search results.
@@ -301,7 +296,7 @@ Show highlighted search terms.
 
 ;''Show selected item in status bar''
 Show the full path and filename of the selected file in the status bar.
-The status bar format for the selected item can be customized with the [[support/Everything/Options#statusbar_selected_item_format|statusbar_selected_item_format]] ini option.
+The status bar format for the selected item can be customized with the [[support/Everything/ini#statusbar_selected_item_format|statusbar_selected_item_format]] ini option.
 
 ;''Show the result count with the selection count''
 Show the total number of results with the selection count in the status bar.
@@ -425,6 +420,7 @@ The font style. Can be bold or normal.
 [[File:support/everything/Everything.Options.Keyboard.png|alt=Everything Options Keyboard]]
 
 Contains settings for configuring keyboard shortcuts and hotkeys.
+For a list of all the default keyboard shortcuts, please see [[support/everything/keyboard_shortcuts|Keyboard Shortcuts]].
 
 <dl>
 ;''New window hotkey''
@@ -486,7 +482,7 @@ if disabled search history is kept forever.
 ;''Always show search suggestions''
 Show the suggestion list after every change to the search.
 Consider disabling [[support/everything/options#search as you type|Search as you type]].
-See [[support/everything/ini#search history|Everything.ini]] for more options.
+See [[support/everything/ini#search_history_always_suggest|Everything.ini]] for more options.
 
 ;''Enable run history''
 Remember the number of times each file or folder has been run. When you execute an item in the result list, its run count is incremented by one. You can set the run count for an item in the result list by right clicking it and selecting Set run count.... Disabling run history will not delete run history. Click Clear Now to permanently delete run history.
@@ -624,7 +620,6 @@ Automatically include new fixed volumes in Everything.
 ;ntfs_auto_include_new_removable_volumes|''Auto include new removable volumes''
 Automatically include new removable volumes in Everything.
 Everything must rebuild the database when a volume path, volume guid, the USN Journal ID changes or the volume goes offline.
-See the [[support/Everything/ini|Everything.ini]] option [[support/Everything/ini#keep_missing_indexes|keep_missing_indexes]] to keep offline volumes in the index.
 
 ;ntfs_enable_usn_journal|''Enable USN Journal''
 Enable USN Journal logging on the selected NTFS volume. Everything uses the USN Change journal to index and monitor changes to NTFS volumes.
@@ -643,7 +638,7 @@ Include this NTFS volume in the Everything index.
 Load the entire USN Journal for this volume into the recent changes list. See [[support/everything/Recent changes|Recent changes]] for more information.
 
 ;ntfs_include_only|''Include only''
-Semi-colon delimited list of folders to include on this NTFS volume. Leave empty to include all folders.
+semicolon delimited list of folders to include on this NTFS volume. Leave empty to include all folders.
 
 ;ntfs_monitor_changes|''Monitor changes''
 Keep the NTFS index of this NTFS volume up to date.
@@ -653,7 +648,6 @@ Keep the NTFS index of this NTFS volume up to date.
 [[File:support/everything/Everything.Options.ReFS.png|alt=Everything Options ReFS]]
 
 Contains settings for configuring ReFS volumes and ReFS indexing.
-Requires Everything 1.4 or later.
 
 <dl>
 ;refs_auto_include_new_fixed_volumes|''Auto include new fixed volumes''
@@ -662,7 +656,6 @@ Automatically include new fixed volumes in Everything.
 ;refs_auto_include_new_removable_volumes|''Auto include new removable volumes''
 Automatically include new removable volumes in Everything.
 Everything must rebuild the database when a volume path, volume guid, the USN Journal ID changes or the volume goes offline.
-See the [[support/Everything/ini|Everything.ini]] option [[support/Everything/ini#keep_missing_indexes|keep_missing_indexes]] to keep offline volumes in the index.
 
 ;refs_enable_usn_journal|''Enable USN Journal''
 Enable USN Journal logging on the selected ReFS volume. Everything uses the USN Change journal to index and monitor changes to ReFS volumes.
@@ -682,7 +675,7 @@ Include this ReFS volume in the Everything index.
 Load the entire USN Journal for this volume into the recent changes list. See [[support/everything/Recent changes|Recent changes]] for more information.
 
 ;refs_include_only|''Include only''
-Semi-colon delimited list of folders to include on this ReFS volume. Leave empty to include all folders.
+semicolon delimited list of folders to include on this ReFS volume. Leave empty to include all folders.
 
 ;refs_monitor_changes|''Monitor changes''
 Keep the ReFS index of this ReFS volume up to date.
@@ -757,7 +750,7 @@ C:\Windows
 </ul>
 
 ;''Include only files''
-A semi-colon delimited wildcard filter list of files to include. Leave empty to include all files.
+A semicolon delimited wildcard filter list of files to include. Leave empty to include all files.
 For example, include only mp3 and mkv files:
 <pre>
 *.mp3;*.mkv
@@ -771,7 +764,7 @@ regex:^[A-M]
 
 
 ;''Exclude files''
-A semi-colon delimited wildcard filter list of files to exclude. Leave empty to include all files.
+A semicolon delimited wildcard filter list of files to exclude. Leave empty to include all files.
 For example, exclude db files
 <pre>
 *.db

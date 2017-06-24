@@ -19,4 +19,5 @@
 <ul>
 *[[support/everything/Installing Everything|Everything 설치하기]]
 *[[support/everything/Using Everything|Everything 사용하기]]
+*[[/Everything.chm.zip|도움말 파일 받기]]
 </ul>

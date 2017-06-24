@@ -13,7 +13,7 @@ ETP/FTP 서버를 시작하려면:
 이 경우 각각의 서버 드라이브를 해당 문자로 공유합니다.
 즉 C: 드라이브를 '''C'''라는 이름으로, 모든 드라이브를 공유합니다.
 
-이건 차기 Everything 버전에서 설정 가능해질 겁니다.
+다른 이름을 쓰려면 [[support/everything/ini/#etp_client_rewrite_patterns|ETP 경로 고쳐쓰기]]를 보세요.
 
 ==ETP 서버 접속==
 ETP 서버에 접속하려면:

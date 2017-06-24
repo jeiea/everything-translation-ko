@@ -77,6 +77,9 @@ Your translation is compatible with previous and future versions of Everything.
 Strings that have not yet been translated will appear in English.
 
 
+==Changes==
+Some strings may change vary between Everything versions. Usually help information is expanded upon or alt shortcut keys added.
+Please check the Changes.txt in the [[/Template.zip]] file for a list of changes that may need updating in your existing translation template.txt.
 
 ==Language compiler==
 Please download the language pack compiler if you would like to test your translation with "''Everything''".
@@ -109,11 +112,10 @@ The last definition will be used for duplicates.
 You can optionally remove the first references of the duplicates to remove these warnings.
 
 Warnings for undefined strings should be fixed.
-
-
+Warnings for empty strings should be fixed.
 
 ==Credit==
-You can add your name to the credit list for your translation.
+Please add your name to the credit list for your translation.
 
 Your name will be added to the English translation template to be updated for the next release of "''Everything''".
 
@@ -122,8 +124,13 @@ Your name will also be included on the website.
 You can optionally have your name linked to an email address or website.
 
 ==Help & Support==
-Please contact [[mailto:david@voidtools.com|David Carpenter]] for help and support.
+Please contact [[mailto:david@voidtools.com|David Carpenter]] for assistance.
 
+==Everything 1.4 Changes==
+Please check the latest English translation template from [[/Template.zip]] for a list of changes to strings from Everything 1.3. These strings should be updated in your translation template.
+
+==Website==
+To translate the voidtools website, please see [[support/everything/makevoidtools|makevoidtools]].
 
 
 ==Thanks==

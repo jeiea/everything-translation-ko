@@ -1,5 +1,9 @@
 =Everything 사용하기=
-Everything 기본 사용법입니다.
+Everything을 처음 실행할 때 로컬 NTFS 볼륨 색인을 생성합니다.
+색인엔 수 초가 걸릴 수 있습니다.
+한 번 색인이 끝나면, 사용자의 모든 파일이 보일 겁니다.
+
+검색하려면 상단 검색 줄에 파일 이름 일부분을 쳐 보세요.
 
 [[File:support/everything/Everything.Search.Window.png|alt=Everything 검색 창]]
 
@@ -40,6 +44,7 @@ Everything 검색 창을 보려면
 * [[support/everything/Keyboard Shortcuts#Hotkeys|단축키]]를 쓰거나.
 
 * Everything 바탕화면, 시작메뉴, 빠른 실행 바로가기에 단축키를 할당해 실행하는 방법이 있습니다.
+
 </ul>
 
 기본적으로 Everything은 검색 창을 하나만 씁니다.
@@ -50,9 +55,10 @@ Everything 검색 창을 보려면
 
 검색 결과의 빈 공간을 우클릭해서 정렬 - 수정한 날짜를 클릭하면 파일 변화를 실시간으로 볼 수 있습니다.
 
- * Everything 1.4 이상이 필요합니다.
+
 
 ==자주 실행하는 파일을 간단히 열기==
+Everything은 각각의 항목 실행횟수를 기억합니다.
 검색 줄에서 엔터를 누르면 가장 많이 실행한 항목을 선택합니다.
 항목을 우클릭하면 실행 횟수를 재설정할 수 있습니다.
 자세한 건 [[support/everything/Run history|실행 기록]]을 참고하세요.
@@ -61,7 +67,10 @@ Everything 검색 창을 보려면
 
 ==결과 내보내기==
 검색 결과는 csv, txt, [[support/everything/file lists|efu]] 파일로 내보낼 수 있습니다.
-결과를 내보내려면 '''파일''' 메뉴 - '''내보내기...'''를 클릭하면 됩니다.
+아래 방법으로 결과를 내보냅니다.
+<ul>
+*'''Everything''' - '''파일''' 메뉴 - '''내보내기...''' 클릭
+</ul>
 
 ==필터==
 필터는 음악 혹은 비디오같은 것들을 찾도록 미리 정의한 검색입니다.

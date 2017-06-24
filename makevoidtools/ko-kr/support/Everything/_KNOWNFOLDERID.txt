@@ -2,304 +2,385 @@
 
 <code>shell:<이름></code> 검색 함수에 쓸 수 있습니다.
 <code><이름></code>에 아래 것들을 넣을 수 있습니다.
+
 {|
 ! 이름
-! 경로
+! 윈도 버전
+! 경로 예시
 |-
 | AccountPictures
-| %APPDATA%\Microsoft\Windows\AccountPictures
+| Windows 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Windows\AccountPictures
 |-
-| AdminTools
-| %APPDATA%\Microsoft\Windows\Start Menu\Programs\Administrative Tools
+| Administrative Tools
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Administrative Tools
 |-
-| ApplicationShortcuts
-| %LOCALAPPDATA%\Microsoft\Windows\Application Shortcuts
+| AppData
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming
 |-
-| CameraRoll
-| %USERPROFILE%\Pictures\Camera Roll
+| Application Shortcuts
+| Windows 8, 10
+| C:\Users\User\AppData\Local\Microsoft\Windows\Application Shortcuts
 |-
-| CDBurning
-| %LOCALAPPDATA%\Microsoft\Windows\Burn\Burn
+| Cache
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Local\Microsoft\Windows\Temporary Internet Files\Content.IE5\XXXXXXXX
 |-
-| CommonAdminTools
-| %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\Administrative Tools
+| Camera Roll
+| Windows 8, 10
+| C:\Users\User\Pictures\Camera Roll
 |-
-| CommonOEMLinks
-| %ALLUSERSPROFILE%\OEM Links
+| CD Burning
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Local\Microsoft\Windows\Burn\Burn
 |-
-| CommonPrograms
-| %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs
+| Common Administrative Tools
+| Windows XP, Vista, 7, 8, 10
+| C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Administrative Tools
 |-
-| CommonStartMenu
-| %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu
+| Common AppData
+| Windows XP, Vista, 7, 8, 10
+| C:\ProgramData
 |-
-| CommonStartup
-| %ALLUSERSPROFILE%\Microsoft\Windows\Start Menu\Programs\StartUp
+| Common Desktop
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\Public\Desktop
 |-
-| CommonTemplates
-| %ALLUSERSPROFILE%\Microsoft\Windows\Templates
+| Common Documents
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\Public\Documents
+|-
+| Common Programs
+| Windows XP, Vista, 7, 8, 10
+| C:\ProgramData\Microsoft\Windows\Start Menu\Programs
+|-
+| Common Start Menu
+| Windows XP, Vista, 7, 8, 10
+| C:\ProgramData\Microsoft\Windows\Start Menu
+|-
+| Common Start Menu Places
+| Windows 10
+| C:\ProgramData\Microsoft\Windows\Start Menu Places
+|-
+| Common Startup
+| Windows XP, Vista, 7, 8, 10
+| C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
+|-
+| Common Templates
+| Windows XP, Vista, 7, 8, 10
+| C:\ProgramData\Microsoft\Windows\Templates
+|-
+| CommonDownloads
+| Windows Vista, 7, 8, 10
+| C:\Users\Public\Downloads
+|-
+| CommonMusic
+| Windows Vista, 7, 8, 10
+| C:\Users\Public\Music
+|-
+| CommonPictures
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\Public\Pictures
+|-
+| CommonRingtones
+| Windows 7, 8, 10
+| C:\ProgramData\Microsoft\Windows\Ringtones
+|-
+| CommonVideo
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\Public\Videos
 |-
 | Contacts
-| %USERPROFILE%\Contacts
+| Windows Vista, 7, 8, 10
+| C:\Users\User\Contacts
 |-
 | Cookies
-| %APPDATA%\Microsoft\Windows\Cookies
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Windows\Cookies
+|-
+| CredentialManager
+| Windows Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Credentials
+|-
+| CryptoKeys
+| Windows Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Crypto
+|-
+| Default Gadgets
+| Windows Vista, 7
+| C:\Program Files (x86)\Windows Sidebar\Gadgets
 |-
 | Desktop
-| %USERPROFILE%\Desktop
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\Desktop
 |-
-| DeviceMetadataStore
-| %ALLUSERSPROFILE%\Microsoft\Windows\DeviceMetadataStore
-|-
-| Documents
-| %USERPROFILE%\Documents
+| Device Metadata Store
+| Windows 7, 8, 10
+| C:\ProgramData\Microsoft\Windows\DeviceMetadataStore
 |-
 | DocumentsLibrary
-| %APPDATA%\Microsoft\Windows\Libraries\Documents.library-ms
+| Windows 7, 8, 10
+| Libraries\Documents
 |-
 | Downloads
-| %USERPROFILE%\Downloads
+| Windows Vista, 7, 8, 10
+| C:\Users\User\Downloads
+|-
+| DpapiKeys
+| Windows Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Protect
 |-
 | Favorites
-| %USERPROFILE%\Favorites
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\Favorites
 |-
 | Fonts
-| %windir%\Fonts
+| Windows XP, Vista, 7, 8, 10
+| C:\Windows\Fonts
+|-
+| Gadgets
+| Windows Vista, 7
+| C:\Users\User\AppData\Local\Microsoft\Windows Sidebar\Gadgets
 |-
 | GameTasks
-| %LOCALAPPDATA%\Microsoft\Windows\GameExplorer
+| Windows Vista, 7, 8, 10
+| C:\Users\User\AppData\Local\Microsoft\Windows\GameExplorer
 |-
 | History
-| %LOCALAPPDATA%\Microsoft\Windows\History
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Local\Microsoft\Windows\History
 |-
 | ImplicitAppShortcuts
-| %APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned\ImplicitAppShortcuts
-|-
-| InternetCache
-| %LOCALAPPDATA%\Microsoft\Windows\Temporary Internet Files
-|-
-| Libraries
-| %APPDATA%\Microsoft\Windows\Libraries
+| Windows 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned\ImplicitAppShortcuts
 |-
 | Links
-| %USERPROFILE%\Links
+| Windows Vista, 7, 8, 10
+| C:\Users\User\Links
 |-
-| LocalAppData
-| %LOCALAPPDATA% (%USERPROFILE%\AppData\Local)
+| Local AppData
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Local
+|-
+| Local Documents
+| Windows 10
+| C:\Users\User\Documents
+|-
+| Local Downloads
+| Windows 10
+| C:\Users\User\Downloads
+|-
+| Local Music
+| Windows 10
+| C:\Users\User\Music
+|-
+| Local Pictures
+| Windows 10
+| C:\Users\User\Pictures
+|-
+| Local Videos
+| Windows 10
+| C:\Users\User\Videos
 |-
 | LocalAppDataLow
-| %USERPROFILE%\AppData\LocalLow
+| Windows Vista, 7, 8, 10
+| C:\Users\User\AppData\LocalLow
 |-
 | LocalizedResourcesDir
-| %windir%\resources\0409 (code page)
+| Windows XP, Vista
+| C:\Windows\Resources\<LanguageID>
 |-
-| Music
-| %USERPROFILE%\Music
+| My Music
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\Music
 |-
-| MusicLibrary
-| %APPDATA%\Microsoft\Windows\Libraries\Music.library-ms
+| My Pictures
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\Pictures
+|-
+| My Video
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\Videos
 |-
 | NetHood
-| %APPDATA%\Microsoft\Windows\Network Shortcuts
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Windows\Network Shortcuts
 |-
-| OriginalImages
-| %LOCALAPPDATA%\Microsoft\Windows Photo Gallery\Original Images
+| OneDrive
+| Windows 8, 10
+| C:\Users\User\OneDrive
 |-
-| PhotoAlbums
-| %USERPROFILE%\Pictures\Slide Shows
-|-
-| PicturesLibrary
-| %APPDATA%\Microsoft\Windows\Libraries\Pictures.library-ms
-|-
-| Pictures
-| %USERPROFILE%\Pictures
-|-
-| Playlists
-| %USERPROFILE%\Music\Playlists
+| Personal
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\Documents
 |-
 | PrintHood
-| %APPDATA%\Microsoft\Windows\Printer Shortcuts
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Windows\Printer Shortcuts
 |-
 | Profile
-| %USERPROFILE% (%SystemDrive%\Users\%USERNAME%)
-|-
-| ProgramData
-| %ALLUSERSPROFILE% (%ProgramData%, %SystemDrive%\ProgramData)
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User
 |-
 | ProgramFiles
-| %ProgramFiles% (%SystemDrive%\Program Files)
-|-
-| ProgramFilesX64
-| %ProgramFiles% (%SystemDrive%\Program Files)
-|-
-| ProgramFilesX86
-| %ProgramFiles% (%SystemDrive%\Program Files)
+| Windows XP, Vista, 7, 8, 10
+| C:\Program Files
 |-
 | ProgramFilesCommon
-| %ProgramFiles%\Common Files
+| Windows Vista, 7, 8, 10
+| C:\Program Files\Common Files
 |-
 | ProgramFilesCommonX64
-| %ProgramFiles%\Common Files
+| Windows 10
+| C:\Program Files\Common Files
 |-
 | ProgramFilesCommonX86
-| %ProgramFiles%\Common Files
+| Windows Vista, 7, 8, 10
+| C:\Program Files (x86)\Common Files
+|-
+| ProgramFilesX64
+| Windows 10
+| C:\Program Files
+|-
+| ProgramFilesX86
+| Windows Vista, 7, 8, 10
+| C:\Program Files (x86)
 |-
 | Programs
-| %APPDATA%\Microsoft\Windows\Start Menu\Programs
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs
 |-
 | Public
-| %PUBLIC% (%SystemDrive%\Users\Public)
+| Windows Vista, 7, 8, 10
+| C:\Users\Public
 |-
-| PublicDesktop
-| %PUBLIC%\Desktop
-|-
-| PublicDocuments
-| %PUBLIC%\Documents
-|-
-| PublicDownloads
-| %PUBLIC%\Downloads
+| PublicAccountPictures
+| Windows 8, 10
+| C:\Users\Public\AccountPictures
 |-
 | PublicGameTasks
-| %ALLUSERSPROFILE%\Microsoft\Windows\GameExplorer
+| Windows Vista, 7, 8, 10
+| C:\ProgramData\Microsoft\Windows\GameExplorer
 |-
 | PublicLibraries
-| %ALLUSERSPROFILE%\Microsoft\Windows\Libraries
+| Windows 8, 10
+| C:\Users\Public\Libraries
 |-
-| PublicMusic
-| %PUBLIC%\Music
-|-
-| PublicPictures
-| %PUBLIC%\Pictures
-|-
-| PublicRingtones
-| %ALLUSERSPROFILE%\Microsoft\Windows\Ringtones
-|-
-| PublicUserTiles
-| %PUBLIC%\AccountPictures
-|-
-| PublicVideos
-| %PUBLIC%\Videos
-|-
-| QuickLaunch
-| %APPDATA%\Microsoft\Internet Explorer\Quick Launch
+| Quick Launch
+| Windows Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch
 |-
 | Recent
-| %APPDATA%\Microsoft\Windows\Recent
-|-
-| RecordedTVLibrary
-| %PUBLIC%\RecordedTV.library-ms
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Windows\Recent
 |-
 | ResourceDir
-| %windir%\Resources
+| Windows XP, Vista, 7, 8, 10
+| C:\Windows\Resources
 |-
 | Ringtones
-| %LOCALAPPDATA%\Microsoft\Windows\Ringtones
+| Windows 7, 8, 10
+| C:\Users\User\AppData\Local\Microsoft\Windows\Ringtones
 |-
-| RoamingAppData
-| %APPDATA% (%USERPROFILE%\AppData\Roaming)
-|-
-| RoamedTileImages
-| %LOCALAPPDATA%\Microsoft\Windows\RoamedTileImages
-|-
-| RoamingTiles
-| %LOCALAPPDATA%\Microsoft\Windows\RoamingTiles
+| Roaming Tiles
+| Windows 8, 10
+| C:\Users\User\AppData\Local\Microsoft\Windows\RoamingTiles
 |-
 | SampleMusic
-| %PUBLIC%\Music\Sample Music
+| Windows Vista, 7
+| C:\Users\Public\Music\Sample Music
 |-
 | SamplePictures
-| %PUBLIC%\Pictures\Sample Pictures
-|-
-| SamplePlaylists
-| %PUBLIC%\Music\Sample Playlists
+| Windows Vista, 7
+| C:\Users\Public\Pictures\Sample Pictures
 |-
 | SampleVideos
-| %PUBLIC%\Videos\Sample Videos
+| Windows Vista, 7
+| C:\Users\Public\Videos\Sample Videos
 |-
 | SavedGames
-| %USERPROFILE%\Saved Games
+| Windows Vista, 7, 8, 10
+| C:\Users\User\Saved Games
 |-
 | SavedPictures
-| %USERPROFILE%\Pictures\Saved Pictures
+| Windows 10
+| C:\Users\User\Pictures\Saved Pictures
 |-
-| SavedPicturesLibrary
-| %APPDATE%\Microsoft\Windows\Libraries\SavedPictures.library-ms
-|-
-| SavedSearches
-| %USERPROFILE%\Searches
-|-
-| Screenshots
-| %USERPROFILE%\Pictures\Screenshots 
-|-
-| SearchHistory
-| %LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\History
-|-
-| SearchTemplates
-| %LOCALAPPDATA%\Microsoft\Windows\ConnectedSearch\Templates
+| Searches
+| Windows Vista, 7, 8, 10
+| C:\Users\User\Searches
 |-
 | SendTo
-| %APPDATA%\Microsoft\Windows\SendTo
-|-
-| SidebarDefaultParts
-| %ProgramFiles%\Windows Sidebar\Gadgets
-|-
-| SidebarParts
-| %LOCALAPPDATA%\Microsoft\Windows Sidebar\Gadgets
-|-
-| SkyDrive
-| %USERPROFILE%\OneDrive
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Windows\SendTo
 |-
 | SkyDriveCameraRoll
-| %USERPROFILE%\OneDrive\Pictures\Camera Roll
+| Windows 8
+| C:\Users\User\SkyDrive\Pictures\Camera Roll
 |-
 | SkyDriveDocuments
-| %USERPROFILE%\OneDrive\Documents
+| Windows 8
+| C:\Users\User\SkyDrive\Documents
+|-
+| SkyDriveMusic
+| Windows 8
+| C:\Users\User\SkyDrive\Music
 |-
 | SkyDrivePictures
-| %USERPROFILE%\OneDrive\Pictures
+| Windows 8
+| C:\Users\User\SkyDrive\Pictures
 |-
-| StartMenu
-| %APPDATA%\Microsoft\Windows\Start Menu
+| Start Menu
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu
 |-
 | Startup
-| %APPDATA%\Microsoft\Windows\Start Menu\Programs\StartUp
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup
 |-
 | System
-| %windir%\system32
+| Windows XP, Vista, 7, 8, 10
+| C:\Windows\System32
+|-
+| SystemCertificates
+| Windows Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\SystemCertificates
 |-
 | SystemX86
-| %windir%\system32
+| Windows XP, Vista, 7, 8, 10
+| C:\Windows\SysWOW64
 |-
 | Templates
-| %APPDATA%\Microsoft\Windows\Templates
+| Windows XP, Vista, 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Windows\Templates
 |-
-| UserPinned
-| %APPDATA%\Microsoft\Internet Explorer\Quick Launch\User Pinned
+| ThisDeviceFolder
+| Windows 8, 10
+| C:\Users\Public
+|-
+| User Pinned
+| Windows 7, 8, 10
+| C:\Users\User\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch\User Pinned
 |-
 | UserProfiles
-| %SystemDrive%\Users
+| Windows Vista, 7, 8, 10
+| C:\Users
 |-
 | UserProgramFiles
-| %LOCALAPPDATA%\Programs
+| Windows 7, 8, 10
+| C:\Users\User\AppData\Local\Programs
 |-
 | UserProgramFilesCommon
-| %LOCALAPPDATA%\Programs\Common
+| Windows 7, 8, 10
+| C:\Users\User\AppData\Local\Programs\Common
 |-
-| Videos
-| %USERPROFILE%\Videos
-|-
-| VideosLibrary
-| %APPDATA%\Microsoft\Windows\Libraries\Videos.library-ms
+| UsersFilesFolder
+| Windows Vista, 7, 8, 10
+| C:\Users\User
 |-
 | Windows
-| %windir%
-|-
-| ProgramFiles
-| depends on caller
-|-
-| ProgramFilesCommon
-| depends on caller
-|-
-| System
-| depends on caller
+| Windows XP, Vista, 7, 8, 10
+| C:\Windows
 |}
