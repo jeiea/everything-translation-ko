@@ -122,15 +122,7 @@ The |text part in [ [url|text]] can be omitted, in which case the url is used as
 [[File:support/everything/Everything.Search.Window.png|alt=Everything Search Window]]
 
 ;''Preformatted text''
-<pre>
-<pre>
-int i;
-for(i=0;i<10;i++)
-{
-	printf("hello %d\n",i);
-}
- </pre>
-</pre>
+{{PRE_EXAMPLE}}
 
 <pre>
 int i;

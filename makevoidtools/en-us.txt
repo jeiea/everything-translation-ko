@@ -1,16 +1,16 @@
 ﻿
 
-// Please rename this en-US.txt file and the en-US sub folder to your language-region code, eg: es-ES.txt and es-ES for the folder.
+// Please rename this en-us.txt file and the en-us sub folder to your language-region code, eg: es-es.txt and es-es for the folder.
 // For a list of codes, please see:
 // http://www.i18nguy.com/unicode/language-identifiers.html
 
 // Please make sure to edit and save as UTF-8
 
 // Put the name of the Language (Region) here
-_LANGUAGE_NAME = "English (US)"
+_LANGUAGE_NAME = "English (United States)"
 
 // Put the English name of the Language (Region) here 
-_LANGUAGE_ENGLISH_NAME = "English (US)"
+_LANGUAGE_ENGLISH_NAME = "English (United States)"
 
 // Put your name here so I can credit you.
 _LANGUAGE_TRANSLATOR = "David Carpenter"
@@ -46,9 +46,6 @@ MAINTENANCE="Maintenance"
 // page template files.
 // these should be lowercase and easy to type.
 // no spaces, no special characters
-//
-// page templates use basic wikipedia markup:
-// https://en.wikipedia.org/wiki/Help:Wiki_markup
 
 HOME_TEMPLATE="home.txt"
 DOWNLOADS_TEMPLATE="downloads.txt"
@@ -82,8 +79,6 @@ FORUMS_URL="/forum"
 SUPPORT_URL="support/everything"
 
 // title format
-// please change voidtools to: voidtools United States
-// where United States is your region.
 HOME_TITLE = "voidtools"
 TITLE_FORMAT = "{{TITLE}} - voidtools" // {{TITLE}} = current page title
 
@@ -94,6 +89,7 @@ EVERYTHING_CHANGES = "[[{{CHANGES}}|Changes]]" // {{CHANGES}} = /Changes-1.3.4.6
 EVERYTHING_OLDER_VERSIONS = "[[support/everything/previous_versions|Older Versions]]"
 EVERYTHING_LICENSE = "[[License.txt|License]]"
 EVERYTHING_MD5 = "[[{{MD5}}|MD5]]" // {{MD5}} = /Changes-1.3.4.686.md5
+EVERYTHING_SHA256 = "[[{{SHA256}}|SHA256]]" // {{SHA256}} = /Changes-1.3.4.686.sha256
 EVERYTHING_SUPPORTED_LANGUAGES = "[[support/everything/supported_languages|Supported Languages]]" 
 EVERYTHING_HELP = "[[support/everything/installing_everything|Help]]"
 
@@ -140,4 +136,6 @@ CONTACT_FORM_MESSAGE = "Message:"
 CONTACT_FORM_EMAIL = "Email (optional):"
 CONTACT_FORM_SEND = "Send"
 
+EVERYTHING_SHA256 = "[[{{SHA256}}|SHA256]]"
+DOWNLOAD_EVERYTHING_OFFLINE_HELP = "Download Everything Offline Help"
 

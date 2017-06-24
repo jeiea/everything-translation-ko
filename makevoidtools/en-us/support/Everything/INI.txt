@@ -12,7 +12,7 @@ The Everything.ini stores all the settings for Everything.
 *[[support/everything/ini#hidden_settings|Hidden settings]]
 </ul>
 
-==Viewing and changing the Everything.ini==
+==Viewing and changing settings in Everything==
 Most of these settings can be changed from within Everything, in the [[support/everything/options|Everything Options]].
 
 To show the current value for a setting in the status bar, type in the following search and press ENTER:
@@ -42,6 +42,14 @@ For example, to enable the '''snap''' ini option, type in the following search a
 
 The new value is shown in the status bar for 3 seconds.
 
+==Editing the Everything.ini==
+The Everything.ini is located in:
+<pre>
+%APPDATA%\Everything
+</pre>
+If [[support/everything/options#Store settings and data in %APPDATA%\Everything|Store settings and data in %APPDATA%\Everything]] is disabled, the Everything.ini is stored in the same location as Everything.exe.
+
+The [[support/everything/options#Store settings and data in %APPDATA%\Everything|Store settings and data in %APPDATA%\Everything]] setting is stored in the Everything.ini in the same location as Everything.exe.
 
 To open your Everything.ini file, type in the following search and press ENTER:
 <pre>
@@ -58,14 +66,6 @@ To exit Everything:
 </ul>
 
 The Everything.ini should be opened and saved as UTF-8.
-
-The main Everything.ini is located in:
-<pre>
-%APPDATA%\Everything
-</pre>
-If [[support/everything/options#Store settings and data in %APPDATA%\Everything|Store settings and data in %APPDATA%\Everything]] is disabled, the Everything.ini is stored in the same location as Everything.exe.
-
-The Everything.ini in the same location as your Everything stores basic settings such as run as admin and load the main Everything.ini from %APPDATA%\Everything.
 
 ==Syntax==
 <pre>
@@ -171,16 +171,16 @@ The number of days to keep search history.
 ;''run_history_days_to_keep''
 The number of days to keep run history.
 
-;''search_history_keep_forever
+;''search_history_keep_forever''
 Keep search history forever.
 Set to 1 to enable. Set to 0 to disable.
 
-;''run_history_keep_forever
+;''run_history_keep_forever''
 Keep run history forever.
 Set to 1 to enable. Set to 0 to disable.
 
 ;''search_history_always_suggest''
-Show search suggestions on each keystroke or only show suggestions when Ctrl + Space is pressed. Set to 1 to always show suggestions. Set to 1 to show suggestions when Ctrl + Space is pressed.
+Show search suggestions on each keystroke or only show suggestions when Ctrl + Space is pressed. Set to 1 to always show suggestions. Set to 0 to show suggestions when Ctrl + Space is pressed.
 
 ;''search_history_sort''
 The search history organizer sort.
@@ -218,16 +218,16 @@ The width of the search column in pixels.
 The position of the search column.
 
 ;''search_history_column_count_wide''
-The width of the search column in pixels.
+The width of the search count column in pixels.
 
 ;''search_history_column_count_order''
-The position of the search column.
+The position of the search count column.
 
 ;''search_history_column_date_wide''
-The width of the search column in pixels.
+The width of the last search date column in pixels.
 
 ;''search_history_column_date_order''
-The position of the search column.
+The position of the last search date column.
 </dl>
 
 ==Search Window Settings==
@@ -829,11 +829,11 @@ Exclude or include hidden files and folders. Set to 1 to exclude hidden files an
 Exclude or include system files and folders. Set to 1 to exclude system files and folders. Set to 0 to include system files and folders.
 
 ;''include_only_files''
-Semi-colon delimited list of which extensions to include. eg: *.mp3;*.jpg 
+semicolon delimited list of which extensions to include. eg: *.mp3;*.jpg 
 Set to an empty string to include all file types.
 
 ;''exclude_files''
-Semi-colon delimited list of which extensions to exclude. eg: *.db
+semicolon delimited list of which extensions to exclude. eg: *.db
 Set to an empty string to not exclude any file types.
 
 ;''db_location''
@@ -843,7 +843,7 @@ The path where the Everything.db is located.
 Use a unique filename for the database for each computer and user. Set to 1 to enable. Set to 0 to disable. Might be useful when using the portable version on different computers.
 
 ;''db_compress''
-Use Bzip 2 to compress the database. Set to 1 to enable. Set to 0 to enable. Can improve loading performance on slow hard drives at the cost of higher CPU usage when loading and saving.
+Use Bzip 2 to compress the database. Set to 1 to enable. Set to 0 to disable. Can improve loading performance on slow hard drives at the cost of higher CPU usage when loading and saving.
 
 ;''index_size''
 Include file size information in the index.
@@ -919,7 +919,7 @@ List of include or exclude values for each NTFS volume in the ntfs_volume_path l
 List of load recent change values for each NTFS volume in the ntfs_volume_path list. Set to 1 to load recent changes. Set to 0 to not load recent changes.
 
 ;''ntfs_volume_include_onlys''
-List of load include only values for each NTFS volume in the ntfs_volume_path list. Set to an empty string to include all folders. Set to a semi-colon delimited list of folders to exclude.
+List of load include only values for each NTFS volume in the ntfs_volume_path list. Set to an empty string to include all folders. Set to a semicolon delimited list of folders to exclude.
 
 ;''ntfs_volume_monitors''
 List of monitor values for each NTFS volume in the ntfs_volume_path list. Set to 1 to monitor changes. Set to 0 to not monitor changes.
@@ -940,7 +940,7 @@ List of include or exclude values for each ReFS volume in the refs_volume_path l
 List of load recent change values for each ReFS volume in the refs_volume_path list. Set to 1 to load recent changes. Set to 0 to not load recent changes.
 
 ;''refs_volume_include_onlys''
-List of load include only values for each ReFS volume in the refs_volume_path list. Set to an empty string to include all folders. Set to a semi-colon delimited list of folders to exclude.
+List of load include only values for each ReFS volume in the refs_volume_path list. Set to an empty string to include all folders. Set to a semicolon delimited list of folders to exclude.
 
 ;''refs_volume_monitors''
 List of monitor values for each ReFS volume in the refs_volume_path list. Set to 1 to monitor changes. Set to 0 to not monitor changes.
@@ -1115,7 +1115,7 @@ The HTTP server default page.
 The HTTP server log filename. Set to an empty string to use the default log filename.
 
 ''http_server_logging_enabled''
-Enable or disable ETP server logging. Set to 1 to enable. Set to 0 to disable.
+Enable or disable HTTP server logging. Set to 1 to enable. Set to 0 to disable.
 
 ;''http_server_log_max_size''
 The maximum size of the HTTP server log file in bytes. If the log file exceeds this size it is truncated http_server_log_delta_size bytes.
@@ -1455,7 +1455,7 @@ Include beta updates when checking for updates. If set to 1, beta updates are in
 ;''window_title_format''
 ;''taskbar_notification_title_format''
 Window title or taskbar notification.
-See [[support/everything/customizing#Change the Everything window caption|Change the Everything window caption]] for more information.
+See [[support/everything/customizing#window_caption|Change the Everything window caption]] for more information.
 
 ;''instance_name''
 The instance name.
@@ -1567,7 +1567,7 @@ The maximum context menu type to use. Can be one of the following settings:
 ;''auto_size_1''
 ;''auto_size_2''
 ;''auto_size_3''
-The window size in pixels to use when auto sizing.
+The window height in pixels to use when auto sizing.
 
 ;''auto_size_aspect_ratio_x''
 ;''auto_size_aspect_ratio_y''
@@ -1602,10 +1602,10 @@ The height of a result list item in pixels. Set to 0 to use the default height.
 Force the display to update immediately after changing the selection mask. Set to 1 to update immediately. Set to 0 to invalidate and update later. Setting this to 1 can improve performance when the mouse updates faster than 40hz.
 
 ;''rename_move_caret_to_selection_end''
-Move the caret to the selection end or keep the selection when renaming. Set to 1 to move the caret to the end. Set to 0 to move the caret from the current position.
+Move the caret to the selection end or keep the selection when renaming. Set to 1 to move the caret to the end of the selection. Set to 0 to move the caret from the current position.
 
 ;''search_edit_move_caret_to_selection_end''
-Move the caret to the selection end or keep the selection when focusing the search edit. Set to 1 to move the caret to the end. Set to 0 to move the caret from the current position.
+Move the caret to the selection end or keep the selection when focusing the search edit. Set to 1 to move the caret to the end of the selection. Set to 0 to move the caret from the current position.
 
 ;''reset_vscroll_on_search''
 Scroll the results to the top when the search changes.
@@ -1788,7 +1788,7 @@ Display the full path and filename in the name column. Set to 1 to enable. Set t
 Use visual themes or windows classic style to render the toolbar. Set to 1 to use visual themes. Set to 0 to use Windows classic style.
 
 ;''copy_path_folder_append_backslash''
-Append a backslash to copied folder names. Set to 1 to append a backslash. Set to 1 to not append a backslash.
+Append a backslash to copied folder names. Set to 1 to append a backslash. Set to 0 to not append a backslash.
 
 ;''custom_verb01''
 ;''custom_verb02''
@@ -1860,7 +1860,7 @@ Can be one of the following modes:
 |}
 
 ;''db_update_thread_priority''
-The thread priority to read USN Journal.
+The thread priority to read the USN Journal.
 Can be one of the following values:
 {|
 ! Value
@@ -1986,7 +1986,7 @@ The delay in milliseconds to wait before showing the cancel dialog when the Ever
 
 ;''http_title_format''
 The http title format.
-See [[support/everything/customizing#Change the window title|Change the Everything window caption]] for more information.
+See [[support/everything/customizing#window_caption|Change the Everything window caption]] for more information.
 
 ;''http_server_show_drive_labels''
 Show drive labels for root folders.

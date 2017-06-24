@@ -1,6 +1,4 @@
-﻿=Language=
+﻿=Language and Region=
 
-==Under Construction==
-	
-Select from one of the following languages:
+Select from one of the following language and Regions:
 {{LANGUAGES}}

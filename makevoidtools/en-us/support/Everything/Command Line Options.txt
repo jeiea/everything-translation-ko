@@ -17,8 +17,8 @@ Required option.
 
 
 ==Installation==
-These commands return immediately and do not show an Everything search window.
-These commands can be run as a standard user. Everything will automatically request admin privileges if required.
+These command line options return immediately and do not show an Everything search window.
+Some command line options require administrative privileges. Running Everything with a command line option that requires administrative privileges from a standard user account will automatically relaunch Everything with the specified command line option as administrator.
 
 <dl>
 ;''-app-data''
@@ -120,19 +120,19 @@ Open the specified file list.
 Create a file list of a path. When this command completes Everything.exe will exit, no search window is shown.
 
 ;''-create-file-list-exclude-files'' <filters>
-Set a semi-colon delimited wildcard filter of files to exclude with -create-file-list.
+Set a semicolon delimited wildcard filter of files to exclude with -create-file-list.
 Prefix a filter with regex: to use Regex.
 
 ;''-create-file-list-exclude-folders'' <filters>
-Set a semi-colon delimited wildcard filter of folders to exclude with -create-file-list.
+Set a semicolon delimited wildcard filter of folders to exclude with -create-file-list.
 Prefix a filter with regex: to use Regex.
 
 ;''-create-file-list-include-only-files'' <filters>
-Set a semi-colon delimited wildcard filter of files to include only with -create-file-list.
+Set a semicolon delimited wildcard filter of files to include only with -create-file-list.
 Prefix a filter with regex: to use Regex.
 
 ;''-edit'' <filename>
-Open a file list with the file list editor.
+Open the specified file list with the file list editor.
 
 ;''-f'' <filename>
 ;''-filelist'' <filename>

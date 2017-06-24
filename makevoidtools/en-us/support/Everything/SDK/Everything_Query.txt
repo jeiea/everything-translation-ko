@@ -57,6 +57,7 @@ Optionally call the following functions to set the search state before calling E
 *[[support/everything/SDK/Everything_SetMax|Everything_SetMax]]
 *[[support/everything/SDK/Everything_SetOffset|Everything_SetOffset]]
 *[[support/everything/SDK/Everything_SetReplyID|Everything_SetReplyID]]
+*[[support/everything/SDK/Everything_SetRequestFlags|Everything_SetRequestFlags]]
 </ul>
 You can mix ANSI / Unicode version of Everything_SetSearch and Everything_Query.
 The ANSI / Unicode version of Everything_Query MUST match the ANSI / Unicode version of Everything_GetResultName and Everything_GetResultPath.

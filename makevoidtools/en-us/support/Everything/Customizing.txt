@@ -262,7 +262,7 @@ To change the status bar font see [[support/everything/ini#status_bar_font|statu
 To change the result list header font see [[support/everything/ini#header_font|header_font]] and [[support/everything/ini#header_font_size|header_font_size]]
 
 ==Status bar format==
-To change the status bar format see [[support/everything/ini#status_bar_format|status_bar_format]]
+To change the status bar format see [[support/everything/ini#statusbar_selected_item_format|statusbar_selected_item_format]]
 
 ==HTTP Server==
 See [[support/everything/http#Change the default HTTP files|Change the default HTTP files]].

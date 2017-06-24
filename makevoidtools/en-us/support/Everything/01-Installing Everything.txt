@@ -20,10 +20,10 @@ The installer and portable version of Everything can be found on the [[downloads
 | The x64 version requires a 64bit x64 OS. Supports databases larger than 2GB. Only x64 context menu extensions will work in Everything. The x64 version will use more memory than the x86 version.
 |-
 | English (US)
-| Only English is available for this version, the language pack can be installed manually.
+| Only English is available for this version, the [[support/everything/supported_languages/#installing_the_language_pack|language pack]] can be installed manually.
 |-
 | Multilingual
-| Includes the Everything language pack for multiple language support.
+| Includes the Everything [[support/everything/supported_languages/#installing_the_language_pack|language pack]] for multiple language support.
 |}
 
 ==Language selection==
@@ -105,7 +105,7 @@ This setting can be changed in the [[support/Everything/Options|Everything optio
 | Creates the Search Everything shortcut in the Quick launch toolbar.
 |-
 | ES URL Protocol
-| Open Everything from ES: urls.
+| Open Everything from es: urls.
 |-
 | Associate EFU files with Everything
 | Associate Everything file lists (EFU files) with Everything.

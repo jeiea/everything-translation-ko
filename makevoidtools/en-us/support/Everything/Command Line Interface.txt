@@ -4,7 +4,7 @@ ES is a command line interface to search Everything from a command prompt.
 [[File:support/everything/es-no-shadow.png|alt=Everything ES command line interface]]
 
 ==Download==
-ES can be downloaded from the [[downloads|Downloads page]].
+ES can be downloaded from the [[downloads#cli|Downloads page]].
 
 ==Requirements==
 <ul>

@@ -53,6 +53,15 @@ Everything can take a couple minutes to scan a folder and all its subfolders and
 *Click '''OK'''.
 </ul>
 
+==How do I stop Everything from scanning folders on startup==
+To prevent Everything from rescanning folders on startup:
+<ul>
+*In '''Everything''', type in the following search and press '''ENTER''':
+/[[support/everything/ini#folder_update_rescan_asap|folder_update_rescan_asap]]=0
+</ul>
+
+Folder rescanning will occur at the next scheduled time.
+
 ==Will Everything detect all file name changes made to this folder?==
 Almost all changes are detected. 
 Changes can be missed if too many occur in a short time.
@@ -78,6 +87,23 @@ To customize the update time or update interval:
 *Update periodically in the specified hours or minutes.
 *Never update.
 </ul>
+</ul>
+
+==How do I manually update a folder index?==
+To manually update all folder indexes:
+<ul>
+*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
+*Click the '''Folders '''tab.
+*Click '''Rescan All Now'''.
+*Click '''OK'''.
+</ul>
+
+To manually update a folder index:
+<ul>
+*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
+*Click the '''Folders '''tab.
+*Select the folder to update and click '''Rescan Now'''.
+*Click '''OK'''.
 </ul>
 
 ==What happens if the indexed folder is offline or not available?==

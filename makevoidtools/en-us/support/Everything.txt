@@ -19,4 +19,5 @@
 <ul>
 *[[support/everything/Installing Everything|Installing Everything]]
 *[[support/everything/Using Everything|Using Everything]]
+*[[/Everything.chm.zip|Download offline help]]
 </ul>

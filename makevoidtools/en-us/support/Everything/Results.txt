@@ -16,8 +16,6 @@ To show results in thumbnail view:
 *In "'''''Everything'''''", Press and hold the Ctrl key and use the mouse wheel to change the view from Details to Extra Large Thumbnails.
 </ul>
 
- * Requires Everything 1.4
-
 ==Preview==
 [[File:support/everything/Everything.Preview.png|alt=Everything Preview]]
 
@@ -27,8 +25,6 @@ To show the preview pane:
 </ul>
 
 Click and drag the divider to resize the preview pane.
-
- * Requires Everything 1.4
 
 ==Hide results when the search is empty==
 All files and folders are found when the search is empty. To hide the results when the search is empty:

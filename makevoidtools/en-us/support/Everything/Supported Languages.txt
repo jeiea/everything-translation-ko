@@ -13,7 +13,7 @@ English is used for new untranslated features.
 
 ==Download language pack for "''Everything''"==
 <ul>
-*[[/Everything.lng.zip|Everything.lng.zip]] (portable) [[#installing the language pack|Install instructions]]
+[[/Everything.lng.zip|Everything.lng.zip]]
 </ul>
 
 ==Installing the language pack==

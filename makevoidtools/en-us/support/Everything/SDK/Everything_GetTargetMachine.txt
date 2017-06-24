@@ -44,14 +44,19 @@ The build part is incremental and unique for all Everything versions.
 
 ==Example==
 <pre>
-DWORD buildNumber;
+DWORD targetMachine;
 
 // Get the attributes of the first visible result.
-buildNumber = Everything_GetBuildNumber();
+targetMachine = Everything_GetTargetMachine();
 
-if (buildNumber >= 686)
+if (targetMachine == EVERYTHING_TARGET_MACHINE_X64)
 {
-	// do something with build 686 or later.
+	// do something with x64 build.
+}
+else
+if (targetMachine == EVERYTHING_TARGET_MACHINE_X86)
+{
+	// do something with x86 build.
 }
 </pre>
 

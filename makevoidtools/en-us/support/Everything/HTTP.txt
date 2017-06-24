@@ -294,14 +294,17 @@ To change the HTTP server port:
 <ul>
 *In '''Everything''', from the '''Tools '''menu, click '''Options'''
 *Click the '''HTTP server''' tab.
-*Change''' Listen on port''' to a new port, for example 81.
+*Change''' Listen on port''' to a new port, for example 8080.
 *Click '''OK'''
 </ul>
 
 Please make sure to specify this port when connecting to the web server with your web browser, for example:
 <pre>
-http://localhost:81
+http://localhost:8080
 </pre>
+
+==Range request==
+Everything supports range requests for streaming support.
 
 ==See also==
 <ul>

@@ -1,6 +1,25 @@
 =Searching=
 Use the [[support/everything/using everything#search edit|search edit]] to type in a search. 
-Everything will display the results immediately.
+
+Type in a partial filename, files and folders matching your partial filename search will be instantly displayed in the [[support/everything/using everything#result_list|result list]].
+
+For example, to find files and folders with the text '''reports''' in the filename, search for:
+<code>reports</code>
+
+To limit the results to a drive, simply search for that drive, for example, to find files and folders on your '''D:''' drive, search for:
+<code>d:</code>
+
+Include the path to limit the results to a folder, for example, to find files and folders in the folder '''D:\Downloads''', search for:
+<code>d:\downloads\</code>
+
+Use double quotes to escape spaces, for example, to find files and folders in '''C:\Program Files''', search for:
+<code>"c:\program files\"</code>
+
+Use \ to find partial paths, for example, to find files and folders in a folder ending with '''documents''', search for:
+<code>documents\</code>
+
+Use a space to combine searches, for example, to find files and folders containing the text '''order''', located in the folder starting with '''work''', search for:
+<code>\work order</code>
 
 ==Syntax==
 <dl>
@@ -171,7 +190,7 @@ Wildcards match the ''whole'' filename. Disable [[support/everything/options#Mat
 | Filenames (including extension) ending with text.
 |-
 | <code>ext:<list></code>
-| Search for files with a matching extension in the specified semi-colon delimited extension list.
+| Search for files with a matching extension in the specified semicolon delimited extension list.
 |-
 | <code>filelist:<list></code>
 | Search for a list of file names in the specified pipe (|) delimited file list.
@@ -180,7 +199,7 @@ Wildcards match the ''whole'' filename. Disable [[support/everything/options#Mat
 | Search for files and folders belonging to the file list filename.
 |-
 | <code>frn:<frnlist></code>
-| Search for files and folders with the specified semi-colon delimited File Reference Numbers.
+| Search for files and folders with the specified semicolon delimited File Reference Numbers.
 |-
 | <code>fsi:<index></code>
 | Search for files and folders in the specified zero based internal file system index.
@@ -349,7 +368,7 @@ Wildcards match the ''whole'' filename. Disable [[support/everything/options#Mat
 </dl>
 	
 ==Search options==
-Search options can be toggled from the [[support/everything/using everything#Search|Search menu]].
+Search options can be toggled from the [[support/everything/using everything#menu|Search menu]].
 
 Enabled search options are displayed in the right of the status bar. Double click the status bar part to disable the search option. Right click the status bar to show a list of search options.
 
@@ -391,8 +410,6 @@ To show the advanced search dialog:
 </ul>
 
 
-<beta>
-
 ==Content Searching==
 Warning: content searching is extremely slow.
 File content is not indexed.
@@ -423,8 +440,6 @@ Example, find emails, modified this week, containing the text "keyboard":
 </pre>
 
  * Note: content: is used last in the search above, this means Everything will only search the content of files that matched the previous search <code>*.eml dm:thisweek</code>
-
-<beta>
 
 ==ID3 Tags==
 The following search functions can be used to search for ID3 tags and FLAC tags:
@@ -467,8 +482,6 @@ track:>10
 year:>=2000
 </pre>
 
-<beta>
-
 ==Image information==
 The following functions can be used to search for image dimensions
 {|
@@ -498,8 +511,6 @@ width:800..1920
 height:600..1080
 dimensions:800x600..1920x1080
 </pre>
-
-<beta>
 
 ==Duplicated Files==
 The following functions can be used to search for duplicated files.
@@ -537,10 +548,8 @@ dupe: .mp4
 size:>1gb sizedupe:
 </pre>
 
-<beta>
-
 ==Filters==
-Filters are predefined searches. Only one filter can be active at a time. Filters can be toggled from the [[support/everything/using everything#Search|Search menu]].
+Filters are predefined searches. Only one filter can be active at a time. Filters can be toggled from the [[support/everything/using everything#menu|Search menu]].
 
 To create a new filter from the current search:
 <ul>
@@ -600,7 +609,7 @@ foo
 
 ==Regex==
 Regex overrides the search syntax. Search operators, wildcards, macros, modifiers and functions do not work in regex mode.
-Regex must be enabled from the [[support/everything/using everything#search|Search menu]] or prefix the search with <code>regex:</code>
+Regex must be enabled from the [[support/everything/using everything#menu|Search menu]] or prefix the search with <code>regex:</code>
 
 {|
 | <code>a|b</code>
@@ -728,10 +737,10 @@ The following search commands are special searches that can be activated by typi
 | <code>/update <folder index></code>
 | Update the specifed folder index by path now.
 |-
-| <code>/[[support/Everything/INI|<ini option>]]</code>
+| <code>/[[support/Everything/INI|&lt;ini option&gt;]]</code>
 | Show the current setting for the specified ini option in the statusbar. Use the TAB key to auto complete.
 |-
-| <code>/[[support/Everything/INI|<ini option>]]=<value></code>
+| <code>/[[support/Everything/INI|&lt;ini option&gt;]]=<value></code>
 | Set the specified ini option to the specified value. The new value is shown in the status bar if successful.
 |}
 
@@ -756,6 +765,13 @@ For example, to change the command prefix to <code>></code>, type in the followi
 To restore the command prefix to the default <code>/</code>, type in the following search and press ENTER:
 <pre>
 /search_command_prefix=/
+</pre>
+
+==Limiting results==
+To limit the number of results shown, use the count: search function.
+For example to limit the number of results shown to 100, include at the start of your search:
+<pre>
+count:100
 </pre>
 
 ==Examples==
@@ -825,8 +841,6 @@ Instantly find files that have changed today:
 dm:today
 </pre>
 
-<beta>
-
 Find files and folders created this week:
 <pre>
 dc:thisweek
@@ -852,11 +866,9 @@ Find filenames with non-ASCII characters:
 regex:[^\x00-\x7f]
 </pre>
 
-<beta>
-
 ==See also==
 <ul>
-*[[support/everything/using everything#search|Search menu]]
+*[[support/everything/using everything#menu|Search menu]]
 *[[support/everything/command line options#searching|Search command line options]]
 *[[support/everything/options#search|Search options]]
 *[[support/everything/keyboard shortcuts|Search keyboard shortcuts]]

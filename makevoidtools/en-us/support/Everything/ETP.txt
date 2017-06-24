@@ -13,7 +13,7 @@ To start an ETP/FTP server:
 Please make sure you share each drive on your server as its drive letter.
 For example, share C: drive as: '''C'''
 
-This will be customizable in a future release of "Everything".
+To use custom shares, please [[support/everything/ini/#etp_client_rewrite_patterns|ETP path rewriting]].
 
 ==Connect to an ETP server==
 To connect to an ETP server:

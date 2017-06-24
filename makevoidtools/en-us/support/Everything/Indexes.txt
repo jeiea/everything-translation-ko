@@ -47,12 +47,21 @@ To include extra file information in the Everything index:
 Note: Including extra file information in the index will require more memory.
 Hover over an extra file information option to see a tooltip showing the extra memory requirements.
 
+==Folder sizes==
+To show folder sizes in ''"Everything"'':
+<ul>
+*In '''''"Everything"''''', from the '''Tools''' menu, click '''Options'''
+*Click the '''Indexes''' tab.
+*Check '''Index folder size'''.
+*Click '''OK'''.
+</ul>
+
 ==Fast Sorting==
-Everything maintains a "Fast sort" index for size and date modified information.
+''"Everything"'' maintains a "Fast sort" index for size and date modified information.
 
-Fast sorting is persistent, that is, Everything will remember the sort between searches.
+Fast sorting is persistent, that is, ''"Everything"'' will remember the sort between searches.
 
-When sorting by file information that does not have fast sorting enabled Everything must gather this information from disk which can be slow.
+When sorting by file information that does not have fast sorting enabled ''"Everything"'' must gather this information from disk which can be slow.
 
 To enable fast sorting:
 <ul>
@@ -77,7 +86,7 @@ Hover over a fast sort option to see a tooltip showing the extra memory requirem
 Name, Date Run, Run Count and Date Recently Changed are always fast sort enabled.
 
 ==NTFS==
-Everything will automatically index all fixed NTFS volumes.
+''"Everything"'' will automatically index all fixed NTFS volumes.
 
 To manually index fixed NTFS volumes:
 <ul>
@@ -97,7 +106,7 @@ To include removable NTFS volumes in the index:
 </ul>
 
 ==ReFS==
-Everything will automatically index all fixed ReFS volumes.
+''"Everything"'' will automatically index all fixed ReFS volumes.
 
 To manually index fixed ReFS volumes:
 <ul>
@@ -127,18 +136,18 @@ Use file lists to index CDs, DVDs, BluRays and other offline files and folders.
 See [[support/everything/File lists]] for more information.
 
 ==Exclude==
-Everything will index every file and folder, you can then exclude files from the index.
+''"Everything"'' will index every file and folder, you can then exclude files from the index.
 
-To exclude files or folders with the hidden or system attributes from the Everything index:
+To exclude files or folders with the hidden or system attributes from the ''"Everything"'' index:
 <ul>
 *In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
 *Click the '''Exclude''' tab
-*Check '''Exclude hidden files and folders''" to exclude files and folders with the hidden attribute.
-*Check '''Exclude system files and folders''" to exclude files and folders with the system attribute.
+*Check '''Exclude hidden files and folders''' to exclude files and folders with the hidden attribute.
+*Check '''Exclude system files and folders''' to exclude files and folders with the system attribute.
 *Click '''OK'''.
 </ul>
 
-To exclude a folder from the Everything index:
+To exclude a folder from the ''"Everything"'' index:
 <ul>
 *In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
 *Click the '''Exclude''' tab
@@ -148,30 +157,33 @@ To exclude a folder from the Everything index:
 *Click '''OK'''.
 </ul>
 
-To include only certain types of files in the Everything index:
+To include only certain types of files in the ''"Everything"'' index:
 <ul>
 *In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
 *Click the '''Exclude''' tab
-*Type in the semi-colon delimited list of wildcard filters for '''include only files''', for example, include only mp3 and jpg files:
+*Type in the semicolon delimited list of wildcard filters for '''include only files''', for example, include only mp3 and jpg files:
 <pre>
 *.mp3;*.jpg
 </pre>
 *Click '''OK'''.
 </ul>
 
-To exclude certain types of files from the Everything index:
+To exclude certain types of files from the ''"Everything"'' index:
 <ul>
 *In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
 *Click the '''Exclude''' tab
-*Type in the semi-colon delimited list of wildcard filters for '''exclude files''', for example, exclude thumbs.db, desktop.ini and tmp files:
+*Type in the semicolon delimited list of wildcard filters for '''exclude files''', for example, exclude thumbs.db, desktop.ini and tmp files:
 <pre>
 thumbs.db;desktop.ini;*.tmp
 </pre>
 *Click '''OK'''.
 </ul>
 
+To use regex in your exclude filters, prefix the exclude filter with regex:, for example, to exclude folders starting with A-N, set the exclude filter to:
+regex:^[A-N]
+
 ==Optimizing for smallest memory foot print==
-To reduce the memory requirements for "Everything":
+To reduce the memory requirements for ''"Everything"'':
 <ul>
 *In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
 *Click the '''Indexes''' tab
@@ -180,7 +192,7 @@ To reduce the memory requirements for "Everything":
 *Uncheck '''Index folder size'''.
 *Uncheck '''Index date created'''.
 *Uncheck '''Index date modified'''.
-*Uncheck '''Index date modified'''.
+*Uncheck '''Index date accessed'''.
 *Uncheck '''Index attributes'''.
 *Uncheck '''Fast path sort'''.
 *Uncheck '''Fast extension sort'''.
@@ -195,11 +207,11 @@ To recover a list of filenames from a Everything.db:
 *Open db2efu.zip and run db2efu.exe
 *Select your Everything.db file.
 *Choose a filename to store the list of filenames.
-*This [[support/Everything/File Lists|file list]] file can be opened with Everything, notepad or Excel.
+*This [[support/Everything/File Lists|file list]] file can be opened with ''"Everything"'', notepad or Excel.
 </ul>
 
 ==Force rebuild==
-To force Everything to rebuild its indexes:
+To force ''"Everything"'' to rebuild its indexes:
 <ul>
 *In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
 *Click the '''Indexes''' tab
@@ -224,11 +236,29 @@ To manually remove offline volumes
 *Click '''OK'''.
 </ul>
 
-
 ==Fast reindexing==
-Everything must perform a reindex when a new volume is added to the index or an existing volume is removed from the index.
-When a reindex occurs with Everything 1.3 and earlier, all volumes must be completely rescanned, even if they have not changed.
-Everything 1.4 can quickly reindex by reusing the existing up-to-date indexes.
+''"Everything"'' must perform a reindex when a new volume is added to the index or an existing volume is removed from the index.
+When a reindex occurs with ''"Everything"'' 1.3 and earlier, all volumes must be completely rescanned, even if they have not changed.
+''"Everything"'' 1.4 can quickly reindex by reusing the existing up-to-date indexes.
+
+==Limitations==
+While all NTFS/ReFS hard links are indexed, changes made to a hard link will only update the first hard link entry in ''"Everything"''.
+''"Everything"'' does not follow junctions with NTFS/ReFS indexing.
+
+==Pausing file system monitors==
+To pause NTFS monitors, ReFS monitors, folder monitors and file list monitors:
+<ul>
+*In "'''''Everything'''''", type in the following search and press ENTER:
+/monitor_pause
+</ul>
+
+To resume NTFS monitors, ReFS monitors, folder monitors and file list monitors:
+<ul>
+*In "'''''Everything'''''", type in the following search and press ENTER:
+/monitor_resume
+</ul>
+
+Monitors will remain paused until they are resumed.
 
 ==See also==
 <ul>

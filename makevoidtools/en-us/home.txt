@@ -14,6 +14,6 @@ Locate files and folders by name instantly.
 </ul>
 {{SCREENSHOT_END}}
 
-{{DOWNLOAD_EVERYTHING}}
-
 {{DOWNLOAD_EVERYTHING_BETA}}
+
+{{DOWNLOAD_EVERYTHING}}

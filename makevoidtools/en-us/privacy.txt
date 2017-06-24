@@ -28,8 +28,8 @@ The following information is logged by voidtools.com, if you have enabled [[supp
 <ul>
 *Your IP address
 *Version of "Everything" you are currently running
-*Information is kept for the last 1000 requests.
 </ul>
+Information is kept for the last 1000 requests.
 
 
 ==ETP/FTP/HTTP Servers==

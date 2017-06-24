@@ -1,5 +1,5 @@
 =Everything_SetMatchWholeWord=
-The '''Everything_SetMatchWholeWord''' function enables or disables full path matching for the next call to [[support/everything/SDK/Everything_Query|Everything_Query]].
+The '''Everything_SetMatchWholeWord''' function enables or disables matching whole words for the next call to [[support/everything/SDK/Everything_Query|Everything_Query]].
 
 ==Syntax==
 <pre>
