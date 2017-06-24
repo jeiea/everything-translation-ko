@@ -1,37 +1,36 @@
-=Everything Service=
-The Everything service indexes NTFS volumes and monitors USN Journals.
-This allows the Everything client to run as a standard user.
+=Everything 서비스=
+Everything 서비스는 NTFS 볼륨을 색인하고 USN 저널을 감시합니다.
+서비스를 실행하면 Everything 클라이언트에 관리자 권한이 필요하지 않습니다.
 
-On XP or earlier the Everything service is not required.
-On Vista or later with a standard user account you will need to install the Everything service to use NTFS indexing.
-On Vista or later with the true administrator account the Everything service is not required.
+XP와 그 이전은 서비스가 필요하지 않습니다.
+비스타와 그 이후는 일반 계정으로 NTFS 색인을 하려면 Everything 서비스를 설치해야 합니다.
+비스타와 그 이후로 administrator 계정이라면 Everything 서비스는 필요하지 않습니다.
 
-The Everything service is installed by default on Windows Vista or later when the installer is run with a standard user account.
+Everything 서비스는 비스타와 그 이후 버전엔 Everything 설치 시 일반 계정이었다면 기본값으로 설치합니다.
 
-==Installing==
-
-<ul>
-*Check the Install Everything Service option when running the Everything installer.
-</ul>
-
--or-
+==설치==
 
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''General '''Tab.
-*Check '''Everything Service'''.
-*Uncheck '''Run as administrator'''.
-*Click '''OK'''.
+*Everything을 설치할 때 '''Everything 서비스 설치'''를 체크하세요.
 </ul>
 
-==How is the Everything service started?==
-Windows automatically starts the Everything service on system start-up.
+-또는-
 
-==Stopping or starting the service==
-The Everything service is always running and generally does not need to be stopped.
-However, you can start or stop the Everything service from Start -> Control Panel -> Administrative Tools -> Services. Right click the Everything service and select Start or Stop.
+<ul>
+*'''Everything''' - '''Tools ''' 메뉴 - '''설정''' - '''일반''' 탭을 클릭합니다.
+*'''Everything 서비스'''를 체크합니다.
+*'''관리자 권한으로 실행'''을 해제합니다.
+*'''확인'''을 클릭합니다.
+</ul>
 
-==How can I manage the Everything service from the command line?==
+=Everything 서비스는 어떻게 실행되나요?==
+윈도 시작 시 자동으로 시작합니다.
+
+==Everything 서비스 끄고 켜기==
+Everything 서비스는 항상 실행 중이고 보통 끌 일이 없습니다.
+하지만 시작 -> 제어판 -> 관리 도구 -> 서비스 -> Everything 서비스를 우클릭 해 시작 혹은 중지할 수 있습니다.
+
+==어떻게 명령 행으로 Everything 서비스를 조작할 수 있나요?==
 <pre>
 Everything.exe -install-service [-install-service-pipe-name <name>] [-install-service-security-descriptor <sd>]
 Everything.exe -uninstall-service
@@ -39,38 +38,37 @@ Everything.exe -start-service
 Everything.exe -stop-service
 </pre>
 
-==How can I manage the Everything service from Everything?==
+==Everything 서비스를 Everything에서 조작할 수 있나요?==
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''General '''Tab.
-*Check or uncheck the '''Everything service''' to install or uninstall the Everything service.
-*Click '''OK'''.
+*'''Everything''' - '''Tools ''' 메뉴 - '''설정''' - '''일반''' 탭을 클릭합니다.
+*'''Everything 서비스'''를 체크하거나 해제해 서비스를 설치하거나 지웁니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==How can I run the Everything service from the portable version of Everything?==
-To launch the Everything service as a normal administrator application, run the following:
+==어떻게 휴대 버전 Everything에서 Everything 서비스를 실행할 수 있나요?==
+Everything 서비스를 일반 관리자 권한으로 실행하려면, 다음을 실행하세요.
 <pre>
 Everything.exe -svc
 </pre>
 
-To specify the pipe name, use the -svc-pipe-name <name> command line option, for example:
+파이프 이름을 지정하려면 -svc-pipe-name <이름> 인자를 쓰세요.
 <pre>
 Everything.exe -svc -svc-pipe-name "my Everything pipe name"
 </pre>
 
-Running the Everything service this way does not modify the system.
+이 방법으로 Everything 서비스를 실행하면 시스템을 변경하지 않습니다.
 
-The Everything service has no interface.
-Use Task Manager to terminate the service application when it is no longer needed.
+위 방법으로 실행한 Everything 서비스는 조작법이 따로 없습니다.
+서비스가 필요 없어지면 작업 관리자에서 강제종료 하세요.
 
-You can close the portable service application easily by making a batch file that runs Everything.exe -svc
-Simply close the console window to terminate the service application.
+Everything.exe -svc를 실행하는 배치 파일을 만들어서 휴대버전 서비스를 간단히 종료할 수 있습니다.
+실행한 배치 파일 창을 끄기만 하면 서비스는 종료될 겁니다.
 
-==How many resources does the service use?==
-The Everything service will use about 1MB of RAM and will have none to very little CPU usage.
+==서비스는 자원을 얼마나 잡아먹나요?==
+약 1MB 메모리를 차지하고 CPU는 거의 쓰지 않습니다.
 
-==Security==
-Any local user can use the Everything Service to create a list of all NTFS filenames. 
-Note: The Everything Service can not be used to access files, only filenames.
+==보안==
+모든 로컬 사용자가 NTFS 파일 이름을 색인하기 위해 Everything 서비스를 쓸 수 있습니다.
+Everything 서비스는 파일을 접근하는 데 사용할 수 없고, 파일 이름만 건네줍니다.
 
 

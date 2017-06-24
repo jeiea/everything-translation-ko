@@ -1704,7 +1704,7 @@ SERVICE_UNABLE_TO_DELETE_SERVICE = "Everything 서비스를 삭제할 수 없습
 ALLOW_FORWARD_SLASH_PATH_SEPARATOR = "/를 \\로 치환(&F)"
 ALLOW_FORWARD_SLASH_PATH_SEPARATOR_HELP = "슬래시를 백슬래시로 바꿔 경로 구분자로 간주합니다."
 
-EVERYTHING_SERVICE = "Everything 서비스 설치(&V)"
+EVERYTHING_SERVICE = "Everything 서비스(&V)"
 EVERYTHING_SERVICE_HELP = "Everything 서비스를 설치·제거합니다.\n일반 사용자가 NTFS 볼륨을 색인하려면 서비스가 필요합니다.\n서비스를 켜면 모든 로컬 사용자가 NTFS 볼륨의 모든 파일을 색인할 수 있습니다."
 
 SERVICE_PORT = "서비스 포트(&O):"
