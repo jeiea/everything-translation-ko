@@ -1,116 +1,106 @@
-=Folder Indexing=
-Folder indexing allows Everything to include any file system folder in the Everything index.
+=폴더 색인=
+폴더 색인으로 Everything 색인에 다른 파일 시스템 폴더를 추가할 수 있습니다.
 
-Indexed folders can go offline and remain in the Everything index.
+색인한 폴더 연결이 끊기더라도 Everything 색인에 남게 됩니다.
 
-For example, with folder indexing you can index:
+폴더 색인으로 다음을 스캔할 수 있습니다.
 <ul>
-*Network shares or mapped network drives.
-*FAT32 and other volumes.
-*Any physical folder.
+*네트워크 공유 폴더 및 드라이브.
+*FAT32 및 기타 볼륨.
+*기타 물리 폴더.
 </ul>
 
-[[File:support/everything/everything.options.folders.server.downloads.png|alt=Everything Options Folders Network Share]]
+[[File:support/everything/Everything.Options.Folders.Server.Downloads.png|alt=Everything Options Folders Network Share]]
 
-==Do I need administrative privileges or the Everything service to index folders?==
-No, folder indexing does not require administrative privileges or the Everything service.
+==폴더를 색인하려면 관리자 권한이나 Everything 서비스가 필요한가요?==
+아니오, 폴더 색인엔 관리자 권한이나 서비스가 필요하지 않습니다.
 
-==Why is indexing so slow?==
-Folder indexing uses the same approach as the Windows search.
-This can be a lot slower than NTFS indexing.
-Everything can take a couple minutes to scan a folder and all its subfolders and files.
+==왜 색인이 느린가요?==
+폴더 색인은 윈도 검색과 같은 방법을 씁니다.
+이건 NTFS 색인보다 훨씬 느립니다.
+폴더와 하위항목을 색인하는데 2분 이상이 걸릴 수도 있습니다.
 
-==How do I add a folder to the Everything index?==
+==어떻게 Everything 색인에 폴더를 추가하죠?==
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''Folders '''tab.
-*Click '''Add...'''.
-*Select a folder to add to the Everything index.
-*Click '''OK'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''폴더''' 탭을 클릭합니다.
+*'''폴더 추가'''를 클릭합니다.
+*Everything 색인에 추가할 폴더를 선택합니다.
+*'''확인''' - '''확인'''을 클릭합니다.
 </ul>
 
-==How do I add a network share to the Everything index?==
+==네트워크 공유폴더를 어떻게 Everything 색인에 추가하나요?==
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''Folders '''tab.
-*Click '''Add...'''.
-*Select the network share to add to the Everything index, for example:
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''폴더''' 탭을 클릭합니다.
+*'''폴더 추가'''를 클릭합니다.
+*아래처럼 색인에 추가할 공유 폴더를 선택합니다.
 <pre>
 \\server\share
 </pre>
-*Click '''OK'''.
-*Click '''OK'''.
+*'''확인''' - '''확인'''을 클릭합니다.
 </ul>
 
-==How do I add a mapped network drive to the Everything index?==
+==네트워크 드라이브를 어떻게 Everything 색인에 추가하나요?==
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''Folders '''tab.
-*Click '''Add...'''.
-*Select the mapped network drive.
-*Click '''OK'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''폴더''' 탭을 클릭합니다.
+*'''폴더 추가'''를 클릭합니다.
+*색인에 추가할 연결된 네트워크 드라이브를 선택합니다..
+*'''확인''' - '''확인'''을 클릭합니다.
 </ul>
 
-==How do I stop Everything from scanning folders on startup==
-To prevent Everything from rescanning folders on startup:
+==Everything 시작 시 폴더를 스캔하지 않도록 할 수 있나요?==
+Everything 시작 시 폴더를 스캔하지 않으려면
 <ul>
-*In '''Everything''', type in the following search and press '''ENTER''':
+*'''Everything'''에서 다음 검색어를 치고 '''엔터'''를 누릅니다.
 /[[support/everything/ini#folder_update_rescan_asap|folder_update_rescan_asap]]=0
 </ul>
 
-Folder rescanning will occur at the next scheduled time.
+다음 예정 시각에 폴더를 스캔합니다.
 
-==Will Everything detect all file name changes made to this folder?==
-Almost all changes are detected. 
-Changes can be missed if too many occur in a short time.
+==Everything이 색인한 폴더의 모든 이름 변경을 탐지하나요?==
+거의 모든 변경이 탐지됩니다.
+순식간에 많은 변경이 생긴다면 놓칠 수도 있습니다.
 
-To rebuild the folder index when too many changes occur in a short time:
+위의 경우에 폴더 색인을 재구축하려면
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''Folders '''tab.
-*Select a folder.
-*Check '''Rescan on full buffer'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''폴더''' 탭을 클릭합니다.
+*재확인할 폴더를 선택합니다.
+*'''버퍼가 찼을 때 재검사'''를 체크합니다.
 </ul>
 
-Everything can schedule an update time or update interval to rescan the entire folder for changes that might have been missed.
+Everything은 혹시 놓쳤을 변경 사항을 반영하기 위한 갱신 시각 혹은 간격을 설정할 수 있습니다.
 
-To customize the update time or update interval:
+갱신 시각과 간격을 설정하려면
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''Folders '''tab.
-*Select a folder.
-*Choose one of the options below:
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''폴더''' 탭을 클릭합니다.
+*재확인할 폴더를 선택합니다.
+*다음 중 하나를 선택합니다.
 <ul>
-*Update each day, or weekly on a specific day, at a specific time.
-*Update periodically in the specified hours or minutes.
-*Never update.
+*매일, 특정 요일, 특정 시각에 갱신합니다.
+*일정 간격으로 주기적으로 갱신합니다.
+*갱신하지 않습니다.
 </ul>
 </ul>
 
-==How do I manually update a folder index?==
-To manually update all folder indexes:
+==어떻게 수동으로 폴더 색인을 갱신하나요?==
+모든 폴더를 강제로 갱신하려면
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''Folders '''tab.
-*Click '''Rescan All Now'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''폴더''' 탭을 클릭합니다.
+*'''모두 갱신'''을 클릭합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-To manually update a folder index:
+한 폴더만 강제로 갱신하려면
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''Folders '''tab.
-*Select the folder to update and click '''Rescan Now'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''폴더''' 탭을 클릭합니다.
+*재확인할 폴더를 선택하고 '''지금 갱신'''을 클릭합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==What happens if the indexed folder is offline or not available?==
-The folder index will remain unchanged.
-However, forcing a index rebuild will show the folder as empty.
+==색인한 폴더가 분리되거나 사용할 수 없을 경우 어떻게 되나요?==
+폴더 색인은 그대로 남습니다.
+하지만 강제로 폴더 색인을 재구축하면 내용을 비워버립니다.
 
-Everything will continue to re-scan the folder at the specified update time or update interval and only update the folder when it is online.
+Everything은 폴더를 쓸 수 있을 때만 지정된 시각 또는 간격으로 갱신합니다.
 
-Displaying icons and file information of offline folders can take several seconds to time-out.
-You can press F5 to refresh this cache when the folder is back online.
+쓸 수 없는 폴더의 아이콘이나 파일 정보를 보려고하면 몇초간 멎을 수 있습니다.
+폴더를 쓸 수 있을 때 F5를 눌러 캐시를 새로고칠 수 있습니다.
