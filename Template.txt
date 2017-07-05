@@ -53,9 +53,9 @@ COPYRIGHT = "Copyright © 2017 David Carpenter"
 CREDITS = "David Carpenter"
 OK = "OK"
 ABOUT_FORMAT = "About %s"
-	
-	// db
-	
+
+// db
+
 ARE_YOU_SURE_SORT_FORMAT = "Are you sure you want to sort %d items?\nGathering data and sorting could take several minutes."
 CONFIRM_SORT = "Confirm sort"
 UNABLE_TO_CREATE_USN_JOURNAL_FORMAT = "Unable to create USN Journal on volume \\\\.\\%c:"
@@ -65,12 +65,11 @@ DELETE_USN_JOURNAL = "Delete USN Journal"
 UNABLE_TO_OPEN_USN_JOURNAL_FORMAT = "Unable to open volume \\\\.\\%c:"
 OPEN_USN_JOURNAL = "Open USN Journal"
 
-	
-	// etp server
+// etp server
 CHANGES_HAVE_BEEN_MADE_TO_THE_ETP_SERVER = "Changes have been made to the ETP/FTP server\nWould you like to restart the ETP/FTP server?"
 RESTART_ETP_SERVER = "Restart ETP/FTP server?"
 
-	// events
+// events
 LOADING_DATABASE = "Loading database..."
 UPDATING_DATABASE = "Updating database..."
 QUERY_DATABASE = "Query database..."
@@ -158,7 +157,7 @@ FAILED_TO_SEND_VERSION_REQUEST = "Failed to send version request."
 FAILED_TO_RECEIVE_VERSION = "Failed to receive version."
 LATEST_VERSION_INFORMATION_NOT_FOUND = "Latest version information not found."
 
-	// http server.
+// http server.
 SEARCH_EVERYTHING = "Search Everything"
 SEARCH = "Search"
 TOTAL_SIZE = "Total Size"
@@ -173,16 +172,16 @@ NOT_FOUND = "Not Found"
 CHANGES_HAVE_BEEN_MADE_TO_THE_HTTP_SERVER = "Changes have been made to the HTTP server\nWould you like to restart the HTTP server?"
 RESTART_HTTP_SERVER = "Restart HTTP server?"
 
-	// mu
+// mu
 LOCAL_DISK = "Local Disk"
 REMOVABLE_DISK = "Removable Disk"
 TEXT_FILES = "Text Files"
 ALL_FILES = "All Files"
 
-	// string
+// string
 KB = "KB"
-	
-	// tray
+
+// tray
 TRAY_NEW_SEARCH_WINDOW = "&New Search Window"
 TRAY_START_HTTP_SERVER = "Start &HTTP Server"
 TRAY_START_ETP_SERVER = "Start &ETP/FTP Server"
@@ -190,7 +189,7 @@ TRAY_CONNECT_TO_ETP_SERVER = "&Connect to ETP Server..."
 TRAY_OPTIONS = "&Options..."
 TRAY_EXIT = "E&xit"
 
-	// ui
+// ui
 MENU_FILE = "&File"
 MENU_EDIT = "&Edit"
 MENU_SEARCH = "&Search"
@@ -258,7 +257,7 @@ EVERYTHING_OPTIONS = "Everything Options"
 
 CANCEL = "Cancel"
 APPLY = "Apply"
-	
+
 GENERAL = "General"
 VIEW = "View"
 NTFS_VOLUMES = "NTFS"
@@ -331,7 +330,7 @@ READ_FILE_INFO_PRIORITY = "Load extended in&formation priority:"
 READ_FILE_INFO_PRIORITY_HELP = "The priority of the thread to load extended information."
 MAX_FILE_INFO_CACHE_SIZE = "Maximum file info cache &size:"
 MAX_FILE_INFO_CACHE_SIZE_HELP = "Maximum size of file information to cache, in kilobytes. 0 = unlimited."
-	
+
 DATABASE_LOCATION = "Database &location:"
 DATABASE_LOCATION_HELP = "Specify the location of the database file.\nLeave empty to store the database file in the default location for local application data.\n"
 BROWSE_FOR_THE_DATABASE_LOCATION_BROWSE_HELP = "Browse for the database location."
@@ -371,7 +370,7 @@ ETP_SERVER_LOG_DELTA_SIZE_HELP = "Size of memory allocation that is removed from
 SAVE_ETP_SERVER_LOG_FILE = "Save ETP/FTP server log file:"
 
 HTTP_SERVER_PORT = "Listen on &port:"
-HTTP_SERVER_PORT_HELP = "List for new connections on the specified port."
+HTTP_SERVER_PORT_HELP = "Listen for new connections on the specified port."
 HTTP_SERVER_USERNAME = "&Username:"
 HTTP_SERVER_USERNAME_HELP = "Basic access authentication username.\nEmpty = Username ignored."
 HTTP_SERVER_PASSWORD = "Pass&word:"
@@ -390,7 +389,7 @@ SAVE_HTTP_SERVER_LOG_FILE = "Select the HTTP Server Log File"
 LANGUAGE_CHANGE = "Language change"
 LANGUAGE_CHANGE_REQUIRES_RESTART = "Changes to the language will be made the next time Everything is started."
 
-	// update
+// update
 NEW_VERSION_IS_AVAILABLE_MESSAGE_FORMAT = "Everything version %d.%d.%d.%d is available.\n\n%s\n\nWould you like to open the download page now?"
 NEW_VERSION_IS_AVAILABLE_FORMAT = "Version %d.%d.%d.%d is available.\n\nWould you like to download it now?"
 EVERYTHING_IS_UP_TO_DATE = "Everything is up to date!"
@@ -430,7 +429,7 @@ DECREASE_THE_FONT_SIZE = "Decrease the font and icon size."
 RESTORE_THE_FONT_SIZE_TO_THE_DEFAULT_DESKTOP_FONT_SIZE = "Restore the font and icon size to the default desktop font and icon size."
 
 DOWNLOAD_LANGUAGE_PACK = "Opens the download page for the language pack"
-	
+
 HOST = "&Host:"
 PORT = "&Port:"
 USERNAME = "&Username:"
@@ -440,7 +439,7 @@ USE_FTP_LINKS = "Use FTP links"
 EXCLUDE_LIST = "Exclude"
 EXCLUDE_PATH_LIST = "Path List"
 EXCLUDE_PATH_LIST_HELP = "Path list"
-	
+
 CHECK_MEDIA = "&Check media" 
 CHECK_MEDIA_HELP = "Access this volumes media" 
 
@@ -450,7 +449,7 @@ REMOVE_EXCLUDE_PATH_HELP = "Remove the selected path from the exclude list."
 ADD_EXCLUDE_PATH = "Add Folder"
 ADD_EXCLUDE_PATH_HELP = "Add a folder to the exclude list."
 
-	// 1.2.0.322b
+// 1.2.0.322b
 
 EXTENSION = "Extension"
 TYPE = "Type"
@@ -464,9 +463,9 @@ MENU_EXPORT = "&Export..."
 TYPE_IN_SEARCH = "Ready"
 ETP_SERVER_USERNAME = "&Username:"
 ETP_SERVER_USERNAME_HELP = "ETP/FTP server username.\nEmpty = Username ignored."
-	
-	// please add your name to this list
-	
+
+// please add your name to this list
+
 CREDIT_LIST = 
 	"!Created by\nDavid Carpenter\n\n!Contributors\n"
 	"Piotr J. Balwierz\n"
@@ -512,12 +511,14 @@ CREDIT_LIST =
 	"University of Cambridge\n"
 	"01 Vlatce\n"
 	"WanderMax\n"
+	"GT Wang\n"
+	"Jeroen Westera\n"
 	"Sepp Winkler\n"
 	"xbeta\n"
 	"Dmitry Yerokhin\n"
 	"Carl Yuan\n"
 	"\n\n\n\n\nThanks for using Everything!"
-		
+
 TYPE2 = "&Type"
 VALUE = "&Value"
 APPLY_TO = "&Apply To"
@@ -589,22 +590,21 @@ SPECIFY_A_FILTER_HELP = "Specify a wildcard filter.\n* matches zero or more char
 
 HIDE_RESULTS_WHEN_THE_SEARCH_EMPTY = "&Hide results when the search is empty"
 HIDE_RESULTS_WHEN_THE_SEARCH_EMPTY_HELP = "Only display results when you type in a search."
-		
-	// 1.2.1.352b 	
+
+// 1.2.1.352b
 
 EXCLUDE_HIDDEN_FILES_AND_FOLDERS = "Exclude &hidden files and folders"
 EXCLUDE_HIDDEN_FILES_AND_FOLDERS_HELP = "Exclude hidden files and folders from the database.\nRebuilding the database may be necessary when unhiding a folder."
 EXCLUDE_SYSTEM_FILES_AND_FOLDERS = "Exclude &system files and folders"
 EXCLUDE_SYSTEM_FILES_AND_FOLDERS_HELP = "Exclude system files and folders from the database.\nRebuilding the database may be necessary when removing the system attribute from a folder."
 
-	// 1.2.1.356b
+// 1.2.1.356b
 
 EXPORT_RESULT_LIST_FILE = "Export Result List"
 EXPORT_THE_RESULT_LIST_TO_A_TEXT_FILE = "Export the current result list to a file."
 
-	// 1.2.1.358b	
-	
-	// added
+// 1.2.1.358b
+
 EVERYTHING_HELP = "Everything Help"
 UNINSTALL_EVERYTHING = "Uninstall Everything"
 
@@ -617,16 +617,16 @@ MENU_EXPLORE_HELP = "Open in the default file browser."
 MENU_EXPLORE_PATH_HELP = "Open containing folder in the default file browser."
 MENU_COPY_FULL_NAME_TO_CLIPBOARD_HELP = "Copy the full path and file name to the clipboard."
 MENU_COPY_PATH_TO_CLIPBOARD_HELP = "Copy the full path to the clipboard."
-	
+
 CONTAINS_COMMANDS_FOR_ADJUSTING_THE_FONT_SIZE = "Contains commands for adjusting the font and icon size."
 
-	// 1.2.1.371
+// 1.2.1.371
 
 MB = "MB"
 GB = "GB"
 
 FILE_LISTS = "File Lists"
-	
+
 STATUS_CASE = "CASE"
 STATUS_WHOLE_WORD = "WHOLE WORD"
 STATUS_PATH = "PATH"
@@ -634,7 +634,7 @@ STATUS_REGEX = "REGEX"
 
 X_OF_Y_OBJECTS_SELECTED_FORMAT = "%s of %s objects selected"
 1_OF_1_OBJECT_SELECTED = "1 of 1 objects selected"
-	
+
 KEYS = "Keyboard"
 KEYBOARD_COMMANDS_STATIC = "&Commands:"
 KEYBOARD_COMMANDS_HELP = "List of commands"
@@ -659,10 +659,10 @@ KEYBOARD_USEIN_SEARCH_EDIT = "Search Edit"
 KEYBOARD_USEIN_EDITOR = "Editor"
 KEYBOARD_SHORTCUT_KEY_STATIC = "Shortcut &key:"
 KEYBOARD_SHORTCUT_KEY_HELP = "Press a new keyboard shortcut."
-	
+
 MENU_VIEW = "&View"
 VIEW_MENU_HELP = "Contains commands for manipulating the view."
-	
+
 MENU_HELP_SEARCH_SYNTAX = "&Search Syntax"
 HELP_SEARCH_SYNTAX_MENU_HELP = "Show search syntax help."
 
@@ -682,16 +682,16 @@ SIZE_FORMAT_HELP = "Display sizes in Bytes, KB or MB depending on the size or al
 SIZE_FORMAT_AUTO = "Auto"
 SIZE_FORMAT_BYTES = "Bytes"
 SIZE_FORMAT_KB = "KB"
-	
+
 DOUBLE_CLICK_PATH = "Open &path with double click in path column"
 DOUBLE_CLICK_PATH_HELP = "Open a path in the path column by double clicking."
 
 EXECUTE_IN_A_SEPARATE_THREAD = "Execute in a separate thread"
 AUTOMATICALLY_SHOW_SEARCH_HISTORY_MATCHES = "Automatically show search history matches"
-	
+
 SORT_BY_NEWEST_TO_OLDEST_DATE_TIME_FIRST = "Sort by newest to oldest date/time first"
 SORT_BY_LARGEST_TO_SMALLEST_SIZE_FIRST = "Sort by largest to smallest size first"
-	
+
 REMEMBER_LAST_SEARCH = "Remember last &search"
 REMEMBER_LAST_SEARCH_HELP = "Remember the search between Everything sessions."
 AUTO_INCLUDE_NEW_REMOVABLE_VOLUMES = "Automatically include new &removable volumes"
@@ -706,13 +706,13 @@ SELECT_SEARCH_ON_MOUSE_CLICK_HELP = "Select all the text in the search edit when
 
 FOCUS_SEARCH_ON_ACTIVATE = "Focus search on &activate"
 FOCUS_SEARCH_ON_ACTIVATE_HELP = "Focus the search edit when the search window is activated."
-	
+
 SELECTION_RECTANGLE = "&Selection rectangle:"
 SELECTION_RECTANGLE_HELP = "Display an alpha blended selection mask or a XOR selection mask."
 SELECTION_RECTANGLE_USE_SYSTEM_SETTINGS = "Use system default"
 SELECTION_RECTANGLE_TRANSLUCENT_MASK = "Translucent mask"
 SELECTION_RECTANGLE_XOR_MASK = "XOR mask"
-	
+
 VIEW_RESTORE_DEFAULTS = "&Restore Defaults"
 VIEW_RESTORE_DEFAULTS_HELP = "Restore all settings on this page to their default state."
 
@@ -720,7 +720,7 @@ QUERYING_USN_CHANGE_JOURNAL_FORMAT2 = "Querying USN Change Journal on %s (%s)"
 SCANNING_FORMAT2 = "Scanning %s (%s)"
 UNABLE_TO_CREATE_USN_JOURNAL_FORMAT2 = "Unable to create USN Journal on %s"
 UNABLE_TO_DELETE_USN_JOURNAL_FORMAT2 = "Unable to delete USN Journal on %s"
-	
+
 ALLOW_MULTIPLE_WINDOWS_FROM_TRAY = "Create a new &window from the system tray"
 ALLOW_MULTIPLE_WINDOWS_FROM_TRAY_HELP = "Create a new window or show an existing window when opening Everything from the system tray."
 
@@ -787,7 +787,7 @@ HELP_COMMAND_LINE_OPTIONS_MENU_HELP = "Show help on command line options."
 
 LOADING_FILE_LIST = "Opening file list..."
 FAILED_TO_OPEN_FILELIST2 = "Failed to open filelist %s"
-	
+
 COLOR_NORMAL = "Normal"
 COLOR_HIGHLIGHTED = "Highlighted"
 COLOR_CURRENT_SORT = "Current Sort"
@@ -806,7 +806,7 @@ COLOR_ALTERNATE_ROW = "Alternate Row"
 COLOR_ALTERNATE_ROW_HIGHLIGHTED = "Alternate Row (Highlighted)"
 COLOR_CURRENT_SORT_ALTERNATE_ROW = "Current Sort Alternate Row"
 COLOR_CURRENT_SORT_ALTERNATE_ROW_HIGHLIGHTED = "Current Sort Alternate Row (Highlighted)"
-	
+
 FONTS_AND_COLORS_FONT_STATIC = "&Font:"
 FONTS_AND_COLORS_FONT_HELP = "Specify the font family name to use for the result list."
 FONTS_AND_COLORS_SIZE_STATIC = "&Size:"
@@ -849,23 +849,23 @@ ONLINE_SEARCH_COMMANDS = "http://support.voidtools.com/everything/Search_command
 READ_EXTENDED_INFORMATION_MENU = "Read Extended &Information"
 READ_EXTENDED_INFORMATION_MENU_HELP = "Read the file size, date modified, date created and attributes for the current selection."
 READING_EXTENDED_INFORMATION_STATUS = "Reading extended information..."
-	
+
 FILE_DELETE_MENU = "&Delete"
 FILE_DELETE_MENU_HELP = "Deletes the selected items."
 FILE_RENAME_MENU = "Rena&me"
 FILE_RENAME_MENU_HELP = "Renames the selected items."
 FILE_PROPERTIES_MENU = "P&roperties"
 FILE_PROPERTIES_MENU_HELP = "Displays the properties of the selected items."
-	
+
 VIEW_REFRESH_MENU = "&Refresh"
 VIEW_REFRESH_MENU_HELP = "Refresh all extended information, icon and thumbnail cache."
-	
+
 UNABLE_TO_OPEN_VOLUME_FOR_READING = "Unable to open volume %s for reading..."
-	
+
 EXCLUDE_FOLDERS_STATIC = "Exclude f&olders:"
 EXCLUDE_INCLUDE_ONLY_FILES_STATIC = "&Include only files:"
 EXCLUDE_FILES_STATIC = "E&xclude files:"
-	
+
 EXCLUDE_FOLDER_ADD_BUTTON = "Add &Folder..."
 EXCLUDE_FOLDER_ADD_BUTTON_HELP = "Browse for a folder to add to the exclude folder list."
 EXCLUDE_FILTER_ADD_BUTTON = "Add Fi&lter..."
@@ -875,18 +875,18 @@ EXCLUDE_REMOVE_BUTTON_HELP = "Remove the selected item from the exclude folder l
 EXCLUDE_BROWSE_FOR_FOLDER = "Browse for Folder"
 
 EXCLUDE_FOLDER_LIST_HELP = "List of folders to exclude.\nEmpty = No folders excluded."
-EXCLUDE_INCLUDE_ONLY_FILE_EDIT_HELP  = "Semi-colon delimited wildcard filters for which files to include.\nEmpty = Include all files."
-EXCLUDE_FILE_EDIT_HELP = "Semi-colon delimited wildcard filters for which files to exclude.\nEmpty = No files excluded."
+EXCLUDE_INCLUDE_ONLY_FILE_EDIT_HELP = "semicolon delimited wildcard filters for which files to include.\nEmpty = Include all files."
+EXCLUDE_FILE_EDIT_HELP = "semicolon delimited wildcard filters for which files to exclude.\nEmpty = No files excluded."
 
 EXCLUDE_FILTER_ADD_CAPTION = "Add wildcard filter"
 EXCLUDE_FILTER_EDIT_CAPTION = "Edit wildcard filter"
 EXCLUDE_FILTER_EDIT_STATIC = "&Filter:"
 EXCLUDE_FILTER_EDIT_HELP = "Type in a filter\n* = match zero or more characters\n? = match one character\nIncluding a backslash (\\) in your filter will match full paths."
-	
-NTFS_INCLUDE_ONLY_EDIT_HELP = "Semi-colon delimited list of folders on this volume to include.\nEmpty = Include all folders."
-	
-	// bookmarks
-	
+
+NTFS_INCLUDE_ONLY_EDIT_HELP = "semicolon delimited list of folders on this volume to include.\nEmpty = Include all folders."
+
+// bookmarks
+
 BOOKMARK_MENU = "&Bookmarks"
 BOOKMARK_MENU_HELP = "Contains commands for working with bookmarks."
 BOOKMARK_ADD_MENU = "&Add to Bookmarks..."
@@ -962,11 +962,11 @@ FILE_PRINT_MENU = "Print"
 FILE_PRINT_TO_MENU = "Print To"
 FILE_RUN_AS_MENU = "Run As"
 VIEW_FULLSCREEN_MENU = "Fullscreen"
-	
+
 TOOLS_CONSOLE_MENU = "Console"
 TOOLS_EDITOR_MENU = "File List &Editor..."
 TOOLS_EDITOR_MENU_HELP = "Open the Everything file list editor to create or modify file lists."
-	
+
 RESULT_LIST_UP_MENU = "Item Up"
 RESULT_LIST_DOWN_MENU = "Item Down"
 RESULT_LIST_PAGE_UP_MENU = "Page Up"
@@ -994,26 +994,26 @@ RESULT_LIST_FOCUS_PAGE_UP_EXTEND_MENU = "Focus Page Up Extend"
 RESULT_LIST_FOCUS_PAGE_DOWN_EXTEND_MENU = "Focus Page Down Extend"
 RESULT_LIST_FOCUS_START_EXTEND_MENU = "Focus Start of List Extend"
 RESULT_LIST_FOCUS_END_EXTEND_MENU = "Focus End of List Extend"
-	
+
 SEARCH_EDIT_FOCUS_MENU = "Focus Search Edit"
 RESULT_LIST_FOCUS_MENU = "Focus Result List"
-	
+
 RESULT_LIST_AUTOFIT_COLUMNS_MENU = "Size &All Columns to Fit"
 RESULT_LIST_CONTEXT_MENU = "Context Menu"
-	
+
 RESULT_LIST_SCROLL_LEFT_MENU = "Scroll Left or Thumbnail Left"
 RESULT_LIST_SCROLL_RIGHT_MENU = "Scroll Right or Thumbnail Right"
 RESULT_LIST_SCROLL_PAGE_LEFT_MENU = "Scroll Page Left or Thumbnail Focus Left"
 RESULT_LIST_SCROLL_PAGE_RIGHT_MENU = "Scroll Page Right or Thumbnail Focus Right"
-	
+
 RESULT_LIST_SELECT_FOCUS_MENU = "Select Focus"
 RESULT_LIST_TOGGLE_FOCUS_SELECTION_MENU = "Toggle Focus Selection"
-	
+
 SEARCH_EDIT_DELETE_TO_START_MENU = "Delete Previous Word"
-	
+
 NEXT_WINDOW_MENU = "Next Everything Window"
 PREV_WINDOW_MENU = "Previous Everything Window"
-	
+
 SORT_BY_NAME_MENU = "Sort By Name"
 SORT_BY_PATH_MENU = "Sort By Path"
 SORT_BY_SIZE_MENU = "Sort By Size"
@@ -1022,7 +1022,7 @@ SORT_BY_TYPE_MENU = "Sort By Type"
 SORT_BY_DATE_MODIFIED_MENU = "Sort By Date Modified"
 SORT_BY_DATE_CREATED_MENU = "Sort By Date Created"
 SORT_BY_ATTRIBUTES_MENU = "Sort By Attributes"
-	
+
 TOGGLE_PATH_COLUMN_MENU = "Toggle Path Column"
 TOGGLE_SIZE_COLUMN_MENU = "Toggle Size Column"
 TOGGLE_EXTENSION_COLUMN_MENU = "Toggle Extension Column"
@@ -1030,7 +1030,7 @@ TOGGLE_TYPE_COLUMN_MENU = "Toggle Type Column"
 TOGGLE_DATE_MODIFIED_COLUMN_MENU = "Toggle Date Modified Column"
 TOGGLE_DATE_CREATED_COLUMN_MENU = "Toggle Date Created Column"
 TOGGLE_ATTRIBUTES_COLUMN_MENU = "Toggle Attributes Column"
-	
+
 NTFS_INCLUDE_ONLY_STATIC = "Include &only:"
 INDEXES_BROWSE_BUTTON = "&Browse..."
 INDEXES_FORCE_REBUILD_BUTTON = "&Force Rebuild"
@@ -1040,15 +1040,15 @@ INDEXES_RESTORE_DEFAULTS_HELP = "Restore all settings on this page to their defa
 
 GENERAL_DOWNLOAD_LANGUAGE_PACK_BUTTON = "&Download..."
 UI = "UI"
-	
+
 GUI_FONT_POINTSIZE = "8"
 GUI_FONT_WEIGHT = "400"
 GUI_FONT_ITALIC = "0"
 GUI_FONT_CHARSET = "0"
 GUI_FONT_TYPEFACE = "MS Shell Dlg"
 
-	// editor
-		
+// editor
+
 EDITOR_CAPTION = "Everything File List Editor"
 EDITOR_FILE_MENU = "&File"
 EDITOR_FILE_MENU_HELP = "Contains commands for working with the file list."
@@ -1103,30 +1103,30 @@ FILE_OPEN_FILELIST_MENU = "&Open File List..."
 FILE_OPEN_FILELIST_MENU_HELP = "Open an existing file list."
 FILE_CLOSE_FILELIST_MENU = "Close File List"
 FILE_CLOSE_FILELIST_MENU_HELP = "Close an open file list."
-	
+
 TRAY_SHOW_SEARCH_WINDOW = "&Show Search Window"
-	
+
 GENERAL_RESTORE_DEFAULTS = "&Restore Defaults"
 GENERAL_RESTORE_DEFAULTS_HELP = "Restore all settings on this page to their default state."
 
 UI_RESTORE_DEFAULTS = "&Restore Defaults"
 UI_RESTORE_DEFAULTS_HELP = "Restore all settings on this page to their default state."
-	
+
 DONT_SELECT_EXTENSION_WHEN_RENAMING = "Do not select &extension when renaming"
 DONT_SELECT_EXTENSION_WHEN_RENAMING_HELP = "Do not select the file names extension when renaming a file, otherwise the entire filename is selected."
-	
+
 SORT_DATE_DESCENDING_FIRST = "Sort &date descending first"
 SORT_DATE_DESCENDING_FIRST_HELP = "Sort newest to oldest dates first."
 
 SORT_SIZE_DESCENDING_FIRST = "Sort &size descending first"
 SORT_SIZE_DESCENDING_FIRST_HELP = "Sort largest to smallest sizes first."
-	
+
 SNAP_TO_DESKTOP_EDGES_AT = "Snap to desktop ed&ges at"
-SNAP_TO_DESKTOP_EDGES_AT_HELP = "The Everything window borders will snap to the desktop edges when moved or sized with-in the specified range.\nUse the shift key to temporarily toggle this option while moving or sizing the search window."
-	
+SNAP_TO_DESKTOP_EDGES_AT_HELP = "The Everything window borders will snap to the desktop edges when moved or sized within the specified range.\nUse the shift key to temporarily toggle this option while moving or sizing the search window."
+
 SNAP_PIXELS = "pixels"
 SNAP_LENGTH_HELP = "The number of pixels before the search window is snapped to the desktop edge."
-	
+
 RESULT_LIST_FOCUS = "Result &list focus:"
 RESULT_LIST_FOCUS_HELP = "Clamp: The focus can not be moved above the first item, or lower than the last item.\nRepeat: Moving the focus above the first item will wrap to the bottom item, moving the focus below the last item will wrap to the top item.\nRepeat with search: Moving the focus above the first item, or below the last item will focus the search edit."
 
@@ -1136,16 +1136,16 @@ RESULT_LIST_FOCUS_REPEAT_WITH_SEARCH = "Repeat with search"
 
 ALLOW_LITERAL_OPERATORS = "Allow &literal operators"
 ALLOW_LITERAL_OPERATORS_HELP = "Allow AND, OR and NOT to be used as operators."
-	
+
 SEARCH_RESTORE_DEFAULTS = "&Restore Defaults"
 SEARCH_RESTORE_DEFAULTS_HELP = "Restore all settings on this page to their default state."
-	
+
 DOUBLE_BUFFER = "&Double buffer"
 DOUBLE_BUFFER_HELP = "Use an off screen buffer when rendering the result list to avoid flickering."
-	
+
 ALTERNATE_ROW_COLOR = "&Alternate row color"
 ALTERNATE_ROW_COLOR_HELP = "Display different background colors for each alternating row."
-	
+
 FOLDERS_ADD = "&Add..."
 FOLDERS_ADD_HELP = "Add a folder to the list."
 FOLDERS_REMOVE = "&Remove"
@@ -1157,7 +1157,7 @@ FOLDERS_UPDATE_ALL_NOW_HELP = "Rescan all folders now."
 FOLDERS_STATIC = "&Folders:"
 FOLDERS_LIST_HELP = "List of folders to include in the Everything index."
 FOLDERS_MONITOR = "Attempt to &monitor changes"
-FOLDERS_MONITOR_HELP = "Attempt to monitor changes made to this folder.\nMultiple changes that occur with-in a small time frame can be missed."
+FOLDERS_MONITOR_HELP = "Attempt to monitor changes made to this folder.\nMultiple changes that occur within a small time frame can be missed."
 FOLDERS_UPDATE_EVERY = "Rescan &every"
 FOLDERS_UPDATE_EVERY_HELP = "Rescan this folder periodically at a specific time interval."
 FOLDERS_UPDATE_DAY = "Res&can"
@@ -1182,17 +1182,17 @@ FOLDERS_NEVER_UPDATE_HELP = "Never rescan this folder, click Rescan Now to resca
 FOLDERS_SETTINGS_FOR_FORMAT = "Settings for %s"
 FOLDERS_SETTINGS_FOR_SELECTED_FOLDER = "Settings for selected folder"
 FOLDERS_SELECT_FOLDER = "Select folder"
-	
+
 EFU_ASSOCIATION_DESCRIPTION = "Everything File List"
-	
+
 EXPORTING = "Exporting..."
 
 SCANNING_FILELIST_FORMAT = "Loading %s..."
 SCANNING_FOLDER_FORMAT = "Scanning %s..."
-	
+
 ALLOW_ROUND_BRACKET_PARENTHESES = "Allow round &bracket grouping"
 ALLOW_ROUND_BRACKET_PARENTHESES_HELP = "Allow left parenthesis '(' and right parenthesis ')' for grouping."
-	
+
 RESULT_LIST_CUSTOM_VERB01 = "Custom Verb 1"
 RESULT_LIST_CUSTOM_VERB02 = "Custom Verb 2"
 RESULT_LIST_CUSTOM_VERB03 = "Custom Verb 3"
@@ -1211,355 +1211,354 @@ FILE_CREATE_SHORTCUT_MENU_HELP = "Creates shortcuts to the selected items."
 
 HELP_REGEX_SYNTAX_MENU = "&Regex Syntax"
 HELP_REGEX_SYNTAX_MENU_HELP = "Show regex syntax help."
-	
+
 HELP_REGEX_SYNTAX_CAPTION = "Regex Syntax - Everything"
-	
+
 HELP_REGEX_SYNTAX_TEXT = "\r\n"
-		"Regex Syntax:\r\n"
-		"\r\n"
-		"a|b\tMatches a or b\r\n"
-		"gr(a|e)y\tMatches gray or grey\r\n"
-		".\tMatches any single character\r\n"
-		"[abc]\tMatches a single character a, b or c\r\n"
-		"[^abc]\tMatches any single character except a, b or c\r\n"
-		"[a-z]\tMatches a single charactor in the range a to z\r\n"
-		"[a-zA-Z]\tMatches a single charactor in the range a to z or A to Z\r\n"
-		"^\tMatches the start of the filename\r\n"
-		"$\tMatches the end of the filename\r\n"
-		"( )\tDefines a marked subexpression\r\n"
-		"\\n\tMatches what the nth marked subexpression matched, where n is a digit from 1 to 9\r\n"
-		"\\b\tMatch word boundaries\r\n"
-		"*\tMatches the preceding element zero or more times\r\n"
-		"?\tMatches the preceding element zero or one times\r\n"
-		"+\tMatches the preceding element one or more times\r\n"
-		"*?\tLazily matches the preceding element zero or more times\r\n"
-		"+?\tLazily matches the preceding element one or more times\r\n"
-		"{x}\tMatches the preceding element x times\r\n"
-		"{x,}\tMatches the preceding element x or more times\r\n"
-		"{x,y}\tMatches the preceding element between x and y times\r\n"
-		"\\\tEscape special character\r\n"
+	"Regex Syntax:\r\n"
+	"\r\n"
+	"a|b\tMatches a or b\r\n"
+	"gr(a|e)y\tMatches gray or grey\r\n"
+	".\tMatches any single character\r\n"
+	"[abc]\tMatches a single character a, b or c\r\n"
+	"[^abc]\tMatches any single character except a, b or c\r\n"
+	"[a-z]\tMatches a single charactor in the range a to z\r\n"
+	"[a-zA-Z]\tMatches a single charactor in the range a to z or A to Z\r\n"
+	"^\tMatches the start of the filename\r\n"
+	"$\tMatches the end of the filename\r\n"
+	"( )\tDefines a marked subexpression\r\n"
+	"\\n\tMatches what the nth marked subexpression matched, where n is a digit from 1 to 9\r\n"
+	"\\b\tMatch word boundaries\r\n"
+	"*\tMatches the preceding element zero or more times\r\n"
+	"?\tMatches the preceding element zero or one times\r\n"
+	"+\tMatches the preceding element one or more times\r\n"
+	"*?\tLazily matches the preceding element zero or more times\r\n"
+	"+?\tLazily matches the preceding element one or more times\r\n"
+	"{x}\tMatches the preceding element x times\r\n"
+	"{x,}\tMatches the preceding element x or more times\r\n"
+	"{x,y}\tMatches the preceding element between x and y times\r\n"
+	"\\\tEscape special character\r\n"
 
 HELP_SEARCH_SYNTAX_CAPTION = "Search Syntax - Everything"
 
 HELP_SEARCH_SYNTAX_TEXT = "\r\n"
-		"Operators:\r\n" 
-		"\tspace\tAND\r\n"
-		"\t|\tOR\r\n"
-		"\t!\tNOT\r\n"
-		"\t< >\tGrouping\r\n"
-		"\t\" \"\tSearch for an exact phrase.\r\n"
-		"\r\n"
+	"Operators:\r\n" 
+	"\tspace\tAND\r\n"
+	"\t|\tOR\r\n"
+	"\t!\tNOT\r\n"
+	"\t< >\tGrouping\r\n"
+	"\t\" \"\tSearch for an exact phrase.\r\n"
+	"\r\n"
 
-		"Wildcards:\r\n"
-		"\t*\tMatches zero or more characters.\r\n"
-		"\t?\tMatches one character.\r\n"
-		"\r\n"
-		
-		"Macros:\r\n"
-		"\tquot:\tLiteral double quote (\")\r\n"
-		"\tapos:\tLiteral apostrophe (')\r\n"
-		"\tamp:\tLiteral ampersand (&)\r\n"
-		"\tlt:\tLiteral less than (<)\r\n"
-		"\tgt:\tLiteral greater than (>)\r\n"
-		"\t#<n>:\tLiteral unicode character <n> in decimal.\r\n"
-		"\t#x<n>:\tLiteral unicode character <n> in hexadecimal.\r\n"
-		"\taudio:\tSearch for audio files.\r\n"
-		"\tzip:\tSearch for compressed files.\r\n"
-		"\tdoc:\tSearch for document files.\r\n"
-		"\texe:\tSearch for executable files.\r\n"
-		"\tpic:\tSearch for picture files.\r\n"
-		"\tvideo:\tSearch for video files.\r\n"
-		"\r\n"
-						
-		"Modifiers:\r\n"
-		"\tascii:\tEnable fast ASCII case comparisons.\r\n"
-		"\tcase:\tMatch case.\r\n"
-		"\tdiacritics:\tMatch diacritical marks.\r\n"
-		"\tfile:\tMatch files only.\r\n"
-		"\tfolder:\tMatch folders only.\r\n"
-		"\tnoascii:\tDisable fast ASCII case comparisons.\r\n"
-		"\tnocase:\tDo not match case.\r\n"
-		"\tnodiacritics:\tDo not match diacritical marks.\r\n"
-		"\tnofileonly:\tDo not allow files only.\r\n"
-		"\tnofolderonly:\tDo not allow folders only.\r\n"
-		"\tnopath:\tDo not match path.\r\n"
-		"\tnoregex:\tDisable regex.\r\n"
-		"\tnowfn:\tDo not match the whole filename.\r\n"
-		"\tnowholefilename:\tDo not match the whole filename.\r\n"
-		"\tnowholeword:\tDo not match whole words only.\r\n"
-		"\tnowildcards:\tDisable wildcards.\r\n"
-		"\tnoww:\tDo not match whole words only.\r\n"
-		"\tpath:\tMatch path and file name.\r\n"
-		"\tregex:\tEnable regex.\r\n"
-		"\tutf8:\tDisable fast ASCII case comparisons.\r\n"
-		"\twfn:\tMatch the whole filename.\r\n"
-		"\twholefilename:\tMatch the whole filename.\r\n"
-		"\twholeword:\tMatch whole words only.\r\n"
-		"\twildcards:\tEnable wildcards.\r\n"
-		"\tww:\tMatch whole words only.\r\n"
-		"\r\n"
-
-		"Functions:\r\n"
-		"\talbum:<text>\tSearch media for album meta data.\r\n"
-		"\tansicontent:<text>\tSearch ANSI file content for text.\r\n"
-		"\tartist:<text>\tSearch media for artist meta data.\r\n"
-		"\tattrib:<attributes>\tSearch for files and folders with the specified file attributes.\r\n"
-		"\tattribdupe:\tFind files and folders with the same attributes.\r\n"
-		"\tattributes:<attributes>\tSearch for files and folders with the specified file attributes.\r\n"
-		"\tbitdepth:<bitdepth>\tFind images with the specified bits per pixel.\r\n"
-		"\tchild:<filename>\tSearch for folders that contain a child with a matching filename.\r\n"
-		"\tchildcount:<count>\tSearch for folders that contain the specified number of subfolders and files.\r\n"
-		"\tchildfilecount:<count>\tSearch for folders that contain the specified number of files.\r\n"
-		"\tchildfoldercount:<n>\tSearch for folders that contain the specified number of subfolders.\r\n"
-		"\tcomment:<text>\tSearch media for comment meta data.\r\n"
-		"\tcontent:<text>\tSearch file content for text.\r\n"
-		"\tcount:<max>\tLimit the number of results to max.\r\n"
-		"\tdateaccessed:<date>\tSearch for files and folders with the specified date accessed.\r\n"
-		"\tdatecreated:<date>\tSearch for files and folders with the specified date created.\r\n"
-		"\tdatemodified:<date>\tSearch for files and folders with the specified date modified.\r\n"
-		"\tdaterun:<date>\tSearch for files and folders with the specified date run.\r\n"
-		"\tda:<date>\tSearch for files and folders with the specified date accessed.\r\n"
-		"\tdadupe:\tFind files and folders with the same date accessed.\r\n"
-		"\tdc:<date>\tSearch for files and folders with the specified date created.\r\n"
-		"\tdcdupe:\tFind files and folders with the same date created.\r\n"
-		"\tdimensions:<w>X<h>\tFind images with the specified width and height.\r\n"
-		"\tdm:<date>\tSearch for files and folders with the specified date modified.\r\n"
-		"\tdmdupe:\tFind files and folders with the same date modified.\r\n"
-		"\tdr:<date>\tSearch for files and folders with the specified date run.\r\n"
-		"\tdupe:\tSearch for duplicated filenames.\r\n"
-		"\tempty:\tSearch for empty folders.\r\n"
-		"\tendwith:<text>\tFilenames (including extension) ending with text.\r\n"
-		"\text:<ext1;ext2;...>\tSearch for files with a matching extension in the specified semi-colon delimited extension list.\r\n"
-		"\tfilelist:<fn1|fn2|...>\tSearch for a list of file names in the specified pipe (|) delimited file list.\r\n"
-		"\tfilelistfilename:<name>\tSearch for files and folders belonging to the file list filename.\r\n"
-		"\tfrn:<frn>\tSearch for files and folders with the specified File Reference Number.\r\n"
-		"\tfsi:<index>\tSearch for files and folders in the specified zero based internal file system index.\r\n"
-		"\tgenre:<text>\tSearch media for genre meta data.\r\n"
-		"\theight:<height>\tFind images with the specified height in pixels.\r\n"
-		"\tinfolder:<path>\tSearch for files and folders in the specified path, excluding subfolders.\r\n"
-		"\tlen:<length>\tSearch for files and folders that match the specified filename length.\r\n"
-		"\tnamepartdupe:\tSearch for files and folders with the same name part.\r\n"
-		"\torientation:<type>\tSearch for images with the specified orientation (landscape or portrait).\r\n"
-		"\tparent:<path>\tSearch for files and folders in the specified path, excluding subfolders.\r\n"
-		"\tparents:<count>\tSearch for files and folders with the specified number of parent folders.\r\n"
-		"\trc:<date>\tSearch for files and folders with the specified recently changed date.\r\n"
-		"\trecentchange:<date>\tSearch for files and folders with the specified recently changed date.\r\n"
-		"\troot:\tSearch for files and folders with no parent folders.\r\n"
-		"\truncount:<count>\tSearch for files and folders with the specified run count.\r\n"
-		"\tshell:<name>\tSearch for a known shell folder name, including subfolders and files.\r\n"
-		"\tsize:<size>\tSearch for files with the specified size in bytes.\r\n"
-		"\tsizedupe:\tSearch for duplicated sizes.\r\n"
-		"\tstartwith:<text>\tSearch for filenames starting with text.\r\n"
-		"\ttitle:<text>\tSearch media for title meta data.\r\n"
-		"\ttrack:<number>\tFind media files with the specified track number.\r\n"
-		"\ttype:<type>\tSearch for files and folders with the specified type.\r\n"
-		"\tutf16content:<text>\tSearch UTF-16 file content for text.\r\n"
-		"\tutf16becontent:<text>\tSearch UTF-16 Big Endian file content for text.\r\n"
-		"\tutf8content:<text>\tSearch UTF-8 file content for text.\r\n"
-		"\twidth:<width>\tFind images with the specified width in pixels.\r\n"
-		"\r\n"
-
-		"Function Syntax:\r\n"
-		"\tfunction:value\tEqual to value.\r\n"
-		"\tfunction:<=value\tLess than or equal to value.\r\n"
-		"\tfunction:<value\tLess than value.\r\n"
-		"\tfunction:=value\tEqual to value.\r\n"
-		"\tfunction:>value\tGreater than value.\r\n"
-		"\tfunction:>=value\tGreater than or equal to value.\r\n"
-		"\tfunction:start..end\tIs in the range of values from start to end.\r\n"
-		"\tfunction:start-end\tIs in the range of values from start to end.\r\n"
-		"\r\n"
-
-		"Size Syntax:\r\n"
-		"\tsize[kb|mb|gb]\r\n"
-		"\r\n"
-		
-		"Size Constants:\r\n"
-		"\tempty\r\n"
-		"\ttiny\t0 KB < size <= 10 KB\r\n"
-		"\tsmall\t10 KB < size <= 100 KB\r\n"
-		"\tmedium\t100 KB < size <= 1 MB\r\n"
-		"\tlarge\t1 MB < size <= 16 MB\r\n"
-		"\thuge\t16 MB < size <= 128 MB\r\n"
-		"\tgigantic\tsize > 128 MB\r\n"
-		"\tunknown\r\n"
-		"\r\n"
-		
-		"Date Syntax:\r\n"
-		"\tyear\r\n"
-		"\tmonth/year or year/month depending on locale settings\r\n"
-		"\tday/month/year, month/day/year or year/month/day depending on locale settings\r\n"
-		"\tYYYY[-MM[-DD[Thh[:mm[:ss[.sss]]]]]]\r\n"
-		"\tYYYYMM[DD[Thh[mm[ss[.sss]]]]]\r\n"
-		"\r\n"
-
-		"Date Constants:\r\n"
-		"\ttoday\r\n"
-		"\tyesterday\r\n"
-		"\ttomorrow\r\n"
-		"\t<last|past|prev|current|this|coming|next><year|month|week>\r\n"
-		"\t<last|past|prev|coming|next><x><years|months|weeks|days|hours|minutes|mins|seconds|secs>\r\n"
-		"\tjanuary|february|march|april|may|june|july|august|september|october|november|december\r\n"
-		"\tjan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec\r\n"
-		"\tsunday|monday|tuesday|wednesday|thursday|friday|saturday\r\n"
-		"\tsun|mon|tue|wed|thu|fri|sat\r\n"
-		"\tunknown\r\n"
-		"\r\n"
-
-		"Attribute Constants:\r\n"
-		"\tA\tArchive\r\n"
-		"\tC\tCompressed\r\n"
-		"\tD\tDirectory\r\n"
-		"\tE\tEncrypted\r\n"
-		"\tH\tHidden\r\n"
-		"\tI\tNot content indexed\r\n"
-		"\tL\tReparse point\r\n"
-		"\tN\tNormal\r\n"
-		"\tO\tOffline\r\n"
-		"\tP\tSparse file\r\n"
-		"\tR\tRead only\r\n"
-		"\tS\tSystem\r\n"
-		"\tT\tTemporary\r\n"
-		"\tV\tDevice"
-		,
-		
-HELP_COMMAND_LINE_OPTIONS_CAPTION = "Command Line Options - Everything"
+	"Wildcards:\r\n"
+	"\t*\tMatches zero or more characters.\r\n"
+	"\t?\tMatches one character.\r\n"
+	"\r\n"
 	
+	"Macros:\r\n"
+	"\tquot:\tLiteral double quote (\")\r\n"
+	"\tapos:\tLiteral apostrophe (')\r\n"
+	"\tamp:\tLiteral ampersand (&)\r\n"
+	"\tlt:\tLiteral less than (<)\r\n"
+	"\tgt:\tLiteral greater than (>)\r\n"
+	"\t#<n>:\tLiteral unicode character <n> in decimal.\r\n"
+	"\t#x<n>:\tLiteral unicode character <n> in hexadecimal.\r\n"
+	"\taudio:\tSearch for audio files.\r\n"
+	"\tzip:\tSearch for compressed files.\r\n"
+	"\tdoc:\tSearch for document files.\r\n"
+	"\texe:\tSearch for executable files.\r\n"
+	"\tpic:\tSearch for picture files.\r\n"
+	"\tvideo:\tSearch for video files.\r\n"
+	"\r\n"
+					
+	"Modifiers:\r\n"
+	"\tascii:\tEnable fast ASCII case comparisons.\r\n"
+	"\tcase:\tMatch case.\r\n"
+	"\tdiacritics:\tMatch diacritical marks.\r\n"
+	"\tfile:\tMatch files only.\r\n"
+	"\tfolder:\tMatch folders only.\r\n"
+	"\tnoascii:\tDisable fast ASCII case comparisons.\r\n"
+	"\tnocase:\tDo not match case.\r\n"
+	"\tnodiacritics:\tDo not match diacritical marks.\r\n"
+	"\tnofileonly:\tDo not allow files only.\r\n"
+	"\tnofolderonly:\tDo not allow folders only.\r\n"
+	"\tnopath:\tDo not match path.\r\n"
+	"\tnoregex:\tDisable regex.\r\n"
+	"\tnowfn:\tDo not match the whole filename.\r\n"
+	"\tnowholefilename:\tDo not match the whole filename.\r\n"
+	"\tnowholeword:\tDo not match whole words only.\r\n"
+	"\tnowildcards:\tDisable wildcards.\r\n"
+	"\tnoww:\tDo not match whole words only.\r\n"
+	"\tpath:\tMatch path and file name.\r\n"
+	"\tregex:\tEnable regex.\r\n"
+	"\tutf8:\tDisable fast ASCII case comparisons.\r\n"
+	"\twfn:\tMatch the whole filename.\r\n"
+	"\twholefilename:\tMatch the whole filename.\r\n"
+	"\twholeword:\tMatch whole words only.\r\n"
+	"\twildcards:\tEnable wildcards.\r\n"
+	"\tww:\tMatch whole words only.\r\n"
+	"\r\n"
+
+	"Functions:\r\n"
+	"\talbum:<text>\tSearch media for album meta data.\r\n"
+	"\tansicontent:<text>\tSearch ANSI file content for text.\r\n"
+	"\tartist:<text>\tSearch media for artist meta data.\r\n"
+	"\tattrib:<attributes>\tSearch for files and folders with the specified file attributes.\r\n"
+	"\tattribdupe:\tFind files and folders with the same attributes.\r\n"
+	"\tattributes:<attributes>\tSearch for files and folders with the specified file attributes.\r\n"
+	"\tbitdepth:<bitdepth>\tFind images with the specified bits per pixel.\r\n"
+	"\tchild:<filename>\tSearch for folders that contain a child with a matching filename.\r\n"
+	"\tchildcount:<count>\tSearch for folders that contain the specified number of subfolders and files.\r\n"
+	"\tchildfilecount:<count>\tSearch for folders that contain the specified number of files.\r\n"
+	"\tchildfoldercount:<n>\tSearch for folders that contain the specified number of subfolders.\r\n"
+	"\tcomment:<text>\tSearch media for comment meta data.\r\n"
+	"\tcontent:<text>\tSearch file content for text.\r\n"
+	"\tcount:<max>\tLimit the number of results to max.\r\n"
+	"\tdateaccessed:<date>\tSearch for files and folders with the specified date accessed.\r\n"
+	"\tdatecreated:<date>\tSearch for files and folders with the specified date created.\r\n"
+	"\tdatemodified:<date>\tSearch for files and folders with the specified date modified.\r\n"
+	"\tdaterun:<date>\tSearch for files and folders with the specified date run.\r\n"
+	"\tda:<date>\tSearch for files and folders with the specified date accessed.\r\n"
+	"\tdadupe:\tFind files and folders with the same date accessed.\r\n"
+	"\tdc:<date>\tSearch for files and folders with the specified date created.\r\n"
+	"\tdcdupe:\tFind files and folders with the same date created.\r\n"
+	"\tdimensions:<w>X<h>\tFind images with the specified width and height.\r\n"
+	"\tdm:<date>\tSearch for files and folders with the specified date modified.\r\n"
+	"\tdmdupe:\tFind files and folders with the same date modified.\r\n"
+	"\tdr:<date>\tSearch for files and folders with the specified date run.\r\n"
+	"\tdupe:\tSearch for duplicated filenames.\r\n"
+	"\tempty:\tSearch for empty folders.\r\n"
+	"\tendwith:<text>\tFilenames (including extension) ending with text.\r\n"
+	"\text:<ext1;ext2;...>\tSearch for files with a matching extension in the specified semicolon delimited extension list.\r\n"
+	"\tfilelist:<fn1|fn2|...>\tSearch for a list of file names in the specified pipe (|) delimited file list.\r\n"
+	"\tfilelistfilename:<name>\tSearch for files and folders belonging to the file list filename.\r\n"
+	"\tfrn:<frn>\tSearch for files and folders with the specified File Reference Number.\r\n"
+	"\tfsi:<index>\tSearch for files and folders in the specified zero based internal file system index.\r\n"
+	"\tgenre:<text>\tSearch media for genre meta data.\r\n"
+	"\theight:<height>\tFind images with the specified height in pixels.\r\n"
+	"\tinfolder:<path>\tSearch for files and folders in the specified path, excluding subfolders.\r\n"
+	"\tlen:<length>\tSearch for files and folders that match the specified filename length.\r\n"
+	"\tnamepartdupe:\tSearch for files and folders with the same name part.\r\n"
+	"\torientation:<type>\tSearch for images with the specified orientation (landscape or portrait).\r\n"
+	"\tparent:<path>\tSearch for files and folders in the specified path, excluding subfolders.\r\n"
+	"\tparents:<count>\tSearch for files and folders with the specified number of parent folders.\r\n"
+	"\trc:<date>\tSearch for files and folders with the specified recently changed date.\r\n"
+	"\trecentchange:<date>\tSearch for files and folders with the specified recently changed date.\r\n"
+	"\troot:\tSearch for files and folders with no parent folders.\r\n"
+	"\truncount:<count>\tSearch for files and folders with the specified run count.\r\n"
+	"\tshell:<name>\tSearch for a known shell folder name, including subfolders and files.\r\n"
+	"\tsize:<size>\tSearch for files with the specified size in bytes.\r\n"
+	"\tsizedupe:\tSearch for duplicated sizes.\r\n"
+	"\tstartwith:<text>\tSearch for filenames starting with text.\r\n"
+	"\ttitle:<text>\tSearch media for title meta data.\r\n"
+	"\ttrack:<number>\tFind media files with the specified track number.\r\n"
+	"\ttype:<type>\tSearch for files and folders with the specified type.\r\n"
+	"\tutf16content:<text>\tSearch UTF-16 file content for text.\r\n"
+	"\tutf16becontent:<text>\tSearch UTF-16 Big Endian file content for text.\r\n"
+	"\tutf8content:<text>\tSearch UTF-8 file content for text.\r\n"
+	"\twidth:<width>\tFind images with the specified width in pixels.\r\n"
+	"\r\n"
+
+	"Function Syntax:\r\n"
+	"\tfunction:value\tEqual to value.\r\n"
+	"\tfunction:<=value\tLess than or equal to value.\r\n"
+	"\tfunction:<value\tLess than value.\r\n"
+	"\tfunction:=value\tEqual to value.\r\n"
+	"\tfunction:>value\tGreater than value.\r\n"
+	"\tfunction:>=value\tGreater than or equal to value.\r\n"
+	"\tfunction:start..end\tIs in the range of values from start to end.\r\n"
+	"\tfunction:start-end\tIs in the range of values from start to end.\r\n"
+	"\r\n"
+
+	"Size Syntax:\r\n"
+	"\tsize[kb|mb|gb]\r\n"
+	"\r\n"
+	
+	"Size Constants:\r\n"
+	"\tempty\r\n"
+	"\ttiny\t0 KB < size <= 10 KB\r\n"
+	"\tsmall\t10 KB < size <= 100 KB\r\n"
+	"\tmedium\t100 KB < size <= 1 MB\r\n"
+	"\tlarge\t1 MB < size <= 16 MB\r\n"
+	"\thuge\t16 MB < size <= 128 MB\r\n"
+	"\tgigantic\tsize > 128 MB\r\n"
+	"\tunknown\r\n"
+	"\r\n"
+	
+	"Date Syntax:\r\n"
+	"\tyear\r\n"
+	"\tmonth/year or year/month depending on locale settings\r\n"
+	"\tday/month/year, month/day/year or year/month/day depending on locale settings\r\n"
+	"\tYYYY[-MM[-DD[Thh[:mm[:ss[.sss]]]]]]\r\n"
+	"\tYYYYMM[DD[Thh[mm[ss[.sss]]]]]\r\n"
+	"\r\n"
+
+	"Date Constants:\r\n"
+	"\ttoday\r\n"
+	"\tyesterday\r\n"
+	"\ttomorrow\r\n"
+	"\t<last|past|prev|current|this|coming|next><year|month|week>\r\n"
+	"\t<last|past|prev|coming|next><x><years|months|weeks|days|hours|minutes|mins|seconds|secs>\r\n"
+	"\tjanuary|february|march|april|may|june|july|august|september|october|november|december\r\n"
+	"\tjan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec\r\n"
+	"\tsunday|monday|tuesday|wednesday|thursday|friday|saturday\r\n"
+	"\tsun|mon|tue|wed|thu|fri|sat\r\n"
+	"\tunknown\r\n"
+	"\r\n"
+
+	"Attribute Constants:\r\n"
+	"\tA\tArchive\r\n"
+	"\tC\tCompressed\r\n"
+	"\tD\tDirectory\r\n"
+	"\tE\tEncrypted\r\n"
+	"\tH\tHidden\r\n"
+	"\tI\tNot content indexed\r\n"
+	"\tL\tReparse point\r\n"
+	"\tN\tNormal\r\n"
+	"\tO\tOffline\r\n"
+	"\tP\tSparse file\r\n"
+	"\tR\tRead only\r\n"
+	"\tS\tSystem\r\n"
+	"\tT\tTemporary\r\n"
+	"\tV\tDevice"
+
+HELP_COMMAND_LINE_OPTIONS_CAPTION = "Command Line Options - Everything"
+
 HELP_COMMAND_LINE_OPTIONS_TEXT = "\r\n"
-		"Everything.exe [filename] [-options]\r\n"
-		"\r\n"
-		"filename\tOpen the specified file list.\r\n"
-		"\r\n"
-		"-?\tShow this help.\r\n"
-		"-admin\tRun \"Everything\" as Administrator.\r\n"
-		"-admin-server-share-links\tUse \\\\Server\\C$ links for ETP connections.\r\n"
-		"-app-data\tStore data in application data.\r\n"
-		"-bookmark <name>\tOpen a bookmark.\r\n"
-		"-case\tEnable case matching.\r\n"
-		"-choose-language\tShow the language selection page.\r\n"
-		"-choose-volumes\tDo not automatically index volumes.\r\n"
-		"-close\tClose the current search window.\r\n"
-		"-config <filename>\tThe filename of the ini file.\r\n"
-		"-connect <user:pass@host:port>\tConnect to an ETP server.\r\n"
-		"-console\tShow the debugging console.\r\n"
-		"-copyto <filename1> <...>\tShow the multi-file renamer with the specified filenames.\r\n"
-		"-create-file-list <filename> <path>\tCreate a file list of a path.\r\n"
-		"-create-file-list-exclude-files <list>\texclude the semi-colon delimited wildcard filter for files.\r\n"
-		"-create-file-list-exclude-folders <list>\texclude the semi-colon delimited wildcard filter for folders.\r\n"
-		"-create-file-list-include-only-files <list>\tinclude only the semi-colon delimited wildcard filter for files.\r\n"
-		"-create-usn-journal <volume> <max-size-bytes> <allocation-delta-bytes>\r\n"
-		"-db <filename>\tThe filename of the database.\r\n"
-		"-debug\tShow the debugging console.\r\n"
-		"-debug-log\tLog debugging information to disk\r\n"
-		"-delete-usn-journal <volume>\tDelete a USN Journal.\r\n"
-		"-details\tShow results in detail view.\r\n"
-		"-diacritics\tEnable diacritics matching.\r\n"
-		"-disable-run-as-admin\tDisable run as administrator.\r\n"
-		"-disable-update-notification\tDisable update notification on startup.\r\n"
-		"-drive-links\tUse C: links for ETP connections.\r\n"
-		"-edit <filename>\tOpen a file list with the file list editor.\r\n"
-		"-enable-run-as-admin\tEnable run as administrator.\r\n"
-		"-enable-update-notification\tEnable update notification on startup.\r\n"
-		"-exit\tExit \"Everything\".\r\n"
-		"-first-instance\tOnly run if this is the first instance of \"Everything\".\r\n"
-		"-filelist <filename>\tOpen a file list.\r\n"
-		"-filename <filename>\tSearch for a file or folder by filename.\r\n"
-		"-filter <name>\tSelect a search filter.\r\n"
-		"-focus-bottom-result\tFocus the bottom result.\r\n"
-		"-focus-last-run-result\tFocus the last run result.\r\n"
-		"-focus-most-run-result\tFocus the most run result.\r\n"
-		"-focus-results\tFocus the result list.\r\n"
-		"-focus-top-result\tFocus the top result.\r\n"
-		"-ftp-links\tUse ftp://host/C: links for ETP connections.\r\n"
-		"-fullscreen\tShow the search window fullscreen.\r\n"
-		"-h\tShow this help.\r\n"
-		"-help\tShow this help.\r\n"
-		"-home\tOpen the home search.\r\n"
-		"-install <location>\tInstall \"Everything\" to a new location.\r\n"
-		"-install-client-service\tInstall the \"Everything\" client as a service.\r\n"
-		"-install-config <filename>\tInstall the specified ini file.\r\n"
-		"-install-desktop-shortcut\tInstall desktop shortcut.\r\n"
-		"-install-efu-association\tInstall EFU file association.\r\n"
-		"-install-folder-context-menu\tInstall folder context menus.\r\n"
-		"-install-quick-launch-shortcut\tInstall Quick Launch shortcut.\r\n"
-		"-install-run-on-system-startup\tInstall \"Everything\" from the system startup.\r\n"
-		"-install-service\tInstall and start the \"Everything\" service.\r\n"
-		"-install-service-pipe-name <name>\tUse the specified name for the \"Everything\" service pipe name.\r\n"
-		"-install-service-security-descriptor\tSpecify the pipe security descriptor.\r\n"
-		"-install-start-menu-shortcuts\tInstall \"Everything\" shortcuts from the Start menu.\r\n"
-		"-install-url-protocol\tInstall URL Protocol.\r\n"
-		"-instance <name>\tThe name of the \"Everything\" instance.\r\n"
-		"-l\tLoad the local database.\r\n"
-		"-language <langID>\tSet the language to the specified language ID.\r\n"
-		"-load-delay <milliseconds>\tThe delay in milliseconds before loading the database.\r\n"
-		"-local\tLoad the local database.\r\n"
-		"-matchpath\tEnable full path matching.\r\n"
-		"-maximized\tMaximize the search window.\r\n"
-		"-minimized\tMinimize the search window.\r\n"
-		"-moveto <filename1> <...>\tShow the multi-file renamer with the specified filenames.\r\n"
-		"-name-part <filename>\tSearch for the name part of a filename.\r\n"
-		"-newwindow\tCreate a new search window.\r\n"
-		"-noapp-data\tStore data in executable location.\r\n"
-		"-nocase\tDisable case matching.\r\n"
-		"-nodb\tDo not save to or load from the \"Everything\" database file.\r\n"
-		"-nodiacritics\tDisable diacritics matching.\r\n"
-		"-nofullscreen\tShow the search window in a window.\r\n"
-		"-nomatchpath\tDisable full path matching.\r\n"
-		"-nomaximized\tUnmaximize the search window.\r\n"
-		"-nominimized\tUnminimize the search window.\r\n"
-		"-nonewwindow\tShow an existing search window.\r\n"
-		"-noontop\tDisable always ontop.\r\n"
-		"-noregex\tDisable Regex.\r\n"
-		"-noverbose\tDisplay only basic debug messages.\r\n"
-		"-nowholeword\tDisable match whole word.\r\n"
-		"-noww\tDisable match whole word.\r\n"
-		"-ontop\tEnable always ontop.\r\n"
-		"-p <path>\tSearch for a path.\r\n"
-		"-parent <path>\tSearch for files and folders in the specified folder.\r\n"
-		"-parentpath <path>\tSearch for the parent of a path.\r\n"
-		"-path <path>\tSearch for a path.\r\n"
-		"-quit\tExit \"Everything\".\r\n"
-		"-read-only\tLoads the database in read-only mode.\r\n"
-		"-regex\tEnable Regex.\r\n"
-		"-reindex\tForce database rebuild.\r\n"
-		"-rename <filename1> <...>\tShow the multi-file renamer with the specified filenames.\r\n"
-		"-s <text>\tSet the search.\r\n"
-		"-search <text>\tSet the search.\r\n"
-		"-search-file-list <filename>\tSearch the specified text file for a list of file names.\r\n"
-		"-select <filename>\tFocus and select the specified result.\r\n"
-		"-server-share-links\tUse \\\\Server\\C: links for ETP connections.\r\n"
-		"-service-pipe-name <name>\tconnect to the service pipe with the specified name.\r\n"
-		"-sort <name>\tSet the sort to the specified name.\r\n"
-		"-sort-ascending\tSort ascending.\r\n"
-		"-sort-descending\tSort descending.\r\n"
-		"-start-client-service\tStart the \"Everything\" client service.\r\n"
-		"-start-service\tStart the \"Everything\" service.\r\n"
-		"-startup\tRun \"Everything\" in the background.\r\n"
-		"-stop-client-service\tStop the \"Everything\" client service.\r\n"
-		"-stop-service\tStop the \"Everything\" service.\r\n"
-		"-svc\tRun \"Everything\" as a service.\r\n"
-		"-svc-pipe-name <name>\tHost the pipe server with the specified name.\r\n"
-		"-svc-security-descriptor <sd>\tHost the pipe server with the security descriptor.\r\n"
-		"-thumbnail-size <size>\tSpecify the size of thumbnails in pixels.\r\n"
-		"-thumbnails\tShow results in thumbnail view.\r\n"
-		"-toggle-window\tHides the current foreground search window or shows the search window.\r\n"
-		"-uninstall [path]\tUninstall \"Everything\" from the specified path.\r\n"
-		"-uninstall-client-service\tUninstall the \"Everything\" client service.\r\n"
-		"-uninstall-desktop-shortcut\tUninstall desktop shortcut.\r\n"
-		"-uninstall-efu-association\tUninstall EFU file association.\r\n"
-		"-uninstall-folder-context-menu\tUninstall folder context menus.\r\n"
-		"-uninstall-quick-launch-shortcut\tUninstall Quick Launch shortcut.\r\n"
-		"-uninstall-run-on-system-startup\tRemove \"Everything\" from the system startup.\r\n"
-		"-uninstall-service\tUninstall the \"Everything\" service.\r\n"
-		"-uninstall-start-menu-shortcuts\tUninstall \"Everything\" shortcuts from the Start menu.\r\n"
-		"-uninstall-url-protocol\tUninstall URL Protocol.\r\n"
-		"-uninstall-user\tUninstall user files.\r\n"
-		"-update\tSave the database to disk.\r\n"
-		"-url <[es:]search>\tSet the search from an ES: URL.\r\n"
-		"-verbose\tDisplay all debug messages.\r\n"
-		"-wholeword\tEnable match whole word.\r\n"
-		"-ww\tEnable match whole word."
-			
+	"Everything.exe [filename] [-options]\r\n"
+	"\r\n"
+	"filename\tOpen the specified file list.\r\n"
+	"\r\n"
+	"-?\tShow this help.\r\n"
+	"-admin\tRun \"Everything\" as Administrator.\r\n"
+	"-admin-server-share-links\tUse \\\\Server\\C$ links for ETP connections.\r\n"
+	"-app-data\tStore data in application data.\r\n"
+	"-bookmark <name>\tOpen a bookmark.\r\n"
+	"-case\tEnable case matching.\r\n"
+	"-choose-language\tShow the language selection page.\r\n"
+	"-choose-volumes\tDo not automatically index volumes.\r\n"
+	"-close\tClose the current search window.\r\n"
+	"-config <filename>\tThe filename of the ini file.\r\n"
+	"-connect <user:pass@host:port>\tConnect to an ETP server.\r\n"
+	"-console\tShow the debugging console.\r\n"
+	"-copyto <filename1> <...>\tShow the multi-file renamer with the specified filenames.\r\n"
+	"-create-file-list <filename> <path>\tCreate a file list of a path.\r\n"
+	"-create-file-list-exclude-files <list>\texclude the semicolon delimited wildcard filter for files.\r\n"
+	"-create-file-list-exclude-folders <list>\texclude the semicolon delimited wildcard filter for folders.\r\n"
+	"-create-file-list-include-only-files <list>\tinclude only the semicolon delimited wildcard filter for files.\r\n"
+	"-create-usn-journal <volume> <max-size-bytes> <allocation-delta-bytes>\r\n"
+	"-db <filename>\tThe filename of the database.\r\n"
+	"-debug\tShow the debugging console.\r\n"
+	"-debug-log\tLog debugging information to disk\r\n"
+	"-delete-usn-journal <volume>\tDelete a USN Journal.\r\n"
+	"-details\tShow results in detail view.\r\n"
+	"-diacritics\tEnable diacritics matching.\r\n"
+	"-disable-run-as-admin\tDisable run as administrator.\r\n"
+	"-disable-update-notification\tDisable update notification on startup.\r\n"
+	"-drive-links\tUse C: links for ETP connections.\r\n"
+	"-edit <filename>\tOpen a file list with the file list editor.\r\n"
+	"-enable-run-as-admin\tEnable run as administrator.\r\n"
+	"-enable-update-notification\tEnable update notification on startup.\r\n"
+	"-exit\tExit \"Everything\".\r\n"
+	"-first-instance\tOnly run if this is the first instance of \"Everything\".\r\n"
+	"-filelist <filename>\tOpen a file list.\r\n"
+	"-filename <filename>\tSearch for a file or folder by filename.\r\n"
+	"-filter <name>\tSelect a search filter.\r\n"
+	"-focus-bottom-result\tFocus the bottom result.\r\n"
+	"-focus-last-run-result\tFocus the last run result.\r\n"
+	"-focus-most-run-result\tFocus the most run result.\r\n"
+	"-focus-results\tFocus the result list.\r\n"
+	"-focus-top-result\tFocus the top result.\r\n"
+	"-ftp-links\tUse ftp://host/C: links for ETP connections.\r\n"
+	"-fullscreen\tShow the search window fullscreen.\r\n"
+	"-h\tShow this help.\r\n"
+	"-help\tShow this help.\r\n"
+	"-home\tOpen the home search.\r\n"
+	"-install <location>\tInstall \"Everything\" to a new location.\r\n"
+	"-install-client-service\tInstall the \"Everything\" client as a service.\r\n"
+	"-install-config <filename>\tInstall the specified ini file.\r\n"
+	"-install-desktop-shortcut\tInstall desktop shortcut.\r\n"
+	"-install-efu-association\tInstall EFU file association.\r\n"
+	"-install-folder-context-menu\tInstall folder context menus.\r\n"
+	"-install-quick-launch-shortcut\tInstall Quick Launch shortcut.\r\n"
+	"-install-run-on-system-startup\tInstall \"Everything\" from the system startup.\r\n"
+	"-install-service\tInstall and start the \"Everything\" service.\r\n"
+	"-install-service-pipe-name <name>\tUse the specified name for the \"Everything\" service pipe name.\r\n"
+	"-install-service-security-descriptor\tSpecify the pipe security descriptor.\r\n"
+	"-install-start-menu-shortcuts\tInstall \"Everything\" shortcuts from the Start menu.\r\n"
+	"-install-url-protocol\tInstall URL Protocol.\r\n"
+	"-instance <name>\tThe name of the \"Everything\" instance.\r\n"
+	"-l\tLoad the local database.\r\n"
+	"-language <langID>\tSet the language to the specified language ID.\r\n"
+	"-load-delay <milliseconds>\tThe delay in milliseconds before loading the database.\r\n"
+	"-local\tLoad the local database.\r\n"
+	"-matchpath\tEnable full path matching.\r\n"
+	"-maximized\tMaximize the search window.\r\n"
+	"-minimized\tMinimize the search window.\r\n"
+	"-moveto <filename1> <...>\tShow the multi-file renamer with the specified filenames.\r\n"
+	"-name-part <filename>\tSearch for the name part of a filename.\r\n"
+	"-newwindow\tCreate a new search window.\r\n"
+	"-noapp-data\tStore data in executable location.\r\n"
+	"-nocase\tDisable case matching.\r\n"
+	"-nodb\tDo not save to or load from the \"Everything\" database file.\r\n"
+	"-nodiacritics\tDisable diacritics matching.\r\n"
+	"-nofullscreen\tShow the search window in a window.\r\n"
+	"-nomatchpath\tDisable full path matching.\r\n"
+	"-nomaximized\tUnmaximize the search window.\r\n"
+	"-nominimized\tUnminimize the search window.\r\n"
+	"-nonewwindow\tShow an existing search window.\r\n"
+	"-noontop\tDisable always ontop.\r\n"
+	"-noregex\tDisable Regex.\r\n"
+	"-noverbose\tDisplay only basic debug messages.\r\n"
+	"-nowholeword\tDisable match whole word.\r\n"
+	"-noww\tDisable match whole word.\r\n"
+	"-ontop\tEnable always ontop.\r\n"
+	"-p <path>\tSearch for a path.\r\n"
+	"-parent <path>\tSearch for files and folders in the specified folder.\r\n"
+	"-parentpath <path>\tSearch for the parent of a path.\r\n"
+	"-path <path>\tSearch for a path.\r\n"
+	"-quit\tExit \"Everything\".\r\n"
+	"-read-only\tLoads the database in read-only mode.\r\n"
+	"-regex\tEnable Regex.\r\n"
+	"-reindex\tForce database rebuild.\r\n"
+	"-rename <filename1> <...>\tShow the multi-file renamer with the specified filenames.\r\n"
+	"-s <text>\tSet the search.\r\n"
+	"-search <text>\tSet the search.\r\n"
+	"-search-file-list <filename>\tSearch the specified text file for a list of file names.\r\n"
+	"-select <filename>\tFocus and select the specified result.\r\n"
+	"-server-share-links\tUse \\\\Server\\C: links for ETP connections.\r\n"
+	"-service-pipe-name <name>\tconnect to the service pipe with the specified name.\r\n"
+	"-sort <name>\tSet the sort to the specified name.\r\n"
+	"-sort-ascending\tSort ascending.\r\n"
+	"-sort-descending\tSort descending.\r\n"
+	"-start-client-service\tStart the \"Everything\" client service.\r\n"
+	"-start-service\tStart the \"Everything\" service.\r\n"
+	"-startup\tRun \"Everything\" in the background.\r\n"
+	"-stop-client-service\tStop the \"Everything\" client service.\r\n"
+	"-stop-service\tStop the \"Everything\" service.\r\n"
+	"-svc\tRun \"Everything\" as a service.\r\n"
+	"-svc-pipe-name <name>\tHost the pipe server with the specified name.\r\n"
+	"-svc-security-descriptor <sd>\tHost the pipe server with the security descriptor.\r\n"
+	"-thumbnail-size <size>\tSpecify the size of thumbnails in pixels.\r\n"
+	"-thumbnails\tShow results in thumbnail view.\r\n"
+	"-toggle-window\tHides the current foreground search window or shows the search window.\r\n"
+	"-uninstall [path]\tUninstall \"Everything\" from the specified path.\r\n"
+	"-uninstall-client-service\tUninstall the \"Everything\" client service.\r\n"
+	"-uninstall-desktop-shortcut\tUninstall desktop shortcut.\r\n"
+	"-uninstall-efu-association\tUninstall EFU file association.\r\n"
+	"-uninstall-folder-context-menu\tUninstall folder context menus.\r\n"
+	"-uninstall-quick-launch-shortcut\tUninstall Quick Launch shortcut.\r\n"
+	"-uninstall-run-on-system-startup\tRemove \"Everything\" from the system startup.\r\n"
+	"-uninstall-service\tUninstall the \"Everything\" service.\r\n"
+	"-uninstall-start-menu-shortcuts\tUninstall \"Everything\" shortcuts from the Start menu.\r\n"
+	"-uninstall-url-protocol\tUninstall URL Protocol.\r\n"
+	"-uninstall-user\tUninstall user files.\r\n"
+	"-update\tSave the database to disk.\r\n"
+	"-url <[es:]search>\tSet the search from an ES: URL.\r\n"
+	"-verbose\tDisplay all debug messages.\r\n"
+	"-wholeword\tEnable match whole word.\r\n"
+	"-ww\tEnable match whole word."
+
 TOGGLE_WINDOW_HOTKEY = "&Toggle window Hotkey:"
 TOGGLE_WINDOW_HOTKEY_HELP = "Press a new keyboard shortcut to toggle the search window.\nIf a search window does not exist a new window is created.\nPress Backspace to clear."
 
@@ -1650,18 +1649,18 @@ SEARCH_AS_YOU_TYPE_HELP = "When enabled the search results are updated each time
 
 INDEXES_ALL_USERS = "&Multi-user database filename"
 INDEXES_ALL_USERS_HELP = "Use the database filename: \"Everything.Computer.User.db\"."
-	
+
 SEARCH_SHOW_SEARCH_HISTORY = "Show Search History"
 SEARCH_SHOW_ALL_SEARCH_HISTORY = "Show All Search History"
-	
+
 NAV_GOTO = "&Go To"
 NAV_GOTO_HELP = "Contains commands for browsing search history."
-	
+
 NAV_BACK = "&Back"
 NAV_BACK_HELP = "Go to the previous search."
 NAV_FORWARD = "&Forward"
 NAV_FORWARD_HELP = "Go to the next search."
-	
+
 SIZE_RESULT_LIST_TO_FIT = "Size Result List to Fit"
 SIZE_COLUMN_TO_FIT = "&Size Column to Fit"
 
@@ -1680,15 +1679,15 @@ SEARCH_HISTORY_CLEAR_NOW_ARE_YOU_SURE = "Are you sure you wish to delete all sea
 
 HISTORY_RESTORE_DEFAULTS = "&Restore Defaults"
 HISTORY_RESTORE_DEFAULTS_HELP = "Restore all settings on this page to their default state."
-	
+
 SEARCH_HISTORY_ALWAYS_SUGGEST = "&Always show search suggestions"
 SEARCH_HISTORY_ALWAYS_SUGGEST_HELP = "Display a list of suggested searches when typing in a search.\nSearch suggestions are always shown if search as you type is disabled.\nYou can also show search suggestions with Auto Complete Search (Ctrl+Space)."
 
 DB_COMPRESS = "&Compress database"
 DB_COMPRESS_HELP = "Compress the database when saving to disk.\nEnable compression to improve loading and saving performance on slow hard drives."
-	
+
 CANCEL_CURRENT_QUERY = "Cancel current query?"
-	
+
 CONTEXT_MENU = "Context Menu"
 
 SERVICE_UNABLE_TO_OPEN_SERVICE = "Unable to open the Everything service: %d"
@@ -1697,7 +1696,7 @@ SERVICE_UNABLE_TO_OPEN_SCM = "Unable to open the Service Control Manager: %d"
 SERVICE_UNABLE_TO_START_SERVICE = "Unable to start the Everything service: %d"
 SERVICE_UNABLE_TO_STOP_SERVICE = "Unable to stop the Everything service: %d"
 SERVICE_UNABLE_TO_DELETE_SERVICE = "Unable to delete the Everything service: %d"
-	
+
 ALLOW_FORWARD_SLASH_PATH_SEPARATOR = "Replace &forward slashes with backslashes"
 ALLOW_FORWARD_SLASH_PATH_SEPARATOR_HELP = "Forward slashes (/) are replaced with backslashes (\\)."
 
@@ -1713,7 +1712,7 @@ CONTEXT_MENU_OPEN_FILES = "Open (Files)"
 CONTEXT_MENU_LIST = "Context menu &items:"
 CONTEXT_MENU_RESTORE_DEFAULTS = "&Restore Defaults"
 CONTEXT_MENU_RESTORE_DEFAULTS_HELP = "Restore all settings on this page to their default state."
-	
+
 CONTEXT_MENU_SHOW = "&Show this item"
 CONTEXT_MENU_SHOW_HELP = "Show this item in the context menu."
 CONTEXT_MENU_SHOW_SHIFT = "Show this item when the Shift &key is down"
@@ -1731,7 +1730,7 @@ RESULTS_RESTORE_DEFAULTS_HELP = "Restore all settings on this page to their defa
 APP_DATA = "Store settings and data in %APPDATA%\\Everything"
 APP_DATA_HELP = "Store settings and data in %APPDATA%\\Everything.\nDisable to store settings and data in the same location as Everything.exe"
 
-	// HTTP
+// HTTP
 HTTP_SERVER_INDEX_OF = "Index of "
 HTTP_SERVER_UP_ONE_DIRECTORY = "Up one directory..."
 HTTP_SERVER_ONE_RESULT_FORMAT = "%s result"
@@ -1740,7 +1739,7 @@ HTTP_SERVER_X_TO_Y_OF_Z_RESULTS_FORMAT = "%s to %s of %s results"
 HTTP_SERVER_PREVIOUS = "< Previous"
 HTTP_SERVER_NEXT = "Next >"
 HTTP_SERVER_BINDINGS = "Bind to &interfaces:"
-HTTP_SERVER_BINDINGS_HELP = "Listen for new connections on the specified semi-colon delimited list of interfaces.\nEmpty = Listen on all interfaces."
+HTTP_SERVER_BINDINGS_HELP = "Listen for new connections on the specified semicolon delimited list of interfaces.\nEmpty = Listen on all interfaces."
 HTTP_SERVER_TITLE_FORMAT = "$s?{$s - }$t"
 HTTP_SERVER_LOG_FILE_BROWSE = "Selec&t..."
 HTTP_SERVER_SERVE_PAGES_FROM = "&Serve pages from:"
@@ -1757,9 +1756,9 @@ HTTP_SERVER_RESTORE_DEFAULTS_HELP = "Restore all settings on this page to their 
 HTTP_SERVER_SELECT_HOME_CAPTION = "Select the HTTP server root folder"
 HTTP_SERVER_SELECT_DEFAULT_PAGE_CAPTION = "Select the Default Page"
 
-	// ETP
+// ETP
 ETP_SERVER_BINDINGS = "Bind to &interfaces:"
-ETP_SERVER_BINDINGS_HELP = "Listen for new connections on the specified semi-colon delimited list of interfaces.\nEmpty = Listen on all interfaces."
+ETP_SERVER_BINDINGS_HELP = "Listen for new connections on the specified semicolon delimited list of interfaces.\nEmpty = Listen on all interfaces."
 ETP_SERVER_MAX_LOG_SIZE = "Maximum si&ze:"
 ETP_SERVER_LOG_FILE_BROWSE = "Selec&t..."
 ETP_SERVER_RESTORE_DEFAULTS = "&Restore Defaults"
@@ -1769,7 +1768,7 @@ HTTP_SERVER_ERROR_FORMAT = "Unable to start HTTP server: %s"
 ETP_CLIENT_ERROR_FORMAT = "Unable to connect to ETP server: %s"
 ETP_CLIENT_DISCONNECTED_FORMAT = "Disconnected from ETP server: %s"
 
-	// ui connect
+// ui connect
 HOST_HELP = "IP or host name of the ETP server"
 PORT_HELP = "ETP server port number"
 USERNAME_HELP = "The ETP username.\nEmpty = anonymous"
@@ -1793,15 +1792,15 @@ RECV_FAILED_FORMAT = "recv failed %d"
 SEND_FAILED_FORMAT = "send failed %d"
 NO_MORE_ADDRINFO = "A connection could not be established."
 INVALID_USERNAME_OR_PASSWORD = "Invalid username or password."
-	
+
 FILE_LIST_FILENAME = "File List Filename"
 TOGGLE_FILE_LIST_FILENAME_COLUMN_MENU = "Toggle File List Filename Column"
-	
+
 RESULT_LIST_COPY_CSV_TO_CLIPBOARD = "Copy as &CSV"
-	
+
 CANCEL_CURRENT_SORT = "Cancel current sort?"
 CANCEL_CURRENT_READ_EXTENDED_INFO = "Cancel current read extended information?"
-	
+
 VIEW_ONTOP_MENU = "On &Top"
 VIEW_ONTOP_MENU_HELP = "Contains commands for keeping this window on top of other windows."
 VIEW_ONTOP_NEVER_MENU = "&Never"
@@ -1814,7 +1813,7 @@ VIEW_ONTOP_WHILE_SEARCHING_MENU_HELP = "Keep this window on top of other windows
 OPEN_FILELIST_ERROR_FORMAT = "Unable to open file list: %s"
 FILE_LIST_NOT_FOUND = "%s not found."
 INVALID_FILE_LIST = "%s is not a valid file list."
-	
+
 BOOKMARK_REMEMBER_INDEX = "Remem&ber index:"
 BOOKMARK_REMEMBER_INDEX_HELP = "Remember the index for this bookmark. Enable to specify the index for this bookmark. Disable to leave the index unchanged."
 BOOKMARK_INDEX_LOCAL_DATABASE = "&Local database"
@@ -1835,28 +1834,28 @@ ENABLE_ETP_SERVER = "&Enable ETP/FTP server"
 ENABLE_ETP_SERVER_HELP = "Allow remote users to search and access yours folders and files with an ETP/FTP client."
 ENABLE_HTTP_SERVER = "&Enable HTTP server"
 ENABLE_HTTP_SERVER_HELP = "Allow remote users to search and access yours folders and files with a web browser."
-	
-	// 647
-	
+
+// 647
+
 SHORTCUT_KEY_CURRENTLY_USED_BY = "Shortcut key &currently used by:"
 SHORTCUT_KEY_CURRENTLY_USED_BY_HELP = "A list of commands already assigned to the shortcut key.\nAdding a new shortcut key will remove any existing shortcut keys with the same scope and key."
 RUN_AS_ADMINISTRATOR_FAILED = "Failed to run as administrator"
-	
-	// 649
-	
+
+// 649
+
 SERVICE_UNABLE_TO_UPDATE_SERVICE = "Unable to update the Everything service: %d"
 RUN_COUNT = "Run Count"
 DATE_RECENTLY_CHANGED = "Date Recently Changed"
 TOGGLE_RUN_COUNT_COLUMN_MENU = "Toggle Run Count Column"
 TOGGLE_DATE_RECENTLY_CHANGED_COLUMN_MENU = "Toggle Date Recently Changed Column"
-	
+
 QUERYING = "Querying..."
-	
+
 LOAD_USN_JOURNAL_RECENT_CHANGES = "Load recent &changes from USN journal"
 LOAD_USN_JOURNAL_RECENT_CHANGES_HELP = "Load all files and folders from the USN change journal into the recent change database.\nEnabling may decrease \"Everything\" startup performance.\nIndex recent changes must be enabled."
-	
+
 FORMAT_SIZE_BYTES = "bytes"
-	
+
 RUN_HISTORY_GROUPBOX = "Run History"
 RUN_HISTORY_ENABLE = "Enable run &history"
 RUN_HISTORY_ENABLE_HELP = "Enable or disable run history.\nRun history remembers how many times a result was opened.\nPressing enter from the search edit will focus the result with the highest run count."
@@ -1867,16 +1866,16 @@ RUN_HISTORY_CLEAR_NOW = "Clear &Now"
 RUN_HISTORY_CLEAR_NOW_HELP = "Delete all run history on disk and in memory."
 RUN_HISTORY_CLEAR_NOW_ARE_YOU_SURE = "Are you sure you wish to delete all run history?\n\nThis action can not be undone."
 
-	// ui run history.
+// ui run history.
 
 RUN_HISTORY_SET_COUNT_CAPTION = "Set Run Count"
 RUN_HISTORY_COUNT_STATIC = "Run count:"
 RUN_HISTORY_COUNT_EDIT_HELP = "Set the number of times this item has been run.\nSet to 0 to remove the run count."
 MENU_SET_RUN_COUNT = "Set Run Count..."
 MENU_SET_RUN_COUNT_HELP = "Set the run count for the selected items."
-	
+
 TOGGLE_DATE_ACCESSED_COLUMN_MENU = "Toggle Date Accessed Column"
-	
+
 HOME = "Home"
 HOME_USE_LAST_VALUE = "Use last value"
 HOME_ENABLED = "Enabled"
@@ -1891,7 +1890,7 @@ HOME_MATCH_DIACRITICS = "Match &diacritics:"
 HOME_MATCH_DIACRITICS_HELP = "Match diacritics when opening a new search window."
 HOME_REGEX = "Match &regex:"
 HOME_REGEX_HELP = "Match regex when opening a new search window."
-	
+
 HOME_SEARCH = "&Search:"
 HOME_SEARCH_EDIT_HELP = "Set a custom search."
 HOME_SEARCH_HELP = "Use this search when opening a new search window."
@@ -1909,7 +1908,7 @@ HOME_ETP_SERVER = "&ETP server:"
 HOME_ETP_SERVER_HELP = "Connect to an ETP server when opening a new search window.\nusername:password@host:port"
 HOME_LINK_TYPE = "Lin&k type:"
 HOME_LINK_TYPE_HELP = "Specify the link type."
-	
+
 HOME_CUSTOM = "Custom"
 HOME_INDEX_LOCAL_DATABASE = "Local database"
 HOME_INDEX_FILE_LIST = "File list"
@@ -1920,31 +1919,31 @@ HOME_RESTORE_DEFAULTS_HELP = "Restore all settings on this page to their default
 
 NAV_HOME = "&Home"
 NAV_HOME_HELP = "Open the home search."
-	
-	// 653
+
+// 653
 
 MATCH_WHOLE_FILENAME_WHEN_USING_WILDCARDS = "Match &whole filename when using wildcards"
 MATCH_WHOLE_FILENAME_WHEN_USING_WILDCARDS_HELP = "If disabled, wildcard matches can occur anywhere in the filename. Use wholefilename: or nowholefilename: to override."
-	
+
 DATE_RUN = "Date Run"
 TOGGLE_DATE_RUN_COLUMN_MENU = "Toggle Date Run Column"
-	
+
 RUN_AS_ADMIN = "Ru&n as administrator"
 RUN_AS_ADMIN_HELP = "Ensure Everything is running as Administrator.\nThe \"Everything\" service is not required when running as administrator.\nWarning: When enabled, Applications run from \"Everything\" will also be run as administrator.\nRequires restart."
 
 VIEW_TOGGLE_LTR_RTL = "Toggle LTR/RTL direction"
 VIEW_TOGGLE_LTR_RTL_HELP = "Toggle the text direction layout of Everything."
-		
+
 ENABLE_USN_JOURNAL_LOGGING_ACCESS_DENIED = "Access denied: Install the Everything service or run as administrator to index this volume."
 
-	// 662
-	
+// 662
+
 ACCESS_DENIED_REQUIRES_ADMIN = "\"Everything\" requires administrative privileges to index NTFS volumes. Run as administrator or install the Everything service to index NTFS volumes."
 ACCESS_DENIED_CHOOSE_AN_OPTION = "Choose an option:"
 ACCESS_DENIED_RUN_AS_ADMIN = "Run as &administrator"
 ACCESS_DENIED_INSTALL_SERVICE = "Install the \"Everything\" &service"
 ACCESS_DENIED_DO_NOT_INDEX_NTFS = "&Do not index NTFS volumes"
-	
+
 INSTALLER_NAME = "Everything"
 INSTALLER_EVERYTHING_SETUP = "Everything Setup"
 INSTALLER_SELECT_LANGUAGE = "Please select the language of the installer"
@@ -1974,33 +1973,32 @@ INSTALLER_AUTOMATICALLY_INDEX_FIXED_NTFS_VOLUMES = "Automatically index fixed NT
 
 // See http://en.wikipedia.org/wiki/MIT_License for existing translations
 INSTALLER_LICENSE = 
+	"Everything\r\n"
+	"\r\n"
+	"Copyright (c) 2005-2017 David Carpenter\r\n"
+	"\r\n"
+	"Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n"
+	"\r\n"
+	"The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n"
+	"\r\n"
+	"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\r\n"
+	"\r\n"
+	"Perl-Compatible Regular Expressions\r\n"
+	"\r\n"
+	"Copyright (c) 1997-2012 University of Cambridge\r\n"
+	"\r\n"
+	"Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\r\n"
+	"\r\n"
+	"* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\r\n"
+	"\r\n"
+	"* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\r\n"
+	"\r\n"
+	"* Neither the name of the University of Cambridge nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\r\n"
+	"\r\n"
+	"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n"
 
-		"Everything\r\n"
-		"\r\n"
-		"Copyright (c) 2005-2017 David Carpenter\r\n"
-		"\r\n"
-		"Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:\r\n"
-		"\r\n"
-		"The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.\r\n"
-		"\r\n"
-		"THE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.\r\n"
-		"\r\n"
-		"Perl-Compatible Regular Expressions\r\n"
-		"\r\n"
-		"Copyright (c) 1997-2012 University of Cambridge\r\n"
-		"\r\n"
-		"Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:\r\n"
-		"\r\n"
-		"* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.\r\n"
-		"\r\n"
-		"* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.\r\n"
-		"\r\n"
-		"* Neither the name of the University of Cambridge nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.\r\n"
-		"\r\n"
-		"THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\r\n"
+// 686
 
-	// 686
-	
 VIEW_DETAILS_MENU = "&Details"
 VIEW_DETAILS_MENU_HELP = "Displays information about each item in the window."
 VIEW_MEDIUM_ICONS_MENU = "&Medium Thumbnails"
@@ -2017,7 +2015,7 @@ RESULT_LIST_LEFT_EXTEND_MENU = "Left Extend"
 RESULT_LIST_RIGHT_EXTEND_MENU = "Right Extend"
 RESULT_LIST_FOCUS_LEFT_EXTEND_MENU = "Focus Left Extend"
 RESULT_LIST_FOCUS_RIGHT_EXTEND_MENU = "Focus Right Extend"
-	
+
 COLOR_HOT = "Hot"
 COLOR_HOT_HIGHLIGHTED = "Hot (Highlighted)"
 COLOR_SELECTED_HOT = "Hot Selected"
@@ -2052,9 +2050,9 @@ UNDERLINE_HOVER = "Hover"
 
 FULL_ROW_SELECT = "&Full row select"
 FULL_ROW_SELECT_HELP = "Item selection bounds extend the entire row."
-	
+
 INDEXING_FORMAT = "Indexing %s..."
-	
+
 PERMANENTLY_DELETE_ARE_YOU_SURE = "Are you sure you want to permanently delete this file?\n\n%s"
 PERMANENTLY_DELETE_ERROR = "Error %d: unable to permanently delete:\n%s\n\nRetry?"
 
@@ -2064,7 +2062,7 @@ REFS_REMOVE_HELP = "Remove the selected offline ReFS volume from the list."
 REFS_LOCAL_VOLUMES = "&Local ReFS volumes:"
 REFS_LOCAL_VOLUMES_HELP = "Select a volume to modify its values."
 REFS_INCLUDE_ONLY_STATIC = "Include &only:"
-REFS_INCLUDE_ONLY_EDIT_HELP = "Semi-colon delimited list of folders on this volume to include.\nEmpty = Include all folders."
+REFS_INCLUDE_ONLY_EDIT_HELP = "semicolon delimited list of folders on this volume to include.\nEmpty = Include all folders."
 REFS_SETTINGS_FOR_SELECTED_VOLUME = "Settings for selected local ReFS volume"
 REFS_SETTINGS_FOR_VOLUME_FORMAT = "Settings for %s"
 REFS_AUTO_INCLUDE_NEW_REMOVABLE_VOLUMES = "Automatically include new &removable volumes"
@@ -2088,7 +2086,7 @@ REFS_LOAD_USN_JOURNAL_RECENT_CHANGES_HELP = "Include all the files and folders i
 VIEW_PREVIEW_MENU = "&Preview"
 VIEW_PREVIEW_MENU_HELP = "Shows or hides the preview pane."
 PREVIEW_WINDOW_TITLE = "Preview"
-	
+
 SHOW_SIZE_IN_STATUSBAR = "Show si&ze in status bar"
 SHOW_SIZE_IN_STATUSBAR_HELP = "Show the total file selection size in the status bar. Size indexing must be enabled. Enabling will reduce the performance of Everything."
 
@@ -2116,10 +2114,10 @@ FOLDERS_UPDATEDIR_HELP = "Rescan the folder, subfolders and files after receivin
 
 FILELIST_MONITOR = "&Monitor changes"
 FILELIST_MONITOR_HELP = "Reload the filelist if it has been modified."
-	
+
 FILELIST_SETTINGS_FOR_FORMAT = "Settings for %s"
 FILELIST_SETTINGS_FOR_SELECTED_FILELIST = "Settings for selected filelist"
-	
+
 SEARCH_HISTORY_CAPTION = "Organize Search History"
 SEARCH_HISTORY_SEARCH_STATIC = "Search:"
 SEARCH_HISTORY_SEARCH_HELP = "Filter the list by search."
@@ -2172,17 +2170,17 @@ FAST_PATH_SORT = "Fast &path sort"
 FAST_PATH_SORT_HELP = "Allow instant sorting by path. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by path."
 FAST_EXTENSION_SORT = "Fast e&xtension sort"
 FAST_EXTENSION_SORT_HELP = "Allow instant sorting by extension. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by extension."
-	
+
 RENAME_CAPTION = "Rename"
 RENAME_OLD_FORMAT = "Old &Format:"
 RENAME_OLD_FORMAT_HELP = "Format to match old filenames.\n"
-		"The whole filename is matched"
-	
+	"The whole filename is matched"
+
 RENAME_NEW_FORMAT = "New For&mat:"
 RENAME_NEW_FORMAT_HELP = "Format for the new filenames.\n"
-		"Filenames that do not match the old format are not effected by the new format.\n"
-		"Changing the new format will generate new filenames."
-		
+	"Filenames that do not match the old format are not effected by the new format.\n"
+	"Changing the new format will generate new filenames."
+
 RENAME_OLD_FILENAMES = "&Old Filenames:"
 RENAME_OLD_FILENAMES_HELP = "List of the original filenames."
 RENAME_NEW_FILENAMES = "&New Filenames:"
@@ -2190,10 +2188,10 @@ RENAME_NEW_FILENAMES_HELP = "List of new filenames generated from the new format
 RENAME_ERROR = "Error %d: Unable to rename:\n%s\nto:\n%s\n\nRetry?"
 RENAME_BAD_OLD_FORMAT = "<Old filename does not match old format>"
 RENAME_DUPLICATED_NEW_FILENAME = "<Duplicated new filename>"
-	
+
 SEARCH_ADVANCED_SEARCH_MENU = "&Advanced Search..."
 SEARCH_ADVANCED_SEARCH_MENU_HELP = "Perform more complex searches, such as searching file content, sizes, dates and types."
-	
+
 ADVANCED_SEARCH_CAPTION = "Advanced Search"
 ADVANCED_SEARCH_MATCH_CASE_CHECKBOX = "Match case"
 ADVANCED_SEARCH_MATCH_CASE_HELP = "Match or ignore case."
@@ -2202,7 +2200,7 @@ ADVANCED_SEARCH_MATCH_WHOLEWORDS_HELP = "Match words anywhere or only match whol
 ADVANCED_SEARCH_MATCH_DIACRITICS_CHECKBOX = "Match diacritics"
 ADVANCED_SEARCH_MATCH_DIACRITICS_HELP = "Match or ignore accent marks."
 ADVANCED_SEARCH_TO_STATIC = "to"
-	
+
 ADVANCED_SEARCH_FILE_NAMES_CONTAINING_STATIC = "File names containing..."
 ADVANCED_SEARCH_AND_STATIC = "&all these words:"
 ADVANCED_SEARCH_AND_HELP = "Use spaces to separate words.\nUse * to match zero or more characters\nUse ? to match a single character."
@@ -2229,7 +2227,7 @@ ADVANCED_SEARCH_LOCATED_IN_BROWSE_HELP = "Browse for a path..."
 ADVANCED_SEARCH_LOCATED_IN_BROWSE_CAPTION = "Located In"
 ADVANCED_SEARCH_LOCATED_IN_INCLUDE_SUBFOLDERS_CHECKBOX = "Include subfolders"
 ADVANCED_SEARCH_LOCATED_IN_INCLUDE_SUBFOLDERS_HELP = "Include subfolders in the searched location."
-	
+
 ADVANCED_SEARCH_DATE_MODIFIED_STATIC = "&Date modified:"
 ADVANCED_SEARCH_DATE_MODIFIED_HELP = "The start and end date for the date modified range.\nLeave both unchecked to search all files.\nSet only the start date to search for files modified on or after a specific date.\nSet only the end date to search for files modified on or before a specific date.\nSet both the start and end date to search for a range of dates."
 ADVANCED_SEARCH_DATE_MODIFIED_WARNING = "Date modified is not indexed. Combine with other filters for the best performance or enable date modified indexing."
@@ -2241,7 +2239,7 @@ ADVANCED_SEARCH_DATE_ACCESSED_HELP = "The start and end date for the date access
 ADVANCED_SEARCH_DATE_ACCESSED_WARNING = "Date accessed is not indexed. Combine with other filters for the best performance or enable date accessed indexing."
 ADVANCED_SEARCH_DATE_RECENTLY_CHANGED_STATIC = "Date recently changed:"
 ADVANCED_SEARCH_DATE_RECENTLY_CHANGED_HELP = "The start and end date for the date recently changed range.\nLeave both unchecked to search all files.\nSet only the start date to search for files recently changed on or after a specific date.\nSet only the end date to search for files recently changed on or before a specific date.\nSet both the start and end date to search for a range of dates."
-	
+
 ADVANCED_SEARCH_FILTER_STATIC = "&Filter:"
 ADVANCED_SEARCH_FILTER_HELP = "Search with a pre-defined filter."
 ADVANCED_SEARCH_TYPE_STATIC = "&Type:"
@@ -2252,18 +2250,18 @@ ADVANCED_SEARCH_TYPE_FILES_WITH_NO_EXTENSION = "Files with no Extension"
 ADVANCED_SEARCH_TYPE_FOLDERS = "Folders"
 ADVANCED_SEARCH_TYPE_EMPTY_FOLDERS = "Empty Folders"
 ADVANCED_SEARCH_TYPE_ROOTS = "Roots"
-	
+
 ADVANCED_SEARCH_EXTENSION_STATIC = "E&xtension:"
-ADVANCED_SEARCH_EXTENSION_HELP = "Search for a list of extensions.\nSeparate extensions (excluding the dot) with a semi-colon (;)."
+ADVANCED_SEARCH_EXTENSION_HELP = "Search for a list of extensions.\nSeparate extensions (excluding the dot) with a semicolon (;)."
 ADVANCED_SEARCH_SIZE_STATIC = "&Size:"
-ADVANCED_SEARCH_SIZE_HELP = "The start and end size.\nLeave both empty to search all files.\nSet only the start size to search for files with the exact size or larger.\nSet only the end size to search for files with the exact size or smaller.\nSet both the start and end size to search for a range of sizes."
+ADVANCED_SEARCH_SIZE_HELP = "The minimum and maximum size.\nLeave both empty to search all files.\nSet only the minimum size to search for files with the exact size or larger.\nSet only the maximum size to search for files with the exact size or smaller.\nSet both the minimum and maximum size to search for a range of sizes."
 ADVANCED_SEARCH_SIZE_WARNING = "Size is not indexed. Combine with other filters for the best performance or enable size indexing."
 ADVANCED_SEARCH_SIZE_BYTES = "Bytes"
 ADVANCED_SEARCH_SIZE_KB = "KB"
 ADVANCED_SEARCH_SIZE_MB = "MB"
 ADVANCED_SEARCH_SIZE_GB = "GB"
 ADVANCED_SEARCH_SIZE_FORMAT_HELP = "Select the size format.\nKB = 1024 bytes.\nMB = 1024 KB.\nGB = 1024 MB.\n"
-	
+
 ADVANCED_SEARCH_ATTRIBUTES_STATIC = "Attri&butes:"
 ADVANCED_SEARCH_ATTRIBUTES_ARCHIVE_CHECKBOX = "Archive"
 ADVANCED_SEARCH_ATTRIBUTES_COMPRESSED_CHECKBOX = "Compressed"
@@ -2281,10 +2279,10 @@ ADVANCED_SEARCH_ATTRIBUTES_TEMPORARY_CHECKBOX = "Temporary"
 ADVANCED_SEARCH_ATTRIBUTES_DEVICE_CHECKBOX = "Device"
 ADVANCED_SEARCH_ATTRIBUTES_HELP = "Check the desired attributes.\nLeave all attributes unchecked to search for all files.\n"
 ADVANCED_SEARCH_ATTRIBUTES_WARNING = "This information is not indexed and will take some time to gather, combine with other filters for the best performance or enable indexing of this information."
-	
+
 ADVANCED_SEARCH_REGEX_STATIC = "Matches this &regular expression:"
 ADVANCED_SEARCH_REGEX_HELP = "Search for a basic regular expression.\n"
-	
+
 ADVANCED_SEARCH_FILE_NAME_LENGTH_STATIC = "File na&me length:"
 ADVANCED_SEARCH_FILE_NAME_LENGTH_HELP = "The length of the filename in characters."
 ADVANCED_SEARCH_FILE_NAME_LENGTH_INCLUDE_PATH_CHECKBOX = "Include path"
@@ -2295,9 +2293,9 @@ ADVANCED_SEARCH_RUN_COUNT_STATIC = "R&un count:"
 ADVANCED_SEARCH_RUN_COUNT_HELP = "The number of times the file or folder has been opened in \"Everything\"."
 ADVANCED_SEARCH_DATE_RUN_STATIC = "Date run:"
 ADVANCED_SEARCH_DATE_RUN_HELP = "The start and end date for the date run range.\nLeave both unchecked to search all files.\nSet only the start date to search for files run on or after a specific date.\nSet only the end date to search for files run on or before a specific date.\nSet both the start and end date to search for a range of dates."
-	
+
 ADVANCED_SEARCH_CHILD_STATIC = "Folders with a &child subfolder or file name containing:"
-ADVANCED_SEARCH_CHILD_HELP = "Find folders only that contain a file or folder with the specified filename."
+ADVANCED_SEARCH_CHILD_HELP = "Find only folders that contain a file or subfolder with the specified filename."
 ADVANCED_SEARCH_CHILDCOUNT_STATIC = "Folders with this many subfolders and files:"
 ADVANCED_SEARCH_CHILDCOUNT_HELP = "Find folders with the specified number of subfolders and files."
 ADVANCED_SEARCH_CHILDFILECOUNT_STATIC = "Folders with this many files:"
@@ -2313,24 +2311,23 @@ ADVANCED_SEARCH_DUPE_SIZE = "Size"
 ADVANCED_SEARCH_DUPE_ATTRIBUTES = "Attributes"
 ADVANCED_SEARCH_DUPE_HELP = "Find duplicated files and folders.\nThis finds duplicated files and folders in the entire index (not the current results).\nFor the best results use one duplicate option with an extension or a type search."
 ADVANCED_SEARCH_DUPE_WARNING = "Duplicated options will only work for information that is indexed and has fast sort enabled."
-	
-	
+
 ADVANCED_SEARCH_FILELIST_FILENAME_STATIC = "File list file name containin&g:"
 ADVANCED_SEARCH_FILELIST_FILENAME_HELP = "Find files and folders that are in an indexed file list where the file list file name matches this search."
 ADVANCED_SEARCH_FILELIST_STATIC = "Searc&h for a list of file names:"
 ADVANCED_SEARCH_FILELIST_HELP = "Search for a list of file names.\nSeparate file names with a vertical bar (|).\nInclude a backslash (\\) to match the full path and file name."
-	
+
 ADVANCED_SEARCH_FILELIST_BROWSE_BUTTON = "Browse..."
-ADVANCED_SEARCH_FILELIST_BROWSE_HELP = "Select a file to populate the list of file names.\nEvery line in a txt file describes a file name.\nEverything row under the Filename column in an efu or csv file describes a file name."
+ADVANCED_SEARCH_FILELIST_BROWSE_HELP = "Select a file to populate the list of file names.\nEvery line in a txt file describes a file name.\nEvery row under the Filename column in an efu or csv file describes a file name."
 ADVANCED_SEARCH_FILELIST_BROWSE_CAPTION = "Browse For File List"
-	
+
 VIEW_INCREASE_THUMBNAIL_SIZE_MENU = "Increase Thumbnail Size"
 VIEW_DECREASE_THUMBNAIL_SIZE_MENU = "Decrease Thumbnail Size"
 
 HELP_DONATE_MENU = "&Donate"
 HELP_DONATE_HELP = "Help support the future development of \"Everything\"."
 DONATE_LINK = "http://www.voidtools.com/donate/"
-	
+
 FOLDER_CONTEXT_MENU = "Search Everything..."
 MENU_COPY_NAME_TO_CLIPBOARD = "Copy Name to Clipboard"
 MENU_COPY_NAME_TO_CLIPBOARD_HELP = "Copy the file name part only to the clipboard."
@@ -2340,8 +2337,8 @@ NTFS_AUTO_REMOVE_OFFLINE_VOLUMES = "Automatically remo&ve offline volumes"
 NTFS_AUTO_REMOVE_OFFLINE_VOLUMES_HELP = "Automatically remove included volumes from the index when they go offline."
 REFS_AUTO_REMOVE_OFFLINE_VOLUMES = "Automatically remo&ve offline volumes"
 REFS_AUTO_REMOVE_OFFLINE_VOLUMES_HELP = "Automatically remove included volumes from the index when they go offline."
-	
-	// 709b
+
+// 709b
 
 COLOR_SELECTED_INACTIVE_HOT = "Hot Inactive Selected"
 COLOR_SELECTED_INACTIVE_HOT_HIGHLIGHTED = "Hot Inactive Selected (Highlighted)"
@@ -2358,115 +2355,115 @@ BOOKMARK_REMEMBER_SEARCH_BUTTON = "Remember &search:"
 BOOKMARK_REMEMBER_SEARCH_BUTTON_HELP = "Remember the search for this bookmark. Enable to specify the search for this bookmark. Disable to leave the search unchanged when opening this bookmark."
 
 EXCLUDE_EDIT_BUTTON = "E&dit..."
-EXCLUDE_EDIT_BUTTON_HELP = "Modify the selected exclude folder or filter."
-	
-	// 713b
+EXCLUDE_EDIT_BUTTON_HELP = "Modify the selected excluded folder or filter."
 
-FILE_OPEN_MOST_RUN	 = "Open most run"
+// 713b
+
+FILE_OPEN_MOST_RUN = "Open most run"
 UNABLE_TO_SAVE_CONFIG = "Unable to save settings.\n\nStore settings and data in %APPDATA%\\Everything?"
 SEARCH_HISTORY_KEEP_FOREVER_HELP = "Enable to keep search history for the specified number of days.\nDisable to keep search history forever."
 RUN_HISTORY_KEEP_FOREVER_HELP = "Enable to keep run history for the specified number of days.\nDisable to keep run history forever."
-	
+
 DB_ENABLE_RECENT_CHANGES = "Index recent chan&ges"
 DB_ENABLE_RECENT_CHANGES_HELP = "Keep a list of changes to the Everything database.\nAllows searching and sorting by Date recently changed.\nEnabling may reduce the performance of Everything.\nRecent changes indexing is similar to Date Modified indexing except only recently modified files are indexed.\n"
-	
+
 ADVANCED_SEARCH_ADDITIONAL_SEARCH_STATIC = "Additional search options:"
-ADVANCED_SEARCH_ADDITIONAL_SEARCH_HELP  = "Include additional search options at the end of the advanced search."
+ADVANCED_SEARCH_ADDITIONAL_SEARCH_HELP = "Include additional search options at the end of the advanced search."
 
 SEARCH_HISTORY_SORT_BY = "&Sort all search history results by:"
 SEARCH_HISTORY_SORT_BY_HELP = "When clicking on the drop down button on the search edit, show all search results by this sort type."
 SEARCH_HISTORY_SORT_BY_SEARCH_DATE = "Date searched"
 SEARCH_HISTORY_SORT_BY_SEARCH_COUNT = "Search count"
 SEARCH_HISTORY_SORT_BY_SEARCH = "Search"
-		
+
 RENAME_REPLACE_CAPTION = "Replace"
 RENAME_EDIT_HELP = "A list of file names.\nEach line represents one file.\nThe number of lines must match the initial number of files."
 RENAME_REPLACE_BUTTON = "&Replace..."
 RENAME_REPLACE_BUTTON_HELP = "Find and replace text."
-		
+
 EDIT_COPY_TO = "Copy to &Folder..."
 EDIT_COPY_TO_HELP = "Copy the selected files to another location."
 EDIT_MOVE_TO = "Mo&ve to Folder..."
 EDIT_MOVE_TO_HELP = "Move the selected files to another location."
-	
+
 COPY_TO_CAPTION = "Copy To"
 MOVE_TO_CAPTION = "Move To"
-	
+
 KEYBOARD_USEIN_PREVIEW = "Preview"
 PREVIEW_FOCUS = "Focus Preview"
-	
+
 ABOUT_LICENSE_BUTTON = "&License"
 LICENSE_CAPTION = "License - Everything"
-	
-LICENSE = "\r\n"
-		"Everything\r\n"
-		"\r\n"
-		"\tCopyright (c) 2005-2017 David Carpenter\r\n"
-		"\t\r\n"
-		"\tPermission is hereby granted, free of charge, to any person obtaining a copy of\r\n"
-		"\tthis software and associated documentation files (the \"Software\"), to deal in \r\n"
-		"\tthe Software without restriction, including without limitation the rights to \r\n"
-		"\tuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\r\n"
-		"\tof the Software, and to permit persons to whom the Software is furnished to do\r\n"
-		"\tso, subject to the following conditions:\r\n"
-		"\t\r\n"
-		"\tThe above copyright notice and this permission notice shall be included in all\r\n"
-		"\tcopies or substantial portions of the Software.\r\n"
-		"\t\r\n"
-		"\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \r\n"
-		"\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \r\n"
-		"\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE \r\n"
-		"\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \r\n"
-		"\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, \r\n"
-		"\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE \r\n"
-		"\tSOFTWARE.\r\n"
-		"\r\n"
-		"Perl-Compatible Regular Expressions\r\n"
-		"\r\n"
-		"\tCopyright (c) 1997-2012 University of Cambridge\r\n"
-		"\t\r\n"
-		"\tRedistribution and use in source and binary forms, with or without\r\n"
-		"\tmodification, are permitted provided that the following conditions are met:\r\n"
-		"\t\r\n"
-		"\t* Redistributions of source code must retain the above copyright notice,\r\n"
-		"\t  this list of conditions and the following disclaimer.\r\n"
-		"\t\r\n"
-		"\t* Redistributions in binary form must reproduce the above copyright\r\n"
-		"\t  notice, this list of conditions and the following disclaimer in the\r\n"
-		"\t  documentation and/or other materials provided with the distribution.\r\n"
-		"\t\r\n"
-		"\t* Neither the name of the University of Cambridge nor the names of its\r\n"
-		"\t  contributors may be used to endorse or promote products derived from\r\n"
-		"\t  this software without specific prior written permission.\r\n"
-		"\t\r\n"
-		"\tTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\r\n"
-		"\tAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\r\n"
-		"\tIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\r\n"
-		"\tARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE\r\n"
-		"\tLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\r\n"
-		"\tCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\r\n"
-		"\tSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\r\n"
-		"\tINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\r\n"
-		"\tCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\r\n"
-		"\tARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\r\n"
-		"\tPOSSIBILITY OF SUCH DAMAGE.\r\n"
-		
+
+LICENSE = 
+	"\r\n"
+	"Everything\r\n"
+	"\r\n"
+	"\tCopyright (c) 2005-2017 David Carpenter\r\n"
+	"\t\r\n"
+	"\tPermission is hereby granted, free of charge, to any person obtaining a copy of\r\n"
+	"\tthis software and associated documentation files (the \"Software\"), to deal in \r\n"
+	"\tthe Software without restriction, including without limitation the rights to \r\n"
+	"\tuse, copy, modify, merge, publish, distribute, sublicense, and/or sell copies\r\n"
+	"\tof the Software, and to permit persons to whom the Software is furnished to do\r\n"
+	"\tso, subject to the following conditions:\r\n"
+	"\t\r\n"
+	"\tThe above copyright notice and this permission notice shall be included in all\r\n"
+	"\tcopies or substantial portions of the Software.\r\n"
+	"\t\r\n"
+	"\tTHE SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR \r\n"
+	"\tIMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, \r\n"
+	"\tFITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE \r\n"
+	"\tAUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER \r\n"
+	"\tLIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, \r\n"
+	"\tOUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE \r\n"
+	"\tSOFTWARE.\r\n"
+	"\r\n"
+	"Perl-Compatible Regular Expressions\r\n"
+	"\r\n"
+	"\tCopyright (c) 1997-2012 University of Cambridge\r\n"
+	"\t\r\n"
+	"\tRedistribution and use in source and binary forms, with or without\r\n"
+	"\tmodification, are permitted provided that the following conditions are met:\r\n"
+	"\t\r\n"
+	"\t* Redistributions of source code must retain the above copyright notice,\r\n"
+	"\t  this list of conditions and the following disclaimer.\r\n"
+	"\t\r\n"
+	"\t* Redistributions in binary form must reproduce the above copyright\r\n"
+	"\t  notice, this list of conditions and the following disclaimer in the\r\n"
+	"\t  documentation and/or other materials provided with the distribution.\r\n"
+	"\t\r\n"
+	"\t* Neither the name of the University of Cambridge nor the names of its\r\n"
+	"\t  contributors may be used to endorse or promote products derived from\r\n"
+	"\t  this software without specific prior written permission.\r\n"
+	"\t\r\n"
+	"\tTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS IS\"\r\n"
+	"\tAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\r\n"
+	"\tIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\r\n"
+	"\tARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE\r\n"
+	"\tLIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR\r\n"
+	"\tCONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF\r\n"
+	"\tSUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS\r\n"
+	"\tINTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN\r\n"
+	"\tCONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)\r\n"
+	"\tARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE\r\n"
+	"\tPOSSIBILITY OF SUCH DAMAGE.\r\n"
+
 RENAME_REPLACE_MATCH_CASE = "Match &case"
 RENAME_REPLACE_MATCH_CASE_HELP = "Match case or ignore case.\nThe generated old format is always case sensitive."
 RENAME_REPLACE_REGEX = "&Regex"
 RENAME_REPLACE_REGEX_HELP = "Enable regular expressions.\nOld format will be regenerated when toggled."
-	
+
 RENAME_OLD_FORMAT_REGEX_HELP = "Regular expression to match old filenames.\n" 
-		"All matches in the filename will be replaced.\n"
-	
-RENAME_NEW_FORMAT_REGEX_HELP = 
-		"Filenames that match the expression in old format are replaced with this expression.\n"
-		"Changing the new format will generate new filenames.\n"
-	
+	"All matches in the filename will be replaced.\n"
+
+RENAME_NEW_FORMAT_REGEX_HELP = "Filenames that match the expression in old format are replaced with this expression.\n"
+	"Changing the new format will generate new filenames.\n"
+
 FOLDER_UPDATING_FORMAT = "%s [Rescanning]"
 HOME_VIEW = "&View:"
 HOME_VIEW_HELP = "Use this view when opening a new search window."
-	
+
 EDIT_ADVANCED_MENU = "Advanc&ed"
 EDIT_ADVANCED_MENU_HELP = "Contains advanced commands."
 
@@ -2474,15 +2471,15 @@ EDIT_ADVANCED_COPY_TO = "Advanced Copy to &Folder..."
 EDIT_ADVANCED_COPY_TO_HELP = "Copy the selected files to another location."
 EDIT_ADVANCED_MOVE_TO = "Advanced Mo&ve to Folder..."
 EDIT_ADVANCED_MOVE_TO_HELP = "Move the selected files to another location."
-	
+
 FOLDERS_BUFFER_SIZE = "Buffer &size:"
 FOLDERS_BUFFER_SIZE_HELP = "The size of the buffer for storing changes made to this folder, subfolder and files.\nChanges will be missed if Everything is unable to process this buffer fast enough.\nNetwork drives are limited to 64 KB."
 FOLDERS_RESCAN_FULL_BUFFER = "Rescan on full &buffer"
 FOLDERS_RESCAN_FULL_BUFFER_HELP = "Rescan the entire folder, subfolders and files if the change buffer is full because too many changes occurred too quickly."
-	
+
 RENAME_BROWSE_FOR_FOLDER_CATPION = "Browse for folder"
 RENAME_BROWSE_FOR_FOLDER = "Browse for folder..."
-	
+
 RENAME_OLD_REGEX_LAZY = "(.*?) Match and save any number of characters (lazy)"
 RENAME_OLD_REGEX_GREEDY = "(.*)  Match and save any number of characters (greedy)"
 RENAME_OLD_REGEX_DOT = ".    Any single character"
@@ -2513,39 +2510,37 @@ RENAME_NEW_PERCENT = "%%   A single literal %"
 RENAME_NEW_DOLLAR = "$$   A single literal $"
 RENAME_NEW_OPEN_BRACKET = "$(   A single literal ("
 RENAME_NEW_CLOSE_BRACKET = "$)   A single literal )"
-	
+
 // set these to 1 to show Right to Left, otherwise they will be shown Left to Right
 HELP_REGEX_SYNTAX_RTL = ""
 HELP_SEARCH_SYNTAX_RTL = ""
 HELP_COMMAND_LINE_OPTIONS_RTL = ""
 LICENSE_RTL = ""
 
-	// 747b
-	
+// 747b
+
 FILE_OPEN_LAST_RUN = "Open last run"
 OFFLINE_DISK = "Offline Disk"
 FORMAT_FILETIME_FORMAT = "%S %S"
-	
-	// 767
-	
+
+// 767
+
 ADVANCED_COPYMOVE_TO_OLD_FORMAT = "Old &format:"
-ADVANCED_COPYMOVE_TO_OLD_FORMAT_HELP = 
-		"Format to match old full paths and filenames.\n"
-		"The whole full paths and filename is matched"
-	
+ADVANCED_COPYMOVE_TO_OLD_FORMAT_HELP = "Format to match old full paths and filenames.\n"
+	"The whole full paths and filename is matched"
+
 ADVANCED_COPYMOVE_TO_NEW_FORMAT = "New for&mat:"
-ADVANCED_COPYMOVE_TO_NEW_FORMAT_HELP = 
-		"Format for the new full paths and filenames.\n"
-		"Full paths and filenames that do not match the old format are not effected by the new format.\n"
-		"Changing the new format will generate new full paths and filenames."
-		
+ADVANCED_COPYMOVE_TO_NEW_FORMAT_HELP = "Format for the new full paths and filenames.\n"
+	"Full paths and filenames that do not match the old format are not effected by the new format.\n"
+	"Changing the new format will generate new full paths and filenames."
+
 ADVANCED_COPYMOVE_TO_OLD_FILENAMES = "&Old full paths and filenames:"
 ADVANCED_COPYMOVE_TO_OLD_FILENAMES_HELP = "List of the original full paths and filenames."
 ADVANCED_COPYMOVE_TO_NEW_FILENAMES = "&New full paths and filenames:"
 ADVANCED_COPYMOVE_TO_NEW_FILENAMES_HELP = "List of new full paths and filenames generated from the new format."
 
-	// 772
+// 772
 
 FORMAT_FILETIME_TIME_DATE_FORMAT = "%S %S"
-	
-	// 801
+
+// 801
