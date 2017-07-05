@@ -1,273 +1,255 @@
-=Indexes=
-By default, "''Everything''" indexes all local fixed NTFS volumes.
+=색인=
+''Everything''은 기본적으로 모든 고정 NTFS 볼륨을 색인해둡니다.
 
-Indexes can be customized in the [[support/everything/options#indexes|Everything options]].
+색인 작업은 [[support/everything/options#indexes|Everything 옵션]]에서 설정할 수 있습니다.
 
-==Database location==
-Everything stores the database in:
+==데이터베이스 위치==
+Everything은 데이터베이스를 아래 위치에 저장합니다.
 <pre>
 %LOCALAPPDATA%\Everything\Everything.db
 </pre>
-If [[support/everything/options#Store settings and data in %APPDATA%\Everything|Store settings and data in %APPDATA%\Everything]] is disabled, Everything.db is stored in the same location as Everything.exe.
+[[support/everything/options#Store settings and data in %APPDATA%\Everything|%APPDATA%\Everything에 설정 저장]]을 껐다면 Everything.exe 위치에 Everything.db를 저장합니다.
 
-To set the database location:
+데이터베이스 위치를 설정하려면
 <ul>
-*In "''Everything''", from the '''Tools''' menu, click '''Options'''.
-*Select the '''Indexes''' tab.
-*Set the '''Database location'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''색인''' 탭을 클릭합니다.
+*'''데이터베이스 저장경로'''를 설정합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Size, Dates and Attributes Indexing==
-Everything indexes file size and date modified by default.
-Everything will maintain this extra file information in real-time.
+==크기, 날짜, 속성 색인==
+Everything은 파일 크기와 수정한 날짜를 기본으로 색인해둡니다.
+색인한 부가 정보는 변동 시 실시간으로 갱신합니다.
 
-File information that is indexed can be searched instantly.
+색인한 파일 정보는 빨리 검색할 수 있습니다.
 
-Extra file information, such as date created and file attributes is not indexed.
-This file information is gathered when displayed in Everything.
-Searching or sorting by this file information can be quite slow for many results.
+만든 날짜나 파일 속성같은 여타 부가정보는 색인하지 않습니다.
+이런 정보는 Everything 창에 보여질 때만 조사합니다.
+이런 파일 정보로 검색이나 정렬을 하면 느릴 수 있습니다.
 
-To include extra file information in the Everything index:
+Everything 색인에 다른 부가정보도 색인하려면
 <ul>
-*In '''''"Everything"''''', from the '''Tools''' menu, click '''Options'''
-*Click the '''Indexes''' tab.
-*Check the desired options:
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''색인''' 탭을 클릭합니다.
+*원하는 항목을 선택합니다:
 <ul>
-*Index file size
-*Index folder size
-*Index date created
-*Index date modified
-*Index date accessed
-*Index attributes
+*파일 크기 색인
+*폴더 크기 색인
+*만든 날짜 색인
+*수정한 날짜 색인
+*접근한 날짜 색인
+*속성 정보 색인
 </ul>
-*Click '''OK'''.
-</ul>
-
-Note: Including extra file information in the index will require more memory.
-Hover over an extra file information option to see a tooltip showing the extra memory requirements.
-
-==Folder sizes==
-To show folder sizes in ''"Everything"'':
-<ul>
-*In '''''"Everything"''''', from the '''Tools''' menu, click '''Options'''
-*Click the '''Indexes''' tab.
-*Check '''Index folder size'''.
-*Click '''OK'''.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Fast Sorting==
-''"Everything"'' maintains a "Fast sort" index for size and date modified information.
+참고: 색인에 추가 정보를 포함하는 덴 추가 메모리가 필요합니다.
+각 체크박스에 포인터를 갖다대면 필요한 메모리를 툴팁으로 알려줍니다.
 
-Fast sorting is persistent, that is, ''"Everything"'' will remember the sort between searches.
-
-When sorting by file information that does not have fast sorting enabled ''"Everything"'' must gather this information from disk which can be slow.
-
-To enable fast sorting:
+==폴더 크기==
+''Everything''에서 폴더 크기를 보려면
 <ul>
-*In '''''"Everything"''''', from the '''Tools''' menu, click '''Options'''.
-*Click the '''Indexes''' tab.
-*Check the desired fast sort options:
-<ul>
-*Fast size sort
-*Fast date created sort
-*Fast date modified sort
-*Fast date accessed sort
-*Fast attribute sort
-*Fast path sort
-*Fast extension sort
-</ul>
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''색인''' 탭을 클릭합니다.
+*'''폴더 크기 색인'''을 체크합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-Note: Enabling fast sort requires more memory. The corresponding extra file information must be included in the index.
-Hover over a fast sort option to see a tooltip showing the extra memory requirements.
+==빠른 정렬==
+''Everything''은 파일 크기와 수정한 날짜 정보의 빠른 정렬을 위한 색인을 유지합니다.
 
-Name, Date Run, Run Count and Date Recently Changed are always fast sort enabled.
+빠른 정렬 색인을 두면 검색 시마다 정렬하는 시간이 사라집니다.
+
+빠른 정렬 색인이 없다면 Everything은 매번 디스크에서 정보를 모아야하고 상당히 느려질 수 있습니다.
+
+빠른 정렬 색인을 켜려면
+<ul>
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''색인''' 탭을 클릭합니다.
+*원하는 정렬 옵션을 체크합니다
+<ul>
+*빠른 크기 정렬
+*빠른 만든 날짜 정렬
+*빠른 수정한 날짜 정렬
+*빠른 접근한 날짜 정렬
+*빠른 속성순 정렬
+*빠른 경로 정렬
+*빠른 확장자 정렬
+</ul>
+*'''확인'''을 클릭합니다.
+</ul>
+
+참고: 빠른 정렬 색인을 유지하는 덴 추가 메모리가 필요합니다.
+각 체크박스에 포인터를 갖다대면 필요한 메모리를 툴팁으로 알려줍니다.
+
+이름, 실행한 날짜, 실행 횟수, 최근에 변경한 날짜는 항상 빠른 정렬이 가능합니다.
 
 ==NTFS==
-''"Everything"'' will automatically index all fixed NTFS volumes.
+''Everything''은 기본적으로 모든 고정 NTFS 볼륨을 색인해둡니다.
 
-To manually index fixed NTFS volumes:
+고정 NTFS 볼륨을 수동으로 색인하려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''NTFS''' tab
-*uncheck '''Auto include new fixed volumes'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''NTFS''' 탭을 클릭합니다.
+*'''새 하드 디스크를 자동으로 추가'''를 해제합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-To include removable NTFS volumes in the index:
+제거 가능한 NTFS 볼륨을 색인하려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''NTFS''' tab
-*Select the removable volume.
-*Check '''Include in database'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''NTFS''' 탭을 클릭합니다.
+*색인해 둘 이동식 볼륨을 선택합니다.
+*'''데이터베이스에 포함'''을 체크합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
 ==ReFS==
-''"Everything"'' will automatically index all fixed ReFS volumes.
+''Everything''은 기본적으로 모든 고정 ReFS 볼륨을 색인해둡니다.
 
-To manually index fixed ReFS volumes:
+고정 ReFS 볼륨을 수동으로 색인하려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''ReFS''' tab
-*uncheck '''Auto include new fixed volumes'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''ReFS''' 탭을 클릭합니다.
+*'''새 하드 디스크를 자동으로 추가'''를 해제합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-To include removable ReFS volumes in the index:
+제거 가능한 ReFS 볼륨을 색인하려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''ReFS''' tab
-*Select the removable volume.
-*Check '''Include in database'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''ReFS''' 탭을 클릭합니다.
+*색인해 둘 이동식 볼륨을 선택합니다.
+*'''데이터베이스에 포함'''을 체크합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Folders==
-Use folder indexing to include mapped network drives, CDRoms, DVDRoms, FAT and FAT32 volumes.
+==폴더==
+네트워크 드라이브, CD, DVD롬, FAT, FAT32 볼륨을 색인해두려면 폴더 색인을 쓰면 됩니다.
 
-See [[support/everything/Folder Indexing]] for more information.
+자세한 건 [[support/everything/Folder Indexing|폴더 색인]]을 확인하세요.
 
-==File Lists==
-Use file lists to index CDs, DVDs, BluRays and other offline files and folders.
+==파일 목록==
+CD, DVD, 블루레이 등 바로 볼 수 없는 항목은 파일 목록으로 색인해둘 수 있습니다.
 
-See [[support/everything/File lists]] for more information.
+자세한 건 [[support/everything/File lists|파일 목록]]을 확인하세요.
 
-==Exclude==
-''"Everything"'' will index every file and folder, you can then exclude files from the index.
+==제외==
+''Everything''이 모든 대상 파일과 폴더를 색인하지만 일부 파일을 색인에서 제외할 수 있습니다.
 
-To exclude files or folders with the hidden or system attributes from the ''"Everything"'' index:
+숨김이나 시스템 속성을 가진 파일 및 폴더를 색인에서 제외하려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''Exclude''' tab
-*Check '''Exclude hidden files and folders''' to exclude files and folders with the hidden attribute.
-*Check '''Exclude system files and folders''' to exclude files and folders with the system attribute.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''제외''' 탭을 클릭합니다.
+*'''숨겨진 파일 및 폴더는 검색에서 제외'''를 체크해 숨김 속성 파일 및 폴더를 제외합니다.
+*'''시스템 파일 및 폴더는 검색에서 제외'''를 체크해 시스템 속성 파일 및 폴더를 제외합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-To exclude a folder from the ''"Everything"'' index:
+Everything 색인에서 폴더를 제외하려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''Exclude''' tab
-*Click '''Add Folder...'''
-*Select the folder to exclude.
-*Click '''OK'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''제외''' 탭을 클릭합니다.
+*'''폴더 추가...'''를 클릭합니다
+*제외할 폴더를 선택합니다.
+*'''확인''' - '''확인'''을 클릭합니다.
 </ul>
 
-To include only certain types of files in the ''"Everything"'' index:
+특정 종류의 파일만 Everything 색인에 추가하려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''Exclude''' tab
-*Type in the semicolon delimited list of wildcard filters for '''include only files''', for example, include only mp3 and jpg files:
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''제외''' 탭을 클릭합니다.
+*'''다음 파일만 검색함'''에 ;로 분리된 와일드카드 필터를 입력합니다. mp3, jpg 파일만 찾으려면
 <pre>
 *.mp3;*.jpg
 </pre>
-*Click '''OK'''.
+*'''확인'''을 클릭합니다.
 </ul>
 
-To exclude certain types of files from the ''"Everything"'' index:
+특정 종류의 파일만 Everything 색인에서 제외하려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''Exclude''' tab
-*Type in the semicolon delimited list of wildcard filters for '''exclude files''', for example, exclude thumbs.db, desktop.ini and tmp files:
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''제외''' 탭을 클릭합니다.
+*'''다음 파일은 검색 제외'''에 ;로 분리된 와일드카드 필터를 입력합니다. thumb.db, desktop.ini, tmp 파일은 빼려면
 <pre>
 thumbs.db;desktop.ini;*.tmp
 </pre>
-*Click '''OK'''.
+*'''확인'''을 클릭합니다.
 </ul>
 
-To use regex in your exclude filters, prefix the exclude filter with regex:, for example, to exclude folders starting with A-N, set the exclude filter to:
-regex:^[A-N]
+제외 필터에 정규식을 쓰고 싶다면 regex:를 앞에 붙이면 됩니다. A-N으로 시작하는 폴더를 제외하고 싶다면 regex:^[A-N]을 쓰면 됩니다.
 
-==Optimizing for smallest memory foot print==
-To reduce the memory requirements for ''"Everything"'':
+==적은 메모리 사용을 위한 최적화==
+''Everything'' 메모리 사용량을 줄이려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''Indexes''' tab
-*Uncheck '''Index recent changes'''.
-*Uncheck '''Index file size'''.
-*Uncheck '''Index folder size'''.
-*Uncheck '''Index date created'''.
-*Uncheck '''Index date modified'''.
-*Uncheck '''Index date accessed'''.
-*Uncheck '''Index attributes'''.
-*Uncheck '''Fast path sort'''.
-*Uncheck '''Fast extension sort'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''색인''' 탭을 클릭합니다.
+*최근 변경사항 색인
+*파일 크기 색인 해제
+*폴더 크기 색인 해제
+*만든 날짜 색인 해제
+*수정한 날짜 색인 해제
+*접근한 날짜 색인 해제
+*속성 정보 색인 해제
+*빠른 경로 정렬 해제
+*빠른 확장자 정렬 해제
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Recover filenames from an Everything.db==
-To recover a list of filenames from a Everything.db:
+==Everything.db에서 파일이름 복구하기==
+Everything.db에서 파일 이름 목록을 복구하려면
 <ul>
-*Please make sure you have a backup of your Everything.db.
-*Download [[/db2efu.zip|db2efu.zip]].
-*Open db2efu.zip and run db2efu.exe
-*Select your Everything.db file.
-*Choose a filename to store the list of filenames.
-*This [[support/Everything/File Lists|file list]] file can be opened with ''"Everything"'', notepad or Excel.
+*Everything.db을 백업합니다.
+*[[/db2efu.zip|db2efu.zip]]을 받습니다.
+*db2efu.zip을 열어서 db2efu.exe를 실행합니다.
+*추출할 Everything.db 파일을 선택합니다.
+*추출한 파일 이름 목록을 저장할 경로를 선택합니다.
+*이 [[support/Everything/File Lists|파일 목록]]은 ''Everything'', 메모장, 엑셀로 열 수 있습니다.
 </ul>
 
-==Force rebuild==
-To force ''"Everything"'' to rebuild its indexes:
+==강제 재구축==
+임의로 ''Everything'' 색인을 재구축하려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''Indexes''' tab
-*Click '''Force Rebuild'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''색인''' 탭을 클릭합니다.
+*'''지금 갱신'''을 클릭합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Keep offline NTFS volumes in the index==
-To force Everything to rebuild its indexes:
+==색인에 연결이 끊긴 NTFS 저장소를 유지하기==
+연결이 끊긴 NTFS 볼륨 색인을 삭제하지 않으려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''NTFS''' tab
-*Uncheck '''Automatically remove offline volumes'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''NTFS''' 탭을 클릭합니다.
+*'''연결이 끊긴 디스크 자동으로 제거'''를 해제합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-To manually remove offline volumes
+연결이 끊긴 볼륨을 수동으로 지우려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''NTFS''' tab
-*Select the offline NTFS volume and click '''Remove'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''NTFS''' 탭을 클릭합니다.
+*연결이 끊긴 볼륨을 선택하고 '''제거'''를 클릭합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Fast reindexing==
-''"Everything"'' must perform a reindex when a new volume is added to the index or an existing volume is removed from the index.
-When a reindex occurs with ''"Everything"'' 1.3 and earlier, all volumes must be completely rescanned, even if they have not changed.
-''"Everything"'' 1.4 can quickly reindex by reusing the existing up-to-date indexes.
+==빠른 색인==
+''Everything''은 볼륨이 색인에 추가되거나 제거될 때 반드시 다시 색인합니다.
+''Everything'' 1.3 이하 버전에서는 변경 사항이 없더라도 모든 볼륨을 검사합니다.
+''Everything'' 1.4 이상은 기존 색인을 활용해 빨리 색인합니다.
 
-==Limitations==
-While all NTFS/ReFS hard links are indexed, changes made to a hard link will only update the first hard link entry in ''"Everything"''.
-''"Everything"'' does not follow junctions with NTFS/ReFS indexing.
+==한계==
+모든 NTFS/ReFS 하드 링크는 색인되어도, 변경사항이 생기면 처음 색인한 항목에만 반영됩니다.
+''Everything''은 NTFS/ReFS 색인에서 디렉토리 정션을 따라가지 않습니다.
 
-==Pausing file system monitors==
-To pause NTFS monitors, ReFS monitors, folder monitors and file list monitors:
+==파일 시스템 감시 정지==
+NTFS, ReFS, 폴더, 파일 목록 감시를 정지하려면
 <ul>
-*In "'''''Everything'''''", type in the following search and press ENTER:
+*'''Everything''' 검색 줄에 다음을 입력하고 엔터를 칩니다.
 /monitor_pause
 </ul>
 
-To resume NTFS monitors, ReFS monitors, folder monitors and file list monitors:
+NTFS, ReFS, 폴더, 파일 목록 감시를 시작하려면
 <ul>
-*In "'''''Everything'''''", type in the following search and press ENTER:
+*'''Everything''' 검색 줄에 다음을 입력하고 엔터를 칩니다.
 /monitor_resume
 </ul>
 
-Monitors will remain paused until they are resumed.
+감시는 다시 시작하기 전까지 정지된 채로 있을 겁니다.
 
-==See also==
+==볼만한 것==
 <ul>
-*[[support/Everything/options#Indexes|Indexing options]]
+*[[support/Everything/options#Indexes|색인 옵션]]
 *[[support/Everything/options#NTFS|NTFS]]
-*[[support/Everything/options#Folders|Folder indexing options]]
-*[[support/Everything/options#File Lists|File lists options]]
-*[[support/Everything/options#Exclude|Exclude options]]
-*[[support/Everything/command line options#Database|Database command line options]]
-*[[support/Everything/ini#Indexing|Indexing Everything.ini options]]
+*[[support/Everything/options#Folders|폴더 색인 옵션]]
+*[[support/Everything/options#File Lists|파일 목록 옵션]]
+*[[support/Everything/options#Exclude|제외 옵션]]
+*[[support/Everything/command line options#Database|데이터베이스 명령행 옵션]]
+*[[support/Everything/ini#Indexing|Everything.ini 색인 옵션]]
 </ul>
 
