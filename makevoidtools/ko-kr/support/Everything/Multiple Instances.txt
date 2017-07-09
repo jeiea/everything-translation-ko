@@ -1,37 +1,34 @@
-=Multiple Instances=
-By default there is only one instance of Everything.
-When you run Everything.exe it will check for an existing instance. If an existing instance is found the command line options are sent and processed by the existing instance. If no existing instance is found a new one is created.
+=다중 인스턴스=
+기본적으로 Everything은 딱 하나만 실행됩니다.
+Everything.exe를 실행하면 이미 실행 중인 인스턴스가 있는지 확인합니다. 있다면 명령 인자를 기존 인스턴스에 전달합니다. 없다면 새 인스턴스를 만듭니다.
 
-To run multiple instances of Everything use [[support/everything/multiple instances#named instances|Named instances]].
+여러 인스턴스를 실행하려면 [[support/everything/multiple instances#named instances|유명 인스턴스]]를 사용하세요..
 
-==Named instances==
-By default Everything uses the unnamed instance. 
-Assign unique names to Everything instances to use multiple instances.
-There can only be one instance for each unique name.
+==유명 인스턴스==
+기본적으로 Everything은 무명(unnamed) 인스턴스를 씁니다.
+인스턴스마다 고유 이름을 할당해 여러 인스턴스를 쓸 수 있습니다.
+각 인스턴스의 고유 이름은 겹칠 수 없습니다.
 
-To assign a name to the instance:
-Use the [[support/everything/command line options#-instance|-instance]] command line option to specify the instance name when starting Everything.exe.
-
-For example:
+인스턴스에 이름을 할당하려면 Everything.exe를 실행할 때 [[support/everything/command line options#-instance|-instance]] 옵션을 지정하세요.
 <pre>
 Everything.exe -instance "ETP Server"
 </pre>
 
-Named instances use unique settings and data.
-For example, the named instanced "ETP Server" will use Everything-ETP SERVER.ini as the settings file.
+유명 인스턴스는 개별 설정과 자료를 가집니다.
+"ETP Server" 유명 인스턴스는 기본 설정 파일 이름이 Everything-ETP SERVER.ini가 됩니다.
 
-The name of the instance is located in the Everything search window caption and in the tooltip when hovering over the tray icon with the cursor.
+인스턴스 이름은 검색 창 이름이나 트레이 아이콘에 포인터를 갖다대면 뜨는 툴팁에서 확인할 수 있습니다.
 
-==Service==
-By default Everything will install a service for each instance.
+==서비스==
+기본적으로 Everything은 인스턴스마다 다른 서비스를 설치합니다.
 
-To use the same service for all instances, use the [[support/everything/command_line_options#-service-pipe-name|-service-pipe-name]] command line option or [[support/everything/ini#service_pipe_name|service_pipe_name]] ini option to specify the same service pipe name.
-The default unnamed servive pipe name is:
+같은 서비스를 쓰게 하려면 [[support/everything/command_line_options#-service-pipe-name|-service-pipe-name]] 명령행 인자나 [[support/everything/ini#service_pipe_name|service_pipe_name]] ini 설정으로 같은 서비스 파이프 이름을 쓰도록 지정하면 됩니다.
+기본 무명 서비스 파이프 이름은 아래와 같습니다.
 <pre>
 \\\\.\\PIPE\\Everything Service
 </pre>
 
-For example, to connect to the default service pipe with a different instance name:
+아래처럼 명령행 인자로 유명 인스턴스가 기본 서비스 파이프를 쓸 수 있습니다.
 <pre>
 Everything.exe -instance "ETP Server" -service-pipe-name "\\\\.\\PIPE\\Everything Service"
 </pre>

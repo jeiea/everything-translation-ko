@@ -42,7 +42,7 @@ Contains settings for configuring the installation of ''Everything''.
 Selects the language used for displaying text in Everything. If set to User Default the language is determined by the current users language for displaying text, (User Default) is displayed next to this language in the language selection combo.
 Click the download button to the right of languages to open the download page for the Everything language pack in your web browser.
 
-;''Store settings and data in %APPDATA%\Everything''
+;''%APPDATA%\\Everything 폴더에 설정 저장''
 Choose the location for storing settings and data. If enabled, settings and data are stored in %APPDATA%\Everything. If disabled, settings and data are stored in the same location as the Everything.exe.
 This option is enabled in the installer by default and disabled in the portable version by default. Changing this setting will overwrite any existing settings.
 
