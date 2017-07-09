@@ -1,379 +1,377 @@
 =INI=
-The Everything.ini stores all the settings for Everything.
+Everything.ini에서 Everything의 모든 설정을 관리할 수 있습니다.
 <ul>
-*[[support/everything/ini#general_settings|General Settings]]
-*[[support/everything/ini#search_window_settings|Search Window Settings]]
-*[[support/everything/ini#search_settings|Search Settings]]
-*[[support/everything/ini#indexing|Indexing]]
+*[[support/everything/ini#general_settings|일반]]
+*[[support/everything/ini#search_window_settings|검색 창]]
+*[[support/everything/ini#search_settings|검색]]
+*[[support/everything/ini#indexing|색인]]
 *[[support/everything/ini#etp|ETP]]
 *[[support/everything/ini#http|HTTP]]
-*[[support/everything/ini#keyboard|Keyboard]]
-*[[support/everything/ini#fonts_and_colors|Fonts and colors]]
-*[[support/everything/ini#hidden_settings|Hidden settings]]
+*[[support/everything/ini#keyboard|키보드]]
+*[[support/everything/ini#fonts_and_colors|글꼴과 색상]]
+*[[support/everything/ini#hidden_settings|숨겨진 설정]]
 </ul>
 
-==Viewing and changing settings in Everything==
-Most of these settings can be changed from within Everything, in the [[support/everything/options|Everything Options]].
+==Everything으로 설정 보고 변경하기==
+[[support/everything/options|Everything 설정]] 창에서 설정 대부분을 바꿀 수 있습니다.
 
-To show the current value for a setting in the status bar, type in the following search and press ENTER:
+특정 설정의 현재값을 알고 싶다면 검색 줄에 다음 내용을 입력하고 엔터를 쳐보세요.
 <pre>
-/<ini option>
+/<ini 옵션>
 </pre>
-where <ini option> is one of the ini options below. Not all ini options are supported.
+<ini 옵션>은 아래 ini 옵션을 넣으면 되고, 모든 옵션을 지원하지는 않습니다.
 
-For example, to check the current value for the ini option '''snap''', type in the following search and press ENTER:
+예시로 '''snap''' 옵션의 값을 알고 싶다면 아래를 입력하고 엔터를 칩니다.
 <pre>
 /snap
 </pre>
 
-The current value is shown in the status bar for 3 seconds.
+현재 설정 값은 3초간 상태 표시줄에 표시됩니다.
 
 
-To change the value for a setting, type in the following search and press ENTER:
+설정 값을 바꾸려면 아래를 입력하고 엔터를 칩니다.
 <pre>
-/<ini option>=<value>
+/<ini 옵션>=<값>
 </pre>
-where <ini option> is one of the ini options below and <value> is the new value. Not all ini options are supported.
+아래 ini 옵션을 넣으면 되고 <값>은 새 설정 값입니다. 모든 옵션을 지원하진 않습니다.
 
-For example, to enable the '''snap''' ini option, type in the following search and press ENTER:
+예시로 '''snap''' 설정을 켜려면 아래를 입력하고 엔터를 칩니다.
 <pre>
 /snap=1
 </pre>
 
-The new value is shown in the status bar for 3 seconds.
+새 설정 값은 3초간 상태 표시줄에 표시됩니다.
 
-==Editing the Everything.ini==
-The Everything.ini is located in:
+==Everything.ini 편집하기==
+Everything.ini는 아래 경로에 있습니다.
 <pre>
 %APPDATA%\Everything
 </pre>
-If [[support/everything/options#Store settings and data in %APPDATA%\Everything|Store settings and data in %APPDATA%\Everything]] is disabled, the Everything.ini is stored in the same location as Everything.exe.
+[[support/everything/options#Store settings and data in %APPDATA%\Everything|%APPDATA%\Everything에 설정 저장하기]]를 껐다면 Everything.exe가 있는 경로에 있을 겁니다.
 
-The [[support/everything/options#Store settings and data in %APPDATA%\Everything|Store settings and data in %APPDATA%\Everything]] setting is stored in the Everything.ini in the same location as Everything.exe.
+[[support/everything/options#Store settings and data in %APPDATA%\Everything|%APPDATA%\Everything에 설정 저장하기]] 설정은 Everything.exe가 있는 곳의 Everything.ini에 저장됩니다.
 
-To open your Everything.ini file, type in the following search and press ENTER:
+현재 사용 중인 Everything.ini 파일을 열려면, 아래를 입력하고 엔터를 치세요.:
 <pre>
 about:config
 </pre>
 
-'''The Everything.ini is automatically generated. Any changes made to the Everything.ini while Everything is running are lost when Everything exits.'''
+'''Everything.ini는 자동 생성됩니다. Everything 실행 도중 Everything.ini를 바꿨더라도 Everything 종료 시 덮어씌워집니다.'''
 
-Please exit "''Everything''" before making changes to the Everything.ini file.
+Everything.ini를 바꾸기 전에 ''Everything''을 꺼 주세요.
 
-To exit Everything:
+Everything을 끄려면
 <ul>
-*Right click the Everything system tray icon and click Exit.
+*Everything 트레이 아이콘을 우클릭하고 종료를 클릭합니다.
 </ul>
 
-The Everything.ini should be opened and saved as UTF-8.
+UTF-8로 Everything.ini를 작성해야 합니다.
 
-==Syntax==
+==구문==
 <pre>
-[section]
-key=value
+[섹션]
+키=값
 </pre>
 
 ==[Everything]==
 <pre>
 [Everything]
 </pre>
-This begins the Everything section.
-Only the Everything section is used.
+위 텍스트로 Everything 섹션을 시작합니다.
+사실 이 섹션말고 안 씁니다.
 
-==General Settings==
-General settings for Everything.
+==일반==
+Everything 일반 설정입니다.
 
 <dl>
 ;''app_data''
-The location of settings and data. If set to 1, settings and data are stored in %APPDATA%\Everything. If set to 0, settings and data are stored in the same location as the Everything.exe.
-This option is always stored in the Everything.ini in the same location as your Everything.exe.
+설정과 자료 위치입니다. 1로 설정하면 %APPDATA%\Everything에 저장합니다. 0이면 Everything.exe가 있는 곳에 저장합니다.
+이 옵션은 Everything.exe가 있는 곳의 Everything.ini에 항상 저장됩니다.
 
 ;''run_as_admin''
-Run Everything as an admin. If set to 1 and Everything was run as from a standard user account, Everything will relaunch as an admin. If set to 1 and Everything was run as an admin, Everything will continue as normal. If set to 0, Everything will not relaunch as an admin.
-This option is always stored in the Everything.ini in the same location as your Everything.exe.
+Everything을 관리자 권한으로 실행합니다. 1이면 일반 계정 권한으로 실행할 때 관리자 권한으로 재실행합니다. 관리자 권한을 가지고 있었다면 그대로 진행합니다. 0이면 관리자 권한으로 재실행하지 않습니다.
+이 옵션은 Everything.exe가 있는 곳의 Everything.ini에 항상 저장됩니다.
 
 ;''allow_multiple_windows''
-Create a new search window or show an existing search window when Everything.exe is run. If set to 1, a new search window is always created. If set to 0 and no search window exists a new one is created. If set to 0 and a search window already exists, the existing search window is shown.
+Everything.exe를 실행할 때 이미 실행 중인 Everything의 기존 검색 창을 보여줄지 새 창을 보여줄지 정합니다. 1이면 새 창을 항상 만듭니다. 0이고 기존 창이 없으면 새로 만듭니다. 0이고 기존 창이 있으면 그 창을 띄워줍니다.
 
 ;''run_in_background''
-Specify wether Everything should exit after all the search windows have been closed. If set to 1, Everything will continue to run in the background after closing all the search windows. If set to 0, Everything will exit when all search windows are closed.
+모든 검색 창을 껐을 때 Everything을 종료해야하는지 정합니다. 1이면 창을 끄더라도 프로그랭은 남아있습니다. 0이면 모든 창을 껐을 때 프로그랭이 종료됩니다.
 
 ;''show_tray_icon''
-Show the Everything icon in the notification area. If set to 1, the tray icon is shown. If set to 0, the tray icon is not shown.
+트레이 영역에 Everything 아이콘을 보여줄지 정합니다. 1이면 트레이 아이콘을 보여주고, 0이면 안 보여줍니다.
 
 ;''language''
-The [[support/everything/language ids|Language Identifier]] in decimal for displaying text. If set to 1033, English (US) is used. If set to 0, The user default language for displaying text is used.
+Everything 창 언어의 십진법 [[support/everything/language ids|언어 ID]]입니다. 1042면 한국어를 사용합니다. 0으면 사용자 기본 언어를 씁니다.
 
 ;''open_folder_command2''
 ;''open_file_command2''
 ;''open_path_command2''
 ;''explore_command2''
 ;''explore_path_command2''
-The command to execute when opening or exploring a folder, file or path.
-See [[support/everything/customizing#External file manager|External file manager]] for more information.
+폴더, 파일, 경로를 열거나 탐색할 때 사용할 명령어입니다.
+자세한 건 [[support/everything/customizing#외부_파일_관리자|외부 파일 관리자]]를 참고하세요.
 
 ;''last_export_type''
-The last export type. Can be one of the following:
+마지막으로 내보낸 형식입니다. 다음 중 하나를 쓸 수 있습니다.
 {|
-! Type
-! Description
+! 종류
+! 설명
 |-
 | 0
-| EFU File
+| EFU 파일
 |-
 | 1
-| CSV File
+| CSV 파일
 |-
 | 2
-| TXT File
+| TXT 파일
 |}
 
 ;''check_for_updates_on_startup''
-Check for updates when Everything is started. Set to 1 to enable. Set to 0 to disable.
+Everything을 시작할 때 업데이트 확인을 합니다. 1이면 켜고 0이면 끕니다.
 
 ;''connect_history_hosts''
-A list of successful ETP connections.
+성공한 ETP 연결 히스토리입니다.
 
 ;''connect_history_ports''
-A list of ports for each connect_history_hosts.
+성공한 ETP 연결 히스토리 각각의 포트 목록입니다.
 
 ;''connect_history_usernames''
-A list of usernames for each connect_history_hosts.
+성공한 ETP 연결 히스토리 각각의 사용자 ID 목록입니다.
 
 ;''connect_history_link_types''
-A list of history link types for each connect_history_hosts. Can be one of the following values:
+성공한 ETP 연결 히스토리 각각의 연결 종류입니다. 다음 중 하나를 쓸 수 있습니다.
 {|
-! Type
-! Description
+! 종류
+! 설명
 |-
 | 0
-| C:\ links.
+| C:\ 형식.
 |-
 | 1
-| \\server\C links.
+| \\server\C 형식.
 |-
 | 2
-| \\server\$C links.
+| \\server\$C 형식.
 |-
 | 3
-| ftp://server/C links.
+| ftp://server/C 형식.
 |}
 
 ;''search_history_enabled''
-Enable or disable search history. Set to 1 to enable. Set to 0 to disable.
+검색어 기록을 켜거나 끕니다. 1이면 켜고, 0이면 끕니다.
 
 ;''run_history_enabled''
-Enable or disable run history. Set to 1 to enable. Set to 0 to disable.
+실행 항목 기록을 켜거나 끕니다. 1이면 켜고, 0이면 끕니다.
 
 ;''search_history_days_to_keep''
-The number of days to keep search history.
+검색어를 보관할 최대 일수입니다.
 
 ;''run_history_days_to_keep''
-The number of days to keep run history.
+실행 기록을 보관할 최대 일수입니다.
 
 ;''search_history_keep_forever''
-Keep search history forever.
-Set to 1 to enable. Set to 0 to disable.
+검색 기록을 영구히 보관합니다.
+1이면 켜고, 0이면 끕니다.
 
 ;''run_history_keep_forever''
-Keep run history forever.
-Set to 1 to enable. Set to 0 to disable.
+실행 기록을 영구히 보관합니다.
+1이면 켜고, 0이면 끕니다.
 
 ;''search_history_always_suggest''
-Show search suggestions on each keystroke or only show suggestions when Ctrl + Space is pressed. Set to 1 to always show suggestions. Set to 0 to show suggestions when Ctrl + Space is pressed.
+검색어를 타자를 칠 때마다 제안할 지 Ctrl + 스페이스 키를 누를때만 제안할 지 정합니다. 1이면 항상 제안하고, 0이면 Ctrl + 스페이스를 눌러야 제안합니다.
 
 ;''search_history_sort''
-The search history organizer sort.
-Can be one of the following values:
+검색 기록 순서를 정합니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Sort by search
+| 이름순 정렬
 |-
 | 1
-| Sort by search count
+| 검색 횟수순 정렬
 |-
 | 2
-| Sort by search date
+| 검색 날짜순 정렬
 |}
 
 ;''search_history_sort_ascending''
-The search history organizer sort order.
-Set to 1 to sort ascending. Set to 0 to sort descending.
+검색 기록 순서를 오름차순으로 할지 정합니다.
+1이면 오름차순, 0이면 내림차순입니다.
 
 ;''search_history_x''
 ;''search_history_y''
-The search history window position.
+검색 히스토리 창 위치입니다.
 
 ;''search_history_wide''
 ;''search_history_high''
-The search history window dimensions.
+검색 히스토리 창 크기입니다.
 
 ;''search_history_column_search_wide''
-The width of the search column in pixels.
+히스토리 창 검색어 열 픽셀 너비입니다.
 
 ;''search_history_column_search_order''
-The position of the search column.
+히스토리 창 검색어 열 위치 순서입니다.
 
 ;''search_history_column_count_wide''
-The width of the search count column in pixels.
+히스토리 창 검색 횟수 열 픽셀 너비입니다.
 
 ;''search_history_column_count_order''
-The position of the search count column.
+히스토리 창 검색 횟수 열 위치 순서입니다.
 
 ;''search_history_column_date_wide''
-The width of the last search date column in pixels.
+히스토리 창 검색 날짜 열 픽셀 너비입니다.
 
 ;''search_history_column_date_order''
-The position of the last search date column.
+히스토리 창 검색 날짜 열 위치 순서입니다.
 </dl>
 
-==Search Window Settings==
-settings that affect appearance.
+==검색 창==
+외관 관련 설정입니다.
 
 <dl>
 ;''window_x''
-The last horizontal position of the search window's upper left corner, in screen coordinates before it was closed. New search windows are positioned based on this setting.
+마지막으로 끈 검색 창 왼쪽 위 귀퉁이의 화면 픽셀 기준 가로 좌표입니다. 새 검색 창을 이 값 위치에 띄웁니다.
 
 ;''window_y''
-The last vertical position of the search window's upper left corner, in screen coordinates before it was closed. New search windows are positioned based on this setting.
+마지막으로 끈 검색 창 왼쪽 위 귀퉁이의 화면 픽셀 기준 세로 좌표입니다. 새 검색 창을 이 값 위치에 띄웁니다.
 
 ;''window_wide''
 ;''window_high''
-The last size of the Everything search window, in pixels before it was closed. New search windows are sized based on this setting.
+마지막으로 끈 Everything 검색 창의 너비, 높이 픽셀 수 입니다. 새 검색 창을 이 크기로 띄웁니다.
 
 ;''maximized''
-Control how new search windows are displayed. If set to 1, new search windows are shown maximized. If set to 0, new search windows are not shown maximized.
+1이면 새 검색 창을 최대화된 상태로 띄웁니다. 0이면 최대화하지 않습니다.
 
 ;''minimized''
-Control how new search windows are displayed. If set to 1, new search windows are minimized, If set to 0, new search windows are not shown minimized. Everything does not save this value, it must be set manually.
+1이면 새 검색 창을 최소화된 상태로 띄웁니다. 0이면 최소화하지 않습니다.
 
 ;''fullscreen''
-Show the Everything search window in a full screen window. Set to 1 to enable full screen mode. Set to 0 to window mode.
+1이면 검색 창을 전체 화면으로 보여줍니다. 0이면 일반 창으로 보여줍니다.
 
 ;''ontop''
-Keep the Everything window on top of other windows. Set to 0 to never be on top. Set to 1 to be always on top. Set to 2 to be on top only while the search is not empty.
+항상 위에 기능입니다. 0이면 일반 창이고, 1이면 항상 위에 창을 고정합니다. 2면 검색 도중에만 항상 위에 고정합니다.
 
 ;''alternate_row_color''
-Set to 1 to alternate the result list row color. Set to 0 to use a solid color for the result list.
+1이면 검색 결과 배경색으로 두 색을 교대로 사용합니다. 0이면 한 색깔만 사용합니다.
 
 ;''show_mouseover''
-Show the row the mouse is currently over in a different color. Set to 1 use a custom color. Set to 0 to use the default color.
+포인터를 갖다댄 검색 결과 행을 다른 색으로 강조합니다. 1이면 다른 색을 쓰고, 0이면 기본 색을 씁니다.
 
 ;''show_highlighted_search_terms''
-Show highlighted search terms. Set to 1 to enable. Set to 0 to disable.
+검색어 일치 부분을 강조합니다. 1이면 켜고, 0이면 끕니다.
 
 ;''text_size''
-Offset in pixels of the font height for displaying results. Set to 0 to reset.
+검색 결과 글꼴 픽셀 높이 오프셋입니다. 기존 설정에 이 값을 더하므로 0이 기본값입니다.
 
 ;''hide_empty_search_results''
-Don't show any results when the search is an empty string. Set to 1 to enable. Set to 0 to show all results when the search is empty.
+1이면 검색 줄이 비어있을 때 아무 결과도 보여주지 않습니다. 0이면 모든 결과를 보여줍니다.
 
 ;''clear_selection_on_search''
-Reset the selection when changing a search parameter. Set to 1 to enable. Set to 0 to keep the selection between searches.
+1이면 검색어가 바뀔 때 선택 영역을 초기화합니다. 0이면 남아있는 항목 선택을 유지합니다.
 
 ;''show_selected_item_in_statusbar''
-Show the full path and filename of the currently selected item in the status bar. Set to 1 to enable. Set to 0 to disable.
+1이면 현재 선택한 항목 정보를 상태 표시줄에 표시합니다. 0이면 선택한 항목 개수를 알려줍니다.
 
 ;''translucent_selection_rectangle_alpha''
-The alpha level for the selection rectangle. Ranges from 0 - 255. 0 = transparent, 255 = opaque.
+드래그 선택 사각형의 투명도입니다. 0 = 투명 ~ 255 = 불투명까지 쓸 수 있습니다.
 
 ;''last_options_page''
-The last Everything options page. When opening a new option window, this page will be shown.
+마지막 Everything 설정 페이지입니다. 설정 창을 띄울 때 이 페이지를 보여줍니다.
 
 ;''invert_layout''
-Toggle LTR/RTL view. Set to 1 to invert.
+LTR/RTL을 전환합니다. 1이면 전환합니다.
 
 ;''allow_multiple_windows_from_tray''
-Create a new search window or show an existing search window when opening Everything from the tray icon. Set to 1 to always create a new search window. Set to 0 to show an existing window before creating a new search window.
+1이면 트레이 아이콘을 더블클릭 했을 때 무조건 새 검색 창을 띄웁니다. 0이면 기존 창이 있을 땐 기존 창을 보여줍니다.
 
 ;''single_click_tray''
-Open the Everything search window with a single or double click from the tray icon. Set to 1 to open with a single click. Set to 0 to open with a double click.
+1이면 트레이 아이콘을 클릭해서 검색 창을 열 수 있습니다. 0이면 더블 클릭으로 열 수 있습니다.
 
 ;''close_on_execute''
-Close the Everything search window after executing an item. Set to 1 to close after executing. Set to 0 to keep the window open after executing.
+1이면 항목을 실행했을 때 검색 창을 닫습니다. 0이면 창을 남겨둡니다.
 
 ;''double_click_path''
-Open the path in the path column when double clicking it. Set to 1 to allow a double click to open the path. Set to 0 to ignore the double click.
+1이면 검색 항목의 경로 칸을 더블 클릭해서 경로를 열 수 있습니다. 0이면 더블 클릭을 무시합니다.
 
 ;''update_display_after_scroll''
-Force the display to update immediately after it is scrolled. Set to 1 to update after scrolling. Set to 0 to invalidate and update later.
+1이면 스크롤한 직후에 다시 그립니다. 0이면 영역 무효화만 하고 갱신은 미룹니다.
 
 ;''auto_scroll_view''
-Automatically scroll the view when dragging the selection mask outside the window. Set to 1 to automatically scroll. Set to 0 to only scroll when the mouse is moved.
+1이면 드래그 선택 포인터가 화면 밖으로 나갔을 때 자동으로 스크롤해서 선택 영역을 확장해 줍니다. 0이면 포인터를 움직일 때만 스크롤해줍니다.
 
 ;''double_quote_copy_as_path''
-Include double quotes around the path when copied to the clipboard. Set to 1 to include the double quotes. Set to 0 to copy without the double quotes.
+1이면 경로를 복사할 때 "로 감싸줍니다. 0이면 경로만 복사합니다.
 
 ;''rename_select_filepart_only''
-Select only the file part only (not the extension) or the entire filename when renaming. Set to 1 to select only the file part and not select the extension. Set to 0 to select the entire filename.
+1이면 이름 바꾸기 시 확장자를 제외하고 선택합니다. 0이면 확장자를 포함해서 선택합니다.
 
 ;''select_search_on_mouse_click''
-Select all the search text when focusing the search edit.
+검색 줄을 선택할 때 검색어 전체를 선택합니다.
 
 ;''focus_search_on_activate''
-Focus the search edit when the Everything window is activated.
+검색 창을 선택하면 자동으로 검색 줄에 초점을 맞춥니다.
 
 ;''single_click_open''
-Open a result with a single click or double click.
-Set to 0 to use the system default setting for single click open. Set to 1 to open with a single click. Set to 2 to open with a double click.
+검색 항목을 여는 방법을 정합니다. 0이면 시스템 기본 설정을 씁니다. 1이면 클릭으로 항목을 엽니다. 2면 더블 클릭으로 항목을 엽니다.
 
 ;''underline_icon_titles''
 Show result text with underlines.
 Set to 0 to use the system default setting for underline icon titles. Set to 1 to always show underlines. Set to 2 to never show underlines. Set to 3 to underline result text when hovering with the mouse cursor. 
 
 ;''wrap_focus''
-Can be one of the following values:
+결과 목록 양 끝을 방향키로 이동할 때의 설정입니다. 다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| focus is clamped to the result list.
+| 결과 목록 맨 처음과 맨 마지막이 연결되어있지 않습니다.
 |-
 | 1
-| focus wraps around the top and bottom of the result list.
+| 결과 목록 맨 처음과 맨 마지막이 연결되어 있습니다.
 |-
 | 2
-| focus wraps around the top and bottom of the result list and search edit.
+| 결과 목록 맨 처음과 맨 마지막 사이에 검색 줄이 들어가 연결되어 있습니다.
 |}
 
 ;''load_icon_priority''
 ;''load_thumbnail_priority''
 ;''load_fileinfo_priority''
-The thread priority of the load action.
-Can be one of the following values:
+불러오기 작업 스레드 우선순위입니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | -15
-| Idle priority.
+| 매우 낮음.
 |-
 | -1
-| Below normal priority.
+| 낮음.
 |-
 | 0
-| Normal priority.
+| 보통.
 |-
 | 1
-| Above normal priority.
+| 조금 높음.
 |-
 | 2
-| High priority.
+| 높음.
 |}
 
 ;''full_row_select''
-Allow clicking anywhere in the row to select an item and show the selection for the entire row.
-Set to 1 to enable. Set to 0 to disable.
+1이면 행 어디를 클릭하더라도 행을 선택할 수 있고 행 전체를 선택 영역으로 표시합니다. 0이면 반드시 이름을 클릭해야 합니다.
 
 ;''double_buffer''
-Use an off screen buffer when rendering the result list. Set to 1 to use the off screen buffer. Set to 0 to render directly to the screen. Use a double buffer to remove flickering when rendering. Drawing directly to the screen may improve performance on older computers.
+1이면 더블 버퍼링을 켜고 0이면 끕니다. 더블 버퍼링은 화면 깜박임을 줄이는데 도움을 주지만 성능이 매우 안 좋은 컴퓨터에서는 끄는 게 도움이 될 수 있습니다.
 
 ;''show_number_of_results_with_selection''
-Show the total number of results with the selection count in the status bar. Set to 1 to enable. Set to 0 to disable.
+1이면 항목을 선택했을 때도 전체 항목 개수를 보여줍니다. 0이면 선택 항목 개수만 보여줍니다.
 
 ;''date_descending_first''
 Show dates in descending order first.
@@ -382,154 +380,153 @@ Show dates in descending order first.
 Show sizes in descending order first.
 
 ;''size_format''
-The size format type, can be one of the following:
+크기 형식입니다. 다음 중 하나를 쓸 수 있습니다.
 {|
-! Type
-! Description
+! 값
+! 설명
 |-
 | 0
-| Best format depending on the size.
+| 크기에 따라 선택.
 |-
 | 1
-| Always show sizes in bytes.
+| 항상 바이트 단위.
 |-
 | 2
-| Always show sizes in KB.
+| 항상 KB 단위.
 |-
 | 3
-| Always show sizes in MB.
+| 항상 MB 단위.
 |}
 
 ;''alpha_select''
-Draw the selection mask as a translucent rectangle or a XOR outline mask. Set to 1 to use a translucent rectangle. Set to 2 to use a XOR outline mask. Set to 0 to use the system default selection rectangle.
+드래그 선택 사각형으로 반투명 사각형을 쓸 건지 XOR 외곽선을 쓸 건지 정합니다. 1은 반투명 사각형, 2는 XOR 외곽선, 0은 시스템 기본값을 사용합니다.
 
 ;''show_size_in_statusbar''
-Set to 1 to show the selection or total size in status bar.
-Set to 0 to disable.
-Enabling can decrease search performance.
+1이면 선택 항목 혹은 전체 파일 크기를 상태 표시줄 우하단에 보여줍니다.
+0이면 이 기능을 끕니다.
+이 기능은 검색 성능을 떨어뜨릴 수 있습니다.
 
 ;''tooltips''
-Show or don't show tooltips in the option window. Set to 1 to show tooltips. Set to 0 to not show tooltips.
+1이면 설정 창에서 툴팁을 표시합니다. 0이면 보여주지 않습니다.
 
 ;''editor_x''
 ;''editor_y''
-The last file list editor window position.
+파일 목록 편집기 창 위치입니다.
 
 ;''editor_wide''
 ;''editor_high''
-The last file list editor window dimensions.
+파일 목록 편집기 창 크기입니다.
 
 ;''editor_maximized''
-The file list editor is maximized.
-Set to 1 to enable. Set to 0 to disable.
+파일 목록 편집기를 최대화합니다.
+1이면 최대화, 0이면 냅둡니다.
 
 ;''rename_x''
 ;''rename_y''
-The multi-file rename window position.
+일괄 이름 변경 창 위치입니다.
 
 ;''rename_wide''
 ;''rename_high''
-The multi-file rename window dimensions.
+일괄 이름 변경 창 크기입니다.
 
 ;''rename_match_case''
-Match or ignore case in a multi-file rename operation.
-Set to 1 to match case. Set to 0 to ignore case.
+일괄 이름 변경 창의 대소문자 구분 옵션입니다.
+1이면 구분하고, 0이면 무시합니다.
 
 ;''rename_regex''
-Enable regex in a multi-file rename operation.
-Set to 1 to enable. Set to 0 to disable.
+일괄 이름 변경 창의 정규식 옵션입니다.
+1이면 켜고, 0이면 끕니다.
 
 ;''advanced_copy_to_x''
 ;''advanced_copy_to_y''
-The advanced copy to window position.
+고급 복사 창 위치입니다.
 
 ;''advanced_copy_to_wide''
 ;''advanced_copy_to_high''
-The advanced copy to window dimensions.
+고급 복사 창 크기입니다.
 
 ;''advanced_copy_to_match_case''
-Match or ignore case in a advanced copy to operation.
-Set to 1 to match case. Set to 0 to ignore case.
+고급 복사 창의 대소문자 구분 옵션입니다.
+1이면 구분하고, 0이면 무시합니다.
 
 ;''advanced_copy_to_regex''
-Enable regex in a advanced copy to operation.
-Set to 1 to enable. Set to 0 to disable.
+고급 복사 창의 정규식 옵션입니다.
+1이면 켜고, 0이면 끕니다.
 
 ;''advanced_move_to_x''
-;''advanced_move_to_y''
-The advanced move to window position.
+고급 이동 창 위치입니다.
 
 ;''advanced_move_to_wide''
 ;''advanced_move_to_high''
-The advanced move to window dimensions.
+고급 이동 창 크기입니다.
 
 ;''advanced_move_to_match_case''
-Match or ignore case in a advanced move to operation.
-Set to 1 to match case. Set to 0 to ignore case.
+고급 이동 창의 대소문자 구분 옵션입니다.
+1이면 구분하고, 0이면 무시합니다.
 
 ;''advanced_move_to_regex''
-Enable regex in a advanced move to operation.
-Set to 1 to enable. Set to 0 to disable.
+고급 이동 창의 정규식 옵션입니다.
+1이면 켜고, 0이면 끕니다.
 
 ;''advanced_search_x''
 ;''advanced_search_y''
-The advanced search window position.
+고급 검색 창 위치입니다.
 
 ;''advanced_search_wide''
 ;''advanced_search_high''
-The advanced search window dimensions.
+고급 검색 창 크기입니다.
 
 ;''advanced_search_page_y_offset''
-The vertical scroll offset from the top of the advanced search page.
+고급 검색 창 스크롤 위치입니다.
 
 ;''advanced_search_focus_id''
-The ID of the advanced search item that had focus last.
+고급 검색 창에서 마지막으로 초점을 가졌던 컨트롤 ID입니다. 엔터를 누르면 기억됩니다.
 
 ;''show_copy_name''
-Show or do not show the copy name context menu item. Set to 1 to show the context menu item. Set to 0 to not show the context menu item. Set to 2 to use the default show setting. Set to 3 to show when holding down the Shift key.
+1이면 이름 복사 컨텍스트 메뉴를 보여줍니다. 0이면 보여주지 않습니다. 2면 시스템 기본 설정을 씁니다. 3이면 시프트 키를 누른 상태에서 우클릭해야 보여줍니다.
 
 ;''show_copy_path''
-Show or do not show the copy path context menu item. Set to 1 to show the context menu item. Set to 0 to not show the context menu item. Set to 2 to use the default show setting. Set to 3 to show when holding down the Shift key.
+1이면 경로 복사 컨텍스트 메뉴를 보여줍니다. 0이면 보여주지 않습니다. 2면 시스템 기본 설정을 씁니다. 3이면 시프트 키를 누른 상태에서 우클릭해야 보여줍니다.
 
 ;''show_copy_full_name''
-Show or do not show the copy full name context menu item. Set to 1 to show the context menu item. Set to 0 to not show the context menu item. Set to 2 to use the default show setting. Set to 3 to show when holding down the Shift key.
+1이면 전체 이름 복사 컨텍스트 메뉴를 보여줍니다. 0이면 보여주지 않습니다. 2면 시스템 기본 설정을 씁니다. 3이면 시프트 키를 누른 상태에서 우클릭해야 보여줍니다.
 
 ;''show_open_path''
-Show or do not show the open path context menu item. Set to 1 to show the context menu item. Set to 0 to not show the context menu item. Set to 2 to use the default show setting. Set to 3 to show when holding down the Shift key.
+1이면 경로 열기 컨텍스트 메뉴를 보여줍니다. 0이면 보여주지 않습니다. 2면 시스템 기본 설정을 씁니다. 3이면 시프트 키를 누른 상태에서 우클릭해야 보여줍니다.
 
 ;''show_explore''
-Show or do not show the Explore context menu item. Set to 1 to show the context menu item. Set to 0 to not show the context menu item. Set to 2 to use the default show setting. Set to 3 to show when holding down the Shift key.
+1이면 탐색 컨텍스트 메뉴를 보여줍니다. 0이면 보여주지 않습니다. 2면 시스템 기본 설정을 씁니다. 3이면 시프트 키를 누른 상태에서 우클릭해야 보여줍니다.
 
 ;''show_explore_path''
-Show or do not show the Explore path context menu item. Set to 1 to show the context menu item. Set to 0 to not show the context menu item. Set to 2 to use the default show setting. Set to 3 to show when holding down the Shift key.
+1이면 경로 탐색 컨텍스트 메뉴를 보여줍니다. 0이면 보여주지 않습니다. 2면 시스템 기본 설정을 씁니다. 3이면 시프트 키를 누른 상태에서 우클릭해야 보여줍니다.
 
 ;''filters_visible''
-Show the filter bar in the toolbar.
-Set to 1 to show. Set to 0 to hide.
+1이면 검색 줄 옆에 필터 칸을 보여줍니다.
+0이면 숨깁니다.
 
 ;''filters_wide''
-Width of the filter bar in pixels.
+필터 칸 너비입니다.
 
 ;''filters_right_align''
-Left or right alignment of the filter bar. Set to 1 to align to the right. Set to 0 to align to the left.
+1이면 필터 칸을 검색 줄 오른쪽에 둡니다. 0이면 왼쪽에 둡니다.
 
 ;''filter_everything_name'';
-The name of the Everything filter.
+기본 필터(전부) 대신 쓸 이름을 설정합니다.
 
 ;''filter_organize_x''
 ;''filter_organize_y''
-The filter organize window position.
+필터 관리 창 위치입니다.
 
 ;''filter_organize_wide''
 ;''filter_organize_high''
-The filter organize window dimensions.
+필터 관리 창 크기입니다.
 
 ;''preview_visible''
-Show or hide the preview pane.
-Set to 1 to show. Set to 0 to hide.
+1이면 미리보기 영역을 보여줍니다.
+0이면 숨깁니다.
 
 ;''preview_x''
-The width of the preview pane in pixels.
+미리보기 영역의 픽셀 너비 입니다.
 
 ;''name_column_pos''
 ;''path_column_pos''
@@ -544,7 +541,7 @@ The width of the preview pane in pixels.
 ;''date_run_column_pos''
 ;''run_count_column_pos''
 ;''date_recently_changed_column_pos''
-The position of the column. 0 being the left most.
+검색 결과 열 순서를 지정합니다. 0이 가장 왼쪽입니다.
 
 ;''name_column_width''
 ;''path_column_width''
@@ -559,7 +556,7 @@ The position of the column. 0 being the left most.
 ;''date_run_column_width''
 ;''run_count_column_width''
 ;''date_recently_changed_column_width''
-The width of the column in pixels.
+검색 결과 열 픽셀 너비입니다.
 
 ;''path_column_visible''
 ;''size_column_visible''
@@ -573,99 +570,99 @@ The width of the column in pixels.
 ;''date_run_column_visible''
 ;''run_count_column_visible''
 ;''date_recently_changed_column_visible''
-Visibility of the column. Set to 1 to show. Set to 0 to hide.
+1이면 해당하는 검색 결과 열을 보여주고, 0이면 숨깁니다.
 </dl>
 
-==Search Settings==
-Settings that affect the search.
+==검색==
+검색에 영향을 주는 설정입니다.
 
 <dl>
 ;''match_whole_word''
-Match whole words. Set to 1 to enable. Set to 0 to match anywhere.
+1이면 전체 단어 일치를 사용합니다. 0이면 아무 위치에서나 검색합니다.
 
 ;''match_path''
-Match full paths. Set to 1 to enable. Set to 0 to match filenames only.
+1이면 전체 경로 검색을 사용합니다. 0이면 파일 이름에서만 검색합니다.
 
 ;''match_case''
-Match case. Set to 1 to enable. Set to 0 to ignore case.
+1이면 대소문자를 구분합니다. 0이면 무시합니다.
 
 ;''match_diacritics''
-Match diacritical marks. Set to 1 to enable. Set to 0 to disable.
+1이면 발음 구별 부호를 구분합니다. 0이면 무시합니다.
 
 ;''match_regex''
-Use regular expressions. Set to 1 to enable. Set to 0 to disable.
+1이면 정규식을 사용합니다. 0이면 쓰지 않습니다.
 
 ;''home_match_case''
-The match case value for the home search. Set to 0 to use the last value. set to 1 to use a custom value.
+처음 화면에서 대소문자 구분 최근 값 사용 여부입니다. 0이면 마지막 값을 쓰고 1이면 지정한 값을 씁니다.
 
 ;''home_match_whole_word'' 
-The match whole word value for the home search. Set to 0 to use the last value. set to 1 to use a custom value.
+처음 화면에서 전체 단어 일치 최근 값 사용 여부입니다. 0이면 마지막 값을 쓰고 1이면 지정한 값을 씁니다.
 
 ;''home_match_path''
-The match path value for the home search. Set to 0 to use the last value. set to 1 to use a custom value.
+처음 화면에서 전체 경로 검색 최근 값 사용 여부입니다. 0이면 마지막 값을 쓰고 1이면 지정한 값을 씁니다.
 
 ;''home_match_diacritics''
-The match diacritics value for the home search. Set to 0 to use the last value. set to 1 to use a custom value.
+처음 화면에서 발음 구별 부호 구분 최근 값 사용 여부입니다. 0이면 마지막 값을 쓰고 1이면 지정한 값을 씁니다.
 
 ;''home_regex''
-The Regex value for the home search. Set to 0 to use the last value. set to 1 to use a custom value.
+처음 화면에서 정규식 사용 최근 값 사용 여부입니다. 0이면 마지막 값을 쓰고 1이면 지정한 값을 씁니다.
 
 ;''home_search''
-The search type for the home search. Set to 0 to use the last value. Set to 1 to use a custom search.
+처음 화면에서 검색어 최근 값 사용 여부입니다. 0이면 마지막 값을 쓰고 1이면 지정한 값을 씁니다.
 
 ;''home_filter''
-The filter type for the home search. Set to 0 to use the last value. Set to 1 to use a custom filter.
+처음 화면에서 필터 최근 값 사용 여부입니다. 0이면 마지막 값을 쓰고 1이면 지정한 값을 씁니다.
 
 ;''home_sort''
-The sort type for the home search. Set to 0 to use the last value. Set to 1 to use a custom sort.
+처음 화면에서 검색어 최근 값 사용 여부입니다. 0이면 마지막 값을 쓰고 1이면 지정한 값을 씁니다.
 
 ;''home_view''
-The result list view mode for the home search.
-Can be one of the following values:
+처음 화면에서 볼 결과 목록 종류입니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Details
+| 자세히
 |-
 | 1
-| Thumbnails
+| 섬네일
 |}
 
 ;''home_index''
-The index type for the home search. Set to 0 to use the last value. Set to 1 to use a custom index.
+처음 화면에서 색인 최근 값 사용 여부입니다. 0이면 마지막 값을 쓰고 1이면 지정한 값을 씁니다.
 
 ;''fast_ascii_search''
-Use single byte ASCII lower case comparisons. Set to 0 to fix Turkish I with dot mappings.
+1바이트 아스키 소문자 비교를 사용합니다. 터키어의 점있는 I를 구분하려면 0으로 설정하세요.
 
 ;''match_path_when_search_contains_path_separator''
-Enable full path matching when the search contains a backslash (\). Set to 1 to enable. Set to 0 to disable.
+1이면 검색어에 \가 있을 경우 전체 경로 검색을 사용합니다. 0이면 냅둡니다.
 
 ;''allow_literal_operators''
-Allow use of the literal operators AND, OR and NOT. Set to 1 to allow. Set to 0 to disallow. Can cause conflicts if enabled and a filename contains the text AND, OR or NOT.
+1이면 검색어에 AND, OR, NOT 연산자를 사용합니다. 0이면 쓰지 않습니다. AND, OR, NOT을 포함한 파일 이름과 충돌할 수 있습니다.
 
 ;''allow_round_bracket_parenthesis''
-Allow ( and ) for grouping. Set to 1 to allow. Set to 0 to disallow. Can cause conflicts if enabled and a filename contains a ( or ).
+1이면 검색어에 <>말고 ()로도 조건을 묶을 수 있습니다. 0이면 그러지 않습니다. ()를 포함한 파일 이름과 충돌할 수 있습니다.
 
 ;''expand_environment_variables''
-Expand environment strings inside % quotes. Set to 1 to enable. Set to 0 to disable. Can cause conflicts if enabled and a filename contains a %.
+1이면 검색어에 %로 감싼 환경변수를 확장합니다. 0이면 확장하지 않습니다. %를 포함한 파일 이름과 충돌할 수 있습니다.
 
 ;''search_as_you_type''
-Search as you type or search when you press enter. Set to 1 to search as you type. Set to 0 to search when you press enter.
+1이면 키 입력마다 실시간으로 검색합니다. 0이면 엔터를 쳐야 검색합니다.
 
 ;''convert_forward_slash_to_backslash''
-Convert backslashes (/) to forward slashes (\). Set to 1 to convert / to \. Set to 0 to allow /. Can cause conflicts if enabled and a filename contains a /. Note: filenames on NTFS volumes can not contain a /. It is possible to use / in file lists for URLs.
+1이면 /를 \로 바꿔줍니다. 0이면 그대로 씁니다. /를 포함한 파일 이름과 충돌할 수 있습니다. NTFS 볼륨은 경로에 /를 포함하지 않지만 URL을 포함한 파일 목록의 경우 /를 포함할 수 있습니다.
 
 ;''match_whole_filename_when_using_wildcards''
-Match the whole filename or anywhere when using wildcards. Set to 1 to match the whole filename. Set to 0 to match anywhere.
+1이면 검색어에 *이 들어갔을 때 전체 파일 이름과 일치 여부를 검사합니다. 0이면 아무데서나 일치를 검사합니다.
 
 ;''operator_precedence''
-Order of operations.
-Can be one of the following values:
+연산자 우선순위입니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
 | OR > AND
@@ -675,7 +672,7 @@ Can be one of the following values:
 |}
 
 ;''search''
-The last search string. Only valid if home_search is set to 1.
+마지막 검색어입니다. home_search가 1일 때만 사용합니다.
 
 ;''bookmark_remember_case''
 ;''bookmark_remember_wholeword''
@@ -686,471 +683,459 @@ The last search string. Only valid if home_search is set to 1.
 ;''bookmark_remember_view''
 ;''bookmark_remember_filter''
 ;''bookmark_remember_index''
-Save the search settings to the bookmark. Set to 1 to remember the setting. Set to 0 to keep the current setting. If enabled, when the bookmark is opened the search settings are restored. 
+1이면 책갈피 추가, 고치기 창을 열 때 해당 설정을 기억하도록 체크합니다. 0이면 체크하지 않습니다.
 
 ;''bookmark_organize_x''
 ;''bookmark_organize_y''
-The current bookmark window position.
+책갈피 관리 창 위치입니다.
 
 ;''bookmark_organize_wide''
 ;''bookmark_organize_high''
-The current bookmark window dimensions.
+책갈피 관리 창 크기입니다.
 
 ;''filter''
-The last filter name. If home_sort is 1, this filter is restored when opening a new search window. 
+마지막 필터 이름입니다. home_sort가 1이면 처음 화면에서 이 필터로 바뀝니다.
 
 ;''sort''
-The last sort. If home_sort is 1, this sort is restored when opening a new search window. If always_keep_sort is 0, this value will be ignored if it is a slow sort.
+마지막 정렬입니다. home_sort가 1이면 새 검색 창을 열 때 이 정렬을 사용합니다. always_keep_sort가 0이면 이 값이 느린 정렬일 때 무시합니다.
 
-Can be one of the following sort types:
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Type
-! Description
+! 종류
+! 설명
 |-
 | 0
-| Name
+| 이름
 |-
 | 1
-| Path
+| 경로
 |-
 | 2
-| Extension
+| 확장자
 |-
 | 3
-| Type
+| 종류
 |-
 | 4
-| Date modified
+| 수정한 날짜
 |-
 | 5
-| Date created
+| 만든 날짜
 |-
 | 6
-| Date accessed
+| 접근한 날짜
 |-
 | 7
-| Attributes
+| 속성
 |-
 | 8
-| Date recently changed
+| 최근에 변경한 날짜
 |-
 | 9
-| Run count
+| 실행 횟수
 |-
 | 10
-| Date run
+| 실행 날짜
 |-
 | 11
-| File list filename
+| 파일 목록 파일이름
 |}
 
 ;''sort_ascending''
-Sort ascending or descending. Set to 1 to sort ascending. Set to 0 to sort descending.
+1이면 오름차순 정렬합니다. 0이면 내림차순 정렬합니다.
 
 ;''index''
-The last index type. If home_index is 1, this index is restored when opening a new search window.
+마지막 색인 종류입니다. home_index가 1이면 새 창을 열 때 이 색인을 불러옵니다.
 
-Can be one of the follow index types:
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Type
-! Description
+! 종류
+! 설명
 |-
 | 0
-| Local DB.
+| 로컬 데이터베이스.
 |-
 | 1
-| File list.
+| 파일 목록.
 |-
 | 2
-| ETP server.
+| ETP 서버.
 |}
 
 ;''index_file_list''
-The file list filename when the last index is a file list.
+마지막 색인이 파일 목록일 때의 파일 목록 파일 이름입니다.
 
 ;''index_etp_server''
-The ETP server when the last index is a ETP server.
+마지막 색인이 ETP 서버일 때의 ETP 서버 이름입니다.
 
 ;''index_link_type''
-The ETP link type when the last index is a ETP server.
+마지막 색인이 ETP 서버일 때의 ETP 서버 연결 종류입니다.
 
 ;''view''
-The result list view mode.
-Can be one of the following values:
+결과 목록 보기 종류입니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Details
+| 자세히
 |-
 | 1
-| Thumbnails
+| 섬네일
 |}
 
 ;''thumbnail_size''
-The thumbnail size in pixels.
+섬네일 픽셀 수 크기입니다.
 
 ;''status_bar_visible''
-Show or hide the status bar. Set to 1 to show the status bar. Set to 0 to hide the status bar.
+1이면 상태 표시줄을 보여줍니다. 0이면 숨깁니다.
 </dl>
 
-==Indexing==
-settings that affect indexing.
+==색인==
+색인에 영향을 주는 설정입니다.
 
 <dl>
 ;''auto_include_fixed_volumes''
-Automatically rebuild the database to include a new fixed NTFS volume has been added to the system.
+새 고정 NTFS 볼륨이 추가됐을 때 색인을 재구축해 데이터베이스에 추가합니다.
 
 ;''auto_include_removable_volumes''
-Automatically rebuild the database to include a new removable NTFS volume has been added to the system.
+새 이동식 NTFS 볼륨이 추가됐을 때 색인을 재구축해 데이터베이스에 추가합니다.
 
 ;''auto_remove_offline_ntfs_volumes''
-Automatically remove offline NTFS volumes included in the index.
-If disabled, offline volumes can be removed manually.
+색인한 NTFS 볼륨 연결이 끊겼을 경우 자동으로 색인에서 제거합니다.
+끄면 연결이 끊긴 볼륨을 수동으로 제거할 수 있습니다.
 
 ;''auto_include_fixed_refs_volumes''
-Automatically rebuild the database to include a new fixed ReFS volume has been added to the system.
+새 고정 ReFS 볼륨이 추가됐을 때 색인을 재구축해 데이터베이스에 추가합니다.
 
 ;''auto_include_removable_refs_volumes''
-Automatically rebuild the database to include a new removable ReFS volume has been added to the system.
+새 이동식 ReFS 볼륨이 추가됐을 때 색인을 재구축해 데이터베이스에 추가합니다.
 
 ;''auto_remove_offline_refs_volumes''
-Automatically remove offline ReFS volumes included in the index.
-If disabled, offline volumes can be removed manually.
+색인한 ReFS 볼륨 연결이 끊겼을 경우 자동으로 색인에서 제거합니다.
+끄면 연결이 끊긴 볼륨을 수동으로 제거할 수 있습니다.
 
 ;''exclude_list_enabled''
-Enable or disable the exclude list. Set to 1 to enable. Set to 0 to disable.
+1이면 제외 목록을 사용합니다. 0이면 사용하지 않습니다.
 
 ;''exclude_hidden_files_and_folders''
-Exclude or include hidden files and folders. Set to 1 to exclude hidden files and folders. Set to 0 to include hidden files and folders.
+1이면 색인에서 숨겨진 파일 및 폴더를 제외합니다. 0이면 포함합니다.
 
 ;''exclude_system_files_and_folders''
-Exclude or include system files and folders. Set to 1 to exclude system files and folders. Set to 0 to include system files and folders.
+1이면 색인에서 시스템 파일 및 폴더를 제외합니다. 0이면 포함합니다.
 
 ;''include_only_files''
-semicolon delimited list of which extensions to include. eg: *.mp3;*.jpg 
-Set to an empty string to include all file types.
+;로 분리된 색인에 포함할 파일 확장자 목록입니다. (예: *.mp3;*.jpg) 
+비워두면 모든 파일을 포함합니다.
 
 ;''exclude_files''
-semicolon delimited list of which extensions to exclude. eg: *.db
-Set to an empty string to not exclude any file types.
+;로 분리된 색인에서 제외할 확장자 목록입니다. (예: *.db) 
+비워두면 아무것도 제외하지 않습니다.
 
 ;''db_location''
-The path where the Everything.db is located.
+Everything.db 파일 위치입니다.
 
 ;''db_multi_user_filename''
-Use a unique filename for the database for each computer and user. Set to 1 to enable. Set to 0 to disable. Might be useful when using the portable version on different computers.
+1이면 컴퓨터별 사용자마다 고유한 데이터베이스 이름을 씁니다. 0이면 그러지 않습니다. 여러 컴퓨터에서 휴대용 버전을 쓸 때 유용할 수 있습니다.
 
 ;''db_compress''
-Use Bzip 2 to compress the database. Set to 1 to enable. Set to 0 to disable. Can improve loading performance on slow hard drives at the cost of higher CPU usage when loading and saving.
+1이면 데이터베이스를 Bzip 2 압축합니다. 0이면 압축하지 않습니다. 하드 디스크가 느리다면 불러오기 및 저장 시에  CPU 부하가 늘어나는 대신 성능이 향상될 수 있습니다.
 
 ;''index_size''
-Include file size information in the index.
-Set to 1 to enable. Set to 0 to disable.
+1이면 색인에 파일 크기 정보를 포함합니다. 0이면 포함하지 않습니다.
 
 ;''fast_size_sort''
-Maintain a size sorted index for instant size sorting.
-Set to 1 to enable. Set to 0 to disable.
+1이면 빠른 크기 정렬을 위해 정렬 색인을 유지합니다. 0이면 그러지 않습니다.
 
 ;''index_date_created''
-Include file and folder date created information in the index.
-Set to 1 to enable. Set to 0 to disable.
+1이면 색인에 만든 날짜 정보를 포함합니다. 0이면 포함하지 않습니다.
 
 ;''fast_date_created_sort''
-Maintain a date created sorted index for instant date created sorting.
-Set to 1 to enable. Set to 0 to disable.
+1이면 빠른 만든 날짜 정렬을 위해 정렬 색인을 유지합니다. 0이면 그러지 않습니다.
 
 ;''index_date_modified''
-Include file and folder date modified information in the index.
-Set to 1 to enable. Set to 0 to disable.
+1이면 색인에 수정한 날짜 정보를 포함합니다. 0이면 포함하지 않습니다.
 
 ;''fast_date_modified_sort''
-Maintain a date modified sorted index for instant date modified sorting.
-Set to 1 to enable. Set to 0 to disable.
+1이면 빠른 수정한 날짜 정렬을 위해 정렬 색인을 유지합니다. 0이면 그러지 않습니다.
 
 ;''index_date_accessed''
-Include file and folder date accessed information in the index.
-Set to 1 to enable. Set to 0 to disable.
+1이면 색인에 접근한 날짜 정보를 포함합니다. 0이면 포함하지 않습니다.
 
 ;''fast_date_accessed_sort''
-Maintain a date accessed sorted index for instant date accessed sorting.
-Set to 1 to enable. Set to 0 to disable.
+1이면 빠른 접근한 날짜 정렬을 위해 정렬 색인을 유지합니다. 0이면 그러지 않습니다.
 
 ;''index_attributes''
-Include file and folder attributes information in the index.
-Set to 1 to enable. Set to 0 to disable.
+1이면 색인에 속성을 포함합니다. 0이면 포함하지 않습니다.
 
 ;''fast_attributes_sort''
-Maintain an attributes sorted index for instant attributes sorting.
-Set to 1 to enable. Set to 0 to disable.
+1이면 빠른 속성 정렬을 위해 정렬 색인을 유지합니다. 0이면 그러지 않습니다.
 
 ;''index_folder size''
-Include folder size information in the index.
-Set to 1 to enable. Set to 0 to disable.
+1이면 색인에 폴더 크기를 포함합니다. 0이면 포함하지 않습니다.
 
 ;''fast_path_sort''
-Maintain an path sorted index for instant path sorting.
-Set to 1 to enable. Set to 0 to disable.
+1이면 빠른 경로 정렬을 위해 정렬 색인을 유지합니다. 0이면 그러지 않습니다.
 
 ;''fast_extension_sort''
-Maintain an extension sorted index for instant extension sorting.
-Set to 1 to enable. Set to 0 to disable.
+1이면 빠른 확장자 정렬을 위해 정렬 색인을 유지합니다. 0이면 그러지 않습니다.
 
 ;''extended_information_cache_monitor''
-Monitor changes to file sizes, dates and attributes. Set to 1 to enable. Set to 0 to disable. 
+1이면 파일 크기, 날짜, 속성 변화를 감시합니다. 0이면 감시하지 안습니다.
 
 ;''index_recent_changes''
-Maintain a list of changes to the database. These changes can be searched, or all results can be sorted by date recently changed.
+최근 변화 목록을 데이터베이스에 유지합니다. 이 목록을 검색하거나 최근 변동 순으로 정렬할 수 있습니다.
 
 ;''ntfs_volume_guids''
-The list of NTFS volumes guids to potentially include in the database.
+데이터베이스에 포함할 수 있는 NTFS 볼륨 GUID 목록입니다.
 
 ;''ntfs_volume_paths''
-The list of NTFS volumes paths to potentially include in the database.
+데이터베이스에 포함할 수 있는 NTFS 볼륨 경로 목록입니다.
 
 ;''ntfs_volume_roots''
-The list of NTFS volumes roots to potentially include in the database. The root is a path without the root part to specify the base folder to index. 
+데이터베이스에 포함할 수 있는 NTFS 볼륨 루트 목록입니다. 루트는 드라이브 부분을 제외한 색인에 포함할 최상위 경로 부분을 의미합니다.
 
 ;''ntfs_volume_includes''
-List of include or exclude values for each NTFS volume in the ntfs_volume_path list. Set to 1 to include. Set to 0 to exclude.
+ntfs_volume_path 목록의 NTFS 볼륨을 포함할 지 여부 목록입니다. 1이면 포함하고 0이면 제외합니다.
 
 ;''ntfs_volume_load_recent_changes''
-List of load recent change values for each NTFS volume in the ntfs_volume_path list. Set to 1 to load recent changes. Set to 0 to not load recent changes.
+ntfs_volume_path 목록의 NTFS 볼륨에서 최근 변동 사항을 가져올 지 여부 목록입니다. 1이면 가져오고 0이면 가져오지 않습니다.
+
 
 ;''ntfs_volume_include_onlys''
-List of load include only values for each NTFS volume in the ntfs_volume_path list. Set to an empty string to include all folders. Set to a semicolon delimited list of folders to exclude.
+ntfs_volume_path 목록의 NTFS 볼륨에서 색인할 폴더입니다. 비워두면 모든 폴더를 포함합니다. ;으로 복수 폴더를 지정할 수 있습니다.
 
 ;''ntfs_volume_monitors''
-List of monitor values for each NTFS volume in the ntfs_volume_path list. Set to 1 to monitor changes. Set to 0 to not monitor changes.
+ntfs_volume_path 목록의 NTFS 볼륨을 감시할지 여부 목록입니다. 1이면 감시하고 0이면 감시하지 않습니다.
 
 ;''refs_volume_guids''
-The list of ReFS volumes guids to potentially include in the database.
+데이터베이스에 포함할 수 있는 ReFS 볼륨 GUID 목록입니다.
 
 ;''refs_volume_paths''
-The list of ReFS volumes paths to potentially include in the database.
+데이터베이스에 포함할 수 있는 ReFS 볼륨 경로 목록입니다.
 
 ;''refs_volume_roots''
-The list of ReFS volumes roots to potentially include in the database. The root is a path without the root part to specify the base folder to index. 
+데이터베이스에 포함할 수 있는 ReFS 볼륨 루트 목록입니다. 루트는 드라이브 부분을 제외한 색인에 포함할 최상위 경로 부분을 의미합니다.
 
 ;''refs_volume_includes''
-List of include or exclude values for each ReFS volume in the refs_volume_path list. Set to 1 to include. Set to 0 to exclude.
+refs_volume_path 목록의 ReFS 볼륨을 포함할 지 여부 목록입니다. 1이면 포함하고 0이면 제외합니다.
 
 ;''refs_volume_load_recent_changes''
-List of load recent change values for each ReFS volume in the refs_volume_path list. Set to 1 to load recent changes. Set to 0 to not load recent changes.
+refs_volume_path 목록의 ReFS 볼륨에서 최근 변동 사항을 가져올 지 여부 목록입니다. 1이면 가져오고 0이면 가져오지 않습니다.
 
 ;''refs_volume_include_onlys''
-List of load include only values for each ReFS volume in the refs_volume_path list. Set to an empty string to include all folders. Set to a semicolon delimited list of folders to exclude.
+refs_volume_path 목록의 ReFS 볼륨에서 색인할 폴더입니다. 비워두면 모든 폴더를 포함합니다. ;으로 복수 폴더를 지정할 수 있습니다.
 
 ;''refs_volume_monitors''
-List of monitor values for each ReFS volume in the refs_volume_path list. Set to 1 to monitor changes. Set to 0 to not monitor changes.
+refs_volume_path 목록의 ReFS 볼륨을 감시할지 여부 목록입니다. 1이면 감시하고 0이면 감시하지 않습니다.
 
 ;''filelists''
-A list of file list filenames to include in the index.
+색인에 포함할 파일 목록 파일 이름 목록입니다.
 
 ;''folders''
-A comma separated list of folders to include in the index.
+색인에 포함할 ,로 나뉜 폴더 목록입니다.
 
 ;''folder_monitor_changes''
-A comma separated list of monitor values for each folder in the folders list. Set to 1 to monitor changes. Set to 0 to not monitor changes.
+폴더 목록의 폴더를 감시할지 ,로 나눈 목록입니다. 1이면 감시하고 0이면 감시하지 않습니다.
 
 ;''folder_buffer_size_list''
-A comma separated list of buffer sizes in bytes for each folder in the index.
+색인에 포함한 각 폴더의 버퍼 바이트를 ,로 나눈 목록입니다.
 
 ;''folder_rescan_if_full_list''
-A comma separated list of rescan if full option for each folder in the index.
-Set to 1 to rescan if full. Set to 0 to ignore changes if buffer is full.
+색인에 포함한 각 폴더의 버퍼가 찼을 때 재검사할지 ,로 나눈 목록입니다.
+1이면 버퍼가 찼을 때 재감사하고, 0이면 무시합니다.
 
 ;''folder_update_types''
-A comma separated list of update types for each folder in the folders list. Can be one of the following values:
+폴더 목록의 폴더를 어떻게 갱신할지 ,로 나눈 목록입니다. 다음 중 하나를 쓸 수 있습니다.
 {|
-! Type
-! Description
+! 종류
+! 설명
 |-
 | 0
-| Never update.
+| 갱신하지 않음.
 |-
 | 1
-| Update at a specified interval.
+| 지정 주기로 갱신.
 |-
 | 2
-| Update on the specified day.
+| 지정 시각에 갱신.
 |}
 
 
 ;''folder_update_days''
-A comma separated list of update days for each folder in the folders list. Can be one of the following values:
+폴더 목록의 폴더를 어느 날에 갱신할지 ,로 나눈 목록입니다. 다음 중 하나를 쓸 수 있습니다.
 {|
-! Type
-! Description
+! 종류
+! 설명
 |-
 | 0
-| Update everyday.
+| 매일 갱신.
 |-
 | 1
-| Update every Sunday
+| 일요일마다 갱신.
 |-
 | 2
-| Update every Monday
+| 월요일마다 갱신.
 |-
 | 3
-| Update every Tuesday
+| 화요일마다 갱신.
 |-
 | 4
-| Update every Wednesday
+| 수요일마다 갱신.
 |-
 | 5
-| Update every Thursday
+| 목요일마다 갱신.
 |-
 | 6
-| Update every Friday
+| 금요일마다 갱신.
 |-
 | 7
-| Update every Saturday
+| 토요일마다 갱신.
 |}
 
 ;''folder_update_ats''
-A comma separated list of update ats in hours for each folder in the folders list. Can be in the range from 0 - 23.
+폴더 목록의 폴더를 몇시에 갱신할지 ,로 나눈 목록입니다. 0~23 값을 쓸 수 있습니다.
 
 ;''folder_update_intervals''
-A comma separated list of update intervals in minutes or hours (depending on folder_update_interval_types) for each folder in the folders list.
+folder_update_interval_types에 따른 폴더 목록의 폴더 갱신 주기 시간 혹은 분을 ,로 나눈 목록입니다.
 
 ;''folder_update_interval_types''
-A comma separated list of update intervals types for each folder in the folders list. Can be one of the following values:
+폴더 목록의 폴더를 어떤 시간단위로 갱신할지 ,로 나눈 목록입니다. 다음 중 하나를 쓸 수 있습니다.
 {|
-! Type
-! Description
+! 종류
+! 설명
 |-
 | 0
-| Minutes
+| 분
 |-
 | 1
-| Hours
+| 시
 |}
 
 ;''exclude_folders''
-A comma separated list of folders to exclude. Set to an empty string to include all folders.
+제외할 폴더를 ,로 나눈 목록입니다. 비워두면 모든 폴더를 포함합니다.
 </dl>
 
 ==ETP==
-settings that affect the ETP server
+ETP 서버에 영향을 주는 설정입니다.
 
 <dl>
 ;''etp_server_enabled''
-Enable or disable the ETP server. Set to 1 to enable the ETP server. Set to 0 to disable the ETP server.
+1이면 ETP 서버를 켭니다. 0이면 끕니다.
 
 ;''etp_server_bindings''
-The ETP server listening socket bindings. Set to an empty string to bind to all interfaces.
+ETP 서버를 돌릴 IP입니다. 비워두면 모든 인터페이스에서 연결받습니다.
 
 ;''etp_server_port''
-The ETP server listening socket port.
+ETP 서버를 돌릴 포트입니다.
 
 ;''etp_server_username''
-The ETP server username. Set to an empty string to ignore.
+ETP 서버 사용자 이름입니다. 비워두면 무시합니다.
 
 ;''etp_server_password''
-The ETP server password. Set to an empty string to ignore.
+ETP 서버 비밀번호입니다. 비워두면 무시합니다.
 
 ;''etp_server_welcome_message''
-The ETP welcome message.
+ETP 서버 인사말입니다.
 
-The following macros can be included:
+다음 상용구를 넣을 수 있습니다.
 {|
-! Macro name
-! Description
+! 상용구 이름
+! 설명
 |-
 | %%
-| A single %
+| % 문자.
 |-
 | %v
-| Current Everything version.
+| 현재 Everything 버전.
 |-
 | %n
-| A new line.
+| 개행.
 |}
-Leave empty to use the default welcome message.
+비워두면 기본 인사말을 씁니다.
 
 ;''etp_server_log_file_name''
-The filename of the ETP server log. Set to an empty string to use the default filename.
+ETP 서버 로그 파일 이름입니다. 비워두면 기본값을 씁니다.
 
 ;''etp_server_logging_enabled''
-Enable or disable ETP server logging. Set to 1 to enable. Set to 0 to disable.
+1이면 ETP 서버 로깅을 켭니다. 0이면 끕니다.
 
 ;''etp_server_log_max_size''
-The maximum size of the ETP server log file in bytes. If the log file exceeds this size it is truncated [[support/everything/ini#etp_server_log_delta_size|etp_server_log_delta_size]] bytes.
+ETP 서버 로그 최대 바이트입니다. 이 크기를 넘으면 [[support/everything/ini#etp_server_log_delta_size|etp_server_log_delta_size]] 바이트만큼 잘립니다.
 
 ;''etp_server_log_delta_size''
-The number of bytes removed from the start of the ETP server log when it exceeds the maximum size.
+ETP 서버 로그 최대 용량을 넘었을 때 잘라낼 단위 바이트입니다.
 
 ;''etp_server_allow_file_download''
-Allow or disallow file downloading from the ETP server. Set to 1 to allow. Set to 0 to disallow.
+1이면 ETP 서버로 파일을 받는 걸 허용합니다. 0이면 막습니다.
 </dl>
 
 ==HTTP==
-Settings that affect the HTTP server
+HTTP 서버에 영향을 주는 설정입니다.
 
 <dl>
 ;''http_server_enabled''
-Enable or disable the HTTP server. Set to 1 to enable. Set to 0 to disable.
+1이면 HTTP 서버를 켭니다. 0이면 끕니다.
 
 ;''http_server_bindings''
-The HTTP server listening socket bindings. Set to an empty string to bind to all interfaces.
+HTTP 서버를 돌릴 IP입니다. 비워두면 모든 인터페이스에서 연결받습니다.
 
 ;''http_server_port''
-The HTTP server listening socket port.
+HTTP 서버를 돌릴 포트입니다.
 
 ;''http_server_username''
-The HTTP server username. Set to an empty string to ignore.
+HTTP 서버 사용자 이름입니다. 비워두면 무시합니다.
 
 ;''http_server_password''
-The HTTP server password. Set to an empty string to ignore.
+HTTP 서버 비밀번호입니다. 비워두면 무시합니다.
 
 ;''http_server_home''
-The HTTP server folder. 
+HTTP 서버 최상위 폴더입니다. 
 
 ''http_server_default_page''
-The HTTP server default page.
+HTTP 서버 기본 페이지입니다.
 
 ;''http_server_log_file_name''
-The HTTP server log filename. Set to an empty string to use the default log filename.
+HTTP 서버 로그 파일 이름입니다. 비워두면 기본값을 씁니다.
 
-''http_server_logging_enabled''
-Enable or disable HTTP server logging. Set to 1 to enable. Set to 0 to disable.
+;''http_server_logging_enabled''
+1이면 HTTP 서버 로깅을 켭니다. 0이면 끕니다.
 
 ;''http_server_log_max_size''
-The maximum size of the HTTP server log file in bytes. If the log file exceeds this size it is truncated http_server_log_delta_size bytes.
+HTTP 서버 로그 최대 바이트입니다. 이 크기를 넘으면 [[support/everything/ini#http_server_log_delta_size|http_server_log_delta_size]] 바이트만큼 잘립니다.
 
 ;''http_server_log_delta_size''
-The number of bytes removed from the start of the HTTP server log when it exceeds the maximum size.
+HTTP 서버 로그 최대 용량을 넘었을 때 잘라낼 단위 바이트입니다.
 
 ;''http_server_allow_file_download''
-Allow or disallow file downloading from the HTTP server. Set to 1 to allow. Set to 0 to disallow.
+1이면 HTTP 서버로 파일을 받는 걸 허용합니다. 0이면 막습니다.
 </dl>
 
-==Keyboard==
-Settings for hotkeys and keyboard shortcuts:
+==키보드==
+핫키와 단축키에 영향을 주는 설정입니다.
 
 <dl>
 ;''new_window_key''
 ;''show_window_key''
 ;''toggle_window_key''
-The hotkey code. The LOBYTE is the Virtual key. HIBYTE is the modifier flags.
-The modifier flags can be 0 or more of the following:
+핫키 코드입니다. LOBYTE는 가상 키코드고 HIBYTE는 조합키 플래그입니다.
+조합키 플래그는 0이거나 다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0x01
-| Control
+| 컨트롤
 |-
 | 0x02
-| Alt
+| 알트
 |-
 | 0x04
-| Shift
+| 시프트
 |-
 | 0x08
-| Windows key
+| 윈도 키
 |}
 </dl>
 
@@ -1306,58 +1291,58 @@ The modifier flags can be 0 or more of the following:
 ;''result_list_select_focus_keys''
 ;''result_list_toggle_focus_selection_keys''
 ;''result_list_copy_selection_to_clipboard_as_csv_keys''
-Comma delimited list of keyboard shortcuts for the command. The LOBYTE is the virtual key. The HIBYTE can be 0 or more of the follow values:
+,로 나눈 해당 명령 단축키입니다. LOBYTE는 가상 키코드고 HIBYTE는 다음 중 하나를 쓸 수 있습니다.
 {|
-! Flag
-! Description
+! 플래그
+! 설명
 |-
 | 0x01
-| Control modifier.
+| 컨트롤.
 |-
 | 0x02
-| Alt modifier.
+| 알트.
 |-
 | 0x04
-| Shift modifier.
+| 시프트.
 |-
 | 0x08
-| Windows key modifier.
+| 윈도 키.
 |-
 | 0x10
-| Use in search edit only.
+| 명령 줄에서만 사용.
 |-
 | 0x20
-| Use in result list only.
+| 결과 목록에서만 사용.
 |}
 </dl>
 
-==Fonts and colors==
-settings for fonts and colors.
+==글꼴과 색상==
+글꼴과 색상에 영향을 주는 설정입니다.
 
 <dl>
 ;''result_list_font''
-The family name of the result list font.
+결과 목록 폰트 이름입니다.
 
 ;''result_list_font_size''
-The size of the result list font in pixels.
+결과 목록 폰트 픽셀 크기입니다.
 
 ;''search_edit_font''
-The family name of the search edit font.
+검색 줄 폰트 이름입니다.
 
 ;''search_edit_font_size''
-The size of the search edit font in pixels.
+검색 줄 폰트 픽셀 크기입니다.
 
 ;''status_bar_font''
-The family name of the status bar font.
+상태 표시줄 폰트 이름입니다.
 
 ;''status_bar_font_size''
-The size of the status bar font in pixels.
+상태 표시줄 폰트 픽셀 크기입니다.
 
 ;''header_font''
-The family name of the result list header font.
+결과 목록 머리행 폰트 이름입니다.
 
 ;''header_font_size''
-The size of the result list header font in pixels.
+결과 목록 머리행 폰트 픽셀 크기입니다.
 
 ;''normal_background_color''
 ;''current_sort_alternate_row_highlighted_foreground_color''
@@ -1395,7 +1380,7 @@ The size of the result list header font in pixels.
 ;''highlighted_foreground_color''
 ;''highlighted_background_color''
 ;''normal_foreground_color''
-The item's color. Set to #RRGGBB, RR is the red hex value, GG is the green hex value and BB is the blue hex value. Set to an empty string to use the default color.
+항목별 색상입니다. #RRGGBB 형식이고 RR, GG, BB는 각각 빨강, 초록, 파랑의 16진법 값입니다. 비워두면 기본 색상을 씁니다.
 
 ;''current_sort_alternate_row_highlighted_bold''
 ;''current_sort_alternate_row_bold''
@@ -1415,380 +1400,367 @@ The item's color. Set to #RRGGBB, RR is the red hex value, GG is the green hex v
 ;''selected_bold''
 ;''highlighted_bold''
 ;''normal_bold''
-The item's style, can be one of the following values:
+항목별 스타일입니다. 다음 중 하나를 쓸 수 있습니다.
 {|
-! Style
-! Description
+! 스타일
+! 설명
 |-
 | 0
-| Normal
+| 일반
 |-
 | 1
-| Default style
+| 기본 스타일
 |-
 | 2
-| Bold
+| 굵
 |}
 </dl>
 
-==Hidden settings==
-These settings are not available in the Everything UI.
-These settings are only available in the Everything.ini.
+==숨겨진 설정==
+여기 설정은 Everything UI에서 설정할 수 없습니다.
+Everything.ini를 직접 편집해야만 합니다.
 
 <dl>
 ;''allow_http_server''
-Set to 1 to allow the http server.
-Set to 0 to disable the http server and remove it from the interface.
-This option is only available in the Everything.ini in the same location as your Everything.exe.
+1이면 HTTP 서버를 허용하고 0이면 HTTP 서버를 끄는 동시에 GUI로 켤 수 없게 합니다.
+Everything.exe 위치에 있는 Everything.ini에서만 설정할 수 있습니다.
 
 ;''allow_etp_server''
-Set to 1 to allow the ETP server.
-Set to 0 to disable the ETP server and remove it from the interface.
-This option is only available in the Everything.ini in the same location as your Everything.exe.
+1이면 ETP 서버를 허용하고 0이면 ETP 서버를 끄는 동시에 GUI로 켤 수 없게 합니다.
+Everything.exe 위치에 있는 Everything.ini에서만 설정할 수 있습니다.
 
 ;''allow_multiple_instances''
-Allow a new Everything process when one is already running. If set to 1, a new process is created every time you run Everything (Not recommended, use [[support/everything/Multiple instances|named instances]] instead). If set to 0 and an Everything process already exists, the commands line options are sent to the existing process. If set to 0 and there is no existing Everything process, a new Everything process is created.
+1이면 실행할 때마다 새 Everything 프로세스를 생성합니다 (이거 대신 [[support/everything/Multiple instances|이름있는 인스턴스]]를 권장합니다). 0이고 기존 프로세스가 있으면 명령어를 기존 프로세스에 전달합니다. 0이고 기존 프로세스가 없으면 새로 실행합니다.
 
 ;''beta_updates''
-Include beta updates when checking for updates. If set to 1, beta updates are included. If set to 0, only stable releases are included.
+1이면 베타 업데이트도 확인합니다. 0이면 안정 버전만 확인합니다.
 
 ;''window_title_format''
 ;''taskbar_notification_title_format''
-Window title or taskbar notification.
-See [[support/everything/customizing#window_caption|Change the Everything window caption]] for more information.
+창 이름과 작업 표시줄 알림 제목 양식입니다.
+자세한 건 [[support/everything/customizing#창_제목|Everything 창 이름 변경]]을 참고하세요.
 
 ;''instance_name''
-The instance name.
-See [[support/everything/Multiple Instances|Multiple Instances]] for more information.
+인스턴스 이름입니다.
+자세한 건 [[support/everything/Multiple Instances|다중 인스턴스]]를 참고하세요.
 
 ;''max_threads''
-Limit the number of threads Everything uses. Set to 0 to use all available threads. Set to 1 to use only one thread.
+Everything이 쓸 수 있는 스레드 개수입니다. 0이면 쓸 수 있는 스레드를 전부 씁니다. 1이면 한 스레드만 씁니다.
 
 ;''reuse_threads''
-Reuse threads. Set to 1 to put threads to sleep when they complete. The thread is reused when a new thread is required. Set to 0 to terminate threads when they complete. Disabling can cause memory leaks.
+스레드를 재활용합니다. 1이면 스레드가 끝날 때 보관했다가 새 스레드가 필요할 때 재활용합니다. 0이면 스레드 작업이 끝난 즉시 소거합니다. 끄면 메모리 누수가 생길 수 있습니다.
 
 ;''max_recv_size''
-The maximum packet size to receive over TCP-IP in bytes.
+TCP/IP 통신으로 받을 최대 패킷 바이트 크기입니다.
 
 ;''search_history_always_suggest_extend_toolbar''
-Always extend the toolbar height when always suggestion search history is enabled.
-Set to 1 to extend the toolbar. Set to 0 to disable.
+항상 검색 제안을 사용할 때 툴바 높이를 확장합니다. 1이면 확장하고 0이면 그러지 않습니다.
 
 ;''search_history_visible_count_max''
-Set the maximum number of visible search history items.
+한 번에 보여줄 검색 기록 최대 개수입니다.
 
 ;''search_history_always_suggest_visible_count_max''
-Set the maximum number of visible search history items when always show search suggestions is enabled.
+항상 검색 제안을 사용할 때 보여줄 검색 기록 최대 개수입니다.
 
 ;''search_history_show_all_max''
-Set the maximum number of search history results when showing all search history.
+모든 검색기록을 볼 때 보여줄 검색 기록 최대 개수입니다.
 
 ;''search_history_suggestion_max''
-Set the maximum number of search history results when suggesting a search.
+검색 제안에서 보여줄 검색 기록 최대 개수입니다.
 
 ;''search_history_show_all_sort''
-Set the sort order for search history when showing all search history.
-Can be one of the following values:
+모든 검색기록을 볼 때 정렬할 순서입니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Sort by search
+| 검색어순 정렬
 |-
 | 1
-| Sort by search count
+| 검색 횟수순 정렬
 |-
 | 2
-| Sort by search date
+| 검색 날짜순 정렬
 |}
 
 ;''search_history_suggestion_sort''
-Set the sort order for search history when showing search suggestions.
-Can be one of the following values:
+검색 제안에서 사용할 정렬입니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Sort by search
+| 검색어순 정렬
 |-
 | 1
-| Sort by search count
+| 검색 횟수순 정렬
 |-
 | 2
-| Sort by search date
+| 검색 날짜순 정렬
 |}
 
 ;''search_history_show_above''
-Show the search history drop down list above or below the search edit. Set to 1 to show above. Set to 0 to show below.
+1이면 검색 제안 드롭다운 목록을 위쪽에 보여줍니다. 0이면 아래쪽에 보여줍니다.
 
 ;''debug''
-Show the debug console. Set to 1 to show the debug console when Everything starts. Set to 0 to not show the debug console when Everything starts.
+1이면 Everything 시작 시 디버그 콘솔을 보여줍니다. 0이면 보여주지 않습니다.
 
 ;''debug_log''
-Log debug messages to %TEMP%\Everything Debug Log.txt
-Set to 1 to enable debugging mode and debug logging. Set to 0 to disable.
+1이면 디버그 모드를 켜고 디버그 메시지를 %TEMP%\Everything Debug Log.txt에 저장합니다. 0이면 그러지 않습니다.
 
 ;''verbose''
-Enable verbose debugging.
+디버그 메시지를 더 꼼꼼히 출력합니다.
 
 ;''min_zoom''
-The minimum pixel offset of the zoom.
+설정 가능한 최소 픽셀 배율입니다.
 
 ;''max_zoom''
-The maximum pixel offset of the zoom.
+설정 가능한 최대 픽셀 배율입니다.
 
 ;''single_parent_context_menu''
-Use context menus for single parents only. 
-Set to 1 to enable single parents only.
-Set to 0 to disable single parents only.
-If enabled, context menu items of files in different paths will only work for items in the same location as the focused item (or first selected item).
+여러 항목을 선택했을 때 전부 같은 부모를 가져야 우클릭 메뉴를 허용합니다.
+1이면 이 제약을 걸고, 0이면 풉니다. 이 제약을 걸었을 때 초점을 맞춘 항목이나 처음 선택한 항목과 같은 위치에 있는 항목에만 우클리 메뉴 작업을 적용합니다.
 
 ;''context_menu_type''
-The maximum context menu type to use. Can be one of the following settings:
+사용할 최대 우클릭 메뉴 종료입니다. 다음 중 하나를 쓸 수 있습니다.
 {|
-! Type
-! Description
+! 종류
+! 설명
 |-
 | 0
-| Use highest context menu interface type possible.
+| 가능한 높은 우클릭 메뉴 인터페이스를 사용합니다.
 |-
 | 1
-| Only IID_IContextMenu types.
+| IID_IContextMenu만 사용합니다.
 |-
 | 2
-| Support IID_IContextMenu or IID_IContextMenu2 types.
+| IID_IContextMenu나 IID_IContextMenu2를 씁니다.
 |-
 | 3
-| Support IID_IContextMenu, IID_IContextMenu2 or IID_IContextMenu3 types.
+| IID_IContextMenu, IID_IContextMenu2, IID_IContextMenu3를 씁니다.
 |}
 
 ;''auto_size_1''
 ;''auto_size_2''
 ;''auto_size_3''
-The window height in pixels to use when auto sizing.
+자동 크기조절을 할 때 사용할 창 픽셀 크기입니다.
 
 ;''auto_size_aspect_ratio_x''
 ;''auto_size_aspect_ratio_y''
-The aspect ratio x:y to use when auto sizing.
+자동 크기조절을 할 때 사용할 x:y 종횡비입니다.
 
 ;auto_size_width_only
-Set to 1 to enable, set to 0 to disable.
-When enabled the height is unchanged when auto-sizing.
+1이면 자동 크기조절을 할 때 높이를 고정합니다. 0이면 그러지 않습니다.
 
 ;''auto_size_path_x''
 ;''auto_size_path_y''
-The ratio x:y to use for auto sizing the name and path column.
+이름, 경로 열을 자동 크기조절할 때 사용할 종횡비입니다.
 
 ;''sticky_vscroll_bottom''
-When the vertical scrollbar is scrolled to the bottom, it will remain at the bottom when resizing the window or when the results change.
+스크롤바를 맨 아래로 내렸을 때 창 크기를 조절하거나 검색 결과가 바뀌었을 때도 맨 아래 위치를 유지합니다.
 
 ;''draw_focus_rect''
-Disable the focus rect drawn around result list items when they have focus.
+검색 결과에서 초점을 가진 항목 주변에 사각형을 그립니다.
 
 ;''date_format''
-The format to display dates. This is the same format GetDateFormat uses. Leave blank to use the default date format.
-See [[support/everything/customizing#date_format]] for more information.
+GetDateFormat과 같은 방식의 날짜 양식 문자열입니다. 비워두면 기본값을 씁니다.
+자세한 건 [[support/everything/customizing#날짜_형식|날짜 형식]]을 참고하세요.
 
 ;''time_format''
-The format to display times. This is the same format GetTimeFormat uses. Leave blank to use the default time format.
-See [[support/everything/customizing#time_format]] for more information.
+GetDateFormat과 같은 방식의 시각 양식 문자열입니다. 비워두면 기본값을 씁니다.
+자세한 건 [[support/everything/customizing#시간_형식|시간 형식]]을 참고하세요.
 
 ;''listview_item_high''
-The height of a result list item in pixels. Set to 0 to use the default height.
+검색 결과 항목 픽셀 높이입니다. 0이면 기본값을 씁니다.
 
 ;''update_display_after_mask''
-Force the display to update immediately after changing the selection mask. Set to 1 to update immediately. Set to 0 to invalidate and update later. Setting this to 1 can improve performance when the mouse updates faster than 40hz.
+1이면 드래그 사각형이 바뀔 때마다 바로 화면을 갱신합니다. 0이면 무효화만 해둡니다. 1로 설정하면 마우스 갱신 빈도가 40Hz보다 높을 때 성능이 좋아질 수 있습니다.
 
 ;''rename_move_caret_to_selection_end''
-Move the caret to the selection end or keep the selection when renaming. Set to 1 to move the caret to the end of the selection. Set to 0 to move the caret from the current position.
+0이면 이름 바꾸기 시 선택 영역이 있을 때 방향키로 이동하면 윈도 탐색기처럼 영역 뒤에서 캐럿(커서)이 이동합니다. 1이면 선택 영역 양 끝으로 이동합니다.
 
 ;''search_edit_move_caret_to_selection_end''
-Move the caret to the selection end or keep the selection when focusing the search edit. Set to 1 to move the caret to the end of the selection. Set to 0 to move the caret from the current position.
+0이면 검색 줄에서 선택 영역이 있을 때 방향키로 이동하면 윈도 탐색기처럼 영역 뒤에서 캐럿이 이동합니다. 1이면 선택 영역 양 끝으로 이동합니다.
 
 ;''reset_vscroll_on_search''
-Scroll the results to the top when the search changes.
+새로 검색할 때 검색 결과 맨 위로 스크롤합니다.
 
 ;''header_high''
-Custom header height in pixels. Set to 0 to use the default header height.
+머리행 픽셀 높이입니다. 0이면 기본값을 씁니다.
 
 ;''hide_on_close''
-Instead of closing the window, hide it temporarily. when a new search window is requested this window is made visible instead. Useful for keeping extended file information cached.
+창을 닫을 때 닫지 않고 숨기기만 합니다. 새 창을 열 때 이 숨긴 창을 보여줍니다. 캐시한 부가 파일 정보를 보존하려할 때 유용합니다.
 
 ;''winmm''
-Automatically plays the focused item with Windows Multimedia API mciSendString. Set to 1 to enable. Set to 0 to disable.
+1이면 초점을 맞춘 항목을 윈도 멀티미디어 API mciSendString으로 자동 재생합니다. 0이면 그러지 않습니다.
 
 ;''menu_escape_amp''
-Escape & characters in menu items. Set to 0 to define custom keyboard shortcuts for bookmarks and filters. Custom keyboard shortcuts can be defined by prefixing a letter with the & character.
+메뉴 항목에서 & 문자를 이스케이핑합니다. 0이면 책갈피와 필터 임의 단축키를 정의할 수 있습니다. 임의 단축키는 & 문자를 앞에 붙여서 정의할 수 있습니다.
 
 ;''menu_folders''
-Enable submenus by including \ in your macro and bookmark names.
-Set to 1 to enable. Set to 0 to disable.
+상용구와 책갈피 이름에 \를 포함해 하위 메뉴를 활성화합니다.
+1이면 켜고 0이면 끕니다.
 
-For example, to use the bookmark name "Beatles" in a submenu called "Music", call your bookmark Music\Beatles
+"Music" 하위 항목에 "Beatles"를 넣고 싶다면 책갈피 이름을 Music\Beatles라고 정하면 됩니다.
 
 ;''menu_folder_separator''
-Change the sub menu separator \ to the specified string. 
+위 하위 메뉴 구분자 \를 다른 문자열로 바꿉니다.
 
 ;''menu_items_per_column''
-Split menus into columns and limit each column to the specified number of items. set to 0 to disable.
+메뉴를 열로 나누고 각 열에 항목을 일정 개수만 담도록 제한합니다. 0이면 그러지 않습니다.
 
 ;''new_inherit''
-Inherit search settings from an existing window.
-Set to 1 to enable. Set to 0 to disable.
-When enabled, creating a new window from an existing window will create a new window with the same settings otherwise the default settings are used. 
+1이면 새 창을 띄울 때 기존 창 검색 설정을 씁니다. 0이면 기본 설정을 씁니다.
 
 ;''rtl_listview_edit''
-Use a right to left layout edit when renaming a file that contains a right to left character. Set to 1 to use a right to left edit. Set to 0 to always use a left to right edit.
+1이면 RTL 문자를 포함한 파일 이름을 바꿀 때 RTL 레이아웃 에디트를 사용합니다. 0이면 항상 LTR 에디트를 씁니다.
 
 ;''force_path_ltr_order''
-Force the path to be shown in Left to Right order.
-Set to 1 to enable. Set to 0 to disable.
+1이면 경로를 무조건 왼쪽에서 오른쪽으로 보여줍니다. 0이면 그러지 않습니다.
 
 ;''force_path_left_align''
-Force the path to be left aligned.
-Set to 1 to enable. Set to 0 to disable.
+1이면 무조건 경로를 왼쪽 정렬합니다. 0이면 그러지 않습니다.
 
 ;''date_time_order''
-Change the order of date and time.
-Can be one of the following values:
+날짜와 시각 표시 순서를 바꿉니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Date Time for LTR localizations, Time Date for RTL localizations
+| LTR 지역에선 날짜 시각, RTL 지역에선 시각 날짜입니다
 |-
 | 1
-| Date Time
+| 날짜 시각
 |-
 | 2
-| Time Date
+| 시각 날짜
 |-
 | 3
-| Time Date for LTR localizations, Date Time for RTL localizations
+| LTR 지역에선 시각 날짜, RTL 지역에선 날짜 시각입니다
 |}
 
 ;''date_time_align''
-Change the alignment of date and time text.
-Can be one of the following values:
+날짜와 시각 텍스트 정렬을 바꿉니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Left aligned for LTR localizations, Right aligned for RTL localizations
+| LTR 지역에선 왼쪽 정렬, RTL 지역에선 오른쪽 정렬입니다
 |-
 | 1
-| Left aligned
+| 왼쪽 정렬
 |-
 | 2
-| Right aligned
+| 오른쪽 정렬
 |-
 | 3
-| Right aligned for LTR localizations, Left aligned for RTL localizations
+| LTR 지역에선 오른쪽 정렬, RTL 지역에선 왼쪽 정렬입니다
 |}
 
 ;''size_align''
-Change the alignment of size text.
-Can be one of the following values:
+크기 텍스트 정렬을 바꿉니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Left aligned for LTR localizations, Right aligned for RTL localizations
+| LTR 지역에선 왼쪽 정렬, RTL 지역에선 오른쪽 정렬입니다
 |-
 | 1
-| Left aligned
+| 왼쪽 정렬
 |-
 | 2
-| Right aligned
+| 오른쪽 정렬
 |-
 | 3
-| Right aligned for LTR localizations, Left aligned for RTL localizations
+| LTR 지역에선 오른쪽 정렬, RTL 지역에선 왼쪽 정렬입니다
 |}
 
 ;''update_layout_on_input_language_change''
-Automatically change the layout to match the current input language.
-Set to 1 to enable. Set to 0 to disable.
+1이면 바뀐 입력 언어에 맞춰 자동으로 레이아웃을 변경합니다. 0이면 냅둡니다.
 
 ;''control_shift_action''
-Set the action when pressing the Control and Shift keys.
-Can be one of the following values:
+컨트롤과 시프트를 누를 때의 동작을 지정합니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Do nothing
+| 아무 것도 안 함
 |-
 | 1
-| Change input
+| 입력을 바꿈
 |-
 | 2
-| Change layout
+| 레이아웃을 바꿈
 |-
 | 3
-| Change input and layout
+| 입력과 레이아웃을 바꿈
 |}
 
-;''change_search_rtl_reading_action''
-Change the search edit Right to left reading order action
-Can be one of the following values:
+;''control_shift_action''
+검색 줄의 오른쪽에서 왼쪽으로 읽기 순서 동작입니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Do nothing
+| 아무 것도 안 함
 |-
 | 1
-| Change input
+| 입력을 바꿈
 |-
 | 2
-| Change layout
+| 레이아웃을 바꿈
 |-
 | 3
-| Change input and layout
+| 입력과 레이아웃을 바꿈
 |}
 
 ;''invert_layout_action''
-Change the invert layout action
-Can be one of the following values:
+레이아웃 반전 동작을 설정합니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Do nothing
+| 아무 것도 안 함
 |-
 | 1
-| Change input
+| 입력을 바꿈
 |-
 | 2
-| Change layout
+| 레이아웃을 바꿈
 |-
 | 3
-| Change input and layout
+| 입력과 레이아웃을 바꿈
 |}
 
 ;''file_list_relative_paths''
-Use relative paths with file lists.
-Set to 1 to enable. Set to 0 to disable.
+1이면 파일 목록에 상대 경로를 사용합니다. 0이면 그러지 않습니다.
 
 ;''advanced_search_warnings''
-Show warning icons on advanced search fields that could perform slowly.
+고급 검색 창에서 느려질 수 있는 필드에 경고 아이콘을 띄웁니다.
 
 ;''display_full_path_name''
-Display the full path and filename in the name column. Set to 1 to enable. Set to 0 to disable.
+1이면 이름 열에 전체 경로와 파일 이름을 보여줍니다. 0이면 그러지 않습니다.
 
 ;''themed_toolbar''
-Use visual themes or windows classic style to render the toolbar. Set to 1 to use visual themes. Set to 0 to use Windows classic style.
+1이면 툴바를 보여줄 때 시각 테마를 사용합니다. 0이면 윈도 클래식 스타일을 사용합니다.
 
 ;''copy_path_folder_append_backslash''
-Append a backslash to copied folder names. Set to 1 to append a backslash. Set to 0 to not append a backslash.
+1이면 폴더 이름을 복사할 때 \를 뒤에 붙입니다. 0이면 붙이지 않습니다.
 
 ;''custom_verb01''
 ;''custom_verb02''
@@ -1802,119 +1774,115 @@ Append a backslash to copied folder names. Set to 1 to append a backslash. Set t
 ;''custom_verb10''
 ;''custom_verb11''
 ;''custom_verb12''
-Define a custom verb for the custom verb keyboard shortcuts.
+특수 동사 단축키에 쓸 특수 동사를 정의합니다.
 
 ;''filters_tab_stop''
-Include the filter bar when cycling through the control focus with TAB. Set to 1 to include the filter bar. Set to 0 to exclude the filter bar.
+1이면 탭 키로 초점을 전환할 때 필터 칸도 포함합니다. 0이면 필터 칸은 넘어갑니다.
 
 ;''preview_tab_stop''
-Allow TAB to focus the preview pane.
+탭 키로 미리보기 영역에 초점을 맞추도록 허용합니다.
 
 ;''translucent_selection_rectangle_background_color''
-The color of the translucent selection rectangle. Set to #RRGGBB, RR is the red hex value, GG is the green hex value and BB is the blue hex value. Set to an empty string to use the default color.
+반투명 선택 사각형 채우기 색상입니다. #RRGGBB 형식이고 RR, GG, BB는 각각 빨강, 초록, 파랑의 16진법 값입니다. 비워두면 기본 색상을 씁니다.
 
 ;''translucent_selection_rectangle_border_color''
-The color of the translucent selection rectangle border. Set to #RRGGBB, RR is the red hex value, GG is the green hex value and BB is the blue hex value. Set to an empty string to use the default color.
+반투명 선택 사각형 테두리 색상입니다. #RRGGBB 형식이고 RR, GG, BB는 각각 빨강, 초록, 파랑의 16진법 값입니다. 비워두면 기본 색상을 씁니다.
 
 ;''size_tiny''
 ;''size_small''
 ;''size_medium''
 ;''size_large''
 ;''size_huge''
-The size to use when searching for size:small, size:medium, size:large, size:huge or size:gigantic.
+size:small, size:medium, size:large, size:huge, size:gigantic 검색 함수에서 쓸 기준 크기입니다.
 
 ;''always_keep_sort''
-Always keep the sort. Set to 1 to enable. Set to 0 to only keep fast sorts. Enabling this will drastically reduce performance.
+1이면 기존에 사용한 느린 정렬도 불러옵니다. 0이면 빠른 정렬만 불러옵니다. 이걸 사용하면 성능이 상당히 나빠질 수 있습니다.
 
 ;''select_search_on_focus_mode''
-Select all the search text when the search edit gains focus. 
-Can be one of the following modes:
+검색 줄에 초점을 맞췄을 때 전체 텍스트를 선택합니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Mode
-! Description
+! 모드
+! 설명
 |-
 | 0
-| Do nothing.
+| 아무 것도 안 함.
 |-
 | 1
-| Select all text and move the caret to the end.
+| 전체 텍스트를 선택하고 캐럿을 맨 뒤로 옮김.
 |-
 | 2
-| Deselect all text and move the caret to the end.
+| 선택 해제하고 캐럿을 맨 뒤로 옮김.
 |}
 
 ;''select_search_on_set_mode''
-Can be one of the following modes:
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Mode
-! Description
+! 모드
+! 설명
 |-
 | 0
-| Do nothing.
+| 아무 것도 안 함.
 |-
 | 1
-| Select all text and move the caret to the end.
+| 전체 텍스트를 선택하고 캐럿을 맨 뒤로 옮김.
 |-
 | 2
-| Deselect all text and move the caret to the end.
+| 선택 해제하고 캐럿을 맨 뒤로 옮김.
 |}
 
 ;''db_update_thread_priority''
-The thread priority to read the USN Journal.
-Can be one of the following values:
+USN 저널 읽기 스레드 우선순위입니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | -15
-| Idle priority.
+| 매우 낮음.
 |-
 | -1
-| Below normal priority.
+| 낮음.
 |-
 | 0
-| Normal priority.
+| 보통.
 |-
 | 1
-| Above normal priority.
+| 조금 높음.
 |-
 | 2
-| High priority.
+| 높음.
 |}
 
 ;''refs_file_id_extd_directory_info_buffer_size''
-The read buffer size for reading ReFS folders. Set to 0 to use the default buffer size (64k).
+ReFS 폴더 읽기 버퍼 크기입니다. 0이면 기본 버퍼 크기(64k)를 씁니다.
 
 ;''folder_update_thread_mode_background''
-Set the folder monitor thread to have low IO priority. 
-Set to 1 to enable. Set to 0 to disable. 
+1이면 폴더 감시 스레드 IO 우선순위를 낮춥니다. 0이면 그러지 않습니다.
 
 ;''folder_update_rescan_asap''
-Rescan folders when starting Everything if a scheduled folder rescan was missed.
-Set to 1 to rescan immediately. Set to 0 to rescan at the next scheduled time.
+1이면 Everything 시작 시 예약한 폴더 스캔을 놓쳤을 때 바로 스캔합니다. 0이면 다음 예약 시간에 스캔합니다.
 
 ;''monitor_thread_mode_background''
-Set the USN monitor thread to have low IO priority. 
-Set to 1 to enable. Set to 0 to disable. 
+1이면 USN 감시 스레드 IO 우선순위를 낮춥니다. 0이면 그러지 않습니다.
 
 ;''monitor_retry_delay''
-The retry delay in milliseconds before attempting to reopen an offline volume for monitoring.
+연결이 끊긴 볼륨을 감시하기 위한 열기 재시도 간격 밀리초입니다.
 
 ;''monitor_update_delay''
-The delay in milliseconds between reading USN journal changes.
+USN 저널 변경사항 읽기 간격 밀리초입니다.
 
 ;''monitor_pause''
-Pause folder indexes monitoring, file list changes monitoring and USN change journal monitors.
-Set to 1 to pause. Set to 0 to allow monitors to start. 
-Monitors can be pause and resumed with the search commands: /monitor_pause and /monitor_resume.
+1이면 폴더 색인, 파일 목록 변경, USN 저널 변경 감시를 정지합니다. 0이면 감시를 시작합니다.
+감시는 검색 줄에 /monitor_pause, /monitor_resume 명령어를 쳐 정지하거나 재시작할 수 있습니다.
 
 ;''usn_record_filter''
-Include list of USN reasons flags. USN Reasons that are not included in this list are ignored.
-Set to 0xffffffff to include all USN reasons.
-Can be zero or more of the follow flags in hexadecimal:
+포함할 USN 이유 플래그 목록입니다. 여기에 없는 USN 이유는 무시됩니다.
+0xffffffff로 설정하면 모든 USN 이유를 포함합니다.
+0이나 다음 16진법값을 조합해 쓸 수 있습니다.
 {|
-! Flag
-! Description
+! 플래그
+! 설명
 |-
 | 0x00000001
 | USN_REASON_DATA_OVERWRITE
@@ -1981,426 +1949,401 @@ Can be zero or more of the follow flags in hexadecimal:
 |}
 
 ;''cancel_delay''
-The delay in milliseconds to wait before showing the cancel dialog when the Everything database is busy.
+검색이 지연될 때 취소 대화상자를 보여줄 때까지 기다릴 밀리초입니다.
 
 
 ;''http_title_format''
-The http title format.
-See [[support/everything/customizing#window_caption|Change the Everything window caption]] for more information.
+HTTP 제목 양식입니다.
+자세한 건 [[support/everything/customizing#창_제목|Everything 창 제목 변경]]을 참고하세요.
 
 ;''http_server_show_drive_labels''
-Show drive labels for root folders.
-Set to 1 to enable. Set to 0 to disable.
+1이면 루트 폴더에 드라이브 레이블(디스크 이름)을 보여줍니다. 0이면 그러지 않습니다.
 
 ;''http_server_strings''
-Customize the built in http server. 
-See [[support/everything/http#Custom strings|Custom Strings]] for more information.
+내장 HTTP 서버를 튜닝합니다.
+자세한 건 [[support/everything/http#문자열_바꾸기|문자열 바꾸기]]를 참고하세요.
 
 ;''alpha''
-Set the transparency value of the Everything.
-0 = transparent. 128 = 50% transparent. 192 = 25% transparent. 255 = opaque.
+Everything의 투명도를 설정합니다.
+0 = 투명. 128 = 50% 투명. 192 = 25% 투명. 255 = 불투명입니다.
 
 ;''snap''
-Snap the Everything search window to the desktop edges. Set to 1 to enable snapping. Set to 0 to disable snapping.
+1이면 Everything 검색 창을 화면 가장자리에 달라붙게 합니다. 0이면 그러지 않습니다.
 
 ;''snaplen''
-The maximum number of pixels from a desktop edge before the Everything search window will snap to it.
+스냅 기능을 적용할 최대 픽셀 거리입니다.
 
 ;''thumbnail_fill''
-Set to 1 to resize the thumbnail to fill the full thumbnail size. Set to 0 to limit the resizing to 1:1. 
+1이면 섬네일 아이콘이 차지하는 공간을 채우도록 크기조절합니다. 0이면 1:1 크기조절합니다.
 
 ;''min_thumbnail_size''
-Set the minimum thumbnail size in pixels. Must be greater than 0.
+최소 섬네일 픽셀 크기입니다. 0보단 커야 합니다.
 
 ;''max_thumbnail_size''
-Set the maximum thumbnail size in pixels. Must be greater than 0. Anything larger than [[support/Everything/INI#thumbnail_load_size|thumbnail_load_size]] will be stretched.
+최대 섬네일 픽셀 크기입니다. 0보단 커야 합니다. [[support/Everything/INI#thumbnail_load_size|thumbnail_load_size]]보다 크면 확대됩니다.
 
 ;''medium_thumbnail_size''
-Set the medium thumbnail size in pixels.
+중간 섬네일 픽셀 크기입니다.
 
 ;''large_thumbnail_size''
-Set the large thumbnail size in pixels.
+큰 섬네일 픽셀 크기입니다.
 
 ;''extra_large_thumbnail_size''
-Set the extra large thumbnail size in pixels.
+매우 큰 섬네일 픽셀 크기입니다.
 
 ;''thumbnail_load_size''
-Set the internal thumbnail size. The largest supported thumbnail size is 1024x1024.
-Set to 0 to use the default internal size (256x256).
+내부 섬네일 크기입니다. 지원 한계 크기는 1024x1024입니다.
+0이면 기본 값(256x256)을 씁니다.
 
 ;''show_in_taskbar''
-Set to 1 to show the Everything taskbar button.
-Set to 0 to prevent the Everything search window from showing in the taskbar.
+1이면 Everything 검색 창을 작업 표시줄에 보여줍니다. 0이면 작업 표시줄에서 숨깁니다.
 
 ;''toggle_window_from_tray_icon''
-Set to 1 to toggle the search window from the tray icon. The taskbar must be ontop, there must not be any topmost windows.
-Set to 0 to show or create a new search window from the tray icon.
+1이면 트레이 아이콘으로 검색 창을 토글할 수 있습니다. 작업 표시줄이 맨 위여야 하고, 다른 항상 위인 창은 없어야 합니다.
+0이면 트레이 아이콘을 더블 클릭했을 때 창을 만들거나 보여주기만 합니다.
 
 ;''show_focus_on_search''
-Set to 1 to brings the focus into view after each search.
-Set to 0 to allow the focus to go off screen after a search.
+1이면 초점을 맞춘 항목이 다음 검색에도 화면을 벗어나지 않도록 스크롤합니다.
+0이면 신경쓰지 않습니다.
 
 ;''statusbar_selected_item_format''
 
-The following string substitutions can be used:
+다음 변환 문자열을 쓸 수 있습니다.
 {|
-! String
-! Substitution
+! 문자열
+! 치환
 |-
 | <code>$$</code>
-| A single $
+| $ 문자
 |-
 | <code>$f</code>
-| Full path and file name
+| 전체 경로와 파일 이름
 |-
 | <code>$n</code>
-| Name
+| 이름
 |-
 | <code>$p</code>
-| Path
+| 경로
 |-
 | <code>$s</code>
-| Size
+| 크기
 |-
 | <code>$e</code>
-| Extension
+| 확장자
 |-
 | <code>$t</code>
-| Type
+| 종류
 |-
 | <code>$m</code>
-| Date modified
+| 수정한 날짜
 |-
 | <code>$c</code>
-| Date created
+| 만든 날짜
 |-
 | <code>$a</code>
-| Date accessed
+| 접근한 날짜
 |-
 | <code>$b</code>
-| Attributes
+| 속성
 |-
 | <code>$d</code>
-| Date recently changed
+| 최근에 변경한 날짜
 |-
 | <code>$r</code>
-| Run count
+| 실행 횟수
 |-
 | <code>$u</code>
-| Date last run
+| 실행 날짜
 |-
 | <code>$l</code>
-| File list file name
+| 파일 목록 파일 이름
 |}
 
-Set to an empty string to use the text from each visible column (showing path last)
+비워두면 결과목록 각 열 정보를 보여줍니다(경로를 마지막으로 보여줍니다).
 
 ;''minimize_to_tray''
-When enabled, the Everything Search window will not show up in the task bar when minimized.
-The search window can be restored from the tray icon.
-Set to 1 to enable. Set to 0 to disable.
+1이면 최소화했을 때 작업 표시줄에서 사라지고 트레이 아이콘으로 복구해야 합니다. 0이면 그러지 않습니다.
 
 ;''auto_remove_moved_ntfs_volumes''
-Set to 1 to enable.
-Set to 0 to disable.
-Automatically remove old NTFS volumes that have moved to a new drive letter.
+1이면 드라이브 문자가 바뀐 NTFS 볼륨을 자동으로 제거합니다. 0이면 그러지 않습니다.
 
 ;''auto_remove_moved_refs_volumes''
-Set to 1 to enable.
-Set to 0 to disable.
-Automatically remove old ReFS volumes that have moved to a new drive letter.
+1이면 드라이브 문자가 바뀐 ReFS 볼륨을 자동으로 제거합니다. 0이면 그러지 않습니다.
 
 ;''find_mount_points_on_removable_volumes''
-Look for mount points on removable volumes.
-Set to 1 to enable.
-Set to 0 to disable.
-Can caused undesired access to removable volumes if enabled.
+1이면 이동식 볼륨에서 마운트 지점을 찾습니다. 0이면 그러지 않습니다.
+켜면 이동식 볼륨에 원치 않은 접근을 일으킬 수 있습니다.
 
 ;''find_subfolders_and_files_max_threads''
-Set to the number of threads to use.
-Set to 0 to use the default number of threads. The default number of threads to use is max_thread / 2 (at least one thread is used).
+사용할 스레드 수를 정합니다.
+0이면 기본값을 씁니다. 기본값은 max_thread / 2개입니다(적어도 한 스레드는 항상 사용합니다). 
 
 ;''statusbar_size_format''
-Set the size format for the total selected size in the status bar.
-Must be one of the following values:
+상태 표시줄에 띄울 선택 항목 전체 크기 단위입니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Auto (Bytes/KB/MB/GB depending on size).
+| 자동 (크기에 따라 바이트/KB/MB/GB).
 |-
 | 1
-| Always Bytes
+| 항상 바이트
 |-
 | 2
-| Always KB.
+| 항상 KB.
 |-
 | 3
-| Always MB.
+| 항상 MB.
 |}
 
 ;''lvm''
-Enable or disable listview messages. Set to 1 to enable. Set to 0 to disable.
+1이면 리스트뷰 메시지를 켭니다. 0이면 끕니다.
 
 ;''ipc''
-Enable or disable IPC. Set to 1 to enable. Set to 0 to disable.
+1이면 IPC를 켭니다. 0이면 끕니다.
 
 ;''rename_nav''
-Enable or disable rename navigation or inline renaming. Set to 1 to enable. Set to 0 to disable.
+1이면 이름 바꾸기 상태에서 위아래 방향키 등으로 다른 항목으로 이동할 수 있습니다. 0이면 그러지 않습니다.
 
 ;''tray_show_command_line''
-The command line to execute when running Everything from the tray icon.
-For example, set to -home to load the home settings when clicking on the tray icon.
+트레이 아이콘으로 Everything을 실행할 때 사용할 명령행 인자입니다.
+예를 들어 -home으로 설정하면 트레이 아이콘을 더블클릭할 때 기본 화면을 띄웁니다.
 
 ;''dpi''
-The Dots Per Inch (DPI) multiplier. Use to scale Everything.
-Set to 0 to disable.
+DPI 배수입니다. Everything 배율을 조절할 수 있습니다.
+0이면 기능을 끕니다.
 96 = 100%, 120=125%, 144=150%, 168=175%, 192=200%
-This setting is multiplied by the current system DPI.
-Please note that some widgets always use the system DPI.
+이 값은 시스템 DPI 값에 곱해집니다.
+일부는 항상 시스템 DPI를 사용하는 것도 있습니다.
 
 ;''ctrl_mouse_wheel_action''
-The action to perform when using the mouse wheel with the control held down.
-Can be one of the following values:
+컨트롤 + 마우스 휠로 실행할 동작입니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| None.
+| 없음.
 |-
 | 1
-| Change view
+| 보기 바꾸기
 |-
 | 2
-| Change zoom
+| 배율 바꾸기
 |}
 
 ;''allow_open''
-Allow executing results.
-Set to 1 to allow. Set to 0 to disallow.
+1이면 결과 항목 실행을 허용합니다. 0이면 막습니다.
 
 ;''allow_context_menu''
-Allow right clicking on results.
-Set to 1 to allow. Set to 0 to disallow.
+1이면 결과 항목 우클릭을 허용합니다. 0이면 막습니다.
 
 ;''allow_delete''
-Allow deleting results.
-Set to 1 to allow. Set to 0 to disallow.
+1이면 결과 항목 삭제를 허용합니다. 0이면 막습니다.
 
 ;''allow_rename''
-Allow renaming results.
-Set to 1 to allow. Set to 0 to disallow.
+1이면 결과 항목 이름 변경을 허용합니다. 0이면 막습니다.
 
 ;''allow_cut''
-Allow cutting/moving results.
-Set to 1 to allow. Set to 0 to disallow.
+1이면 결과 항목 잘라내기/옮기기를 허용합니다. 0이면 막습니다.
 
 ;''allow_copy''
-Allow copying results.
-Set to 1 to allow. Set to 0 to disallow.
+1이면 결과 항목 복사를 허용합니다. 0이면 막습니다.
 
 ;''allow_paste''
-Allow pasting results.
-Set to 1 to allow. Set to 0 to disallow.
+1이면 결과 항목 붙여넣기를 허용합니다. 0이면 막습니다.
 
 ;''allow_drag_drop''
-Allow dragging results and allow dropping on results.
-Set to 1 to allow. Set to 0 to disallow.
+1이면 결과 항목 드래그, 드롭을 허용합니다. 0이면 막습니다.
 
 ;''auto_column_widths''
-Auto adjust column widths when resizing the search window.
-Set to 1 to enable. Set to 0 to disable.
+1이면 창 크기를 조절할 때 열 크기도 자동 조절합니다. 0이면 냅둡니다.
 
 ;''hotkey_explorer_path_search''
-Set the search to the current path in Windows Explorer when opening Everything from a hotkey.
-Set to 1 to enable. Set to 0 to disable.
+1이면 핫키로 Everything을 열었을 때 현재 탐색기 경로를 검색어에 입력합니다. 0이면 그러지 않습니다.
 
 ;''get_key_name_text''
-Use the keyboard driver for keyboard button names.
-Set to 1 to enable. Set to 0 to disable.
+1이면 키 이름을 알아내는 데 키보드 드라이버를 사용합니다. 0이면 그러지 않습니다.
 
 ;''paste_new_line_op''
-Convert new lines when pasting multi-line text into the search box.
-Can be one of the following values:
+텍스트를 검색 줄에 붙여넣을 때 개행 변환 방법입니다.
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| AND (convert new lines to spaces)
+| AND (개행을 공백으로 변환)
 |-
 | 1
-| OR (convert new lines to |)
+| OR (개행을 |로 변환)
 |}
 
 ;''always_update_query_on_search_parameter_change''
-Update the query when search as you type is disabled and when you change a search option or filter.
-Set to 1 to enable. Set to 0 to disable.
+1이면 입력 즉시 검색을 껐을 때 검색 옵션이나 필터를 바꾸면 검색해줍니다. 0이면 검색하지 않습니다.
 
 ;''preview_mag_filter''
-Set the magnify filter for images in the preview window.
-Only works for images.
+미리보기 창에 쓸 이미지 확대 필터를 정합니다.
+이미지에만 적용됩니다.
 
-Must be one of the following values:
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Use default setting.
+| 기본값 사용.
 |-
 | 3
-| Color on color. (Performance)
+| 계단 현상 (성능)
 |-
 | 4
-| Half tone (Quality)
+| 부드럽게 (품질)
 |}
 
 ;''preview_min_filter''
-Set the mipmap filter for images in the preview window.
-Only works for images.
+미리보기 창에 쓸 이미지 축소 필터를 정합니다.
+이미지에만 적용됩니다.
 
-Must be one of the following values:
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Use default setting.
+| 기본값 사용.
 |-
 | 3
-| Color on color. (Performance)
+| 계단 현상 (성능)
 |-
 | 4
-| Half tone (Quality)
+| 부드럽게 (품질)
 |}
 
 ;''preview_fill''
-Set to 1 to resize the preview image to fill the full preview window. Set to 0 to limit the resizing to 1:1. 
-Only works for images.
+1이면 미리보기 이미지 크기를 미리보기 창에 맞게 확대합니다. 0이면 축소만 합니다.
+이미지에만 적용됩니다.
 
 ;''show_preview_handlers_in_preview_pane''
-Allow system preview handlers in the preview pane. Everything has a built in preview handler for images.
-Set to 0 to use the system setting. Set to 1 to allow. Set to 2 to disallow. The system setting can be changed from Windows Explorer -> Tools -> Folder Options... -> View -> Show preview handlers in preview pane.
+미리보기 창에 시스템 미리보기 처리기를 허용합니다. Everything은 내장 이미지 처리기가 있습니다.
+0이면 시스템 설정을 씁니다. 1이면 허용합니다. 2면 막습니다. 시스템 설정은 탐색기 -> 도구 -> 폴더 옵션... -> 보기 -> 미리 보기 창에 미리 보기 처리기 표시를 설정할 수 있습니다.
 
 ;''preview_load_size''
-The single value used for both width and height in pixels of the image preview load buffer. Set to 0 to use the default of 1024.
+이미지 미리보기 로드 버퍼 너비이자 높이 픽셀 수입니다. 0이면 기본값인 1024를 씁니다.
 
 ;''service_pipe_name''
-Name of the service pipe.
-Must be in the form of \\.\pipe\pipename
-Leave blank to use the default pipe name: \\.\pipe\Everything Service
+서비스 파이프 이름입니다.
+\\.\pipe\pipename 형태여야 합니다.
+비워두면 기본값인 \\.\pipe\Everything Service를 사용합니다.
 
 ;''thumbnail_mouseover_border_color''
-Set the thumbnail mouse over border color.
-Use the following color format: #RRGGBB
+포인터를 갖다 댄 섬네일 테두리 색입니다.
+#RRGGBB 형태입니다.
 
 ;''preview_background_color''
-Set the preview background color.
-Use the following color format: #RRGGBB
+미리보기 배경 색입니다.
+#RRGGBB 형태입니다.
 
 ;''etp_client_rewrite_patterns''
 ;''etp_client_rewrite_substitutions''
-A comma (,) separated list of ETP link rewrites.
-For example, on the ETP server you may have a folder D:\folder1 which is shared as \\ETPserver\folder1.
-Set the pattern to: "D:\folder1"
-set the substitution to: "\\ETPserver\folder1"
+,로 나눈 ETP 링크 고쳐쓰기 목록입니다.
+ETP 서버에 D:\folder1 폴더를 \\ETPserver\folder1로 공유하려면
+etp_client_rewrite_patterns를 "D:\folder1"로 하고
+etp_client_rewrite_substitutions를 "\\ETPserver\folder1"로 하면 됩니다.
 
 ;''icons_only''
-Always display icons, never thumbnails.
+항상 섬네일 대신 아이콘을 보여줍니다.
 
-Must be one of the following values:
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
 | 0
-| Use system setting.
+| 시스템 설정을 씁니다.
 |-
 | 1
-| Icons only
+| 아이콘만
 |-
 | 2
-| Thumbnails
+| 섬네일
 |}
-The system setting can be changed in Windows Explorer -> Tools -> Folder Options... -> View -> Always show icons, never thumbnails.
+시스템 설정은 탐색기 -> 도구 -> 폴더 옵션... -> 보기 -> 아이콘은 항상 표시하고 미리 보기는 표시하지 않음를 설정할 수 있습니다.
 
 ;''auto_scroll_repeat_delay''
-The delay to wait in milliseconds before auto scrolling the result list.
+결과 목록을 [[#auto_scroll_view|자동 스크롤]] 할 때 까지 기다릴 밀리초입니다.
 
 ;''auto_scroll_repeat_rate''
-The repeat rate in milliseconds to auto scroll the result list.
+[[#auto_scroll_view|자동 스크롤]] 갱신 간격 밀리초입니다.
 
 ;''open_many_files_warning_threshold''
-Show the open many files warning dialog when attempting to open more than the specified number of files.
+이 개수 이상의 파일을 동시에 열려고 할 때 경고창을 띄웁니다.
 
 ;''search_edit_drag_accept_files''
-Allow files and folders to be dropped on the search edit. When a single folder is dropped, Everything will search inside this folder. When multiple files and/or folders are dropped, a file list search is generated to find the specified files and folders.
+검색 줄에 파일이나 폴더를 드래그하는 걸 허용합니다. 폴더를 드래그하면 그 안에서만 검색합니다. 여러 파일 및 폴더를 드래그하면 그 항목들만 검색하는 파일 목록 검색어를 생성합니다.
 
 ;''always_request_all_fileinfo''
-Always request file information, even when it is not displayed in the result list.
+검색 결과에 안 보이더라도 항상 모든 파일 정보를 요청합니다.
 
 ;''replace_exact_trailing_star_dot_star_with_star''
-Replace *.* with *
-Only works when match_whole_filename_when_using_wildcards is enabled.
-When enabled, *.* also matches files that do not contain a .
-When disabled, *.* matches only files containing a .
-Set to 1 to enable. Set to 0 to disable.
+*.*를 *로 바꿉니다.
+match_whole_filename_when_using_wildcards를 켰을 때만 동작합니다.
+켜면 *.*로 .을 포함하지 않은 파일도 검색할 수 있습니다. 끄면 그러지 않습니다.
 
 ;''allow_exclamation_point_not''
-Allow ! to be used as a NOT operator.
-Set to 1 to enable. Set to 0 to disable.
+1이면 !를 NOT 연산자로 씁니다. 0이면 그러지 않습니다.
 
 ;''search_command_prefix''
-The search command prefix. If convert_forward_slash_to_backslash is enabled, you may wish to change this to > or some other prefix.
+[[#Everything으로_설정_보고_변경하기|검색 명령]] 접두어입니다. [[#convert_forward_slash_to_backslash|convert_forward_slash_to_backslash]]를 켰다면 >나 다른 접두어로 바꿀만합니다.
 
 ;''auto_complete_search_command''
-Allow TAB to auto complete search commands. The search must current start with the search command prefix.
-Set to 1 to enable. Set to 0 to disable.
+탭 키로 검색 명령 자동완성을 허용합니다. 검색어가 검색 명령 접두어로 시작해야 합니다.
+1이면 켜고 0이면 끕니다.
 
 ;''listview_tooltips''
-Show or don't show tooltips in the result list. Set to 1 to show tooltips. Set to 0 to not show tooltips.
+1이면 결과 목록에서 툴팁을 보여줍니다. 0이면 보여주지 않습니다.
 
 ;''show_detailed_listview_tooltips''
-Show detailed tooltips in thumbnail view.
-Set to 1 to show text for all visible column types. Set to 0 to show the name only. 
+섬네일 보기에서 자세한 툴팁을 보여줍니다.
+1이면 보이는 모든 열 정보를 보여줍니다. 0이면 이름만 보여줍니다.
 
 </dl>
 
-==Backup==
-To make a backup of all settings:
+==백업==
+모든 설정을 백업하려면
 <ul>
-*In '''''Everything''''', type in the following search and press ENTER:
+*'''Everything'''에서 아래 명령어를 입력하고 엔터를 칩니다.
 <pre>
 /config_save
 </pre>
-*Choose a filename and destination and click '''Save'''.
+*파일 이름을 정하고 '''저장'''을 클릭합니다.
 </ul>
 
-==Restore==
-To restore all settings:
+==복원==
+모든 설정을 복원하려면
 <ul>
-*In '''''Everything''''', type in the following search and press ENTER:
+*'''Everything'''에서 아래 명령어를 입력하고 엔터를 칩니다.
 <pre>
 /config_load
 </pre>
-*Select a Everything.ini and click '''Open'''.
+*Everything.ini를 선택하고 '''열기'''를 클릭합니다.
 </ul>
 
-==Restore default settings==
-To restore all the default settings in Everything:
+==기본 설정 복원==
+모든 설정을 기본값으로 되돌리려면
 <ul>
-* Exit "''Everything''"
-* Delete the Everything.ini file in %APPDATA%\Everything
-* Restart Everything.
+* ''Everything''을 종료합니다.
+* %APPDATA%\Everything\Everything.ini를 삭제합니다.
+* Everything을 재시작합니다.
 </ul>
 
-==Custom filename==
-Use Everything.exe [[support/everything/command line options#-config|-config]] <Everything.ini> to specify the filename of the Everything ini file.
+==다른 설정 경로==
+Everything.exe [[support/everything/command line options#-config|-config]] <Everything.ini>로 설정 파일 위치를 지정할 수 있습니다.
 
-==See also==
+==볼만한 것==
 <ul>
-*[[support/everything/options|Options]]
+*[[support/everything/options|설정]]
 </ul>
