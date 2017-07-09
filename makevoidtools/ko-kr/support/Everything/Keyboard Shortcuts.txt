@@ -1,360 +1,357 @@
-=Keyboard Shortcuts=
-A list of all the default keyboard shortcuts for Everything and how to customize them.
+=키보드 단축키=
+기본 키보드 단축키 목록과 설정하는 방법입니다.
 
-==Search edit shortcuts==
-Keyboard shortcuts that can be used when the search edit has focus.
+==검색 줄 단축키==
+검색 줄에 초점을 맞췄을 때 쓸 수 있는 단축키입니다.
 
 {| class="wikitable"
-! Shortcut key
-! Action
+! 단축키
+! 동작
 |-
 | Ctrl + A
-| Select all text.
+| 모든 텍스트 선택.
 |-
 | Ctrl + Backspace
-| Delete previous word.
+| 이전 단어를 지우기.
 |-
 | Ctrl + Space
-| Complete search. Requires search history to be enabled.
+| 자동완성입니다. 검색 기록을 켜야 합니다.
 |-
 | Enter
-| Focus result list and select the item with the highest run count.
+| 검색 결과에 초점을 맞추고 가장 실행 횟수가 높은 항목을 선택합니다.
 |-
-| Up Arrow<br>Down Arrow
-| Focus result list.
+| ↑ 방향키<br>↓  방향키
+| 검색 결과에 초점 맞추기.
 |-
-| Alt + Up Arrow<br>Alt + Down Arrow
-| Show search history.
+| Alt + ↑ 방향키<br>Alt + ↓  방향키
+| 검색 기록 보기.
 |-
-| Double Click
-| Select word
+| 더블 클릭
+| 단어 선택.
 |-
-| Triple Click
-| Select all
+| 트리플 클릭
+| 모든 텍스트 선택.
 |}
 
-==Result list shortcuts==
-Keyboard shortcuts that can be used when the result list has focus.
+==검색 결과 단축키==
+검색 결과에 초점을 맞췄을 때 쓸 수 있는 단축키입니다.
 
 {| class="wikitable"
-! Shortcut key
-! Action
+! 단축키
+! 동작
 |-
 | F2
-| Rename the focused item.
+| 선택한 항목 이름 바꾸기.
 |-
 | Delete
-| Move selected items to the recycle bin.
+| 선택한 항목 휴지통으로 보내기.
 |-
 | Shift + Delete
-| Permanently delete selected items.
+| 선택한 항목 영구 삭제.
 |-
-| Left Arrow
-| Scroll left.
+| ← 방향키
+| 왼쪽으로 스크롤.
 |-
-| Right Arrow
-| Scroll right.
+| → 방향키
+| 오른쪽으로 스크롤.
 |-
-| Ctrl + Left Arrow
-| Scroll left one page.
+| Ctrl + ←  방향키
+| 왼쪽으로 한 페이지 스크롤.
 |-
-| Ctrl + Right Arrow
-| Scroll right one page.
+| Ctrl + → 방향키
+| 오른쪽으로 한 페이지 스크롤.
 |-
 | Enter
-| Open the selected items.
+| 선택한 항목 열기.
 |-
 | Ctrl + Enter
-| Open the path of the selected item.
+| 선택한 항목 경로 열기.
 |-
 | Alt + Enter
-| Display properties of the selected items.
+| 선택한 항목 속성 창 열기.
 |-
 | Ctrl + +
-| auto adjust column widths.
+| 열 너비 자동 조절.
 |-
-| Up Arrow<br>Down Arrow<br>Page Up<br>Page Down<br>Home<br>End
-| Navigate item focus and selection.
+| ↑<br>↓<br>Page Up<br>Page Down<br>Home<br>End
+| 초점과 선택 이동.
 |-
-| Shift + Up Arrow<br>Shift + Down Arrow<br>Shift + Page Up<br>Shift + Page Down<br>Shift + Home<br>Shift + End
-| Extend item selection.
+| Shift + ↑ <br>Shift + ↓<br>Shift + Page Up<br>Shift + Page Down<br>Shift + Home<br>Shift + End
+| 선택 영역을 확장하면서 이동.
 |-
-| Ctrl + Up Arrow<br>Ctrl + Down Arrow<br>Ctrl + Page Up<br>Ctrl + Page Down<br>Ctrl + Home<br>Ctrl + End
-| Navigate item focus.
+| Ctrl + ↑<br>Ctrl + ↓<br>Ctrl + Page Up<br>Ctrl + Page Down<br>Ctrl + Home<br>Ctrl + End
+| 선택 영역을 유지하면서 초점만 이동.
 |-
-| Ctrl + Shift + Up Arrow<br>Ctrl + Shift + Down Arrow<br>Ctrl + Shift + Page Up<br>Ctrl + Shift + Page Down<br>Ctrl + Shift + Home<br>Ctrl + Shift + End
-| Extend item selection, keeping the current selection.
+| Ctrl + Shift + ↑<br>Ctrl + Shift + ↓<br>Ctrl + Shift + Page Up<br>Ctrl + Shift + Page Down<br>Ctrl + Shift + Home<br>Ctrl + Shift + End
+| 기존 선택 영역을 유지, 확장하면서 이동.
 |-
 | Space
-| Select focus.
+| 초점 항목 선택.
 |-
 | Ctrl + Space
-| Toggle item selection.
+| 초점 항목 선택 전환.
 |-
 | Escape
-| Cancel any current actions.
+| 모든 동작 취소.
 |-
 | Ctrl + A
-| Selected all items.
+| 모든 항목 선택.
 |-
 | Ctrl + C<br>Ctrl + Insert
-| Copy selected items.
+| 선택한 항목 복사.
 |-
 | Ctrl + E
-| Read the file size, date and attributes of the current selection. May be useful before exporting all sizes, dates and attributes.
+| 선택 항목의 파일 크기, 날짜, 속성 읽기. 내보내기 전에 하면 유용함.
 |-
 | Ctrl + V<br>Shift + Insert
-| Paste items from the clipboard into the selected folder.
+| 클립보드 항목을 선택한 폴더에 복사.
 |-
 | Ctrl + X
-| Cut selected items.
+| 선택한 항목 잘라내기.
 |-
 | Ctrl + Shift + C
-| Copy the full path and name of the current selection to the clipboard.
+| 선택 항목의 전체 경로를 클립보드로 복사.
 |-
 | Shift + F10
-| Display item context menu for the current selection. Displays the result list context menu if no selection.
+| 선택 항목의 우클릭 메뉴 보기. 선택 영역이 없으면 검색 결과의 우클릭 메뉴를 띄움.
 |-
 | Any character
-| Adds a character to the jump to text.
+| 해당 글자로 시작하는 항목으로 이동. 이걸 점프 텍스트에 글자를 추가한다고 표현.
 |-
 | Backspace
-| Remove the last character in the jump to text.
+| 점프 텍스트에서 한 글자 지우기.
 |}
 
-==Global keyboard shortcuts==
-Keyboard shortcuts that can be used when an Everything search window has focus.
+==전역 키보드 단축키==
+Everything 검색 창에 초점을 맞췄을 때 쓸 수 있는 단축키입니다.
 
 {| class="wikitable"
-! Shortcut key
-! Action
+! 단축키
+! 동작
 |-
 | Escape<br>Ctrl + W
-| Close the Everything window.
+| 검색 창 닫기.
 |-
 | F1
-| Show the Everything help.
+| Everything 도움말 보기.
 |-
 | F3<br>Ctrl + F<br>Alt + D
-| Focus and highlight the search edit.
+| 검색 줄로 초점 이동.
 |-
 | F5
-| Reload icons, file sizes, dates and attributes.
+| 아이콘, 파일 크기, 날짜, 속성 등을 새로 고침.
 |-
 | F11
-| Toggle fullscreen.
+| 전체화면 토글.
 |-
 | Ctrl + Tab<br>Ctrl + Shift + Tab
-| Cycle between open windows.
+| 연 검색 창들을 순회.
 |-
 | Tab<br>Shift + Tab
-| Cycle between search edit and results view.
+| 검색 줄과 검색 결과간 초점 이동.
 |-
 | Escape
-| Close the current window.
+| 현재 창 닫기.
 |-
 | Alt + 1
-| Resize the window to 512 x 398.
+| 창을 512 x 398 크기로 조절.
 |-
 | Alt + 2
-| Resize the window to 640 x 497.
+| 창을 640 x 497 크기로 조절.
 |-
 | Alt + 3
-| Resize the window to 768 x 597.
+| 창을 768 x 597 크기로 조절.
 |-
 | Alt + 4
-| Auto size the window.
+| 창 크기 자동 조절.
 |-
 | Alt + P
-| Toggle the preview pane.
+| 미리보기 영역 토글.
 |-
 | Ctrl + Shift + 1
-| Toggle extra large thumbnails.
+| 매우 큰 섬네일 보기 토글.
 |-
 | Ctrl + Shift + 2
-| Toggle large thumbnails.
+| 큰 섬네일 보기 토글.
 |-
 | Ctrl + Shift + 3
-| Toggle medium thumbnails.
+| 중간 섬네일 보기 토글.
 |-
 | Ctrl + Shift + 6
-| Toggle detail view.
+| 자세히 보기 토글.
 |-
 | Ctrl + Alt + +
-| Increase thumbnail size.
+| 섬네일 크기 증가.
 |-
 | Ctrl + Alt + -
-| Decrease thumbnail size.
+| 섬네일 크기 감소.
 |-
 | Ctrl + `
-| Toggle debug console.
+| 디버그 콘솔 토글.
 |-
 | Ctrl + F1
-| Show About Everything.
+| Everything 정보창.
 |-
 | Ctrl + 1
-| Sort by name.
+| 이름순 정렬.
 |-
 | Ctrl + 2
-| Sort by path.
+| 경로순 정렬.
 |-
 | Ctrl + 3
-| Sort by size.
+| 크기순 정렬.
 |-
 | Ctrl + 4
-| Sort by extension.
+| 확장자순 정렬.
 |-
 | Ctrl + 5
-| Sort by type.
+| 종류순 정렬.
 |-
 | Ctrl + 6
-| Sort by date modified.
+| 수정한 날짜순 정렬.
 |-
 | Ctrl + 7
-| Sort by date created.
+| 만든 날짜순 정렬.
 |-
 | Ctrl + 8
-| Sort by attributes.
+| 속성순 정렬.
 |-
 | Ctrl + 9
-| Sort by date recently changed.
+| 최근에 변경한 날짜순 정렬.
 |-
 | Ctrl + B
-| Toggle match whole word.
+| 전체 단어 일치 토글.
 |-
 | Ctrl + D
-| Bookmark the current search.
+| 현재 검색어 책갈피 추가.
 |-
 | Ctrl + I
-| Toggle match case.
+| 대소문자 구분 토글.
 |-
 | Ctrl + M
-| Toggle match diacritics.
+| 발음 구별 부호 구분 토글.
 |-
 | Ctrl + N
-| Open a new search window.
+| 새 검색 창 열기.
 |-
 | Ctrl + O
-| Open an Everything file list.
+| Everything 파일 목록 열기.
 |-
 | Ctrl + P
-| Show the Options window.
+| 설정 창 열기.
 |-
 | Ctrl + Q
-| Exit Everything.
+| 창 닫기.
 |-
 | Ctrl + R
-| Toggle Regex.
+| 정규식 토글.
 |-
 | Ctrl + S
-| Export the current results to an Everything file list, csv or txt file.
+| 현재 검색 결과를 Everything 파일 목록, csv, txt 파일로 내보내기.
 |-
 | Ctrl + T
-| Toggle always on top.
+| 항상 위에 토글.
 |-
 | Ctrl + U
-| Toggle match path.
+| 전체 경로 검색 토글.
 |-
 | Ctrl + +
-| Increase text size.
+| 글자 크기 증가.
 |-
 | Ctrl + -
-| Decrease text size.
+| 글자 크기 감소.
 |-
 | Ctrl + 0
-| Reset text size to Normal.
+| 글자 크기 초기화.
 |-
-| Ctrl + Mouse Wheel Up<br>Ctrl + Mouse Wheel Down
-| Change view.
+| Ctrl + 마우스 휠 ↑<br>Ctrl + 마우스 휠 ↓
+| 보기 전환.
 |-
 | Alt + Home
-| Go to the home search.
+| 초기 화면으로 전환.
 |-
-| Alt + Left Arrow<br>Back<br>Mouse back button
-| Go back to the previous search.
+| Alt + ←<br>뒤로<br>마우스 뒤로 버튼
+| 이전 검색으로 이동.
 |-
-| Alt + Right Arrow<br>Forward<br>Mouse forward button
-| Go forward to the next search.
+| Alt + →<br>앞으로<br>마우스 앞으로 버튼
+| 다음 검색으로 이동.
 |-
 | Ctrl + Shift + F
-| Organize filters.
+| 필터 관리 창 열기.
 |-
 | Ctrl + Shift + B
-| Organize bookmarks.
+| 책갈피 관리 창 열기.
 |-
 | Ctrl + H<br>Ctrl + Shift + H
-| Show all search history.
+| 모든 검색 기록 보기.
 |}
 
-==Hotkeys==
-The Everything search window can be shown by pressing a hotkey.
-Hotkeys can be used anywhere in Windows.
+==핫키==
+Everything 검색 창은 핫키를 눌러서 띄울 수 있습니다.
+핫키는 윈도 어디에서나 쓸 수 있습니다.
 
-There are three different methods for opening the Everything window with a hotkey:
+핫키로 창을 여는 방법은 여러가지가 있습니다.
 {| class="wikitable"
-! Method
-! Description
+! 방법
+! 설명
 |-
-| New window
-| Always show a new Everything search window.
+| 새 창 띄우기
+| 항상 새 검색 창을 엽니다.
 |-
-| Show window
-| Show the Everything search window if one exists, otherwise create a new Everything search window.
+| 창 보기
+| 기존 창이 있었다면 그 창을 활성화하고, 없었다면 새 창을 엽니다.
 |-
-| Toggle window
-| Hide the Everything search window if it is currently in the foreground, otherwise show the Everything search window if one exists, otherwise create a new Everything search window.
+| 창 보이기/숨기기
+| 검색 창을 보고 있었다면 그 창을 숨기고, 검색 창이 있었지만 가려져 있었다면 그 창을 활성화하고, 창이 없었다면 열어줍니다.
 |}
 
-To define a Hotkey to open Everything:
+Everything 핫키를 설정하려면
 <ul>
-*In '''''Everything''''', from the '''Tools''' menu, click '''Options'''.
-*Click the '''Keyboard''' tab.
-*Choose a hotkey method.
-*Press a new key combination.
-*Click OK.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''키보드''' 탭을 클릭합니다.
+*핫키 방법을 선택합니다.
+*사용할 핫키를 입력합니다.
+*확인을 클릭합니다.
 </ul>
 
-Note: Everything must be running in the background for hotkeys to work.
-Note: You can not override any existing hotkey.
+참고: 핫키를 쓰려면 Everything이 백그라운드에서 실행 중이어야 합니다.
+참고: 이미 있는 핫키를 덮어쓸 순 없습니다.
 
-To disable a Windows hotkey, such as Win + F:
+Win + F같은 윈도 핫키를 끄려면
 <ul>
-*From the Start menu, open regedit
-*In the Registry Editor, navigate to:
+*시작메뉴에서 레지스트리 편집기를 엽니다. (Win + R - regedit)
+*레지스트리 편집기에서 아래 경로를 찾아갑니다.
 <pre>
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced
 </pre>
-*Create a new String Value called '''DisabledHotkeys'''
-*Set the DisabledHotkeys data to the letter you would like freed, for example: '''F'''
-*Restart your computer
-*Apply the (now free) hotkey Win + F in Everything.
+*'''DisabledHotkeys''' 문자열 값을 생성합니다.
+*DisabledHotkeys 값을 해제하려는 핫키, 여기선 '''F'''로 설정합니다.
+*컴퓨터를 재시작합니다.
+*Everything에서 해제된 핫키(여기선 Win + F)를 설정합니다.
 </ul>
 
 
-==Customizing==
-To customize keyboard shortcuts:
+==커스터마이징==
+단축키를 따로 설정하려면
 <ul>
-*In '''''Everything''''', from the '''Tools''' menu, click '''Options'''.
-*Click the '''Keyboard''' tab.
-*Use '''Show commands containing:''' to search for a command
-*Click '''Add...''' to add a new keyboard shortcut or click '''Edit...''' to edit an existing one.
-*Select a location to use the shortcut in:
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''키보드''' 탭을 클릭합니다.
+*'''작업 겅색하기:''' 란에서 명령을 검색할 수 있습니다.
+*단축키를 추가하려면 '''추가...'''를, 이미 있는 걸 고치려면 '''수정...'''을 클릭합니다.
+*단축키를 사용할 위치를 선택합니다.
 {|
-! Location
-! Description
+! 위치
+! 설명
 |-
-| Global
-| The shortcut will work anywhere in the Everything search window.
+| 창 전체
+| 단축키를 Everything 검색 창 어디서나 쓸 수 있습니다.
 |-
-| Search Edit
-| The shortcut will only work when pressed in the search edit.
+| 검색 줄
+| 단축키를 검색 줄에서만 쓸 수 있습니다.
 |-
-| Result List
-| The shortcut will only work when pressed in the result list.
+| 검색 결과
+| 단축키를 검색 결과에서만 쓸 수 있습니다.
 |}
-*Press a new keyboard shortcut for shortcut key.
-*Check shortcut key currently used by, this existing shortcut (if any) will be removed if you click OK.
-*Click '''OK'''.
-*Click '''OK'''.
+*새 단축키를 입력합니다.
+*입력한 단축키가 따로 사용 중인지 확인합니다. 만약 사용 중이라면 확인을 누를 때 기존 설정은 지워집니다.
+*'''확인''' - '''확인'''을 클릭합니다.
 </ul>
 
