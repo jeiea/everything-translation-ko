@@ -8,31 +8,31 @@ To open the Everything Options window:
 
 Select one of the ''"tabs"'' below:
 <ul>
-*[[#General|General]]
+*[[#일반|일반]]
 <ul>
-*[[#UI|UI]]
-*[[#Home|Home]]
-*[[#Search|Search]]
-*[[#Results|Results]]
-*[[#View|View]]
-*[[#Context Menu|Context Menu]]
-*[[#Fonts and Colors|Fonts and Colors]]
-*[[#Keyboard|Keyboard]]
+*[[#인터페이스|인터페이스]]
+*[[#검색 창|검색 창]]
+*[[#검색|검색]]
+*[[#검색 결과|검색 결과]]
+*[[#보기|보기]]
+*[[#우클릭 메뉴|우클릭 메뉴]]
+*[[#글꼴과 색상|글꼴과 색상]]
+*[[#키보드|키보드]]
 </ul>
-*[[#History|History]]
-*[[#Indexes|Indexes]]
+*[[#히스토리|히스토리]]
+*[[#색인|색인]]
 <ul>
 *[[#NTFS|NTFS]]
 *[[#ReFS|ReFS]]
-*[[#Folders|Folders]]
-*[[#File Lists|File Lists]]
-*[[#Exclude|Exclude]]
+*[[#폴더|폴더]]
+*[[#파일 목록|파일 목록]]
+*[[#제외|제외]]
 </ul>
-*[[#ETP/FTP Server|ETP/FTP Server]]
-*[[#HTTP Server|HTTP Server]]
+*[[#ETP/FTP 서버|ETP/FTP 서버]]
+*[[#HTTP 서버|HTTP 서버]]
 </ul>
 
-==General==
+==일반==
 [[File:support/everything/Everything.Options.General.png|alt=Everything Options General]]
 
 Contains settings for configuring the installation of ''Everything''.
@@ -42,7 +42,7 @@ Contains settings for configuring the installation of ''Everything''.
 Selects the language used for displaying text in Everything. If set to User Default the language is determined by the current users language for displaying text, (User Default) is displayed next to this language in the language selection combo.
 Click the download button to the right of languages to open the download page for the Everything language pack in your web browser.
 
-;''%APPDATA%\\Everything 폴더에 설정 저장''
+;''%APPDATA%\Everything 폴더에 설정 저장''
 Choose the location for storing settings and data. If enabled, settings and data are stored in %APPDATA%\Everything. If disabled, settings and data are stored in the same location as the Everything.exe.
 This option is enabled in the installer by default and disabled in the portable version by default. Changing this setting will overwrite any existing settings.
 
@@ -89,7 +89,7 @@ For example, when clicking on [[es:abc123|es:abc123]] Everything will launch and
 Open EFU files with Everything. EFU files are Everything file lists, for more information please see [[support/everything/file lists|File Lists]].
 </dl>
 
-==UI==
+==인터페이스==
 [[File:support/everything/Everything.Options.UI.png|alt=Everything Options UI]]
 
 Contains settings for configuring the user interface.
@@ -129,7 +129,7 @@ Open a file or folder with a single click or double click. To select a file or f
 Choose when filenames are underlined in single click mode.
 </dl>
 
-==Home==
+==검색 창==
 [[File:support/everything/Everything.Options.Home.png|alt=Everything Options Home]]
 
 Contains settings for configuring the first search when a new Everything search window is shown.
@@ -173,7 +173,7 @@ The username, password, host and port of the ETP server when the index is set to
 The link type of the ETP server when the index is set to an ETP server.
 </dl>
 
-==Search==
+==검색==
 [[File:support/everything/Everything.Options.Search.png|alt=Everything Options Search]]
 
 Contains settings for configuring the search.
@@ -217,7 +217,7 @@ Set to AND > OR to evaluate AND operations first, for example, searching for <co
 
 </dl>
 
-==Results==
+==검색 결과==
 [[File:support/everything/Everything.Options.Results.png|alt=Everything Options Results]]
 
 Contains settings for configuring the result list.
@@ -276,7 +276,7 @@ The thread priority for loading thumbnails.
 The thread priority for loading file dates, sizes and attributes.
 </dl>
 
-==View==
+==보기==
 [[File:support/everything/Everything.Options.View.png|alt=Everything Options View]]
 
 Contains settings for configuring the view.
@@ -345,7 +345,7 @@ The selection rectangle display type. Can be one of the following values:
 |}
 </dl>
 
-==Context Menu==
+==우클릭 메뉴==
 [[File:support/everything/Everything.Options.Context.Menu.png|alt=Everything Options Context Menu]]
 
 Contains settings for configuring the context menu. The context menu is displayed when right clicking a file or folder in the Everything result list.
@@ -395,7 +395,7 @@ The following command syntax can be used:
 See [[support/everything/customizing#external_file_manager|Customizing]] for more information.
 </dl>
 
-==Fonts and Colors==
+==글꼴과 색상==
 [[File:support/everything/Everything.Options.Fonts.And.Colors.png|alt=Everything Options Fonts And Colors]]
 
 Contains settings for configuring the font and colors in ''Everything''.
@@ -416,7 +416,7 @@ The background color for the selected item. Select a custom color by clicking on
 The font style. Can be bold or normal.
 </dl>
 
-==Keyboard==
+==키보드==
 [[File:support/everything/Everything.Options.Keyboard.png|alt=Everything Options Keyboard]]
 
 Contains settings for configuring keyboard shortcuts and hotkeys.
@@ -462,7 +462,7 @@ To remove a keyboard shortcut:
 </ul>
 </dl>
 
-==History==
+==히스토리==
 [[File:support/everything/Everything.Options.History.png|alt=Everything Options History]]
 
 Contains settings for configuring search history and run history.
@@ -497,7 +497,7 @@ Specify the number of days to keep run history. When the run history is loaded, 
 if disabled run history is kept forever.
 </dl>
 
-==Indexes==
+==색인==
 [[File:support/everything/Everything.Options.Indexes.png|alt=Everything Options Indexes]]
 
 Contains settings for configuring the indexes.
@@ -681,7 +681,7 @@ semicolon delimited list of folders to include on this ReFS volume. Leave empty 
 Keep the ReFS index of this ReFS volume up to date.
 </dl>
 
-==Folders==
+==폴더==
 [[File:support/everything/Everything.Options.Folders.png|alt=Everything Options Folders]]
 
 Contains settings for configuring folder indexes.
@@ -703,7 +703,7 @@ Choose an option for when to update the selected folder.
 See [[support/Everything/Folder Indexing|Folder Indexing]] for more information.
 </dl>
 
-==File Lists==
+==파일 목록==
 [[File:support/everything/Everything.Options.File.Lists.png|alt=Everything Options File Lists]]
 
 Contains settings for configuring file lists indexes.
@@ -720,7 +720,7 @@ The file list editor can create a new file list or edit an existing one.
 See [[support/Everything/File lists|File lists]] for more information.
 </dl>
 
-==Exclude==
+==제외==
 [[File:support/everything/Everything.Options.Exclude.png|alt=Everything Options Exclude]]
 
 Contains settings for exclude files and folders from the index.
@@ -773,7 +773,7 @@ For example, exclude db files
 
 Prefix a filter with regex: to enable regex.
 
-==ETP/FTP Server==
+==ETP/FTP 서버==
 [[File:support/everything/Everything.Options.ETP.FTP.Server.png|alt=Everything Options ETP/FTP Server]]
 
 Contains settings for configuring a ETP/FTP server to access your files remotely from Everything or a FTP client. For more information see [[support/everything/ETP|ETP/FTP Server]].
@@ -810,7 +810,7 @@ Use [[support/everything/multiple instances|multiple instances]] to create an ET
 
 </dl>
 
-==HTTP Server==
+==HTTP 서버==
 [[File:support/everything/Everything.Options.HTTP.Server.png|alt=Everything Options HTTP Server]]
 
 Contains settings for configuring a HTTP server to access your files remotely from a web browser. For more information see [[support/everything/HTTP|HTTP Server]].
@@ -856,7 +856,7 @@ Use [[support/everything/multiple instances|multiple instances]] to create an HT
 ==Where are settings stored==
 Settings are stored in your [[support/everything/INI|Everything.ini]].
 
-==Backup==
+==백업==
 To make a backup of all settings:
 <ul>
 *In '''''Everything''''', type in the following search and press ENTER:
@@ -866,7 +866,7 @@ To make a backup of all settings:
 *Choose a filename and destination and click '''Save'''.
 </ul>
 
-==Restore==
+==복원==
 To restore all settings:
 <ul>
 *In '''''Everything''''', type in the following search and press ENTER:
@@ -876,11 +876,11 @@ To restore all settings:
 *Select a Everything.ini and click '''Open'''.
 </ul>
 
-==Load defaults==
+==기본값 복원==
 Click the Restore defaults button in the bottom right to load the defaults for the current page.
 To reset all settings to their default values, see [[support/everything/ini#Restore default settings|Everything.ini]]
 
-==See also==
+==볼만한 것==
 <ul>
 *[[support/everything/ini|Everything.ini]]
 </ul>

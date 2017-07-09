@@ -1,97 +1,94 @@
-=Results=
-The result list shows the file and folders matches for the current search.
-Right click a file or folder to perform an action, such as open, cut, copy, delete, rename or properties.
+=검색 결과=
+검색 결과 목록은 현재 검색 조건과 일치하는 파일 및 폴더를 보여줍니다.
+열기, 잘라내기, 복사, 삭제, 이름 바꾸기, 속성 창 열기 등의 동작을 하려면 항목을 우클릭하세요.
 
-==Thumbnails==
+==섬네일==
 [[File:support/everything/Everything.Thumbnails.png|alt=Everything Thumbnails]]
 
-To show results in thumbnail view:
+검색 결과를 섬네일로 보려면
 <ul>
-*In "'''''Everything'''''", from the '''View''' menu, click '''Medium Thumbnails''', '''Large Thumbnails''' or '''Extra Large Thumbnails'''.
+*'''Everything''' - '''보기''' 메뉴 - '''중간 섬네일''', '''큰 섬네일'''이나 '''매우 큰 섬네일'''을 클릭합니다.
 </ul>
 
--or-
+-또는-
 
 <ul>
-*In "'''''Everything'''''", Press and hold the Ctrl key and use the mouse wheel to change the view from Details to Extra Large Thumbnails.
+*'''Everything'''에서 컨트롤 + 마우스 휠로 보기 방법을 전환할 수 있습니다.
 </ul>
 
-==Preview==
+==미리보기==
 [[File:support/everything/Everything.Preview.png|alt=Everything Preview]]
 
-To show the preview pane:
+미리보기 영역을 보려면
 <ul>
-*In "'''''Everything'''''", from the '''View''' menu, check '''Preview'''.
+*'''Everything''' - '''보기''' 메뉴 - '''미리보기'''를 클릭합니다.
 </ul>
 
-Click and drag the divider to resize the preview pane.
+미리보기 영역 크기를 조절하려면 경계를 드래그하세요.
 
-==Hide results when the search is empty==
-All files and folders are found when the search is empty. To hide the results when the search is empty:
+==검색어가 비어있을 때 결과 숨기기==
+기본적으로 검색어가 비어있을 때 모든 파일과 폴더를 보여줍니다. 이 경우 결과를 숨기려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Check '''Hide results when the search is empty'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''검색 결과''' 탭을 클릭합니다.
+*'''아무 것도 검색하지 않았을 때 결과 숨김'''을 체크합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Keep selection==
-When you change the search in Everything, the current selection is cleared. 
+==선택 항목 보존==
+검색 조건을 바꿨을 때 선택 영역은 초기화됩니다.
 
-To keep the selection after changing the search:
+변경 후에도 선택을 유지하려면
 <ul>
-*In "'''''Everything'''''", from the '''Tools''' menu, click '''Options'''.
-*Click the '''Results''' tab.
-*Uncheck the '''Clear selection on search'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''검색 결과''' 탭을 클릭합니다.
+*'''검색 시 선택 해제'''를 해제합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Jump to==
-Type in the start of a filename to jump to it.
-The jump to text is displayed in the status bar.
+==점프==
+파일 이름 시작 부분을 입력해 해당 항목으로 이동할 수 있습니다.
+점프 텍스트는 상태 표시줄에 보입니다.
 
-==Sorting results==
-By default the results are sorted by Name, then Path.
-Sorting is reset back to the default each time the search parameters change.
-At the top of the result list is a header. To sort a column click its header.
+==결과 정렬==
+기본적으로 이름순, 경로순으로 정렬합니다.
+검색 조건이 바뀔 때마다 기본 정렬로 돌아옵니다.
+검색 결과 맨 위에 머리행이 있습니다. 머리행을 클릭하면 해당 열로 정렬합니다.
 
-Note: Sorting can be slow when there are many results.
+참고: 결과가 많을 땐 정렬이 느릴 수 있습니다.
 
-Sorting can be cancelled by selecting another sort or changing the search.
+검색 조건을 바꾸거나 다른 정렬을 선택해 정렬을 취소할 수 있습니다.
 
-==Highlight the row the mouse is over==
-To highlight the row the mouse is over:
+==포인터가 있는 행 강조하기==
+포인터가 있는 행을 강조하려면
 <ul>
-*In "''Everything''", from the '''Tools''' menu, click '''Options'''.
-*Select the '''View''' tab.
-*Check '''Show row mouseover'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정''' - '''보기''' 탭을 클릭합니다.
+*'''포인터가 있는 행 강조'''를 체크합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Multi-file Renaming==
+==일괄 이름 변경==
 [[File:support/everything/Everything.Multi.File.Rename.png|alt=Everything Multi-file Rename Screenshot]]
 
-To use multi-file renaming select multiple files in the result list and press F2.
+일괄 이름 병경을 하려면 겅색 결과에서 여러 항목을 선택하고 F2를 누르면 됩니다.
 
-With multi-file renaming you can:
+일괄 이름 변경에서 아래를 할 수 있습니다.
 <ul>
-*Change common text in all filenames.
-*Change the extension of all files easily.
-*Find and replace text.
-*Edit all filenames in one edit box.
+*여러 파일에 공통적으로 들어간 텍스트 변경.
+*여러 파일 확장자를 쉽게 변경.
+*텍스트 찾아 바꾸기.
+*모든 파일 이름을 한 에디트에서 수정.
 </ul>
 
-Note: multi-file renaming works best when the selected files share similar formats, for example: Artist - Album - Track - Song Title.mp3
+참고: 일괄 이름 변경은 음악가-앨범-트랙-제목.mp3같이 선택한 파일 이름 형식이 비슷할 때 가장 효과적입니다. 
 
-==Undo==
-To undo a move, copy or delete:
+==무르기==
+이동, 복사, 삭제를 무르려면
 <ul>
-*Open Windows Explorer (Win + E)
-*From the Edit menu.
-*Click Undo.
+*탐색기를 엽니다 (Win + E).
+*Ctrl + Z를 누릅니다.
 </ul>
 
-==See Also==
+==볼만한 것==
 <ul>
-*[[support/everything/options#results|Results Options]]
-*[[support/everything/options#fonts and colors|Change the font and colors]]
+*[[support/everything/options#검색 결과|검색 결과 설정]]
+*[[support/everything/options#글꼴과 색상|글꼴과 색상 설정]]
 </ul>

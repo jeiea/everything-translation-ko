@@ -1,71 +1,71 @@
-=Search History=
-Search history is a list of all your previous searches.
-Search history is disabled by default.
-When search history is enabled, you can list search suggestions by pressing Ctrl + Space in the search edit.
+=검색 히스토리=
+검색 히스토리는 이전에 검색했던 검색어 목록입니다.
+이 기능은 기본적으로 꺼져있습니다.
+이 기능을 켜면 검색 줄에서 Ctrl + Space키로 검색 제안을 볼 수 있습니다.
 
-==How do I enable search history?==
-Search history is disabled by default, to enable search history:
+==검색 기록을 어떻게 켜나요?==
+검색 기록은 기본적으로 꺼져있습니다. 이걸 켜려면
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''History '''tab.
-*Check '''Enable search history'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정'''을 클릭합니다.
+*'''히스토리''' 탭을 클릭합니다.
+*'''최근 검색어 저장'''을 체크합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==How do I show a list of search suggestions?==
-Press Ctrl + Space to display the list of search suggestions.
+==어떻게 검색 제안을 볼 수 있나요?==
+검색 제안을 보려면 검색 줄에서 Ctrl + Space 또는 Alt + ↓을 누르세요.
 
--or-
+-또는-
 
-Disable search as you type to always show suggestions:
+검색 제안을 항상 보려면 입력 즉시 검색을 끄세요.
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''UI '''tab.
-*Uncheck '''Search as you type'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정'''을 클릭합니다.
+*'''인터페이스''' 탭을 클릭합니다.
+*'''입력 즉시 검색'''을 해제합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
--or-
+-또는-
 
-Always show search suggestions:
+검색 제안을 항상 보려면
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''History '''tab.
-*Check '''Always show search suggestions'''.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정'''을 클릭합니다.
+*'''히스토리''' 탭을 클릭합니다.
+*'''항상 검색 제안 보기'''를 체크합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
--or-
+-또는-
 
-Click the down arrow on the right side the search edit.
+검색 줄 오른쪽의 아래방향 화살표를 클릭합니다.
 
-==How do I add a search to the search history?==
-Press Enter from the search edit or perform an action on a result.
+==어떻게 검색어를 히스토리에 추가하나요?==
+검색어를 입력하고 엔터를 치거나 결과에 동작을 수행하세요.
 
-==Where is the search history saved?==
-Search history is saved to:
+==어디에 히스토리가 저장되나요?==
+아래 경로에 저장됩니다.
 <pre>
 %APPDATA%\Everything\Search History.csv
 </pre>
-If [[support/everything/options#Store settings and data in %APPDATA%\Everything|Store settings and data in %APPDATA%\Everything]] is disabled, the Search History.csv is stored in the same location as Everything.exe.
+[[support/everything/options#%APPDATA%\Everything 폴더에 설정 저장|%APPDATA%\Everything 폴더에 설정 저장]]을 끄면 Everything.exe와 같은 경로에 Search History.csv를 저장합니다.
 
-This file is updated when closing the Everything Search window.
+이 파일은 Everything 검색 창을 닫을 때마다 갱신됩니다.
 
-==How do I clear my search history?==
+==어떻게 검색 기록을 비우나요?==
 <ul>
-*In '''Everything''', from the '''Tools '''menu, click '''Options'''.
-*Click the '''History '''tab.
-*In the Search History group box, click '''Clear Now'''.
-*Click '''OK''' to clear.
-*Click '''OK'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정'''을 클릭합니다.
+'''히스토리''' 탭을 클릭합니다.
+*'''검색어 목록 삭제'''를 클릭합니다.
+*삭제하려면 '''확인'''을 클릭합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Browsing Search History==
-Previous searches can be shown from clicking on the dropdown button to the right of the search box.
+==검색 기록 탐색하기==
+이전 검색어는 검색 줄 오른쪽 드롭다운 화살표를 클릭해서 볼 수 있습니다.
 
-With Everything 1.4 you can now browse and edit your entire search history (if enabled).
+1.4버전 부터는 검색 기록 기능을 켜면 전체 검색 기록을 볼 수 있습니다.
 
-To browse and edit your Search History:
+검색 기록을 보고 편집하려면
 <ul>
-* In "Everything", from the View menu, from the Goto menu, click Show All History.
+* Everything - 보기 메뉴 - 히스토리 - 모든 히스토리 보기를 클릭합니다.
 </ul>

@@ -1,7 +1,7 @@
-=Previous Versions=
-A list of all the previous versions of Everything.
+=이전 버전=
+Everything 이전 버전 목록입니다.
 
-Previous stable releases:
+이전 안정 버전
 {|
 {{PREVIOUS_STABLE_RELEASES}}
 |}
