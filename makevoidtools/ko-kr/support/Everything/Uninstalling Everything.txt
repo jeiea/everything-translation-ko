@@ -1,48 +1,48 @@
-=Uninstalling Everything=
-An uninstaller is created when Everything is installed.
+=Everything 제거하기=
+Everything을 설치할 때 제거실행파일(언인스톨러)도 생성합니다.
 
-To completely uninstall Everything with the uninstaller:
+언인스톨러로 Everything을 완전히 제거하려면
 <ul>
-*From the '''Control panel''', open '''Programs and Features'''.
-*Right click '''''Everything'''''.
-*Select '''Uninstall/Change'''
-*Select the language of the uninstaller if the multilingual installer was used to install Everything.
-*Click '''Uninstall'''.
+*'''제어판'''에서 '''프로그램 및 기능'''을 엽니다.
+*'''Everything'''을 우클릭합니다.
+*'''제거/변경'''을 선택합니다.
+*Everything 다국어 버전을 설치했다면 언인스톨러 언어를 선택하고 '''OK'''를 클릭합니다.
+*'''제거'''를 클릭합니다.
 </ul>
 
-To completely uninstall the portable version of Everything:
+휴대 버전 Everything을 완전히 제거하라면
 <ul>
-*From a command prompt, run:
+*명령 프롬프트에서 아래 명령어를 실행합니다.
 <pre>
 Everything.exe -uninstall
 </pre>
-*Delete Everything.exe.
+*Everything.exe를 삭제합니다.
 </ul>
 
-==System modifications==
-The follow settings modify the system:
+==시스템 변경==
+아래 설정은 시스템을 수정합니다.
 <ul>
-*Store settings and data in %APPDATA%\Everything
-*Start Everything on system startup
-*Everything service
-*Show shell context menus
-*Start menu shortcuts
-*Desktop shortcuts
-*Quick Launch shortcuts
-*URL protocol
-*EFU file association.
+*%APPDATA%\\Everything 폴더에 설정 저장
+*시스템 시작 시 Everything 실행
+*Everything 서비스
+*탐색기에서 우클릭 메뉴 보여주기
+*시작 메뉴 바로가기
+*바탕화면 바로가기
+*빠른 실행 바로가기
+*URL 프로토콜
+*EFU 파일 연결
 </ul>
 
-To change these settings:
+위 설정을 변경하려면
 <ul>
-*In '''''Everything''''', from the '''Tools''' menu, click '''Options'''.
-*Click the '''General''' tab.
+*'''Everything''' - '''도구''' 메뉴 - '''설정'''을 클릭합니다.
+*'''일반''' 탭을 클릭합니다.
 </ul>
 
-All system modifications made by Everything are removed when Everything is uninstalled.
+Everything을 제거할 때 모든 Everything 시스템 변경사항도 제거합니다.
 
-==Files created by Everything==
-Everything may create the following files in %APPDATA%\Everything:
+==Everything이 생성하는 파일==
+Everything이 아래 파일을 %APPDATA%\Everything에 만들 수 있습니다.
 <ul>
 *Everything.db
 *Everything.db.tmp
@@ -61,33 +61,33 @@ Everything may create the following files in %APPDATA%\Everything:
 *Logs\ETP_Server_Log.txt
 </ul>
 
-These files are deleted when Everything is uninstalled.
-If [[support/everything/options#Store settings and data in %APPDATA%\Everything|Store settings and data in %APPDATA%\Everything]] is disabled, these files are stored in the same location as Everything.exe.
-These files have different filenames if [[support/everything/multiple instances|Multiple Instances]] is used.
-If you use [[support/everything/multiple instances|Named instances]] and wish to uninstall, you will have to uninstall each instance separately with Everything.exe -uninstall -instance <Instance Name>
+이 파일들은 Everything을 제거할 때 같이 제거됩니다.
+[[support/everything/options#%APPDATA%\Everything 폴더에 설정 저장|%APPDATA%\Everything 폴더에 설정 저장]]을 끄면 이 파일들은 Everything.exe와 같은 경로에 저장됩니다.
+[[support/everything/multiple instances|다중 인스턴스]]를 쓰고 있다면 위 파일 이름이 달라집니다.
+[[support/everything/multiple instances#유명 인스턴스|유명 인스턴스]]를 사용했었고 그걸 제거하려고 한다면, 각 인스턴스를 Everything.exe -uninstall -instance <인스턴스 이름>으로 일일히 제거해야 합니다.
 
-==Manual uninstall==
+==수동 제거==
 <ul>
-*Make sure Everything and the Everything service is not running.
-*Delete the folder C:\Program Files\Everything
-*Delete the folder C:\Program Files (x86)\Everything
-*Delete the folder %APPDATA%\Everything
-*Delete the registry value Everything in HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
-*Delete the registry value Everything in HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run
-*Delete the registry key HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Everything
-*Delete the registry key HKEY_CLASSES_ROOT\Folder\shell\Search Everything...
-*Delete the folder %APPDATA%\Microsoft\Windows\Start Menu\Programs\Everything
-*Delete the folder %USERPROFILE%\Start Menu\Programs\Everything
-*Delete the shortcut %USERPROFILE%\Desktop\Search Everything.lnk
-*Delete the shortcut %APPDATA%\Microsoft\Internet Explorer\Quick Launch\Search Everything.lnk
-*Delete the registry key HKEY_CLASSES_ROOT\ES
-*Delete the registry key HKEY_CLASSES_ROOT\.efu
-*Delete the registry key HKEY_CLASSES_ROOT\Everything.FileList
-*Delete the registry key HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Everything
-*Delete the registry key HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Everything
+*Everything과 Everything 서비스를 종료합니다.
+*C:\Program Files\Everything 폴더를 삭제합니다.
+*C:\Program Files (x86)\Everything 폴더를 삭제합니다.
+*%APPDATA%\Everything 폴더를 삭제합니다.
+*HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run에 있는 Everything 레지스트리 값을 삭제합니다.
+*HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run에 있는 Everything 레지스트리 값을 삭제합니다.
+*HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\Everything 레지스트리 키를 삭제합니다.
+*HKEY_CLASSES_ROOT\Folder\shell\Search Everything... 레지스트리 키를 삭제합니다.
+*%APPDATA%\Microsoft\Windows\Start Menu\Programs\Everything 폴더를 삭제합니다.
+*%USERPROFILE%\Start Menu\Programs\Everything 폴더를 삭제합니다.
+*%USERPROFILE%\Desktop\Search Everything.lnk 바로가기를 삭제합니다.
+*%APPDATA%\Microsoft\Internet Explorer\Quick Launch\Search Everything.lnk 바로가기를 삭제합니다.
+*HKEY_CLASSES_ROOT\ES 레지스트리 키를 삭제합니다.
+*HKEY_CLASSES_ROOT\.efu 레지스트리 키를 삭제합니다.
+*HKEY_CLASSES_ROOT\Everything.FileList 레지스트리 키를 삭제합니다.
+*HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Everything 레지스트리 키를 삭제합니다.
+*HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\Everything 레지스트리 키를 삭제합니다.
 </ul>
 
-==See also==
+==볼만한 것==
 <ul>
-*[[support/everything/multiple instances|Multiple Instances]]
+*[[support/everything/multiple instances|다중 인스턴스]]
 </ul>

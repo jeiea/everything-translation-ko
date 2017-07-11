@@ -23,7 +23,7 @@
 *[[support/everything/Search History|Search history]]
 *[[support/everything/File Lists|File Lists]]
 *[[support/everything/Folder Indexing|Folder Indexing]]
-*[[support/everything/Searching#Match Diacritics|발음 구별 부호 구분]]
+*[[support/everything/Searching#Match Diacritics|발음 구별 기호 구분]]
 *[[support/everything/Searching#Filters|필터]]
 *[[support/everything/Searching#Bookmarks|책갈피]]
 *[[support/everything/Searching#Filters|필터]]

@@ -188,7 +188,7 @@ Disable this to allow Turkish I with dot to match lowercase i.
 Match the full path and filename when a search term contains a backslash (\). 
 Disable this to find files with backslashes in the filename.
 
-;''Match whole filename when using wildcards''
+;''와일드카드를 사용할 때 전체 경로와 비교''
 If enabled, using wildcards must match the ''entire'' filename. 
 If disabled, wildcard matches can be found anywhere in the filename.
 
@@ -634,7 +634,7 @@ Specify how much is removed from the start of the USN Journal in bytes when it h
 ;ntfs_include_in_database|''Include in database''
 Include this NTFS volume in the Everything index.
 
-;ntfs_include_usn_journal_in_recent_changes|''Include USN Journal in recent changes''
+;ntfs_include_usn_journal_in_recent_changes|''USN 저널에서 최근 변경사항 가져오기''
 Load the entire USN Journal for this volume into the recent changes list. See [[support/everything/Recent changes|Recent changes]] for more information.
 
 ;ntfs_include_only|''Include only''
@@ -671,7 +671,7 @@ Allocation delta is currently ignored for ReFS volumes.
 ;refs_include_in_database|''Include in database''
 Include this ReFS volume in the Everything index.
 
-;refs_include_usn_journal_in_recent_changes|''Include USN Journal in recent changes''
+;refs_include_usn_journal_in_recent_changes|''USN 저널에서 최근 변경사항 가져오기''
 Load the entire USN Journal for this volume into the recent changes list. See [[support/everything/Recent changes|Recent changes]] for more information.
 
 ;refs_include_only|''Include only''
