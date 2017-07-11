@@ -1,106 +1,106 @@
 =makevoidtools=
-makevoidtools is a program to compile your own [[http://www.voidtools.com|voidtools.com]] website.
-All text can be customized for localization.
+makevoidtools는 [[http://www.voidtools.com|voidtools.com]] 웹사이트를 만들어주는 프로그램입니다.
+모든 텍스트를 지역화할 수 있습니다.
 
-==makevoidtools Guide==
+==makevoidtools 가이드==
 <ul>
-*Extact [[/makevoidtools.zip]] to a new folder, eg: c:\makevoidtools
-*Copy the en-us.txt file and name it with the [[http://www.lingoes.net/en/translator/langcode.htm|language code]] for your language and region.
-*This is the main translation template file for the website.
-*For example: es-us.txt
-*Copy the en-us subfolder and name it with the [[http://www.lingoes.net/en/translator/langcode.htm|language code]] for your language and region.
-*This is the main translation folder for the website.
-*For example: es-us
-*open your main translation file, eg: en-us.txt
-*Read the notes inside this translation file for help.
-*translate all strings.
-*translate all pages in the main translation folder, eg: en-us\*.txt
+*[[/makevoidtools.zip]]를 새 폴더에 풀어주세요. 예: c:\makevoidtools
+*en-us.txt를 복사해 번역하려는 [[http://www.lingoes.net/en/translator/langcode.htm|언어-지역 코드]]로 이름을 바꿔주세요.
+*이건 웹사이트의 메인 번역 양식 파일입니다.
+*예시: ko-kr.txt
+*en-us 하위 폴더를 복사해 번역하려는 [[http://www.lingoes.net/en/translator/langcode.htm|언어-지역 코드]]로 이름을 바꿔주세요.
+*이건 웹사이트의 메인 번역 양식 폴더입니다.
+*예시: ko-kr
+*메일 번역 파일을 엽니다. 예: ko-kr.txt
+*번역 파일 안의 도움말을 읽습니다.
+*모든 문자열을 번역합니다.
+*메인 번역 폴더 안의 모든 페이지를 번역합니다. 예: ko-kr\*.txt
 </ul>
 
-==Requirements==
-Only the files directly in your main translation folder (eg: en-us) need to be translated.
-Translating the support wiki is not required. -not all pages need translating as some are quite technical.
-translating the following support wiki pages are encouraged:
+==요구사항==
+주 번역 폴더(예: ko-kr) 안에 있는 파일들만 번역하면 됩니다.
+도움말 위키를 번역하지 않아도 됩니다. 기술적인 페이지는 번역이 필요하지 않습니다.
+다음 위키 페이지는 번역해주시면 좋겠습니다.
 <ul>
 *01-Installing Everything.txt
 *02-Using Everything.txt
 *Searching.txt
 </ul>
 
-==Offline help==
-The Everything.chm offline help will use the same support wiki templates.
+==오프라인 도움말==
+Everything.chm 오프라인 도움말은 같은 위키 양식을 사용합니다.
 
-==Testing==
-Run makevoidtools.exe
-makevoidtools will compile *.txt in the same location as makevoidtools.exe
-These txt files will be translation templates for each language and region.
+==테스트==
+makevoidtools.exe를 실행합니다.
+makevoidtools가 makevoidtools.exe 위치의 *.txt를 컴파일 할 겁니다.
+이 텍스트 파일은 각 언어 및 지역의 번역 양식입니다.
 
 <pre>
-makevoidtools.exe <output folder> <url root>
+makevoidtools.exe <출력 폴더> <URL 루트>
 </pre>
 
-Example:
+예시:
 <pre>
 makevoidtools.exe c:\makevoidtools\voidtools file://c:/makevoidtools/voidtools
 </pre>
 
-Open c:\makevoidtools\voidtools\index.html
+c:\makevoidtools\voidtools\index.html를 엽니다.
 
-==Wiki Pages==
-Make sure you open and save wiki pages as UTF-8
-Wiki pages in the support folder use basic [[#Wiki syntax|wiki markup language]].
-Prefixing a wiki page template with a number are shown above all other wiki pages in sequence. For example, 01-Installing Everything.txt is the first wiki page listed and 02-Using Everything.txt is the second wiki page listed and so on.
-wiki page templates starting with a underscore (_) are hidden. For example: [[http://www.voidtools.com/support/everything/db]].
+==위키 페이지==
+위키 페이지를 UTF-8로 저장하시기 바랍니다.
+support 폴더 안에 있는 위키 페이지는 [[#Wiki syntax|위키 마크업]]을 사용합니다.
+위키 페이지 양식 앞에 숫자를 붙이면 다른 위키 페이지보다 위에 순서대로 보입니다. 예를 들어 01-Installing Everything.txt는 첫째 위키 페이지고 02-Using Everything.txt는 둘째 위키 페이지인 식입니다.
+_로 시작하는 위키 페이지 양식은 숨겨집니다. 다음이 그렇습니다: [[/support/everything/db|DB]].
 
-==Wiki syntax==
-The voidtools wiki syntax is very similar to [[https://en.wikipedia.org/wiki/Help:Wiki_markup|Wikipedia's markup]] with some limitations:
+==위키 마크업==
+voidtools 위키 문법은 [[https://en.wikipedia.org/wiki/Help:Wiki_markup|위키피디아 마크업]]과 비슷하지만 몇가지 제한이 있습니다:
 
 <dl>
-;''Text''
+;''텍스트''
 <pre>
-A paragraph of text.
+텍스트 문단
 </pre>
 
-A paragraph of text.
+텍스트 문단.
 
-;''Headers''
+;''제목''
 <pre>
-=Main Header=
+=주제목=
 </pre>
 
-=Main Header=
+=주제목=
 
 <pre>
-==Sub Header==
+==부제목==
 </pre>
 
-==Sub Header==
+==부제목==
 
-;''Italic''
+;''기울임''
 <pre>
-''Italic''
+''기울임''
 </pre>
 
-''Italic''
+''기울임''
 
-;''Bold''
+;''굵게''
 <pre>
-'''Bold'''
+'''굵게'''
 </pre>
 
-'''bold'''
+'''굵게'''
 
-;''Italic and Bold''
+;''굵은 기울임 꼴''
 <pre>
-'''''Italic and Bold'''''
+'''''굵은 기울임 꼴'''''
 </pre>
 
-'''''Italic and Bold'''''
+'''''굵은 기울임 꼴'''''
 
-;''Links''
-Relative URLs are relative to http://www.voidtools.com/en-us
-where en-us is your language-region code.
-The |text part in [ [url|text]] can be omitted, in which case the url is used as the text and URLs paths are striped when no protocol is present.
+;''링크''
+상대 URL은 http://www.voidtools.com/en-us에 상대적입니다.
+en-us은 해당 언어-지역 코드입니다.
+URL 마지막 부분을 표시 텍스트로 쓴다면 [ [URL|텍스트]]에서 |텍스트 부분은 생략할 수 있습니다.
 
 <pre>
 [[http://en.wikipedia.org/wiki/]]
@@ -114,14 +114,14 @@ The |text part in [ [url|text]] can be omitted, in which case the url is used as
 
 [[faq/#what_is_everything|What is Everything?]]
 
-;''Images''
+;''이미지''
 <pre>
 [[File:support/everything/Everything.Search.Window.png|alt=Everything Search Window]]
 </pre>
 
 [[File:support/everything/Everything.Search.Window.png|alt=Everything Search Window]]
 
-;''Preformatted text''
+;''이미 서식화한 텍스트''
 {{PRE_EXAMPLE}}
 
 <pre>
@@ -132,84 +132,84 @@ for(i=0;i<10;i++)
 }
 </pre>
 
-;''Unordered lists''
+;''순서없는 목록''
 <pre>
 <ul>
-*item1
-*item2
+*항목1
+*항목2
 <ul>
-*subitem1
-*subitem2
-*subitem3
+*하위항목1
+*하위항목2
+*하위항목3
 </ul>
-*item3
+*항목3
 </ul>
 </pre>
 
 <ul>
-*item1
-*item2
+*항목1
+*항목2
 <ul>
-*subitem1
-*subitem2
-*subitem3
+*하위항목1
+*하위항목2
+*하위항목3
 </ul>
-*item3
+*항목3
 </ul>
 
-;''Tables''
+;''표''
 <pre>
 {|
-! header1
-! header2
-! header3
+! 머리열1
+! 머리열2
+! 머리열3
 |-
-| row1, data1
-| row1, data2
-| row1, data3
+| 행1, 자료1
+| 행1, 자료2
+| 행1, 자료3
 |-
-| row2, abc1
-| row2, abc2
-| row2, abc3
+| 행2, abc1
+| 행2, abc2
+| 행2, abc3
 |}
 </pre>
 
 {|
-! header1
-! header2
-! header3
+! 머리열1
+! 머리열2
+! 머리열3
 |-
-| row1, data1
-| row1, data2
-| row1, data3
+| 행1, 자료1
+| 행1, 자료2
+| 행1, 자료3
 |-
-| row2, abc1
-| row2, abc2
-| row2, abc3
+| 행2, abc1
+| 행2, abc2
+| 행2, abc3
 |}
 
-;''Discription lists''
+;''설명 목록''
 <pre>
 <dl>
-;''item1''
-text1
-;''item2''
-text2
-;''item3''
-text3
+;''항목1''
+텍스트1
+;''항목2''
+텍스트2
+;''항목3''
+텍스트3
 </dl>
 </pre>
 
 <dl>
-;''item1''
-text1
-;''item2''
-text2
-;''item3''
-text3
+;''항목1''
+텍스트1
+;''항목2''
+텍스트2
+;''항목3''
+텍스트3
 </dl>
 
-;''Macros''
+;''상용구''
 <pre>
 {{DOWNLOAD_EVERYTHING}}
 </pre>
@@ -218,6 +218,6 @@ text3
 
 </dl>
 
-==Help==
-If you need any assistance, please [[contact|contact David Carpenter]].
+==도움말==
+도움이 필요하면 [[contact|David Carpenter]]에게 연락하세요.
 
