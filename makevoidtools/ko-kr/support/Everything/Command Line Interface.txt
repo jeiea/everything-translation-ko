@@ -1,4 +1,4 @@
-=명령행 인터페이스=
+=명령 행 인터페이스=
 ES는 Everything의 CLI 버전입니다.
 
 [[File:support/everything/es-no-shadow.png|alt=Everything ES command line interface]]

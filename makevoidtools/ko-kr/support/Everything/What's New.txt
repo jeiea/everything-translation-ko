@@ -1,4 +1,4 @@
-=What's New=
+=새 기능=
 
 ==Everything 1.4의 새 기능==
 
@@ -18,16 +18,16 @@
 
 <ul>
 *[[support/everything/Everything service|Everything 서비스]]
-*[[support/everything/Recent changes|Recent changes]]
-*[[support/everything/Run History|Run history]]
-*[[support/everything/Search History|Search history]]
-*[[support/everything/File Lists|File Lists]]
-*[[support/everything/Folder Indexing|Folder Indexing]]
-*[[support/everything/Searching#Match Diacritics|발음 구별 기호 구분]]
-*[[support/everything/Searching#Filters|필터]]
-*[[support/everything/Searching#Bookmarks|책갈피]]
-*[[support/everything/Searching#Filters|필터]]
-*[[support/everything/Searching#Functions|검색 함수]]
+*[[support/everything/Recent changes|최근 변경 목록]]
+*[[support/everything/Run History|실행 히스토리]]
+*[[support/everything/Search History|검색 히스토리]]
+*[[support/everything/File Lists|파일 목록]]
+*[[support/everything/Folder Indexing|폴더 색인]]
+*[[support/everything/Searching#발음 구별 기호 구분|발음 구별 기호 구분]]
+*[[support/everything/Searching#필터|필터]]
+*[[support/everything/Searching#책갈피|책갈피]]
+*[[support/everything/Searching#필터|필터 칸]]
+*[[support/everything/Searching#함수|검색 함수]]
 </ul>
 
 ==개선점==

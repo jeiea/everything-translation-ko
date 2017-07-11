@@ -1,301 +1,301 @@
-=Searching=
-Use the [[support/everything/using everything#search edit|search edit]] to type in a search. 
+=검색=
+[[support/everything/using everything#검색 줄|검색 줄]]에 검색어를 입력하세요. 
 
-Type in a partial filename, files and folders matching your partial filename search will be instantly displayed in the [[support/everything/using everything#result_list|result list]].
+파일 이름 일부분을 치면 조건에 맞는 파일과 폴더가 재깍 [[support/everything/using everything#검색 결과|검색 결과]]에 보입니다.
 
-For example, to find files and folders with the text '''reports''' in the filename, search for:
+'''reports'''가 이름에 들어간 파일 및 폴더를 찾으려면 아래를 입력하세요.
 <code>reports</code>
 
-To limit the results to a drive, simply search for that drive, for example, to find files and folders on your '''D:''' drive, search for:
+'''D:''' 드라이브에서만 찾으려면 아래를 입력하세요.
 <code>d:</code>
 
-Include the path to limit the results to a folder, for example, to find files and folders in the folder '''D:\Downloads''', search for:
+특정 폴더, 예를 들어 '''D:\Downloads''' 폴더 안에서만 찾으려면
 <code>d:\downloads\</code>
 
-Use double quotes to escape spaces, for example, to find files and folders in '''C:\Program Files''', search for:
+공백을 그대로 검색하려면, 가령 '''C:\Program Files'''를 검색하려면 큰따옴표로 감싸세요.
 <code>"c:\program files\"</code>
 
-Use \ to find partial paths, for example, to find files and folders in a folder ending with '''documents''', search for:
+부분 경로를 검색하려면 \를 뒤에 붙이세요. '''documents'''로 끝나는 폴더 안의 파일 및 폴더를 검색하려면 
 <code>documents\</code>
 
-Use a space to combine searches, for example, to find files and folders containing the text '''order''', located in the folder starting with '''work''', search for:
+여러 조건을 쓰려면 공백을 사용하세요. 가령 이름이 '''work'''로 시작하는 폴더 안에서 이름에 '''order'''가 들어간 파일 및 폴더를 찾으려면
 <code>\work order</code>
 
-==Syntax==
+==구문==
 <dl>
-;Operators
+;연산자
 {|
-| <code>''space''</code>
-| AND
+| <code>''공백''</code>
+| 그리고(AND)
 |-
 | <code>|</code>
-| OR
+| 또는(OR)
 |-
 | <code>!</code>
-| NOT
+| 아님(NOT)
 |-
 | <code>< ></code>
-| Grouping
+| 조건 묶기
 |-
 | <code>" "</code>
-| Search for an exact phrase
+| 위 연산자도 문자열로 간주
 |}
 
-;Wildcards
+;와일드카드
 {|
 | <code>*</code>
-| Matches zero of more characters.
+| 0개 이상 문자에 대응.
 |-
 | <code>?</code>
-| Matches one character.
+| 1개 이상 문자에 대응.
 |}
 
-Wildcards match the ''whole'' filename. Disable [[support/everything/options#Match whole filename when using wildcards|Match whole filename when using wildcards]] to match wilcards anywhere in the filename.
+와일드카드는 ''전체'' 파일이름에 대응합니다. 와일드카드를 써도 일부분만 일치하는 결과도 찾으려면 [[support/everything/options#와일드카드를 사용할 때 전체 경로와 비교|와일드카드를 사용할 때 전체 경로와 비교]]를 끄세요.
 
-;syntax_macros|Macros 
+;상용구
 {|
 | <code>quot:</code>
-| Literal double quote <code>"</code>
+| <code>"</code> 문자
 |-
 | <code>apos:</code>
-| Literal apostrophe <code>'</code>
+| <code>'</code> 문자
 |-
 | <code>amp:</code>
-| Literal ampersand <code>&</code>
+| <code>&</code> 문자
 |-
 | <code>lt:</code>
-| Literal less than <code><</code>
+| <code><</code> 문자
 |-
 | <code>gt:</code>
-| Literal greater than <code>></code>
+| <code>></code> 문자
 |-
 | <code>#<n>:</code>
-| Literal unicode character <n> in decimal.
+| 10진법으로 <n>인 유니코드 문자
 |-
 | <code>#x<n>:</code>
-| Literal unicode character <n> in hexadecimal.
+| 16진법으로 <n>인 유니코드 문자
 |-
 | <code>audio:</code>
-| Search for audio files.
+| 음악 파일 검색.
 |-
 | <code>zip:</code>
-| Search for compressed files.
+| 압축 파일 검색.
 |-
 | <code>doc:</code>
-| Search for document files.
+| 문서 파일 검색.
 |-
 | <code>exe:</code>
-| Search for executable files.
+| 실행 파일 검색.
 |-
 | <code>pic:</code>
-| Search for picture files.
+| 사진 파일 검색.
 |-
 | <code>video:</code>
-| Search for video files.
+| 비디오 파일 검색.
 |}
 
-;Modifiers
+;변경자
 {|
 | <code>ascii:<br>utf8:<br>noascii:</code>
-| Enable or disable fast ASCII case comparisons.
+| 빠른 아스키 비교를 켜거나 끕니다.
 |-
 | <code>case:<br>nocase:</code>
-| Match or ignore case.
+| 대소문자를 구분하거나 무시합니다.
 |-
 | <code>diacritics:<br>nodiacritics:</code>
-| Match or ignore accent marks.
+| 발음 구별 기호를 구별하거나 무시합니다.
 |-
 | <code>file:<br>files:<br>nofileonly:</code>
-| Match files only.
+| 파일만 검색하거나 그러지 않습니다.
 |-
 | <code>folder:<br>folders:<br>nofolderonly:</code>
-| Match folders only.
+| 폴더만 검색하거나 그러지 않습니다.
 |-
 | <code>path:<br>nopath:</code>
-| Match the full path and file name or just the filename.
+| 전체 경로에서 검색하거나 파일 및 폴더 이름에서만 검색합니다.
 |-
 | <code>regex:<br>noregex:</code>
-| Enable or disable regex.
+| 정규식을 사용하거나 쓰지 않습니다.
 |-
 | <code>wfn:<br>wholefilename:<br>nowfn:<br>nowholefilename:</code>
-| Match the whole filename or match anywhere in the filename.
+| 전체 파일이름과 비교하거나 일부만 일치해도 인정합니다.
 |-
 | <code>wholeword:<br>ww:<br>nowholeword:<br>noww:</code>
-| Match whole words or match anywhere in the filename.
+| 단어 전체가 일치해야만 인정하거나 그러지 않습니다.
 |-
 | <code>wildcards:<br>nowildcards:</code>
-| Enable or disable wildcards.
+| 와일드카드를 쓰거나 쓰지 않습니다.
 |}
 
-;Functions
+;함수
 {|
-| <code>album:<album></code>
-| Search for the ID3 or FLAC album.
+| <code>album:<앨범></code>
+| ID3나 FLAC 앨범 정보를 검색합니다.
 |-
-| <code>artist:<artist></code>
-| Search for the ID3 or FLAC artist.
+| <code>artist:<음악가></code>
+| ID3나 FLAC 음악가 정보를 검색합니다.
 |-
-| <code>attrib:<attributes><br>attributes:<attributes></code>
-| Search for files and folders with the specified file attributes.
+| <code>attrib:<속성><br>attributes:<속성></code>
+| 지정한 속성을 가진 파일 및 폴더를 검색합니다.
 |-
-| <code>bitdepth:<bitdepth></code>
-| Find images with the specified bits per pixel.
+| <code>bitdepth:<비트></code>
+| 지정한 픽셀 당 비트 수가 일치하는 이미지를 검색합니다.
 |-
-| <code>child:<filename></code>
-| Search for folders that contain a child file or folder with a matching filename.
+| <code>child:<파일이름></code>
+| 지정한 조건(파일이름)에 일치하는 항목을 가진 폴더를 검색합니다.
 |-
-| <code>childcount:<count></code>
-| Search for folders that contain the specified number of subfolders and files.
+| <code>childcount:<개수></code>
+| 하위 파일 및 폴더가 일정 개수인 폴더를 검색합니다.
 |-
-| <code>childfilecount:<count></code>
-| Search for folders that contain the specified number of files.
+| <code>childfilecount:<개수></code>
+| 하위 파일 개수가 일정 개수인 폴더를 검색합니다.
 |-
-| <code>childfoldercount:<count></code>
-| Search for folders that contain the specified number of subfolders.
+| <code>childfoldercount:<개수></code>
+| 하위 폴더 개수가 일정 개수인 폴더를 검색합니다.
 |-
-| <code>comment:<comment></code>
-| Search for the ID3 or FLAC comment.
+| <code>comment:<주석></code>
+| ID3나 FLAC 주석 정보를 검색합니다.
 |-
 | <code>content:<br>ansicontent:<br>utf8content:<br>utf16content:<br>utf16becontent:</code>
-| Search file content.
+| 파일 내용을 검색합니다.
 |-
-| <code>count:<max></code>
-| Limit the number of results to max.
+| <code>count:<개수></code>
+| 일정 개수만 검색합니다.
 |-
-| <code>dateaccessed:<date><br>da:<date></code>
-| Search for files and folders with the specified date accessed.
+| <code>dateaccessed:<날짜><br>da:<날짜></code>
+| 지정한 날짜에 접근한 파일 및 폴더를 검색합니다.
 |-
-| <code>datecreated:<date><br>dc:<date></code>
-| Search for files and folders with the specified date created.
+| <code>datecreated:<날짜><br>dc:<날짜></code>
+| 지정한 날짜에 만든 파일 및 폴더를 검색합니다.
 |-
-| <code>datemodified:<date><br>dm:<date></code>
-| Search for files and folders with the specified date modified.
+| <code>datemodified:<날짜><br>dm:<날짜></code>
+| 지정한 날짜에 수정한 파일 및 폴더를 검색합니다.
 |-
-| <code>daterun:<date><br>dr:<date></code>
-| Search for files and folders with the specified date run.
+| <code>daterun:<날짜><br>dr:<날짜></code>
+| 지정한 날짜에 실행한 파일 및 폴더를 검색합니다.
 |-
-| <code>depth:<depth><br>parents:<count></code>
-| Search for files and folders with the specified folder depth.
+| <code>depth:<깊이><br>parents:<개수></code>
+| 어느 정도 깊이를 가진 파일 및 폴더를 검색합니다.
 |-
-| <code>dimension:<width>x<height></code>
-| Find images with the specified width and height.
+| <code>dimension:<너비>x<높이></code>
+| 지정 너비, 높이를 가진 이미지를 검색합니다.
 |-
 | <code>dupe:<br>namepartdupe:<br>attribdupe:<br>dadupe:<br>dcdupe:<br>dmdupe:<br>sizedupe:</code>
-| Search for duplicated files.
+| 해당 속성이 중복되는 파일을 검색합니다.
 |-
 | <code>empty:</code>
-| Search for empty folders.
+| 빈 폴더를 검색합니다.
 |-
-| <code>endwith:<text></code>
-| Filenames (including extension) ending with text.
+| <code>endwith:<텍스트></code>
+| 확장자를 포함해 지정 텍스트로 끝나는 파일 이름을 검색합니다.
 |-
-| <code>ext:<list></code>
-| Search for files with a matching extension in the specified semicolon delimited extension list.
+| <code>ext:<목록></code>
+| ;로 나뉜 확장자 목록을 전부 검색합니다.
 |-
-| <code>filelist:<list></code>
-| Search for a list of file names in the specified pipe (|) delimited file list.
+| <code>filelist:<목록></code>
+| |로 나뉜 파일 이름 목록을 전부 검색합니다.
 |-
-| <code>filelistfilename:<filename></code>
-| Search for files and folders belonging to the file list filename.
+| <code>filelistfilename:<파일이름></code>
+| 해당 파일 이름의 파일 목록에서 검색합니다. filelistfilename:.이면 열었거나 색인에 포함된 모든 파일목록에서만 검색합니다.
 |-
-| <code>frn:<frnlist></code>
-| Search for files and folders with the specified semicolon delimited File Reference Numbers.
+| <code>frn:<번호목록></code>
+| ;로 나뉜 File Reference Number 목록을 겅색합니다.
 |-
-| <code>fsi:<index></code>
-| Search for files and folders in the specified zero based internal file system index.
+| <code>fsi:<번호></code>
+| 0으로 시작하는 해당 내부 파일 시스템 인덱스를 가진 파일 및 폴더를 검색합니다.
 |-
-| <code>genre:<genre></code>
-| Search for the ID3 or FLAC genre.
+| <code>genre:<장르></code>
+| ID3나 FLAC 장르 정보를 검색합니다.
 |-
-| <code>height:<height></code>
-| Search for images with the specified height in pixels.
+| <code>height:<높이></code>
+| 지정 픽셀 높이 이미지를 검색합니다.
 |-
-| <code>len:<length></code>
-| Search for files and folders that match the specified filename length.
+| <code>len:<길이></code>
+| 이름이 지정 길이인 파일 및 폴더를 검색합니다.
 |-
-| <code>orientation:<type></code>
-| Search for images with the specified orientation (landscape or portrait).
+| <code>orientation:<종류></code>
+| 가로방향(landscape) 혹은 세로방향(portrait) 이미지를 검색합니다.
 |-
-| <code>parent:<path><br>infolder:<path><br>nosubfolders:<path></code>
-| Search for files and folders in the specified path, excluding subfolders.
+| <code>parent:<경로><br>infolder:<경로></code>
+| 지정한 경로의 한 단계 아래 하위 파일 및 폴더만 검색합니다.
 |-
-| <code>recentchange:<date><br>rc:<date></code>
-| Search for files and folders with the specified recently changed date.
+| <code>recentchange:<날짜><br>rc:<날짜></code>
+| 지정한 최근 변경 날짜를 가진 파일 및 폴더를 검색합니다.
 |-
 | <code>root:</code>
-| Search for files and folders with no parent folder.
+| 부모 폴더가 없는 파일 및 폴더를 검색합니다.
 |-
-| <code>runcount:<count></code>
-| Search for files and folders with the specified run count.
+| <code>runcount:<개수></code>
+| 지정한 횟수만큼 실행한 파일 및 폴더를 검색합니다.
 |-
-| <code>shell:<name></code>
-| Search for a [[support/everything/knownfolderid|known shell folder name]], including subfolders and files.
+| <code>shell:<이름></code>
+| [[support/everything/knownfolderid|알려진 쉘 폴더]]와 그 하위 파일 및 폴더를 검색합니다.
 |-
-| <code>size:<size></code>
-| Search for files with the specified size in bytes.
+| <code>size:<크기></code>
+| 지정 바이트 크기인 파일을 검색합니다.
 |-
-| <code>startwith:<text></code>
-| Search for filenames starting with text.
+| <code>startwith:<텍스트></code>
+| 지정 텍스트로 시작하는 파일 이름을 검색합니다.
 |-
-| <code>title:<title></code>
-| Search for the ID3 or FLAC title.
+| <code>title:<제목></code>
+| ID3나 FLAC 제목 정보를 검색합니다.
 |-
-| <code>type:<type></code>
-| Search for files and folders with the specified type.
+| <code>type:<종류></code>
+| 지정 종류 파일 및 폴더를 검색합니다.
 |-
-| <code>width:<width></code>
-| Search for images with the specified width in pixels.
+| <code>width:<너비></code>
+| 지정 픽셀 너비 이미지를 검색합니다.
 |}
 
-;Function syntax
+;함수 구문
 {|
-| <code>function:value</code>
-| Equal to value.
+| <code>함수:값</code>
+| 값과 같음.
 |-
-| <code>function:<=value</code>
-| Less than or equal to value.
+| <code>함수:<=값</code>
+| 값보다 작거나 같음.
 |-
-| <code>function:<value</code>
-| Less than value.
+| <code>함수:<값</code>
+| 값보다 작음.
 |-
-| <code>function:=value</code>
-| Equal to value.
+| <code>함수:=값</code>
+| 값과 같음.
 |-
-| <code>function:>value</code>
-| Greater than value.
+| <code>함수:>값</code>
+| 값보다 큼.
 |-
-| <code>function:>=value</code>
-| Greater than or equal to value.
+| <code>함수:>=값</code>
+| 값보다 크거나 같음.
 |-
-| <code>function:start..end</code>
-| Is in the range of values from start to end.
+| <code>함수:시작..끝</code>
+| 시작과 끝 사이임.
 |-
-| <code>function:start-end</code>
-| Is in the range of values from start to end.
+| <code>함수:시작-끝</code>
+| 시작과 끝 사이임.
 |}
 
-;Size Syntax:
-<code>size[kb|mb|gb]</code>
+;크기 구문:
+<code>크기[kb|mb|gb]</code>
 
-;Size Constants:
+;크기 상수:
 {|
 | <code>empty</code>
 | 
 |-
 | <code>tiny</code>
-| 0 KB < size <= 10 KB
+| 0 KB < 크기 <= 10 KB
 |-
 | <code>small</code>
-| 10 KB < size <= 100 KB
+| 10 KB < 크기 <= 100 KB
 |-
 | <code>medium</code>
-| 100 KB < size <= 1 MB
+| 100 KB < 크기 <= 1 MB
 |-
 | <code>large</code>
-| 1 MB < size <= 16 MB
+| 1 MB < 크기 <= 16 MB
 |-
 | <code>huge</code>
-| 16 MB < size <= 128 MB
+| 16 MB < 크기 <= 128 MB
 |-
 | <code>gigantic</code>
 | size > 128 MB
@@ -304,12 +304,12 @@ Wildcards match the ''whole'' filename. Disable [[support/everything/options#Mat
 | 
 |}
 
-;Date Syntax:
-<code>year</code>
-<code>month/year</code> or <code>year/month</code> depending on locale settings
-<code>day/month/year</code>, <code>month/day/year</code> or <code>year/month/day</code> depending on locale settings
+;날짜 구문:
+<code>년</code>
+<code>월/년</code>일지 '''<code>년/월</code>'''일지는 로케일 설정에 따라 다릅니다.
+<code>일/월/년</code>, <code>월/일/년</code>혹은 '''<code>년/월/일</code>'''일지는 로케일 설정에 따라 다릅니다.
 
-;Date Constants:
+;날짜 상수:
 <code>today</code>
 <code>yesterday</code>
 <code><last|past|prev|current|this|coming|next><year|month|week></code>
@@ -321,158 +321,158 @@ Wildcards match the ''whole'' filename. Disable [[support/everything/options#Mat
 <code>sun|mon|tue|wed|thu|fri|sat</code>
 <code>unknown</code>
 
-;Attribute Constants:
+;속성 상수:
 {|
 | <code>A</code>
-| Archive
+| 보관
 |-
 | <code>C</code>
-| Compressed
+| 압축
 |-
 | <code>D</code>
-| Directory
+| 디렉토리
 |-
 | <code>E</code>
-| Encrypted
+| 암호화
 |-
 | <code>H</code>
-| Hidden
+| 숨김
 |-
 | <code>I</code>
-| Not content indexed
+| 색인되지 않음
 |-
 | <code>L</code>
 | Reparse point
 |-
 | <code>N</code>
-| Normal
+| 일반
 |-
 | <code>O</code>
-| Offline
+| 오프라인
 |-
 | <code>P</code>
-| Sparse file
+| 미리 할당된 파일 (Sparse file)
 |-
 | <code>R</code>
-| Read only
+| 읽기 전용
 |-
 | <code>S</code>
-| System
+| 시스템
 |-
 | <code>T</code>
-| Temporary
+| 임시
 |-
 | <code>V</code>
-| Device
+| 장치
 |}
 </dl>
 	
-==Search options==
-Search options can be toggled from the [[support/everything/using everything#menu|Search menu]].
+==검색 옵션==
+검색 옵션은 [[support/everything/using everything#메뉴|검색 메뉴]]에서 토글할 수 있습니다.
 
-Enabled search options are displayed in the right of the status bar. Double click the status bar part to disable the search option. Right click the status bar to show a list of search options.
+켠 검색 옵션은 상태 표시줄 오른쪽에 표시됩니다. 그 부분을 더블클릭하면 해당 옵션을 끌 수 있습니다. 상태 표시줄을 우클릭해도 검색 옵션 목록을 볼 수 있습니다.
 
 <dl>
-;''Match Case''
-Match or ignore case.
+;''대소문자 구분''
+대소문자를 구분하거나 무시합니다.
 
-;''Match Whole Words''
-Match whole words or allow the match to occur any where in the filename.
+;''전체 단어 일치''
+전체 단어가 일치해야 검색할지 단어 일부만 일치해도 검색할지 정합니다.
 
-;''Match Path''
-match against the full path and filename or just the filename.
+;''전체 경로 검색''
+상위 경로에서도 검색할지 파일 이름만 검색할지 정합니다.
 
-;''Match Diacritics.''
-Match or ignore accent marks.
+;''발음 구별 기호 구분''
+발음 구별 기호를 구분하거나 무시합니다.
 
-;''Enable Regex''
-Enable or disable [[support/everything/searching#regex|regular expressions]].
+;''정규식으로 검색''
+[[support/everything/searching#정규식|정규식]]을 사용하거나 쓰지 않습니다.
 
-;''Everything''
-;''Audio''
-;''Compressed''
-;''Document''
-;''Executable''
-;''Folder''
-;''Picture''
-;''Video''
-Match the specified type only. See [[support/everything/searching#filters|Filters]] for more information.
+;''전부''
+;''음악''
+;''압축파일''
+;''문서''
+;''실행파일''
+;''폴더''
+;''사진''
+;''비디오''
+지정한 종류만 검색합니다. [[support/everything/searching#필터|필터]]를 참고하세요.
 </dl>
 
-==Advanced Search==
-[[File:support/everything/Everything.Advanced.Search.png|alt=Everything Advanced Search]]
+==고급 검색==
+[[File:support/everything/Everything.Advanced.Search.png|alt=Everything 고급 검색 창]]
 
-Use the Everything advanced search to help build a more complex search.
+고급 검색 기능은 복잡한 검색을 도와줍니다.
 
-To show the advanced search dialog:
+고급 검색 창을 열려면
 <ul>
-*In "'''''Everything'''''", from the '''Search''' menu, click '''Advanced Search'''.
+*'''''Everything''''' - '''검색''' 메뉴 - '''고급 검색'''을 클릭합니다.
 </ul>
 
 
-==Content Searching==
-Warning: content searching is extremely slow.
-File content is not indexed.
+==내용 검색==
+경고: 내용 검색은 매우 느립니다.
+파일 내용은 색인되지 않습니다
 
-Please combine content: functions with other filters for the best performance.
+content: 함수를 쓸 땐 성능을 위해 다른 조건을 같이 사용하세요.
 
-Content search functions:
+내용 검색 함수:
 {|
-| <code>content:<text></code>
-| Search file content using the associated [[https://en.wikipedia.org/wiki/IFilter|iFilter]]. If no iFilter exists UTF-8 content is used.
+| <code>content:<텍스트></code>
+| 파일 내용을 연결된 [[https://en.wikipedia.org/wiki/IFilter|iFilter]]를 사용해 검색합니다. 연결된 iFilter가 없으면 UTF-8로 간주합니다.
 |-
-| <code>ansicontent:<text></code>
-| File contents are treated as ANSI text.
+| <code>ansicontent:<텍스트></code>
+| 파일 내용을 ANSI 텍스트로 간주합니다.
 |-
-| <code>utf8content:<text></code>
-| File contents are treated as UTF-8 text.
+| <code>utf8content:<텍스트></code>
+| 파일 내용을 UTF-8 텍스트로 간주합니다.
 |-
-| <code>utf16content:<text></code>
-| File contents are treated as UTF-16 (Unicode) text.
+| <code>utf16content:<텍스트></code>
+| 파일 내용을 UTF-16(유니코드) 텍스트로 간주합니다.
 |-
-| <code>utf16becontent:<text></code>
-| File contents are treated as UTF-16 (Big Endian) text.
+| <code>utf16becontent:<텍스트></code>
+| 파일 내용을 UTF-16(빅 엔디안) 텍스트로 간주합니다.
 |}
 
-Example, find emails, modified this week, containing the text "keyboard":
+이번 주에 수정한 keyboard 단어를 포함하는 이메일을 찾으려면
 <pre>
 *.eml dm:thisweek content:keyboard
 </pre>
 
- * Note: content: is used last in the search above, this means Everything will only search the content of files that matched the previous search <code>*.eml dm:thisweek</code>
+ * 참고: 위에서 content:가 맨 마지막에 나왔는데 <code>*.eml dm:thisweek</code>에서 걸러진 것만 content:함수로 내용을 검색한다는 의미가 됩니다.
 
-==ID3 Tags==
-The following search functions can be used to search for ID3 tags and FLAC tags:
+==ID3 태그==
+아래 함수들로 ID3 태그와 FLAC 태그를 검색할 수 있습니다.
 {|
-| <code>track:<track></code>
-| Track number or track range.
+| <code>track:<트랙></code>
+| 트랙 번호 또는 범위.
 |-
-| <code>year:<year></code>
-| Tear or year range.
+| <code>year:<년도></code>
+| 년도 혹은 년도 범위.
 |-
-| <code>title:<title></code>
-| Song title.
+| <code>title:<제목></code>
+| 곡 제목.
 |-
-| <code>artist:<artist></code>
-| Song Artist.
+| <code>artist:<음악가></code>
+| 음악가.
 |-
-| <code>album:<album></code>
-| Album name.
+| <code>album:<앨범></code>
+| 앨범 이름.
 |-
-| <code>comment:<comment></code>
-| Track comment.
+| <code>comment:<주석></code>
+| 트랙 주석.
 |-
-| <code>genre:<genre></code>
-| Track genre.
+| <code>genre:<장르></code>
+| 트랙 장르.
 |}
 
-ID3v1 is fully supported.
-ID3v2, ID3v2.3 and ID3v2.4 are loosely supported.
+ID3v1는 완벽 지원합니다.
+ID3v2, ID3v2.3 and ID3v2.4는 일부 지원합니다.
 
-ID3 tags and FLAC tags are not indexed. Searching for ID3 tags and FLAC tags is slow, combine with other searches for the best performance.
-Only ID3 tags in mp3 files are currently supported.
+ID3 태그와 FLAC 태그는 색인되지 않습니다. 때문에 검색이 느리기에 다른 조건을 먼저 사용해야 성능을 개선할 수 있습니다.
+mp3 파일에선 ID3만 지원합니다.
 
-Examples:
+예시:
 <pre>
 year:2002..2005
 genre:electronic
@@ -482,29 +482,29 @@ track:>10
 year:>=2000
 </pre>
 
-==Image information==
-The following functions can be used to search for image dimensions
+==이미지 정보==
+아래 함수들을 이미지 크기를 검색하는데 쓸 수 있습니다.
 {|
-| <code>width:<width></code>
-| The width of the image in pixels.
+| <code>width:<너비></code>
+| 이미지 픽셀 너비.
 |-
-| <code>height:<height></code>
-| The height of the image in pixels.
+| <code>height:<높이></code>
+| 이미지 픽셀 높이.
 |-
-| <code>dimensions:<width>x<height></code>
-| The width and height of the image in pixels. Use a x to separate the width and height.
+| <code>dimensions:<너비>x<높이></code>
+| 이미지 픽셀 너비와 높이. 둘을 구분하는데 x를 씁니다.
 |-
-| <code>orientation:<type></code>
-| <code><type></code> can <code>landscape</code> or <code>portrait</code>.
+| <code>orientation:<종류></code>
+| <code><종류></code>로 <code>landscape</code>(가로 방향, 풍경화)나 <code>portrait</code>(세로 방향, 초상화)를 넣을 수 있습니다.
 |-
-| <code>bitdepth:<bitdepth></code>
-| <code>Find images with the specified bits per pixel.</code>.
+| <code>bitdepth:<비트수></code>
+| 지정한 픽셀 당 비트 수를 가진 이미지를 검색합니다.
 |}
 
-Image information is not indexed. Searching for image information is slow, combine with other searches for the best performance.
-Only jpg, png, gif and bmp files are supported.
+이미지 정보는 색인되지 않습니다. 때문에 검색이 느리기에 다른 조건을 먼저 사용해야 성능을 개선할 수 있습니다.
+jpg, png, gif,bmp 파일만 지원합니다.
 
-Examples:
+예시:
 <pre>
 width:>2560
 width:800..1920
@@ -512,364 +512,360 @@ height:600..1080
 dimensions:800x600..1920x1080
 </pre>
 
-==Duplicated Files==
-The following functions can be used to search for duplicated files.
+==중복 파일==
+다음 함수들을 중복 파일을 검색하는 데 쓸 수 있습니다.
 {|
 | <code>dupe:</code>
-| Find files and folders with the same filename.
+| 같은 이름을 가진 파일 및 폴더를 검색합니다.
 |-
 | <code>attribdupe:</code>
-| Find files and folders with the same attributes. Sort by attributes for the best results.
+| 같은 속성을 가진 파일 및 폴더를 검색합니다. 속성 순으로 정렬해보세요.
 |-
 | <code>dadupe:</code>
-| Find files and folders with the same date accessed. Sort by date accessed for the best results.
+| 접근한 날짜가 겹치는 파일 및 폴더를 검색합니다. 접근한 날짜 순으로 정렬해보세요.
 |-
 | <code>dcdupe:</code>
-| Find files and folders with the same date created. Sort by date created for the best results.
+| 만든 날짜가 겹치는 파일 및 폴더를 검색합니다. 만든 날짜 순으로 정렬해보세요.
 |-
 | <code>dmdupe:</code>
-| Find files and folders with the same date modified. Sort by date modified for the best results.
+| 수정한 날짜가 겹치는 파일 및 폴더를 검색합니다. 수정한 날짜 순으로 정렬해보세요.
 |-
 | <code>namepartdupe:</code>
-| Find files and folders with the same name part (excluding extension).
+| 확장자를 제외한 이름 부분이 겹치는 파일 및 폴더를 검색합니다.
 |-
 | <code>sizedupe:</code>
-| Find files and folders with the same size. Sort by size for the best results.
+| 크기가 같은 파일 및 폴더를 검색합니다. 크기 순으로 정렬해보세요.
 |}
 
-Duplicates are found in the ENTIRE index, not the current results. 
-Search and sort results by the same dupe type for the best results.
+중복은 색인 '''전체'''에서 검사합니다. 현재 검색 결과 기준이 아닙니다.
+검색하고 중복 검사한 종류로 정렬하면 좋은 결과를 얻을 수 있습니다.
 
-Everything does not check file contents. Use the dupe finding functions as a guide only.
+Everything은 파일 내용을 검사하지 않습니다. 중복 검색 함수는 참고로만 쓰기 바랍니다.
 
-Examples:
+예시:
 <pre>
 dupe: .mp4
 size:>1gb sizedupe:
 </pre>
 
-==Filters==
-Filters are predefined searches. Only one filter can be active at a time. Filters can be toggled from the [[support/everything/using everything#menu|Search menu]].
+==필터==
+필터는 미리 정한 검색입니다. 한 번에 한 필터만 쓸 수 있습니다. 필터는 [[support/everything/using everything#메뉴|검색 메뉴]]에서 바꿀 수 있습니다.
 
-To create a new filter from the current search:
+현재 검색 조건으로 새 필터를 만들려면:
 <ul>
-*In '''''Everything''''', from the '''Search''' menu, click '''Add to filters...'''.
-*Type in a '''Name'''.
-*Click '''OK'''.
+*'''''Everything''''' - '''검색''' 메뉴 - '''필터 추가...'''를 클릭합니다.
+*'''이름'''을 입력합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-To edit an existing filter:
+기존 필터를 수정하려면:
 <ul>
-*In '''''Everything''''', from the '''Search''' menu, click '''Organize filters...'''.
-*Select a filter.
-*Click '''Edit'''.
+*'''''Everything''''' - '''검색''' 메뉴 - '''필터 관리...'''를 클릭합니다.
+*필터를 선택합니다.
+*'''수정'''을 클릭합니다.
 </ul>
 
-==Bookmarks==
-Bookmarks can save the current search, filter, sort and index.
+==책갈피==
+책갈피로 현재 검색어, 필터, 색인을 저장할 수 있습니다.
 
-To create a new bookmark from the current search:
+현재 검색 조건으로 새 책가피를 만들려면:
 <ul>
-*In '''''Everything''''', from the '''Bookmarks''' menu, click '''Add to bookmarks...'''.
-*Type in a '''Name'''.
-*Click '''OK'''.
+*'''''Everything''''' - '''책갈피''' 메뉴 - '''책갈피 추가...'''를 클릭합니다.
+*'''이름'''을 입력합니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-To organize bookmarks:
+책갈피를 관리하려면:
 <ul>
-*In '''''Everything''''', from the '''Bookmarks''' menu, click '''Organize bookmarks...'''.
+*'''''Everything''''' - '''책갈피''' 메뉴 - '''책갈피 관리...'''를 클릭합니다.
 </ul>
 
-==Home Search==
-The home search is the default search when you first open an Everything search window.
-The home search can be opened by pressing [[support/everything/keyboard_shortcuts#global_keyboard_shortcuts|Alt + Home]].
+==홈==
+Everything 검색 창을 처음 열었을 때의 기본 검색 조건을 홈이라 부릅니다. 입문 사용자 배려를 위해 초기화면이라고 도 부릅니다.
+[[support/everything/keyboard_shortcuts#global_keyboard_shortcuts|Alt + Home]]을 눌러 초기화면으로 돌아갈 수 있습니다.
 
-To change the home search settings:
+초기화면 설정을 바꾸려면:
 <ul>
-*In '''''Everything''''', from the '''Tools''' menu, click '''Options'''.
-*Click the [[support/Everything/Options#home|'''Home''']] tab.
-*Set the desired search, search options, sort order and view options.
-*Click '''OK'''.
+*'''''Everything''''' - '''도구''' 메뉴 - '''설정'''을 클릭합니다.
+*[[support/Everything/Options#초기화면|'''초기화면''']] 탭을 클릭합니다.
+*원하는 검색어, 검색 옵션, 정렬, 보기 설정을 고릅니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-==Macros==
-Custom macros can be defined by filters and bookmarks.
+==상용구==
+필터와 책갈피에 상용구를 지정할 수 있습니다.
 
-To create a custom filter macro:
+사용자 필터 상용구를 만들려면:
 <ul>
-*Create a [[support/everything/searching#Filters|new filter]] or [[support/everything/searching#Filters|edit an existing one]].
-*Type in a macro name, for example:
+*[[support/everything/searching#필터|새 필터]] 를 만들거나 [[support/everything/searching#필터|기존 필터]]를 수정합니다.
+*상용구란에 이름을 입력합니다. 
 <pre>
 foo
 </pre>
-*Click '''OK'''.
-*Click '''OK'''.
-*Searching for foo: will now be replaced by the filter's search.
+*'''확인'''을 클릭합니다.
+*'''확인'''을 클릭합니다.
+*foo:를 검색어로 입력하면 해당 필터 효과를 적용합니다.
 </ul>
 
-==Regex==
-Regex overrides the search syntax. Search operators, wildcards, macros, modifiers and functions do not work in regex mode.
-Regex must be enabled from the [[support/everything/using everything#menu|Search menu]] or prefix the search with <code>regex:</code>
+==정규식==
+정규식은 일반 검색어에만 적용됩니다. 검색 연산자, 와일드카드, 상용구, 변경자와 함수는 정규식 모드가 없습니다.
+정규식으로 검색 옵션은 [[support/everything/using everything#메뉴|검색 메뉴]]나 겅색어 앞에 <code>regex:</code>를 붙여 켤 수 있습니다.
 
 {|
 | <code>a|b</code>
-| Matches a or b
+| a나 b에 대응
 |-
 | <code>gr(a|e)y</code>
-| Matches gray or grey
+| gray나 grey에 대응
 |-
 | <code>.</code>
-| Matches any single character
+| 아무 한 글자에 대응
 |-
 | <code>[abc]</code>
-| Matches a single character a, b or c
+| a, b, c 중 하나에 대응
 |-
 | <code>[^abc]</code>
-| Matches any single character except a, b or c
+| a, b, c를 제외한 한 글자에 대응
 |-
 | <code>[a-z]</code>
-| Matches a single charactor in the range a to z
+| a에서 z까지의 한 글자에 대응
 |-
 | <code>[a-zA-Z]</code>
-| Matches a single charactor in the range a to z or A to Z
+| a~z, A~Z까지의 한 글자에 대응
 |-
 | <code>^</code>
-| Matches the start of the filename
+| 파일이름 시작에 대응
 |-
 | <code>$</code>
-| Matches the end of the filename
+| 파일이름 끝에 대응
 |-
 | <code>*</code>
-| Matches the preceding element zero or more times
+| 앞 요소가 0번 이상 나옴
 |-
 | <code>?</code>
-| Matches the preceding element zero or one times
+| 앞 요소가 0번 혹은 1번 나옴
 |-
 | <code>+</code>
-| Matches the preceding element one or more times
+| 앞 요소가 1번 이상 나옴
 |-
 | <code>{x}</code>
-| Matches the preceding element x times
+| 앞 요소가 x번 나옴
 |-
 | <code>{x,}</code>
-| Matches the preceding element x or more times
+| 앞 요소가 x번 이상 나옴
 |-
 | <code>{x,y}</code>
-| Matches the preceding element between x and y times
+| 앞 요소가 x~y번 나옴
 |}
 
-==Search Commands==
-The following search commands are special searches that can be activated by typing in the search and pressing ENTER.
+==검색 명령==
+아래 검색 명령을 검색 줄에 입력하고 엔터를 쳐서 쓸 수 있습니다.
 
 {|
-! Search
-! Action
+! 검색어
+! 동작
 |-
 | <code>about:</code>
-| Show the About dialog.
+| 이 프로그램은... 창 열기.
 |-
 | <code>about:config</code>
-| Open your [[support/Everything/INI|Everything.ini]]
+| [[support/Everything/INI|Everything.ini]] 열기.
 |-
 | <code>about:credits</code>
-| Show the Everything credits dialog.
+| 크레딧 창 열기.
 |-
 | <code>about:home</code>
-| Open the [[support/Everything/Searching#home search|home search]].
+| [[support/Everything/Searching#홈|초기화면]]으로 돌아가기.
 |-
 | <code>about:licence<br>about:license</code>
-| Show the Everything licence agreement.
+| 라이선스 창 열기.
 |-
 | <code>about:options<br>about:preferences</code>
-| Show the [[support/Everything/Options|Everything options]].
+| [[support/Everything/Options|설정 창]] 열기.
 |-
 | <code>/close</code>
-| Close the Everything search window.
+| 검색 창 닫기.
 |-
 | <code>/closeall</code>
-| Close all Everything search windows.
+| 모든 검색 창 닷기.
 |-
 | <code>/command <id></code>
-| Run the specified [[support/Everything/SDK|command ID]].
+| 지정한 [[support/Everything/SDK|ID 명령]] 실행.
 |-
 | <code>/config_save</code>
-| Show a save as dialog to backup the [[support/Everything/INI|Everything.ini]].
+| [[support/Everything/INI|Everything.ini]] 백업 대화상자 열기.
 |-
-| <code>/config_save <filename></code>
-| Backup the [[support/Everything/INI|Everything.ini]] to the specified filename.
+| <code>/config_save <파일이름></code>
+| [[support/Everything/INI|Everything.ini]]를 지정한 경로에 백업.
 |-
 | <code>/config_load</code>
-| Show a open file dialog to load the [[support/Everything/INI|Everything.ini]].
+| [[support/Everything/INI|Everything.ini]] 복원 대화상자 열기.
 |-
-| <code>/config_load <filename></code>
-| Load the [[support/Everything/INI|Everything.ini]] from the specified filename.
+| <code>/config_load <파일이름></code>
+| [[support/Everything/INI|Everything.ini]]를 지정한 경로에서 복원.
 |-
 | <code>/debug<br>/console</code>
-| Enable debug mode.
+| 디버그 모드 켜기.
 |-
 | <code>/debug_log</code>
-| Enable debug mode and start debug logging.
+| 디버그 모드를 켜고 로깅하기.
 |-
 | <code>/help</code>
-| Show the help window.
+| 도움말 창 열기.
 |-
 | <code>/monitor_pause</code>
-| Stops NTFS, ReFS, file lists and folder monitors. Monitors are not started again until specified with /monitor_resume.
+| NTFS, ReFS, 파일 목록, 폴더 감시 끄기. /monitor_resume을 치기 전엔 켜지지 않음.
 |-
 | <code>/monitor_resume</code>
-| Starts NTFS, ReFS, file lists and folder monitors.
+| NTFS, ReFS, 파일 목록, 폴더 감시 켜기.
 |-
 | <code>/quit<br>/exit</code>
-| Exit Everything
+| Everything 종료.
 |-
 | <code>/rebuild<br>/reindex</code>
-| Force a rebuild
+| 색인 재구축.
 |-
 | <code>/restart</code>
-| Restart Everything
+| Everything 재시작.
 |-
 | <code>/verbose</code>
-| Enable verbose debugging.
+| 디버그 메시지를 자세히.
 |-
 | <code>/update</code>
-| Update all folder indexes now.
+| 모든 폴더 색인을 갱신.
 |-
-| <code>/update <folder index></code>
-| Update the specifed folder index by path now.
+| <code>/update <폴더 색인></code>
+| 지정한 폴더 색인을 갱신.
 |-
-| <code>/[[support/Everything/INI|&lt;ini option&gt;]]</code>
-| Show the current setting for the specified ini option in the statusbar. Use the TAB key to auto complete.
+| <code>/[[support/Everything/INI|&lt;ini 옵션&gt;]]</code>
+| 지정한 ini 옵션 값을 상태표시줄에 표시. 탭 키로 자동완성 가능.
 |-
-| <code>/[[support/Everything/INI|&lt;ini option&gt;]]=<value></code>
-| Set the specified ini option to the specified value. The new value is shown in the status bar if successful.
+| <code>/[[support/Everything/INI|&lt;ini 옵션&gt;]]=<값></code>
+| ini 옵션을 지정 값으로 설정. 성공하면 새 값이 상태표시줄에 표시됨.
 |}
 
-For example, to change the status bar selected item format to full path and filename, type in the following search and press ENTER:
+예시로 선택한 항목의 상태 표시줄 표시 양식을 전체 경로와 이름으로 바꾸려면 검색 줄에 아래를 입력하고 엔터를 치면 됩니다.
 <pre>
 /statusbar_selected_item_format=$f
 </pre>
 
-Changing some ini options will require a restart.
+일부 ini 옵션 변경은 재시작해야 적용됩니다.
 
-To change the / prefix to another character or string, type in the following search and press ENTER:
+앞에 붙이는 /문자를 다른 문자열로 바꾸려면 아래를 입력하고 엔터를 치세요:
 <pre>
-/search_command_prefix=<command prefix>
+/search_command_prefix=<명령 접두어>
 </pre>
-where <code><command prefix></code> is the new command prefix.
+<code><명령 접두어></code>는 새로 사용할 접두어입니다.
 
-For example, to change the command prefix to <code>></code>, type in the following search and press ENTER:
+예를 들어 <code>/</code> 대신 <code>></code>를 쓰려면:
 <pre>
 /search_command_prefix=>
 </pre>
 
-To restore the command prefix to the default <code>/</code>, type in the following search and press ENTER:
+명령 접두어를 기본값 <code>/</code>로 되돌리려면:
 <pre>
 /search_command_prefix=/
 </pre>
 
-==Limiting results==
-To limit the number of results shown, use the count: search function.
-For example to limit the number of results shown to 100, include at the start of your search:
+==검색 결과 제한==
+결과 개수를 제한하려면 count: 검색 함수를 쓰세요.
+결과를 100개 까지만 보려면 검색어 앞에 아래를 추가합니다.
 <pre>
 count:100
 </pre>
 
-==Examples==
+==예제==
 
-Search for ABC and 123:
+ABC와 123 검색:
 <pre>
 ABC 123
 </pre>
 
-Search for ABC or 123:
+ABC나 123 검색:
 <pre>
 ABC|123
 </pre>
 
-Search for everything except ABC:
+ABC가 있으면 제외:
 <pre>
 !ABC
 </pre>
 
-Search for uppercase ABC
+대문자 ABC만 검색:
 <pre>
 case:ABC
 </pre>
 
-Search for mp3 files:
+mp3 파일 검색:
 <pre>
 *.mp3
 </pre>
 
-Search for mp3 files on the D: or E: drive:
+mp3 파일을 D:나 E: 드라이브에서 검색:
 <pre>
 d:|e: *.mp3
 </pre>
 
-Search for jpg or png files on the D: drive:
+jpg나 png 파일을 D: 드라이브에서 검색:
 <pre>
 d: *.jpg|*.png
 </pre>
 
-Search for files or folders with no extension:
+확장자가 없는 파일 및 폴더 검색:
 <pre>
 !.
 </pre>
 
-Search for files only:
+파일만 검색:
 <pre>
 file:
 </pre>
 
-Search for folders only:
+폴더만 검색:
 <pre>
 folder:
 </pre>
 
-Limit the search to a single folder:
+폴더의 바로 아래 항목만 검색
 <pre>
 parent:c:\windows
 </pre>
 
-Find files larger than 1MB:
+1MB보다 큰 파일 검색:
 <pre>
 size:>1mb
 </pre>
 
-Instantly find files that have changed today:
+간단히 오늘 바뀐 파일 검색:
 <pre>
 dm:today
 </pre>
 
-Find files and folders created this week:
+이번 주에 만든 파일 및 폴더 검색:
 <pre>
 dc:thisweek
 </pre>
 
-Find files and folders created from the 1st August 2014 to 31st August 2014:
+2014년 8월에 만든 파일 검색
 <pre>
-dc:1/8/2014-31/8/2014
+dc:2014/8/1-2014/8/31
 </pre>
-or:
-<pre>
-dc:8/1/2014-8/31/2014
-</pre>
-Depending on your locale settings.
+로케일 설정에 따라 다릅니다.
 
-Find folders in D:\music that do not contain an mp3 file:
+D:\music 폴더에서 mp3 파일이 없는 폴더 검색:
 <pre>
 d:\music\ !child:mp3
 </pre>
 
-Find filenames with non-ASCII characters:
+ASCII 문자가 아닌 문자를 포함한 파일이름 검색:
 <pre>
 regex:[^\x00-\x7f]
 </pre>
 
-==See also==
+==볼만한 것==
 <ul>
-*[[support/everything/using everything#menu|Search menu]]
-*[[support/everything/command line options#searching|Search command line options]]
-*[[support/everything/options#search|Search options]]
-*[[support/everything/keyboard shortcuts|Search keyboard shortcuts]]
+*[[support/everything/using everything#메뉴|검색 메뉴]]
+*[[support/everything/command line options#검색|검색 관련 명령 행 인자]]
+*[[support/everything/options#검색|검색 설정]]
+*[[support/everything/keyboard shortcuts|키보드 단축키]]
 </ul>
