@@ -1,15 +1,15 @@
 =INI=
 Everything.ini에서 Everything의 모든 설정을 관리할 수 있습니다.
 <ul>
-*[[support/everything/ini#general_settings|일반]]
-*[[support/everything/ini#search_window_settings|검색 창]]
-*[[support/everything/ini#search_settings|검색]]
-*[[support/everything/ini#indexing|색인]]
+*[[support/everything/ini#일반|일반]]
+*[[support/everything/ini#검색 창|검색 창]]
+*[[support/everything/ini#검색|검색]]
+*[[support/everything/ini#색인|색인]]
 *[[support/everything/ini#etp|ETP]]
 *[[support/everything/ini#http|HTTP]]
-*[[support/everything/ini#keyboard|키보드]]
-*[[support/everything/ini#fonts_and_colors|글꼴과 색상]]
-*[[support/everything/ini#hidden_settings|숨겨진 설정]]
+*[[support/everything/ini#키보드|키보드]]
+*[[support/everything/ini#글꼴과 색상|글꼴과 색상]]
+*[[support/everything/ini#숨겨진 설정|숨겨진 설정]]
 </ul>
 
 ==Everything으로 설정 보고 변경하기==
