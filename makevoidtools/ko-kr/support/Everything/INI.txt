@@ -321,7 +321,7 @@ LTR/RTL을 전환합니다. 1이면 전환합니다.
 
 ;''underline_icon_titles''
 Show result text with underlines.
-Set to 0 to use the system default setting for underline icon titles. Set to 1 to always show underlines. Set to 2 to never show underlines. Set to 3 to underline result text when hovering with the mouse cursor. 
+Set to 0 to use the system default setting for underline icon titles. Set to 1 to always show underlines. Set to 2 to never show underlines. Set to 3 to underline result text when hovering with the mouse cursor.
 
 ;''wrap_focus''
 결과 목록 양 끝을 방향키로 이동할 때의 설정입니다. 다음 중 하나를 쓸 수 있습니다.
@@ -595,7 +595,7 @@ Show sizes in descending order first.
 ;''home_match_case''
 처음 화면에서 대소문자 구분 최근 값 사용 여부입니다. 0이면 마지막 값을 쓰고 1이면 지정한 값을 씁니다.
 
-;''home_match_whole_word'' 
+;''home_match_whole_word''
 처음 화면에서 전체 단어 일치 최근 값 사용 여부입니다. 0이면 마지막 값을 쓰고 1이면 지정한 값을 씁니다.
 
 ;''home_match_path''
@@ -826,11 +826,11 @@ Show sizes in descending order first.
 1이면 색인에서 시스템 파일 및 폴더를 제외합니다. 0이면 포함합니다.
 
 ;''include_only_files''
-;로 분리된 색인에 포함할 파일 확장자 목록입니다. (예: *.mp3;*.jpg) 
+;로 분리된 색인에 포함할 파일 확장자 목록입니다. (예: *.mp3;*.jpg)
 비워두면 모든 파일을 포함합니다.
 
 ;''exclude_files''
-;로 분리된 색인에서 제외할 확장자 목록입니다. (예: *.db) 
+;로 분리된 색인에서 제외할 확장자 목록입니다. (예: *.db)
 비워두면 아무것도 제외하지 않습니다.
 
 ;''db_location''
@@ -1091,7 +1091,7 @@ HTTP 서버 사용자 이름입니다. 비워두면 무시합니다.
 HTTP 서버 비밀번호입니다. 비워두면 무시합니다.
 
 ;''http_server_home''
-HTTP 서버 최상위 폴더입니다. 
+HTTP 서버 최상위 폴더입니다.
 
 ''http_server_default_page''
 HTTP 서버 기본 페이지입니다.
@@ -2076,7 +2076,7 @@ Everything의 투명도를 설정합니다.
 
 ;''find_subfolders_and_files_max_threads''
 사용할 스레드 수를 정합니다.
-0이면 기본값을 씁니다. 기본값은 max_thread / 2개입니다(적어도 한 스레드는 항상 사용합니다). 
+0이면 기본값을 씁니다. 기본값은 max_thread / 2개입니다(적어도 한 스레드는 항상 사용합니다).
 
 ;''statusbar_size_format''
 상태 표시줄에 띄울 선택 항목 전체 크기 단위입니다.
@@ -2108,7 +2108,7 @@ Everything의 투명도를 설정합니다.
 1이면 이름 바꾸기 상태에서 위아래 방향키 등으로 다른 항목으로 이동할 수 있습니다. 0이면 그러지 않습니다.
 
 ;''tray_show_command_line''
-트레이 아이콘으로 Everything을 실행할 때 사용할 명령행 인자입니다.
+트레이 아이콘으로 Everything을 실행할 때 사용할 명령 행 인자입니다.
 예를 들어 -home으로 설정하면 트레이 아이콘을 더블클릭할 때 기본 화면을 띄웁니다.
 
 ;''dpi''

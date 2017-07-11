@@ -161,7 +161,7 @@ ETP 서버에 접속할 때 포트 번호가 일치하는지 확인하시기 바
 ==볼만한 것==
 <ul>
 *[[support/everything/multiple instances|다중 인스턴스]].
-*[[support/everything/command line options#etp|ETP/FTP 서버 명령행 인자]].
+*[[support/everything/command line options#etp|ETP/FTP 서버 명령 행 인자]].
 *[[support/everything/ini#etp|ETP/FTP 서버 Everything.ini 옵션]].
 *[[support/everything/options#etp/ftp server|ETP/FTP 서버 옵션]].
 *[[http://en.wikipedia.org/wiki/FTP]]

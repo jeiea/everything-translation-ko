@@ -249,7 +249,7 @@ NTFS, ReFS, 폴더, 파일 목록 감시를 시작하려면
 *[[support/Everything/options#Folders|폴더 색인 옵션]]
 *[[support/Everything/options#File Lists|파일 목록 옵션]]
 *[[support/Everything/options#Exclude|제외 옵션]]
-*[[support/Everything/command line options#Database|데이터베이스 명령행 옵션]]
+*[[support/Everything/command line options#Database|데이터베이스 명령 행 옵션]]
 *[[support/Everything/ini#Indexing|Everything.ini 색인 옵션]]
 </ul>
 
