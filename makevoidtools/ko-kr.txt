@@ -46,9 +46,6 @@ MAINTENANCE="보수 중"
 // page template files.
 // these should be lowercase and easy to type.
 // no spaces, no special characters
-//
-// page templates use basic wikipedia markup:
-// https://en.wikipedia.org/wiki/Help:Wiki_markup
 
 HOME_TEMPLATE="home.txt"
 DOWNLOADS_TEMPLATE="downloads.txt"
