@@ -52,7 +52,7 @@ http://localhost/?s=&o=0&c=32&j=0&i=0&w=0&p=0&r=0&m=0&path_column=0&size_column=
 지정 번째 결과부터 보여주기
 ;''c''
 ;''count''
-일정 갯수만 보여주기
+일정 개수만 보여주기
 ;''j''
 ;''json''
 0이 아니면 JSON으로 반환
