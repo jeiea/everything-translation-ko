@@ -729,7 +729,7 @@ Show sizes in descending order first.
 | 속성
 |-
 | 8
-| 최근에 변경한 날짜
+| 최근 변경 날짜
 |-
 | 9
 | 실행 횟수
@@ -2047,7 +2047,7 @@ Everything의 투명도를 설정합니다.
 | 속성
 |-
 | <code>$d</code>
-| 최근에 변경한 날짜
+| 최근 변경 날짜
 |-
 | <code>$r</code>
 | 실행 횟수
