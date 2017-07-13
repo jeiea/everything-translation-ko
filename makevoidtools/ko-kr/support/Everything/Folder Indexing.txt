@@ -10,7 +10,7 @@
 *기타 물리 폴더.
 </ul>
 
-[[File:support/everything/Everything.Options.Folders.Server.Downloads.png|alt=Everything Options Folders Network Share]]
+[[File:support/everything/Everything.Options.Folders.Server.Downloads.png|alt=Everything 네트워크 공유 폴더 설정]]
 
 ==폴더를 색인하려면 관리자 권한이나 Everything 서비스가 필요한가요?==
 아니오, 폴더 색인엔 관리자 권한이나 서비스가 필요하지 않습니다.

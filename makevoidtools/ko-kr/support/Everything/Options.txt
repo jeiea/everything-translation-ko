@@ -1,12 +1,12 @@
-=Options=
-The Everything Options contains settings that modify the system or Everything.
+=설정=
+시스템 혹은 Everything을 수정하는 설정입니다.
 
-To open the Everything Options window:
+Everything 설정 창을 열려면:
 <ul>
-*In '''''Everything''''', from the '''Tools''' menu, click '''Options'''.
+*'''Everything''' - '''도구''' 메뉴 - '''설정'''을 클릭합니다.
 </ul>
 
-Select one of the ''"tabs"'' below:
+아래 '''탭''' 중 하나를 선택합니다:
 <ul>
 *[[#일반|일반]]
 <ul>
@@ -33,852 +33,849 @@ Select one of the ''"tabs"'' below:
 </ul>
 
 ==일반==
-[[File:support/everything/Everything.Options.General.png|alt=Everything Options General]]
+[[File:support/everything/Everything.Options.General.png|alt=Everything 일반 설정]]
 
-Contains settings for configuring the installation of ''Everything''.
+''Everything'' 설치 시 선택했던 옵션들이 있습니다.
 
 <dl>
-;''Language''
-Selects the language used for displaying text in Everything. If set to User Default the language is determined by the current users language for displaying text, (User Default) is displayed next to this language in the language selection combo.
-Click the download button to the right of languages to open the download page for the Everything language pack in your web browser.
+;''언어''
+Everything 창에 사용할 언어입니다. 사용자 언어를 선택하면 콤보 목록 중 (사용자 언어)가 오른쪽에 붙은 현재 윈도 사용자 언어를 사용합니다.
+웹 브라우저로 언어 팩을 다운받으려면 오른쪽 다운로드 버튼을 클릭하세요.
 
 ;''%APPDATA%\Everything 폴더에 설정 저장''
-Choose the location for storing settings and data. If enabled, settings and data are stored in %APPDATA%\Everything. If disabled, settings and data are stored in the same location as the Everything.exe.
-This option is enabled in the installer by default and disabled in the portable version by default. Changing this setting will overwrite any existing settings.
+설정과 자료를 저장할 위치를 선택합니다. 켜면 %APPDATA%\Everything에 저장합니다. 끄면 Everything.exe가 있는 위치에 저장합니다.
+이 옵션은 기본적으로 설치 버전에선 켜져있고 휴대 버전에선 꺼져있습니다. 이 설정을 바꾸면 바뀔 위치에 있는 설정은 덮어씌워집니다.
 
-;''Check for updates on startup''
-Check www.voidtools.com for Everything updates when starting Everything.
-To include beta updates, see [[support/everything/ini#beta_updates|Beta updates]].
+;''시작할 때 업데이트 검사''
+Everything을 켤 때 www.voidtools.com에서 Everything 업데이트를 확인합니다..
+베타 업데이트도 확인하려면 [[support/everything/ini#beta_updates|베타 업데이트]]를 확인하세요.
 
-;''Start Everything on system startup''
-Start Everything when Windows starts. When Everything starts from Windows startup, the tray icon is shown and the database is loaded and updated, no Everything search window is shown.
+;''윈도 시작 시 Everything 켜기''
+윈도를 시작할 때 Everything을 실행합니다. 윈도를 켤 때 Everything을 켜면서 트레이 아이콘을 띄우고  데이터베이스를 불러오고 갱신합니다. Everything 검색 창은 보여주지 않습니다.
 
-;''Run as administrator''
-If enabled and Everything is run with limited privileges, Everything will relaunch with administrative privileges. The Everything service is not required when enabling this option. When disabling this option you must manually restart Everything. When enabled, applications run from Everything will also run as administrator.
+;''관리자 권한으로 실행''
+켜면 Everything이 제한된 권한으로 실행될 때 자동으로 관리자 권한으로 재실행합니다. 이 옵션을 켜면 Everything 서비스가 필요하지 않습니다. 이 옵션을 끄고 나선 반드시 수동으로 재시작해줘야 합니다. 켰을 때는 Everything으로 실행한 프로그램도 관리자 권한으로 실행됩니다.
 
-;''Everything service''
-Install the Everything service. The Everything service will allow the Everything search window to read and monitor the USN Journal on all NTFS volumes. Enabling this will allow Everything to run as a standard user.
+;''Everything 서비스''
+Everything 서비스를 설치합니다. Everything 서비스는 검색 창이 모든 NTfS 볼륨 USN 저널을 읽고 감시할 수 있도록 합니다. 이걸 켜면 Everything을 관리자 권한으로 실행할 필요가 사라집니다.
 
-;''Show folder context menus''
-Add the '''Search Everything...''' item to folder context menus. The folder context menu is displayed when you right click a folder in Windows. Clicking on the folder context menu item '''Search Everything...''' will launch Everything and populate the search with the selected folder.
+;''탐색기에 우클릭 메뉴 추가''
+'''Everything 검색...''' 항목을 폴더 우클릭 메뉴에 추가합니다. 폴더 우클릭 메뉴는 윈도에서 폴더를 우클릭 했을 때 나옵니다. 우클릭 메뉴에서 '''Everything 검색...''' 항목을 클릭하면 해당 폴더 내부를 검색하는 검색어가 미리 들어간 Everything 검색 창이 뜹니다.
 
-;''Start menu shortcuts''
-Add '''Search Everything''' shortcut (and '''Uninstall Everything''' shortcut if uninstall.exe is present) to the start menu under Programs \ Everything.
+;''시작메뉴에 추가''
+'''Search Everything''' 바로가기를 시작메뉴\프로그램\Everything에 추가합니다. (uninstall.exe가 있으면 '''Everything 제거''' 바로가기도 추가합니다).
 
-;''Desktop shortcut''
-Add '''Search Everything''' shortcut to the Desktop.
+;''바탕화면에 추가''
+'''Search Everything''' 바로가기를 바탕화면에 만듭니다.
 
-;''Quick launch shortcut''
-Add '''Search Everything''' shortcut to the Quick launch toolbar.
-To show the Quick Launch toolbar in Windows Vista or later:
+;''빠른 실행에 추가''
+'''Search Everything''' 바로가기를 빠른 실행 툴바에 추가합니다.
+빠른 실행 툴바를 윈도 비스타 이후 버전에서 보려면:
 <ul>
-*Right click an empty spot on the taskbar.
-*From the '''Toolbars''' submenu, click '''New toolbar...'''
-*type in:
+*작업 표시줄의 빈 공간을 우클릭합니다.
+*'''도구 모음''' 하위 메뉴에서 '''새 도구 모음...'''을 클릭합니다.
+*아래를 입력합니다:
 <pre>
 %userprofile%\AppData\Roaming\Microsoft\Internet Explorer\Quick Launch
 </pre>
-*Click Select Folder.
+*폴더 선택을 클릭합니다.
 </ul>
 
-;''URL protocol''
-Open Everything from es: urls.
-For example, when clicking on [[es:abc123|es:abc123]] Everything will launch and populate the search with abc123.
+;''es: URL 연결''
+es: URL을 Everything에 연결합니다.
+[[es:abc123|es:abc123]]을 클릭하면 abc123가 입력된 Everything 창이 뜨게 됩니다.
 
-;''EFU file association''
-Open EFU files with Everything. EFU files are Everything file lists, for more information please see [[support/everything/file lists|File Lists]].
+;''.efu 파일 연결''
+EFU 파일을 Everything에 연결합니다. EFU 파일은 Everything 파일 목록이고 자세한 건 [[support/everything/file lists|파일 목록]]을 확인해보세요.
 </dl>
 
 ==인터페이스==
-[[File:support/everything/Everything.Options.UI.png|alt=Everything Options UI]]
+[[File:support/everything/Everything.Options.UI.png|alt=Everything 인터페이스 설정]]
 
-Contains settings for configuring the user interface.
+사용자 인터페이스 관련 설정입니다.
 
 <dl>
-;''Run in background''
-Keep Everything running in the background when all search windows are closed. If disabled and all search windows are closed, Everything will exit completely.
+;''종료해도 남아있기''
+모든 검색 창을 꺼도 백그라운드에 남아있습니다. 끄면 모든 창을 껐을 때 Everything이 완전히 종료됩니다.
 
-;''Show tray icon''
-Show the Everything tray icon.
+;''트레이 아이콘 보기''
+Everything 트레이 아이콘을 보여줍니다.
 
-;''Single click tray''
-If enabled, Everything will open from the tray icon with a single mouse click. If disabled, Everything will open from the tray icon with a double click.
+;''트레이 아이콘을 한 번 클릭해서 창 띄우기''
+켜면 트레이 아이콘을 클릭해서 창을 열 수 있습니다. 끄면 더블 클릭해야 창을 열 수 있습니다.
 
-;''Create a new window from the system tray''
-If enabled, always create a new search window from the system tray. If disabled, opening the search window from the tray will show an existing search window before creating a new search window.
+;''트레이 아이콘으로 새 창 열기''
+켜면 트레이 아이콘을 클릭 혹은 더블 클릭할 때마다 새 창을 띄웁니다. 끄면 기존 창이 있을 시 이미 있던 창을 활성화합니다.
 
-;''Create a new window when running Everything''
-If enabled, always create a new search window when running Everything.exe or an Everything shortcut. If disabled, running Everything.exe or an Everything shortcut will show an existing search window before creating a new search window.
+;''여러 창 사용''
+켜면 Everything.exe나 Everything 바로가기를 실행했을 때 항상 새 검색 창을 엽니다.  끄면 기존 창이 있을 시 이미 있던 창을 활성화합니다.
 
-;''Search as you type''
-If enabled, each keystroke you press will update the search results. If disable, you must press enter to update the search results.
+;''입력 즉시 검색''
+켜면 검색어를 칠 때마다 검색해서 보여줍니다. 끄면 엔터를 쳐야 검색합니다.
 
-;''Select search on mouse click''
-Select all the search edit text when the search edit gains focus from a mouse click.
+;''검색 줄을 클릭하면 텍스트 선택''
+검색 줄을 클릭했을 때 이미 입력되어 있던 텍스트 전체를 선택합니다.
 
-;''Focus search on activate''
-Focus the search edit, when Everything is activated from alt + tab or clicking on an Everything search window with the mouse.
+;''창 활성화 시 검색 줄에 초점 맞추기''
+알트 탭이나 마우스 클릭으로 Everything 검색 창을 활성화했을 때 자동으로 검색 줄에 커서가 깜박이도록 합니다.
 
-;''Full row select''
-The whole row is selectable, otherwise only the name part is selectable.
+;''전체 행 선택''
+켜면 행 아무 데나 클릭해 선택할 수 있습니다. 끄면 이름 부분을 클릭해야 선택됩니다.
 
-;''Single click open''
-Open a file or folder with a single click or double click. To select a file or folder when single click is active hover over the item with the cursor.
+;''클릭으로 열기''
+파일 및 폴더를 클릭으로 열지 더블 클릭으로 열지 정합니다. 클릭으로 열도록 했을 때 항목을 선택하려면 포인터를 갖다대면 됩니다.
 
-;''Underline icon titles''
-Choose when filenames are underlined in single click mode.
+;''항목 밑줄치기''
+클릭으로 여는 설정 시 언제 항목에 밑줄을 칠 지 정합니다.
 </dl>
 
-==검색 창==
-[[File:support/everything/Everything.Options.Home.png|alt=Everything Options Home]]
+==초기화면==
+[[File:support/everything/Everything.Options.Home.png|alt=Everything 초기화면 설정]]
 
-Contains settings for configuring the first search when a new Everything search window is shown.
+새 검색 창을 띄웠을 때 초기 검색 조건에 관련된 설정입니다.
 
 <dl>
-;''Match case''
-The default match case setting. If set to use last value, the match case setting will be restored from the previously closed Everything search window.
+;''대소문자 구분''
+기본 대소문자 구분입니다. 최근 설정 사용을 선택하면 이전에 닫은 창의 대소문자 구분 설정을 불러옵니다.
 
-;''Match whole word''
-The default match whole word setting. If set to use last value, the match whole word setting will be restored from the previously closed Everything search window.
+;''전체 단어 일치''
+기본 전체 단어 일치입니다. 최근 설정 사용을 선택하면 이전에 닫은 창의 전체 단어 일치 설정을 불러옵니다.
 
-;''Match path''
-The default match path setting. If set to use last value, the match path setting will be restored from the previously closed Everything search window.
+;''전체 경로 검색''
+기본 전체 경로 검색입니다. 최근 설정 사용을 선택하면 이전에 닫은 창의 전체 경로 검색 설정을 불러옵니다.
 
-;''Match diacritics''
-The default match diacritics setting. If set to use last value, the match diacritics setting will be restored from the previously closed Everything search window.
+;''발음 구별 기호 구분''
+기본 발음 구별 기호 구분입니다. 최근 설정 사용을 선택하면 이전에 닫은 창의 발음 구별 기호 구분 설정을 불러옵니다.
 
-;''Match Regex''
-The default match regex setting. If set to use last value, the match regex setting will be restored from the previously closed Everything search window.
+;''정규식 검색''
+기본 정규식 검색입니다. 최근 설정 사용을 선택하면 이전에 닫은 창의 정규식 검색 설정을 불러옵니다.
 
-;home_search|''Search''
-The default search. If set to use last value, the search will be restored from the previously closed Everything search window. Set to custom to define your own default search.
+;''검색''
+기본 검색어입니다. 최근 설정 사용을 선택하면 이전에 닫은 창의 검색어를 불러옵니다. 검색어 지정을 선택하면 항상 지정한 검색어를 불러옵니다.
 
-;''Filter''
-The default filter. If set to use last value, the filter will be restored from the previously closed Everything search window. 
+;''필터''
+기본 필터입니다. 최근 설정 사용을 선택하면 이전에 닫은 창의 필터를 불러옵니다.
 
-;''Sort''
-The default sort. If set to use last value, the sort will be restored from the previously closed Everything search window if it was a fast sort. A fast sort is a sort by name, run count, date run or date recent changed.
-To always keep the sort, see [[support/everything/ini#always_keep_sort|Always keep sort]].
+;''정렬''
+기본 정렬입니다. 최근 설정 사용을 선택하면 이전에 닫은 창의 정렬이 빠른 정렬일 때 불러옵니다. 빠른 정렬은 이름, 실행 횟수, 실행 날짜, 최근 변경 날짜 등의 정렬입니다. 항상 정렬을 보존하려면 [[support/everything/ini#always_keep_sort|항상 정렬 유지]] 설정을 확인하세요.
 
-;''Index''
-The default index. If set to use last value, the index will be restored from the previously closed Everything search window.
+;''색인''
+기본 색인입니다. 최근 설정 사용을 선택하면 이전에 닫은 창의 색인 설정을 불러옵니다.
 
-;''File list''
-The filename of the file list when the index is set to a file list.
+;''파일 목록''
+색인이 파일 목록일 때 그 파일 목록 파일 이름입니다.
 
-;''ETP server''
-The username, password, host and port of the ETP server when the index is set to a ETP server.
+;''ETP 서버''
+색인이 ETP 서버일 때 접속할 ETP 서버 계정, 암호, 주소와 포트입니다.
 
-;''Link type''
-The link type of the ETP server when the index is set to an ETP server.
+;''연결 종류''
+색인이 ETP 서버일 때 ETP 서버 연결 종류입니다.
 </dl>
 
 ==검색==
-[[File:support/everything/Everything.Options.Search.png|alt=Everything Options Search]]
+[[File:support/everything/Everything.Options.Search.png|alt=Everything 검색 설정]]
 
-Contains settings for configuring the search.
+검색 관련 설정입니다.
 
 <dl>
-;''Fast ASCII search''
-Use single byte comparisons for lower case ASCII characters. 
-Enabling this will greatly improve searching performance when match diacritics is enabled. 
-Disable this to allow Turkish I with dot to match lowercase i.
+;''빠른 아스키 검색''
+소문자 ASCII 문자를 바이트 비교합니다.
+이 옵션을 켜면 발음 구별 기호 구분을 켰을 때 성능을 꽤 향상시킵니다.
+끄면 터키어 I를 소문자 i와 똑같이 취급합니다.
 
-;''Match path when a search term contains a path separator''
-Match the full path and filename when a search term contains a backslash (\). 
-Disable this to find files with backslashes in the filename.
+;''검색어에 \가 있으면 경로 전체에서 찾기''
+검색어에 백슬래시(\)가 있으면 검색어를 전체 경로에서 검색합니다. 
+이걸 끄면 파일 이름에 \가 들어간 파일을 찾게 됩니다.
 
-;''와일드카드를 사용할 때 전체 경로와 비교''
-If enabled, using wildcards must match the ''entire'' filename. 
-If disabled, wildcard matches can be found anywhere in the filename.
+;''와일드카드를 사용할 때 이름 전체와 비교''
+켜면 와일드카드를 사용한 검색어는 파일이름 전체와 일치해야 합니다.
+끄면 양 끝에 *을 붙인 것처럼 간주합니다.
 
-;''Allow literal operators''
-Allow AND, OR and NOT as operators. 
-Can cause issues when searching for filenames that include the string AND, OR or NOT.
+;''자연어 연산자 사용''
+AND, OR, NOT을 연산자로 사용합니다.
+AND, OR, NOT이 들어간 파일 이름을 검색하기 귀찮아집니다.
 
-;''Allow round bracket grouping''
-Allow ( and ) for grouping operators. Can cause issues when searching for filenames with the text ( and ).
+;''()로 조건 묶기''
+()를 <>처럼 사용해 연산자 우선순위를 조절합니다. ()가 들어간 파일 이름을 찾기 귀찮아집니다.
 
-;''Expand environment variables''
-Expand environment variables inside % quotes. 
-For example: %APPDATA% will expand to C:\Users\<Current User>\AppData\Roaming. 
-Can cause issues when searching for filenames that include a % character.
+;''환경변수 사용''
+%로 둘러싸인 환경변수를 확장합니다.
+%APPDATA%는 C:\Users\<현재 사용자>\AppData\Roaming로 바뀝니다. 
+%가 들어간 파일 이름과 충돌할 수 있습니다.
 
-;''Replace forward slashes with backslashes''
-Forward slashes (/) are replaced with backslashes (\). 
-Can cause issues when searching for filenames that include a / character. File lists can contain URLs with forward slashes (/).
+;''/를 \로 치환''
+슬래시(/)를 백슬래시(\)로 바꿔 검색합니다.
+/가 들어간 파일 이름과 충돌할 수 있습니다. 파일 목록은 /가 들어간 URL을 담을 수 있습니다..
 
-;''Operator precedence''
-Set the order in which operators are evaluated.
+;''연산자 우선순위''
+어느 연산자를 먼저 평가할지 정합니다.
 
-Set to OR > AND to evaluate OR operations first, for example, searching for <code>A B | C D</code> is the same as <code>A (B | C) D</code>.
+OR > AND는 OR를 먼저 평가합니다.<code>A B | C D</code>는 <code>A (B | C) D</code>와 같습니다.
 
-Set to AND > OR to evaluate AND operations first, for example, searching for <code>A B | C D</code> is the same as <code>(A B) | (C D)</code>.
+AND > OR는 AND를 먼저 평가합니다. <code>A B | C D</code>는 <code>(A B) | (C D)</code>와 같습니다.
 
 </dl>
 
 ==검색 결과==
-[[File:support/everything/Everything.Options.Results.png|alt=Everything Options Results]]
+[[File:support/everything/Everything.Options.Results.png|alt=Everything 검색 결과 설정]]
 
-Contains settings for configuring the result list.
+검색 결과 영역 관련 설정입니다.
 
 <dl>
-;''Hide results when the search is empty''
-The results are not shown until you type in a search.
+;''아무 것도 검색하지 않았을 때 결과 숨김''
+검색어를 입력하기 전에 모든 항목을 보여주지 않고 비워둡니다.
 
-;''Clear selection on search''
-Clear the selection each time the search changes. Disable to preserve the selection between searches.
+;''검색 시 항목 선택 해제''
+검색 조건이 바뀌었을 때 항목 선택을 해제합니다. 끄면 남은 항목 선택을 유지합니다.
 
-;''Close window on execute''
-The Everything search window is closed immediately after opening an item.
+;''항목 실행 후에 창 닫기''
+파일 및 폴더를 실행한 직후 검색 창을 닫습니다.
 
-;''Open path with double click''
-Paths in the path column can be opened with a double click.
+;''경로 칸을 더블클릭해서 폴더 열기''
+항목의 경로 열을 더블클릭하면 그 경로를 열어줍니다.
 
-;''Auto scroll view''
-Periodically scroll the result list when the mouse is dragged outside the visible area.
+;''자동 스크롤''
+드래그 선택 시 포인터가 보이는 영역을 벗어나면 계속 스크롤 해 선택 영역을 늘여줍니다.
 
-;''Double quote copy as path''
-Include double quotes when copying filenames to the clipboard.
+;''경로 복사 시 큰따옴표 붙임''
+파일 이름을 클립보드에 복사할 때 큰따옴표로 감쌉니다.
 
-;''Do not select extension when renaming''
-Enable to select the file part only, excluding the extension when renaming a file.
+;''이름 바꿀 때 확장자는 선택하지 않기''
+이름 바꾸기를 할 때 확장자 이전의 파일 이름만 선택합니다. 해제하면 전체 이름을 선택합니다.
 
-;''Sort date descending first''
-When sorting by date, display newest dates first.
+;''날짜 내림차순부터 정렬''
+날짜 순으로 정렬할 때 먼저 새 것부터 보여주도록 정렬합니다.
 
-;''Sort size descending first''
-When sorting by size, display the largest files first.
+;''크기 내림차순부터 정렬''
+크기 순으로 정렬할 때 먼저 큰 것부터 보여주도록 정렬합니다.
 
-;''Result list focus''
-Can be one of the following:
+;''검색 결과 이동법''
+다음 중 하나를 쓸 수 있습니다.
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
-| Clamp
-| The result list focus will be clamped to the top and bottom items.
+| 조임쇠
+| 맨 위 항목 위쪽으로 이동할 수 없고, 맨 아래항목 아래쪽으로 이동할 수 없습니다.
 |-
-| Repeat
-| The result list focus will wrap around the top and bottom items.
+| 반복
+| 양 끝이 연결되어 넘어갈 수 있습니다.
 |-
-| Repeat with search
-| The result list focus will wrap around the top and bottom items to the search edit.
+| 검색과 함께 반복
+| 반복과 같으나, 검색 줄로도 이동할 수 있습니다.
 |}
 
-;''Load icon priority''
-The thread priority for loading icons.
+;''아이콘 로딩 우선순위''
+검색 결과 아이콘을 가져오는 스레드의 우선순위를 정합니다.
 
-;''Load thumbnail priority''
-The thread priority for loading thumbnails.
+;''섬네일 로딩 우선순위''
+검색 결과 섬네일을 가져오는 스레드의 우선순위를 정합니다.
 
-;''Load extended information priority''
-The thread priority for loading file dates, sizes and attributes.
+;''부가 정보 로딩 우선순위''
+파일 날짜, 크기, 속성을 가져오는 스레드의 우선순위입니다.
 </dl>
 
 ==보기==
-[[File:support/everything/Everything.Options.View.png|alt=Everything Options View]]
+[[File:support/everything/Everything.Options.View.png|alt=Everything 보기 설정]]
 
-Contains settings for configuring the view.
+보기 관련 설정입니다.
 
 <dl>
-;''Double buffer''
-Use an off screen buffer when rendering the result list. Enable to avoid flickering when rendering. Disable to draw directly to the screen.
+;''더블 버퍼링 사용''
+검색 결과를 보여주는 데 따로 버퍼를 사용합니다. 켜면 렌더링 시 깜박임을 방지할 수 있습니다. 끄면 스크린에 곧바로 그립니다.
 
-;''Alternate row color''
-Show odd and even rows in a different color.
+;''행 색깔 교대로 반복''
+홀수 행과 짝수 행을 각각 다른 색으로 보여줍니다.
 
-;''Show row mouseover''
-Show the row the mouse is currently over in a different color.
+;''포인터가 있는 행 강조''
+포인터가 있는 행을 다른 색으로 강조합니다.
 
-;''Show highlighted search terms''
-Show highlighted search terms.
+;''검색어 강조''
+검색 결과에서 검색어 일치 부분을 강조합니다.
 
-;''Show selected item in status bar''
-Show the full path and filename of the selected file in the status bar.
-The status bar format for the selected item can be customized with the [[support/Everything/ini#statusbar_selected_item_format|statusbar_selected_item_format]] ini option.
+;''선택한 항목을 상태 표시줄에 표시''
+선택한 파일의 전체 경로와 파일 이름을 상태 표시줄에 보여줍니다.
+이 양식은 [[support/Everything/ini#statusbar_selected_item_format|statusbar_selected_item_format]] ini 설정으로 바꿀 수 있습니다.
 
-;''Show the result count with the selection count''
-Show the total number of results with the selection count in the status bar.
+;''선택항목 수와 전체항목 수를 같이 표시''
+해제하면 선택 항목이 있을 때 상태 표시줄에 선택항목 수만 표시합니다.
 
-;''Show size in status bar''
-Shows the total file selection size in the status bar.
-Folder are not included.
-If there is no selection the total file size is shown.
+;''크기를 상태 표시줄에 표시''
+선택한 파일 전체 크기를 상태 표시줄에 보여줍니다.
+폴더는 포함하지 않습니다.
+선택 항목이 없으면 전체 파일 크기를 보여줍니다.
 
-;''Show tooltips''
-Show helpful tooltips in the Everything Options window.
+;''툴팁 보기''
+Everything 설정 창에서 각 설정에 포인터를 갖다대고 기다리면 자세한 설명을 보여줍니다.
 
-;''Update display immediately after scrolling''
-Force the display to update immediately after it is scrolled. Enabling this can cause performance issues for mice with high refresh rates.
+;''스크롤한 다음 바로 화면 고치기''
+스크롤한 직후 강제로 화면을 갱신합니다. 갱신율이 높은 마우스와 성능 문제가 발생할 수 있습니다.
 
-;''Size format''
-The size format. Can be one of the following values:
+;''용량 단위''
+크기 형식입니다. 다음 중 하나를 쓸 수 있습니다:
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
-| Auto
-| Use the best format depending on the size.
+| 자동
+| 크기에 다라 최선의 단위를 선택합니다.
 |-
-| Bytes
-| Always display sizes in bytes.
+| 바이트
+| 항상 바이트로 보여줍니다.
 |-
 | KB
-| Always display sizes in KB.
+| 항상 KB로 보여줍니다.
 |}
 
-;''Selection rectangle''
-The selection rectangle display type. Can be one of the following values:
+;''드래그 사각형''
+드래그 사각형 종류입니다. 다음 중 하나를 쓸 수 있습니다:
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
-| Use  system default.
-| Use the same setting as Windows Explorer.
+| 시스템 기본
+| 윈도 탐색기와 같은 설정을 씁니다.
 |-
-| Translucent mask
-| Show a transparent selection mask. Translucency and color can be [[support/everything/customizing#Translucent Selection Rectangle|customized]].
+| 반투명 사각형
+| 반투명 사각형을 씁니다. 투명도와 색상은 [[support/everything/customizing#반투명 드래그 사각형|바꿀 수]] 있습니다.
 |-
-| XOR mask
-| Display every other pixel as an inverted pixel.
+| 회색 점선 사각형
+| 색을 반전하는 점선을 사용합니다.
 |}
 </dl>
 
 ==우클릭 메뉴==
-[[File:support/everything/Everything.Options.Context.Menu.png|alt=Everything Options Context Menu]]
+[[File:support/everything/Everything.Options.Context.Menu.png|alt=Everything 우클릭 메뉴 설정]]
 
-Contains settings for configuring the context menu. The context menu is displayed when right clicking a file or folder in the Everything result list.
+우클릭 메뉴 관련 설정입니다. 우클릭 메뉴는 Everything 검색 결과 항목을 우클릭하면 볼 수 있습니다.
 
 <dl>
-;''Show this item''
-;''Show this item when the Shift key is down''
-;''Do not show this item''
-Choose the visibility of this context menu item.
+;''이 명령을 우클릭 메뉴에 추가''
+;''시프트 키를 눌렀을 때만 보기''
+;''이 작업을 메뉴에서 빼기''
+우클릭 메뉴에 명령을 보여줄지 결정합니다.
 
-;''Command''
-The command for the selected context menu item.
+;''명령''
+선택한 우클릭 메뉴 항목 명령입니다.
 
-The following command syntax can be used:
+다음 명령 구문을 쓸 수 있습니다.
 {|
-! command
-! Description
+! 명령
+! 설명
 |-
-| $exec(filename)
-| Executes the specified filename.
+| $exec(파일이름)
+| 지정한 파일을 실행합니다.
 |-
-| $openpath(filename)
-| Opens the folder containing the specified filename and selects the specified filename.
+| $openpath(파일이름)
+| 지정한 파일이 있는 폴더를 열고 해당 파일을 선택합니다.
 |-
-| $parent(filename)
-| The parent folder of the specified filename
+| $parent(파일이름)
+| 지정한 항목의 부모 폴더입니다
 |-
-| $pathpart(filename)
-| The path part of filename
+| $pathpart(파일이름)
+| 지정한 항목의 경로 부분입니다
 |-
-| $namepart(filename)
-| The name and extension part of filename
+| $namepart(파일이름)
+| 지정한 항목의 이름과 확장자 부분입니다.
 |-
 | %1
-| The selected filename.
+| 선택한 파일 이름입니다.
 |-
 | $$
-| A single literal $
+| $ 문자입니다.
 |-
 | $(
-| A single literal (
+| ( 문자입니다.
 |-
 | $)
-| A single literal )
+| ) 문자입니다.
 |}
 
-See [[support/everything/customizing#external_file_manager|Customizing]] for more information.
+자세한 건 [[support/everything/customizing#external_file_manager|입맛 맞추기]]를 참고하세요.
 </dl>
 
 ==글꼴과 색상==
-[[File:support/everything/Everything.Options.Fonts.And.Colors.png|alt=Everything Options Fonts And Colors]]
+[[File:support/everything/Everything.Options.Fonts.And.Colors.png|alt=Everything 글꼴과 색상 설정]]
 
-Contains settings for configuring the font and colors in ''Everything''.
+''Everything'' 글꼴과 색상 관련 설정입니다.
 
 <dl>
-;''Font''
-;''Size''
-The result list font family and size. Use (Default) to use the same settings as the Windows icon font.
-To customize other fonts, please see [[support/everything/ini#Fonts and colors|Everything.ini]].
+;''폰트''
+;''크기''
+검색 결과 폰트와 크기입니다. (기본)은 윈도 아이콘 폰트를 의미합니다. 다른 폰트를 수정하려면 [[support/everything/ini#글꼴과 색상|Everything.ini]]를 참고하세요.
 
-;''Foreground color''
-The text color for the selected item. Select a custom color by clicking on the color button.
+;''글씨색''
+선택한 항목의 글씨색입니다. 색상 버튼을 클릭해 임의 색상을 고를 수 있습니다.
 
-;''Background color''
-The background color for the selected item. Select a custom color by clicking on the color button.
+;''배경색''
+선택한 항목의 배경색입니다. 색상 버튼을 클릭해 임의 색상을 고를 수 있습니다.
 
-;''Font style''
-The font style. Can be bold or normal.
+;''폰트 스타일''
+폰트 스타일입니다. 일반 혹은 굵게 지정이 가능하니다.
 </dl>
 
 ==키보드==
-[[File:support/everything/Everything.Options.Keyboard.png|alt=Everything Options Keyboard]]
+[[File:support/everything/Everything.Options.Keyboard.png|alt=Everything 키보드 설정]]
 
-Contains settings for configuring keyboard shortcuts and hotkeys.
-For a list of all the default keyboard shortcuts, please see [[support/everything/keyboard_shortcuts|Keyboard Shortcuts]].
+키보드 단축키와 핫키 관련 설정입니다.
+기본 단축키 목록은 [[support/everything/keyboard_shortcuts|키보드 단축키]]를 참고하세요.
 
 <dl>
-;''New window hotkey''
-;''Show window hotkey''
-;''Toggle window hotkey''
-New window will always show a new Everything search window. Show window will show an existing window if one exists, otherwise a new search window is created. Toggle window will hide any existing window that is in the foreground, otherwise an existing window is shown if one exists, otherwise a new search window is created.
-Press a new keyboard shortcut to set the hotkey.
+;''새 창 띄우기 핫키''
+;''검색 창 보기 핫키''
+;''창 토글 핫키''
+새 창 띄우기는 항상 새 Everything 검색 창을 띄웁니다. 검색 창 보기는 기존 창이 있으면 기존 창을 보여주고, 없으면 새 창을 엽니다. 창 토글 핫키는 검색 창을 보고 있으면 숨기고, 있지만 보고 있지 않으면 활성화해주고, 없으면 새로 만들어 띄워줍니다.
+오른쪽 칸에서 새 전역 단축키를 눌러 설정할 수 있습니다.
 
-;''Show commands containing''
-Type in a search to filter the command list by name.
+;''명령 검색하기''
+명령 목록을 이름으로 거릅니다.
 
-;''Shortcuts for the selected command''
-To add a new keyboard shortcut to the selected command or edit an existing keyboard shortcut for the selected command:
+;''~ 단축키''
+선택한 명령에 단축키를 추가하거나 기존 단축키를 수정하려면:
 <ul>
-*Click '''Add...''' or '''Edit...'''
-*Choose a location to use the shortcut. Can be one of the following values:
+*'''추가...'''나 '''수정...'''을 클릭합니다.
+*단축키를 사용할 위치를 지정합니다. 다음 중 하나를 쓸 수 있습니다:
 {|
-! Value
-! Description
+! 값
+! 설명
 |-
-| Global
-| The shortcut can be used anywhere in ''Everything''.
+| 창 전체
+| ''Everything'' 안 어디서나 쓸 수 있는 단축키입니다.
 |-
-| Search Edit
-| The shortcut can only be used in the search edit.
+| 검색 줄
+| 검색 줄에서만 쓸 수 있는 단축키입니다.
 |-
-| Result List
-| The shortcut can only be used in the result list.
+| 검색 결과
+| 검색 결과에서만 쓸 수 있는 단축키입니다.
 |}
-*Press a new shortcut key for shortcut key.
-*Take note of the shortcut key currently used by list, These existing keyboard shortcuts will be removed when clicking OK.
-*Click '''OK'''.
+*새 단축키를 단축키 칸에서 누릅니다.
+*현재 사용 중인 단축키 목록에 다른 작업이 있는지 확인합니다. 확인을 누르면 기존 단축키는 제거됩니다.
+*'''확인'''을 클릭합니다.
 </ul>
 
-To remove a keyboard shortcut:
+단축키를 삭제하려면:
 <ul>
-*Select the keyboard shortcut in shortcuts for the selected command.
-*Click '''Remove'''.
+*선택한 작업에서 제거할 단축키를 선택합니다.
+*'''제거'''를 클릭합니다.
 </ul>
 </dl>
 
 ==히스토리==
-[[File:support/everything/Everything.Options.History.png|alt=Everything Options History]]
+[[File:support/everything/Everything.Options.History.png|alt=Everything 히스토리 설정]]
 
-Contains settings for configuring search history and run history.
+검색 히스토리와 실행 히스토리 관련 설정입니다
 
 <dl>
-;''Enable search history''
-Remember search history. A search is added to the search history when you press enter from the search edit or when you act on a file or folder in the result list. Disabling search history does not clear the search history. Click Clear Now to permanently delete search history.
-Press Ctrl + Space to complete a search using the search history, if there's more than one way to complete the search a suggestion list is shown.
-Press the drop down arrow on the right to show search suggestions.
+;''최근 검색어 기록 사용''
+검색어를 기억합니다. 검색 줄에서 엔터를 치거나 검색 결과 항목에 동작을 하면 검색어가 히스토리에 추가됩니다. 이걸 해제해도 히스토리를 비우진 않습니다. 히스토리를 비우려면 검색어 기록 삭제를 클릭하세요.
+Ctrl + Space를 누르면 검색 히스토리로 자동완성을 시도하고 후보가 둘 이상이면 후보 목록을 보여줍니다.
+검색 제안을 보려면 검색줄 오른쪽 드롭다운 화살표를 눌러보세요.
 
-See [[support/Everything/Search History|Search History]] for more information.
+자세한 건 [[support/Everything/Search History|검색 히스토리]]를 참고하세요.
 
-;''Keep search history''
-Specify the number of days to keep search history. When the search history is loaded, searches that occurred longer than the specified number of days will be removed.
-if disabled search history is kept forever.
+;''최근 검색어 보관 기간''
+지정 일수동안만 검색어를 보관합니다. 검색 히스토리를 불러올 때 지정 일수보다 오래된 검색어는 삭제합니다.
+끄면 검색 히스토리를 영구적으로 보관합니다.
 
-;''Always show search suggestions''
-Show the suggestion list after every change to the search.
-Consider disabling [[support/everything/options#search as you type|Search as you type]].
-See [[support/everything/ini#search_history_always_suggest|Everything.ini]] for more options.
+;''항상 검색 제안 보기''
+검색어가 바뀔 때마다 검색어 제안 목록을 보여줍니다.
+[[support/everything/options#입력 즉시 검색|입력 즉시 검색]]을 끄는 걸 고려해보시기 바랍니다.
+다른 설정을 보려면 [[support/everything/ini#search_history_always_suggest|Everything.ini]]를 참고하세요.
 
-;''Enable run history''
-Remember the number of times each file or folder has been run. When you execute an item in the result list, its run count is incremented by one. You can set the run count for an item in the result list by right clicking it and selecting Set run count.... Disabling run history will not delete run history. Click Clear Now to permanently delete run history.
-Press enter from the search edit will focus the result with the highest run count.
-Results can be sorted by run count.
-See [[support/everything/searching#Functions|runcount:]] and [[support/everything/searching#Functions|daterun:]] to search run history.
+;''실행 기록 사용''
+각 파일 및 폴더를 실행한 횟수를 기억합니다. 검색 결과에서 항목을 실행하면 그 항목의 실행 횟수가 1 증가합니다. 검색 항목을 우클릭해 실행 횟수 설정...을 눌러 설정할 수도 있습니다. 이걸 해제해도 히스토리를 비우진 않습니다. 히스토리를 비우려면 실행 기록 삭제를 클릭하세요.
+검색 줄에서 엔터를 치면 실행 횟수가 가장 많은 항목으로 이동합니다.
+결과를 실행 횟수로 정렬할 수 있게 됩니다.
+실행 기록을 검색하려면 [[support/everything/searching#함수|runcount:]]와 [[support/everything/searching#함수|daterun:]] 함수도 알아보세요.
 
-See [[support/Everything/Run History|Run History]] for more information.
+자세한 건 [[support/Everything/Run History|실행 히스토리]]를 참고하세요.
 
-;''Keep run history''
-Specify the number of days to keep run history. When the run history is loaded, searches that occurred longer than the specified number of days will be removed.
-if disabled run history is kept forever.
+;''실행 기록 보관 기간''
+지정 일수동안만 실행 횟수를 보관합니다. 실행 히스토리를 불러올 때 지정 일수보다 오래 검색이 없었던 항목을 삭제합니다. 
+끄면 실행 히스토리를 영구적으로 보관합니다.
 </dl>
 
 ==색인==
-[[File:support/everything/Everything.Options.Indexes.png|alt=Everything Options Indexes]]
+[[File:support/everything/Everything.Options.Indexes.png|alt=Everything 색인 설정]]
 
-Contains settings for configuring the indexes.
+색인 관련 설정입니다.
 
 <dl>
-;''Database location''
-Override the default location for the database. The default location is:
+;''데이터베이스 저장경로''
+기본 저장경로대신 다른 위치에 데이터베이스를 저장합니다. 아래는 기본 저장경로입니다:
 <pre>
 %LOCALAPPDATA%\Everything
 </pre>
-If [[support/everything/options#Store settings and data in %APPDATA%\Everything|Store settings and data in %APPDATA%\Everything]] is disabled, the database location is the same as the Everything.exe location.
-Click '''Browse...''' to browse for a database location.
+[[support/everything/options#%APPDATA%\Everything 폴더에 설정 저장|%APPDATA%\Everything 폴더에 설정 저장]]을 끄면 데이터베이스 위치는 Everything.exe 위치와 같습니다.
+새 데이터베이스 위치를 설정하려면 '''탐색...'''을 클릭하세요.
 
-;''Multi-user database filename''
-Normally Everything uses the filename Everything.db for the database. If enabled Everything will use the unique filename Everything.<ComputerName>.<UserName>.db. This might be useful when using the portable version of Everything on a thumb drive on different computers.
+;''여러 사용자를 위한 데이터베이스 이름짓기''
+기본적으로 데이터베이스 파일 이름은 Everything.db입니다. 이걸 켜면 Everything.<컴퓨터이름>.<사용자이름>.db를 씁니다. USB 메모리에 휴대 버전을 담아 여러 컴퓨터에서 사용할 때 유용할 겁니다.
 
-;''Compress database''
-Compress the database with Bzip 2. Can improve loading performance on very slow hard drives at the cost of higher CPU usage when loading and saving.
+;''데이터베이스 압축''
+데이터베이스를 Bzip2로 압축합니다. 저장 장치가 매우 느린 환경에서 CPU 사용량을 대가로 데이터베이스 불러오기 성능을 향상시킬 수 있습니다.
 
-;''Index recent changes''
-Maintain a separate recent change sorted database of all file system changes that can be searched with [[support/Everything/recent changes|rc:]] or sorted by date recently changed.
+;''최근 변경사항 색인''
+[[support/Everything/recent changes|rc:]]나 최근 변경 날짜순 정렬에 쓸 수 있는 최근 변경순 정렬 데이터베이스를 따로 유지합니다.
 
-;''Index file size''
-Include file size information in the index.
-Size information is maintained in real time.
-Enable to search for size information instantly.
-Greatly improves sorting by size performance.
-Requires an additional 8 bytes of memory per file.
+;''파일 크기 색인''
+파일 크기 정보를 색인에 포함합니다.
+크기 정보는 실시간으로 반영됩니다.
+크기 조건으로 실시간 검색하려면 체크하세요.
+크기순 정렬 시간을 상당히 줄여줍니다.
+파일당 메모리 8바이트가 필요합니다.
 
-;''fast size sort''
-Maintain a separate size sorted database of files.
-Enable to sort by size instantly.
-Enable to make Everything remember this sort between searches.
-Requires an additional 4-8 bytes of memory per file.
+;''빠른 크기 정렬''
+파일 크기순 정렬 데이터베이스를 따로 유지합니다.
+켜면 크기순 정렬을 재깍할 수 있게 됩니다.
+검색 조건이 바뀌어도 이 정렬을 유지하려면 켜세요.
+파일당 메모리 4~8바이트가 필요합니다.
 
-;''Index folder size''
-Include folder size information in the index.
-Size information is maintained in real time.
-Enable to search for folder size information instantly.
-Requires an additional 8 bytes of memory per folder.
-Folder size will not include excluded files.
+;''폴더 크기 색인''
+폴더 크기 정보를 색인에 포함합니다.
+크기 정보는 실시간으로 반영됩니다.
+크기 조건으로 실시간 검색하려면 체크하세요.
+폴더당 메모리 8바이트가 필요합니다.
+폴더 크기에 제외된 파일은 포함되지 않습니다.
 
-;''Index file date created''
-Include date created information in the index.
-Date created information is maintained in real time.
-Enable to search for date created information instantly.
-Greatly improves sorting by date created performance.
-Requires an additional 8 bytes of memory per file and folder.
+;''만든 날짜 색인''
+만든 날짜 정보를 색인에 포함합니다.
+만든 날짜 정보는 실시간으로 반영됩니다.
+만든 날짜 조건으로 실시간 검색하려면 체크하세요.
+만든 날짜순 정렬 시간을 상당히 줄여줍니다.
+파일 및 폴더당 메모리 8바이트가 필요합니다.
 
-;''fast date created sort''
-Maintain a separate date created sorted database of files and folders.
-Enable to sort by date created instantly.
-Enable to make Everything remember this sort between searches.
-Requires an additional 4-8 bytes of memory per file.
+;''빠른 만든 날짜 정렬''
+만든 날짜순 정렬 데이터베이스를 따로 유지합니다.
+켜면 만든 날짜순 정렬을 재깍할 수 있게 됩니다.
+검색 조건이 바뀌어도 이 정렬을 유지하려면 켜세요.
+파일당 메모리 4~8바이트가 필요합니다.
 
-;''Index file date modified''
-Include date modified information in the index.
-Date modified information is maintained in real time.
-Enable to search for date modified information instantly.
-Greatly improves sorting by date modified performance.
-Requires an additional 8 bytes of memory per file and folder.
+;''수정한 날짜 색인''
+수정한 날짜 정보를 색인에 포함합니다.
+수정한 날짜 정보는 실시간으로 반영됩니다.
+수정한 날짜 조건으로 실시간 검색하려면 체크하세요.
+수정한 날짜순 정렬 시간을 상당히 줄여줍니다.
+파일 및 폴더당 메모리 8바이트가 필요합니다.
 
-;''fast date modified sort''
-Maintain a separate date modified sorted database of files and folders.
-Enable to sort by date modified instantly.
-Enable to make Everything remember this sort between searches.
-Requires an additional 4-8 bytes of memory per file.
+;''빠른 수정한 날짜 정렬''
+수정한 날짜순 정렬 데이터베이스를 따로 유지합니다.
+켜면 수정한 날짜순 정렬을 재깍할 수 있게 됩니다.
+검색 조건이 바뀌어도 이 정렬을 유지하려면 켜세요.
+파일당 메모리 4~8바이트가 필요합니다.
 
-;''Index file date accessed''
-Include date accessed information in the index.
-Date accessed information is maintained in real time.
-Enable to search for date accessed information instantly.
-Greatly improves sorting by date accessed performance.
-Requires an additional 8 bytes of memory per file and folder.
+;''빠른 접근한 날짜 색인''
+접근한 날짜 정보를 색인에 포함합니다.
+접근한 날짜 정보는 실시간으로 반영됩니다.
+접근한 날짜 조건으로 실시간 검색하려면 체크하세요.
+접근한 날짜순 정렬 시간을 상당히 줄여줍니다.
+파일 및 폴더당 메모리 8바이트가 필요합니다.
 
-;''fast date accessed sort''
-Maintain a separate date accessed sorted database of files and folders.
-Enable to sort by date accessed instantly.
-Enable to make Everything remember this sort between searches.
-Requires an additional 4-8 bytes of memory per file.
+;''빠른 접근한 날짜 정렬''
+접근한 날짜순 정렬 데이터베이스를 따로 유지합니다.
+켜면 접근한 날짜순 정렬을 재깍할 수 있게 됩니다.
+검색 조건이 바뀌어도 이 정렬을 유지하려면 켜세요.
+파일당 메모리 4~8바이트가 필요합니다.
 
-;''Index file attributes''
-Include attributes information in the index.
-Attributes information is maintained in real time.
-Enable to search for attributes information instantly.
-Greatly improves sorting by attributes performance.
-Requires an additional 4 bytes of memory per file and folder.
+;''파일 속성 색인''
+속성 정보를 색인에 포함합니다.
+속성 정보는 실시간으로 반영됩니다.
+속성 조건으로 실시간 검색하려면 체크하세요.
+속성순 정렬 시간을 상당히 줄여줍니다.
+파일 및 폴더당 메모리 4바이트가 필요합니다.
 
-;''fast attributes sort''
-Maintain a separate attributes sorted database of files and folders.
-Enable to sort by attributes instantly.
-Enable to make Everything remember this sort between searches.
-Requires an additional 4-8 bytes of memory per file.
+;''빠른 속성 정렬''
+속성순 정렬 데이터베이스를 따로 유지합니다.
+켜면 속성순 정렬을 재깍할 수 있게 됩니다.
+검색 조건이 바뀌어도 이 정렬을 유지하려면 켜세요.
+파일당 메모리 4~8바이트가 필요합니다.
 
-;''fast path sort''
-Maintain a separate path sorted database of files and folders.
-Enable to sort by path instantly.
-Enable to make Everything remember this sort between searches.
-Requires an additional 4-8 bytes of memory per file.
+;''빠른 경로 정렬''
+경로순 정렬 데이터베이스를 따로 유지합니다.
+켜면 경로순 정렬을 재깍할 수 있게 됩니다.
+검색 조건이 바뀌어도 이 정렬을 유지하려면 켜세요.
+파일당 메모리 4~8바이트가 필요합니다.
 
-;''fast extension sort''
-Maintain a separate extension sorted database of files and folders.
-Enable to sort by extension instantly.
-Enable to make Everything remember this sort between searches.
-Requires an additional 4-8 bytes of memory per file.
+;''빠른 확장자 정렬''
+확장자순 정렬 데이터베이스를 따로 유지합니다.
+켜면 확장자순 정렬을 재깍할 수 있게 됩니다.
+검색 조건이 바뀌어도 이 정렬을 유지하려면 켜세요.
+파일당 메모리 4~8바이트가 필요합니다.
 
-;''Force Rebuild''
-Rebuild the Everything.db database.
+;''지금 갱신''
+Everything.db 데이터베이스를 재구축합니다.
 </dl>
 
 ==NTFS==
-[[File:support/everything/Everything.Options.NTFS.png|alt=Everything Options NTFS]]
+[[File:support/everything/Everything.Options.NTFS.png|alt=Everything NTFS 설정]]
 
-Contains settings for configuring NTFS volumes and NTFS indexing.
+NTFS 볼륨과 NTFS 색인 관련 설정입니다.
 
 <dl>
-;ntfs_auto_include_new_fixed_volumes|''Auto include new fixed volumes''
-Automatically include new fixed volumes in Everything. 
+;ntfs_auto_include_new_fixed_volumes|''새 하드 디스크를 자동으로 추가''
+새 고정식 볼륨을 자동으로 Everything에 추가합니다.
 
-;ntfs_auto_include_new_removable_volumes|''Auto include new removable volumes''
-Automatically include new removable volumes in Everything.
-Everything must rebuild the database when a volume path, volume guid, the USN Journal ID changes or the volume goes offline.
+;ntfs_auto_include_new_removable_volumes|''새 이동식 디스크를 자동으로 추가''
+새 이동식 볼륨을 자동으로 Everything에 추가합니다.
+Everything은 볼륨 경로, GUID, USN 저널 ID가 바뀌거나 볼륨 연결이 끊겼을 때 반드시 데이터베이스를 재구축해야 합니다.
 
-;ntfs_enable_usn_journal|''Enable USN Journal''
-Enable USN Journal logging on the selected NTFS volume. Everything uses the USN Change journal to index and monitor changes to NTFS volumes.
+;ntfs_enable_usn_journal|''USN 저널 사용''
+선택한 NTFS 볼륨에서 USN 저널 로깅을 활성화합니다. Everything은 NTFS 볼륨을 색인하거나 변경 사항을 감시하는데 USN 변경 저널을 씁니다.
 
-;ntfs_maximum_size|''Maximum size''
-Set the maximum size of the USN Journal in KB. If Everything is rebuilding the database after restarting Windows, try increasing this size to at least 32768 KB.
-If the journal grows larger than this value it is truncated by removing the specified allocation delta from the beginning of the log.
+;ntfs_maximum_size|''최대 크기''
+USN 저널 최대 킬로바이트를 정합니다. 만약 Everything이 윈도 재시작 후 데이터베이스를 재구축한다면, 이 크기를 32768KB 이상 잡아보시기 바랍니다.
+만약 저널이 이 크기 이상 커지면 로그 처음 부분을 할당 변화폭 만큼 잘라 버립니다.
 
-;ntfs_allocation_delta|''Allocation delta''
-Specify how much is removed from the start of the USN Journal in bytes when it has reached its maximum size.
+;ntfs_allocation_delta|''할당 변화폭''
+USN 저널이 최대 크기에 도달했을 때 잘라낼 앞부분 킬로바이트입니다.
 
-;ntfs_include_in_database|''Include in database''
-Include this NTFS volume in the Everything index.
+;ntfs_include_in_database|''데이터베이스에 포함''
+이 NTFS 볼륨을 Everything 색인에 포함합니다.
 
 ;ntfs_include_usn_journal_in_recent_changes|''USN 저널에서 최근 변경사항 가져오기''
-Load the entire USN Journal for this volume into the recent changes list. See [[support/everything/Recent changes|Recent changes]] for more information.
+이 볼륨의 USN 저널 전체를 최근 변경 목록으로 가져옵니다. 자세한 건 [[support/everything/Recent changes|최근 변경 목록]]을 참고하세요.
 
-;ntfs_include_only|''Include only''
-semicolon delimited list of folders to include on this NTFS volume. Leave empty to include all folders.
+;ntfs_include_only|''다음만 포함''
+ ;로 나눈 이 볼륨에서 포함할 폴더 목록입니다. 비우면 모든 폴더를 포함합니다.
 
-;ntfs_monitor_changes|''Monitor changes''
-Keep the NTFS index of this NTFS volume up to date.
+;ntfs_monitor_changes|''실시간 감시''
+이 NTFS 볼륨의 NTFS 색인을 최신으로 유지합니다.
 </dl>
 
 ==ReFS==
-[[File:support/everything/Everything.Options.ReFS.png|alt=Everything Options ReFS]]
+[[File:support/everything/Everything.Options.ReFS.png|alt=Everything ReFS 설정]]
 
-Contains settings for configuring ReFS volumes and ReFS indexing.
+ReFS 볼륨과 ReFS 색인 관련 설정입니다.
 
 <dl>
-;refs_auto_include_new_fixed_volumes|''Auto include new fixed volumes''
-Automatically include new fixed volumes in Everything. 
+;refs_auto_include_new_fixed_volumes|''새 하드 디스크를 자동으로 추가''
+새 고정식 볼륨을 자동으로 Everything에 추가합니다.
 
-;refs_auto_include_new_removable_volumes|''Auto include new removable volumes''
-Automatically include new removable volumes in Everything.
-Everything must rebuild the database when a volume path, volume guid, the USN Journal ID changes or the volume goes offline.
+;refs_auto_include_new_removable_volumes|''새 이동식 디스크를 자동으로 추가''
+새 이동식 볼륨을 자동으로 Everything에 추가합니다.
+Everything은 볼륨 경로, GUID, USN 저널 ID가 바뀌거나 볼륨 연결이 끊겼을 때 반드시 데이터베이스를 재구축해야 합니다.
 
-;refs_enable_usn_journal|''Enable USN Journal''
-Enable USN Journal logging on the selected ReFS volume. Everything uses the USN Change journal to index and monitor changes to ReFS volumes.
+;refs_enable_usn_journal|''USN 저널 사용''
+선택한 ReFS 볼륨에서 USN 저널 로깅을 활성화합니다. Everything은 ReFS 볼륨을 색인하거나 변경 사항을 감시하는데 USN 변경 저널을 씁니다.
 
-;refs_maximum_size|''Maximum size''
-Set the maximum size of the USN Journal in KB. If Everything is rebuilding the database after restarting Windows, try increasing this size to at least 32768 KB.
-If the journal grows larger than this value it is truncated by removing the specified allocation delta from the beginning of the log.
+;refs_maximum_size|''최대 크기''
+USN 저널 최대 킬로바이트를 정합니다. 만약 Everything이 윈도 재시작 후 데이터베이스를 재구축한다면, 이 크기를 32768KB 이상 잡아보시기 바랍니다.
+만약 저널이 이 크기 이상 커지면 로그 처음 부분을 할당 변화폭 만큼 잘라 버립니다.
 
-;refs_allocation_delta|''Allocation delta''
-Specify how much is removed from the start of the USN Journal in bytes when it has reached its maximum size.
-Allocation delta is currently ignored for ReFS volumes.
+;refs_allocation_delta|''할당 변화폭''
+USN 저널이 최대 크기에 도달했을 때 잘라낼 앞부분 킬로바이트입니다.
 
-;refs_include_in_database|''Include in database''
-Include this ReFS volume in the Everything index.
+;refs_include_in_database|''데이터베이스에 포함''
+이 ReFS 볼륨을 Everything 색인에 포함합니다.
 
 ;refs_include_usn_journal_in_recent_changes|''USN 저널에서 최근 변경사항 가져오기''
-Load the entire USN Journal for this volume into the recent changes list. See [[support/everything/Recent changes|Recent changes]] for more information.
+이 볼륨의 USN 저널 전체를 최근 변경 목록으로 가져옵니다. 자세한 건 [[support/everything/Recent changes|최근 변경 목록]]을 참고하세요.
 
-;refs_include_only|''Include only''
-semicolon delimited list of folders to include on this ReFS volume. Leave empty to include all folders.
+;refs_include_only|''다음만 포함''
+ ;로 나눈 이 볼륨에서 포함할 폴더 목록입니다. 비우면 모든 폴더를 포함합니다.
 
-;refs_monitor_changes|''Monitor changes''
-Keep the ReFS index of this ReFS volume up to date.
+;refs_monitor_changes|''실시간 감시''
+이 ReFS 볼륨의 ReFS 색인을 최신으로 유지합니다.
 </dl>
 
 ==폴더==
-[[File:support/everything/Everything.Options.Folders.png|alt=Everything Options Folders]]
+[[File:support/everything/Everything.Options.Folders.png|alt=Everything 폴더 설정]]
 
-Contains settings for configuring folder indexes.
+폴더 색인 관련 설정입니다.
 
 <dl>
-;folders_folders|''Folders''
-The list of folders to include in the Everything index. Can be used to index Window shares, NAS, CDRoms, DVDRoms, Fat and Fat32 volumes.
-To add a folder to the list, click Add.... 
-To remove a folder from the list click Remove....
-To update a folder in the list now, click Update Now.
-To update all folders in the list now, click Update All Now
+;folders_folders|''폴더''
+Everything 색인에 포함할 폴더 목록입니다. 윈도 공유 폴더, NAS, CD롬, DVD롬, FAT, FAT32 볼륨에 쓸 수 있습니다.
+폴더를 목록에 추가하려면 추가...를 클릭하세요.
+폴더를 목록에서 제거하려면 제거...를 클릭하세요.
+목록에 있는 한 폴더를 스캔하려면 갱신을 클릭하세요.
+목록에 있는 모든 폴러를 스캔하려면 모두 갱신을 클릭하세요.
 
-;''Attempt to monitor changes''
-Attempt to monitor changes to the selected folder. 
+;''변경사항 감시 시도''
+가능한 선택한 폴더의 변경을 감시해봅니다.
 
-;''Update''
-Choose an option for when to update the selected folder.
+;''이 때 갱신''
+언제 선택한 폴더를 스캔할지 선택합니다.
 
-See [[support/Everything/Folder Indexing|Folder Indexing]] for more information.
+자세한 내용은 [[support/Everything/Folder Indexing|폴더 색인]]을 참고하세요.
 </dl>
 
 ==파일 목록==
-[[File:support/everything/Everything.Options.File.Lists.png|alt=Everything Options File Lists]]
+[[File:support/everything/Everything.Options.File.Lists.png|alt=Everything 파일 목록 설정]]
 
-Contains settings for configuring file lists indexes.
+파일 목록 색인 관련 설정입니다.
 
 <dl>
-;file_lists_file_lists|''File lists''
-The list of file lists to include in the Everything index.
-To add a file list to the list, click Add....
-To remove a file list from the list, click Remove.
+;file_lists_file_lists|''파일 목록''
+Everything 색인에 포함할 피일 목록 목록입니다.
+파일 목록을 목록에 추가하려면 추가...를 클릭하세요.
+파일 목록을 목록에서 제거하려면 제거를 클릭하세요.
 
-Click the File List Editor button to open the file lists editor.
-The file list editor can create a new file list or edit an existing one.
+파일 목록 편집기 버튼을 클릭해 파일 목록 편집기를 열 수 있습니다.
+파일 목록 편집기로 새 파일목록을 만들거나 기존 목록을 수정할 수 있습니다.
 
-See [[support/Everything/File lists|File lists]] for more information.
+자세한 건 [[support/Everything/File lists|파일 목록]]을 참고하세요.
 </dl>
 
 ==제외==
-[[File:support/everything/Everything.Options.Exclude.png|alt=Everything Options Exclude]]
+[[File:support/everything/Everything.Options.Exclude.png|alt=Everything 제외 설정]]
 
-Contains settings for exclude files and folders from the index.
+색인에서 제외할 파일 및 폴더 관련 설정입니다.
 
 <dl>
-;''Exclude hidden files and folders''
-Exclude files and folders that have the hidden attribute set.
+;''숨겨진 파일 및 폴더는 제외''
+숨김 속성 파일 및 폴더는 색인에서 제외합니다.
 
-;''Exclude system files and folders''
-Exclude files and folders that have the system attribute set. 
+;''시스템 파일 및 폴더는 제외''
+시스템 속성 파일 및 폴더는 색인에서 제외합니다.
 
-;''Exclude folders''
-A list of folders to exclude from the index.
-To add a folder to the list, click Add Folder....
-To add a wildcard filter to the list, click Add Filter....
-To add a regex filter to the list, click Add Filter.... and prefix your filter with regex:
-To remove a folder or filter from the list, click Remove.
+;''다음 폴더 제외''
+색인에서 제외할 폴더 목록입니다.
+폴더를 목록에 추가하려면 폴더 추가...를 클릭하세요.
+와일드카드 필터를 목록에 추가하려면 필터 추가...를 클릭하세요.
+정규식 필터를 목록에 추가하려면 필터 추가...를 클릭 후 필터 앞에 regex:를 붙이세요.
+폴더나 필터를 목록에서 빼려면 제거를 클릭하세요.
 
-For example, to exclude the windows folders:
+가령 Windows 폴더를 색인에서 제외하려면:
 <ul>
-*Click Add Folder....
-*Type in:
+*폴더 추가...를 클릭합니다.
+*아래를 입력합니다:
 <pre>
 C:\Windows
 </pre>
-*Click OK.
+*확인을 클릭합니다.
 </ul>
 
-;''Include only files''
-A semicolon delimited wildcard filter list of files to include. Leave empty to include all files.
-For example, include only mp3 and mkv files:
+;''다음 파일만 포함''
+ ;로 나눈 포함할 파일 와일드카드 필터 목록입니다. 비우면 모든 파일을 포함합니다.
+가령 mp3, mkv 파일만 색인에 포함하려면:
 <pre>
 *.mp3;*.mkv
 </pre>
 
-Prefix a filter with regex: to enable regex.
-For example, to include only files starting with A-M:
+필터 앞에 regex:를 붙이면 정규식을 쓸 수 있습니다.
+A~M으로 시작하는 파일만 색인에 포함하려면:
 <pre>
 regex:^[A-M]
 </pre>
 
 
-;''Exclude files''
-A semicolon delimited wildcard filter list of files to exclude. Leave empty to include all files.
-For example, exclude db files
+;''다음 파일은 제외''
+ ;로 나눈 제외할 파일 와일드카드 필터 목록입니다. 비우면 모든 파일을 포함합니다.
+db 파일은 제외하려면
 <pre>
 *.db
 </pre>
 </dl>
 
-Prefix a filter with regex: to enable regex.
+필터 앞에 regex:를 붙여 정규식을 쓸 수 있습니다.
 
 ==ETP/FTP 서버==
-[[File:support/everything/Everything.Options.ETP.FTP.Server.png|alt=Everything Options ETP/FTP Server]]
+[[File:support/everything/Everything.Options.ETP.FTP.Server.png|alt=Everything ETP/FTP 서버 설정]]
 
-Contains settings for configuring a ETP/FTP server to access your files remotely from Everything or a FTP client. For more information see [[support/everything/ETP|ETP/FTP Server]].
+Everything이나 FTP 클라이언트로 원격에서 파일을 접근하도록 하는 ETP/FTP 서버에 관련된 설정입니다. 자세한 건 [[support/everything/ETP|ETP/FTP 서버]]를 참고하세요.
 
 <dl>
-;''Enable ETP/FTP server''
-Enable the ETP/FTP server.
+;''ETP/FTP 서버 활성화''
+ETP/FTP 서버를 켭니다.
 
-;etp_ftp_server_bind_to_interfaces|''Bind to interfaces''
-Bind the listening socket to the specified interfaces. Use 127.0.0.1 to bind to the loopback adaptor. Only local connections can be made to the loopback adaptor. Leave empty to bind to all interfaces.
+;etp_ftp_server_bind_to_interfaces|''사용할 인터페이스''
+서버 소켓을 지정한 인터페이스에 바인딩합니다. 루프백 어댑터에 바인딩하려면 127.0.0.1을 쓰세요. 루프백 어댑터는 로컬 접속만 가능합니다. 모든 인터페이스에 바인딩하려면 비워두세요.
 
-;etp_ftp_server_listen_on_port|''Listen on port''
-Set the listening socket port. The ETP/FTP client must also connect on this port.
+;etp_ftp_server_listen_on_port|''서버 포트''
+서버가 대기할 포트입니다. ETP/FTP 클라이언트도 이 포트로 접속해야 합니다.
 
-;etp_ftp_server_username|''Username''
-The ETP/FTP username. The user must enter the correct username and password before performing an action. Leave empty to ignore the username. The username is sent as raw text.
+;etp_ftp_server_username|''계정 이름''
+ETP/FTP 계정 이름입니다. 클라이언트는 맞는 계정 이름과 암호를 입력해야 접속할 수 있습니다. 비우면 이름을 무시합니다. 계정 이름은 문자열 그대로 보내집니다.
 
-;etp_ftp_server_password|''Password''
-The ETP/FTP password. The user must enter the correct username and password before performing an action. Leave empty to ignore the password. The password is sent as raw text.
+;etp_ftp_server_password|''계정 암호''
+ETP/FTP 계정 암호입니다. 클라이언트는 맞는 계정 이름과 암호를 입력해야 접속할 수 있습니다. 비우면 암호를 무시합니다. 계정 암호는 문자열 그대로 보내집니다.
 
-;etp_ftp_server_enable_logging|''Enable logging''
-Log all ETP/FTP events to a log file.
+;etp_ftp_server_enable_logging|''서버 로깅 켜기''
+모든 ETP/FTP 사건을 로그 파일에 기록합니다.
 
-;etp_ftp_server_log_file|''Log file''
-The filename of the log file. Click Select to choose the log filename.
+;etp_ftp_server_log_file|''로그 파일''
+로그 파일 이름입니다. 선택을 클릭해 정할 수 있습니다.
 
-;etp_ftp_server_maximum_size|''Maximum size''
-The maximum size of the log file in KB. The log file is trimmed from the start when it is larger than this size.
+;etp_ftp_server_maximum_size|''최대 파일 크기''
+로그 파일 최대 KB 크기입니다. 이 이상 커지면 앞 부분부터 잘립니다.
 
-;etp_ftp_server_allow_file_download|''Allow file download''
-Allow files to be downloaded from the ETP/FTP server. Disable to only allow browsing.
+;etp_ftp_server_allow_file_download|''파일 다운로드 허용''
+ETP/FTP 서버에서 검색 결과 파일을 받는 걸 허용합니다. 끄면 검색만 허용합니다.
 
-Use [[support/everything/multiple instances|multiple instances]] to create an ETP/FTP server with a custom index.
+다른 색인으로 ETP/FTP 서버를 돌리려면 [[support/everything/multiple instances|다중 인스턴스]]를 참고하세요.
 
 </dl>
 
 ==HTTP 서버==
-[[File:support/everything/Everything.Options.HTTP.Server.png|alt=Everything Options HTTP Server]]
+[[File:support/everything/Everything.Options.HTTP.Server.png|alt=Everything HTTP 서버 설정]]
 
-Contains settings for configuring a HTTP server to access your files remotely from a web browser. For more information see [[support/everything/HTTP|HTTP Server]].
+웹 브라우저로 원격에서 파일을 접근하도록 하는 HTTP 서버에 관련된 설정입니다. 자세한 건 [[support/everything/HTTP|HTTP 서버]]를 참고하세요.
 
 <dl>
-;''Enable HTTP server''
-Enable the HTTP server.
+;''HTTP 서버 활성화''
+HTTP 서버를 켭니다.
 
-;http_server_bind_to_interfaces|''Bind to interfaces''
-Bind the listening socket to the specified interfaces. Use 127.0.0.1 to bind to the loopback adaptor. Only local connections can be made to the loopback adaptor. Leave empty to bind to all interfaces.
+;http_ftp_server_bind_to_interfaces|''사용할 인터페이스''
+서버 소켓을 지정한 인터페이스에 바인딩합니다. 루프백 어댑터에 바인딩하려면 127.0.0.1을 쓰세요. 루프백 어댑터는 로컬 접속만 가능합니다. 모든 인터페이스에 바인딩하려면 비워두세요.
 
-;http_server_listen_on_port|''Listen on port''
-Set the listening socket port. The web browser must also connect on this port.
+;http_ftp_server_listen_on_port|''서버 포트''
+서버가 대기할 포트입니다. 웹 브라우저도 이 포트로 접속해야 합니다.
 
-;http_server_username|''Username''
-The HTTP username. The user must enter the correct username and password before performing an action. Leave empty to ignore the username. The username is sent as raw text.
+;http_ftp_server_username|''계정 이름''
+HTTP 계정 이름입니다. 클라이언트는 맞는 계정 이름과 암호를 입력해야 접속할 수 있습니다. 비우면 이름을 무시합니다. 계정 이름은 문자열 그대로 보내집니다.
 
-;http_server_password|''Password''
-The HTTP password. The user must enter the correct username and password before performing an action. Leave empty to ignore the password. The password is sent as raw text.
+;http_ftp_server_password|''계정 암호''
+HTTP 계정 암호입니다. 클라이언트는 맞는 계정 이름과 암호를 입력해야 접속할 수 있습니다. 비우면 암호를 무시합니다. 계정 암호는 문자열 그대로 보내집니다.
 
-;http_server_enable_logging|''Enable logging''
-Log all HTTP events to a log file.
+;http_ftp_server_enable_logging|''서버 로깅 켜기''
+모든 HTTP 사건을 로그 파일에 기록합니다.
 
-;http_server_log_file|''Log file''
-The filename of the log file. Click Select to choose the log filename.
+;http_ftp_server_log_file|''로그 파일''
+로그 파일 이름입니다. 선택을 클릭해 정할 수 있습니다.
 
-;http_server_maximum_size|''Maximum size''
-The maximum size of the log file in KB. The log file is trimmed from the start when it is larger than this size.
+;http_ftp_server_maximum_size|''최대 파일 크기''
+로그 파일 최대 KB 크기입니다. 이 이상 커지면 앞 부분부터 잘립니다.
 
-;''Serve pages from''
-Select the folder to load HTTP files from. These files are not required to be in the index. Leave empty to server files from %APPDATA%\Everything\HTTP Server.
+;''페이지를 가져올 경로''
+HTTP 파일을 가져올 폴더를 선택합니다. 아 파일은 색인에 없어도 됩니다. 비우면 %APPDATA%\Everything\HTTP Server를 씁니다.
 
-;''Default page''
-Select the default page. Leave blank to show a list of volumes.
+;''기본 페이지''
+기본 페이지를 선택합니다. 비우면 볼륨 목록을 보여줍니다.
 
-;http_server_allow_file_download|''Allow file download''
-Allow files to be downloaded from the HTTP server. Disable to only allow browsing.
+;http_ftp_server_allow_file_download|''파일 다운로드 허용''
+HTTP 서버에서 검색 결과 파일을 받는 걸 허용합니다. 끄면 검색만 허용합니다.
 
-Use [[support/everything/multiple instances|multiple instances]] to create an HTTP server with a custom index.
+다른 색인으로 HTTP 서버를 돌리려면 [[support/everything/multiple instances|다중 인스턴스]]를 참고하세요.
 
 </dl>
 
-==Where are settings stored==
-Settings are stored in your [[support/everything/INI|Everything.ini]].
+==설정 저장 위치==
+설정은 [[support/everything/INI|Everything.ini]]에 들어갑니다.
 
 ==백업==
-To make a backup of all settings:
+모든 설정을 백업하려면:
 <ul>
-*In '''''Everything''''', type in the following search and press ENTER:
+*'''''Everything'''''에서 아래 검색어를 입력하고 엔터를 칩니다:
 <pre>
 /config_save
 </pre>
-*Choose a filename and destination and click '''Save'''.
+*백업 파일을 선택하고 '''저장'''을 클릭합니다.
 </ul>
 
 ==복원==
-To restore all settings:
+모든 설정을 복원하려면
 <ul>
-*In '''''Everything''''', type in the following search and press ENTER:
+*'''''Everything'''''에서 아래 검색어를 입력하고 엔터를 칩니다:
 <pre>
 /config_load
 </pre>
-*Select a Everything.ini and click '''Open'''.
+*복원 파일을 선택하고 '''열기'''를 클릭합니다.
 </ul>
 
 ==기본값 복원==
-Click the Restore defaults button in the bottom right to load the defaults for the current page.
-To reset all settings to their default values, see [[support/everything/ini#Restore default settings|Everything.ini]]
+현재 페이지의 기본값을 복원하려면 우하단의 기본값으로 복원 버튼을 클릭하세요.
+모든 설정을 기본값으로 초기화하려면 [[support/everything/ini#기본 설정 복원|Everything.ini]]를 보세요.
 
 ==볼만한 것==
 <ul>
