@@ -50,9 +50,9 @@
 | 1개 이상 문자에 대응.
 |}
 
-와일드카드는 ''전체'' 파일이름에 대응합니다. 와일드카드를 써도 일부분만 일치하는 결과도 찾으려면 [[support/everything/options#와일드카드를 사용할 때 전체 경로와 비교|와일드카드를 사용할 때 전체 경로와 비교]]를 끄세요.
+와일드카드는 ''전체'' 파일이름에 대응합니다. 와일드카드를 써도 일부분만 일치하는 결과도 찾으려면 [[support/everything/options#와일드카드를 사용할 때 이름 전체와 비교|와일드카드를 사용할 때 이름 전체와 비교]]를 끄세요.
 
-;상용구
+;syntax_macros|상용구
 {|
 | <code>quot:</code>
 | <code>"</code> 문자
@@ -582,12 +582,12 @@ size:>1gb sizedupe:
 
 ==홈==
 Everything 검색 창을 처음 열었을 때의 기본 검색 조건을 홈이라 부릅니다. 입문 사용자 배려를 위해 초기화면이라고 도 부릅니다.
-[[support/everything/keyboard_shortcuts#global_keyboard_shortcuts|Alt + Home]]을 눌러 초기화면으로 돌아갈 수 있습니다.
+[[support/everything/keyboard_shortcuts#전역 키보드 단축키|Alt + Home]]을 눌러 초기화면으로 돌아갈 수 있습니다.
 
 초기화면 설정을 바꾸려면:
 <ul>
 *'''''Everything''''' - '''도구''' 메뉴 - '''설정'''을 클릭합니다.
-*[[support/Everything/Options#초기화면|'''초기화면''']] 탭을 클릭합니다.
+*'''[[support/Everything/Options#초기화면|초기화면]]''' 탭을 클릭합니다.
 *원하는 검색어, 검색 옵션, 정렬, 보기 설정을 고릅니다.
 *'''확인'''을 클릭합니다.
 </ul>

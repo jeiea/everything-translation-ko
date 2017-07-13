@@ -478,6 +478,6 @@ ES 소스코드는 다운로드 페이지에 있습니다.
 ==볼만한 것==
 <ul>
 *[[support/everything/SDK/IPC]]
-*[[support/everything/Multiple Instances]]
-*[[downloads|Downloads]]
+*[[support/everything/Multiple Instances|다중 인스턴스]]
+*[[downloads|다운로드]]
 </ul>

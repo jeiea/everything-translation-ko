@@ -24,7 +24,7 @@ Everything 클라이언트는 다른 개인 정보를 Everythinig.ini나 ETP/FTP
 		
 
 ==업데이트 알림==
-[[support/everything/options#Check for updates on startup|시작할 때 업데이트 검사]]를 켜면 다음 정보가 voidtools.com에 기록됩니다.
+[[support/everything/options#시작할 때 업데이트 검사|시작할 때 업데이트 검사]]를 켜면 다음 정보가 voidtools.com에 기록됩니다.
 <ul>
 * 사용자 IP 주소
 * 현재 사용 중인 Everything 버전

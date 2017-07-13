@@ -1,14 +1,14 @@
 =색인=
 ''Everything''은 기본적으로 모든 고정 NTFS 볼륨을 색인해둡니다.
 
-색인 작업은 [[support/everything/options#indexes|Everything 옵션]]에서 설정할 수 있습니다.
+색인 작업은 [[support/everything/options#색인|Everything 설정]]에서 설정할 수 있습니다.
 
 ==데이터베이스 위치==
 Everything은 데이터베이스를 아래 위치에 저장합니다.
 <pre>
 %LOCALAPPDATA%\Everything\Everything.db
 </pre>
-[[support/everything/options#Store settings and data in %APPDATA%\Everything|%APPDATA%\Everything에 설정 저장]]을 껐다면 Everything.exe 위치에 Everything.db를 저장합니다.
+[[support/everything/options#%APPDATA%\Everything 폴더에 설정 저장|%APPDATA%\Everything 폴더에 설정 저장]]을 껐다면 Everything.exe 위치에 Everything.db를 저장합니다.
 
 데이터베이스 위치를 설정하려면
 <ul>
@@ -244,12 +244,12 @@ NTFS, ReFS, 폴더, 파일 목록 감시를 시작하려면
 
 ==볼만한 것==
 <ul>
-*[[support/Everything/options#Indexes|색인 옵션]]
+*[[support/Everything/options#색인|색인 옵션]]
 *[[support/Everything/options#NTFS|NTFS]]
-*[[support/Everything/options#Folders|폴더 색인 옵션]]
-*[[support/Everything/options#File Lists|파일 목록 옵션]]
-*[[support/Everything/options#Exclude|제외 옵션]]
-*[[support/Everything/command line options#Database|데이터베이스 명령 행 옵션]]
-*[[support/Everything/ini#Indexing|Everything.ini 색인 옵션]]
+*[[support/Everything/options#폴더|폴더 색인 옵션]]
+*[[support/Everything/options#파일 목록|파일 목록 옵션]]
+*[[support/Everything/options#제외|제외 옵션]]
+*[[support/Everything/command line options#데이터베이스|데이터베이스 명령 행 옵션]]
+*[[support/Everything/ini#색인|Everything.ini 색인 옵션]]
 </ul>
 

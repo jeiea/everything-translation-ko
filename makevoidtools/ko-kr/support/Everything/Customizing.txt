@@ -60,7 +60,7 @@ taskbar_notification_title_format=$t$i?{ ($i)}
 ==아이콘==
 Everything 아이콘을 바꾸려면 사용할 아이콘 파일을 <code>%APPDATA%\Everything\Everything.ico</code>로 복사합니다.
 
-만약 [[support/everything/options#Store settings and data in %APPDATA%\Everything|APPDATA 폴더에 Everything 설정 저장]]을
+만약 [[support/everything/options#%APPDATA%\Everything 폴더에 설정 저장|%APPDATA%\Everything 폴더에 설정 저장]]을
 해제했다면, 아이콘 파일을 Everything.exe가 있는 폴더에 Everything.ico로 복사해야 합니다.
 Everything을 완전히 종료하고 재시작하면 적용됩니다.
 
@@ -198,10 +198,10 @@ Everything.ini를 저장하고 Everything을 재시작합니다.
 테두리 색을 바꾸려면 [[support/everything/ini#translucent_selection_rectangle_border_color|translucent_selection_rectangle_border_color]]을 참고하세요
 
 ==기본 검색어와 설정 바꾸기==
-[[support/everything/options#home|검색 창]]을 참고하세요.
+[[support/everything/options#초기화면|초기화면]]을 참고하세요.
 
 ==글꼴과 색상==
-검색 결과 글꼴을 바꾸려면 [[support/everything/options#fonts_and_colors|Fonts and colors]]
+검색 결과 글꼴을 바꾸려면 [[support/everything/options#글꼴과 색상|글꼴과 색상]]
 검색 줄 글꼴을 바꾸려면 [[support/everything/ini#search_edit_font|search_edit_font_size]] and [[support/everything/ini#search_edit_font|search_edit_font_size]]
 상태 표시줄 글꼴을 바꾸려면 [[support/everything/ini#status_bar_font|status_bar_font]] and [[support/everything/ini#status_bar_font_size|status_bar_font_size]]
 검색 결과 헤더 글꼴을 바꾸려면 [[support/everything/ini#header_font|header_font]] and [[support/everything/ini#header_font_size|header_font_size]]
@@ -210,7 +210,7 @@ Everything.ini를 저장하고 Everything을 재시작합니다.
 상태 표시줄 형식을 바꾸려면 [[support/everything/ini#statusbar_selected_item_format|status_bar_format]]를 참고하세요.
 
 ==HTTP 서버==
-[[support/everything/http#Change the default HTTP files|기본 HTTP 파일 바꾸기]]를 참고하세요.
+[[support/everything/http#기본 HTTP 파일 변경하기|기본 HTTP 파일 변경하기]]를 참고하세요.
 
 ==ETP/FTP 환영 문구==
 Everything.ini의 [[support/everything/ini#etp_server_welcome_message|etp_server_welcome_message]]를 참고하세요.
@@ -218,8 +218,8 @@ Everything.ini의 [[support/everything/ini#etp_server_welcome_message|etp_server
 ==볼만한 것==
 <ul>
 *[[support/Everything/Ini]]
-*[[support/Everything/번역]]
-*[[support/Everything/색인]]
-*[[support/Everything/검색]]
-*[[support/Everything/명령 행 인자]]
+*[[support/Everything/Translating|번역하기]]
+*[[support/Everything/Indexes|색인]]
+*[[support/Everything/Searching|검색]]
+*[[support/Everything/Command line options|명령 행 인자]]
 </ul>

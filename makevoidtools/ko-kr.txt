@@ -82,8 +82,6 @@ FORUMS_URL="/forum"
 SUPPORT_URL="support/everything"
 
 // title format
-// please change voidtools to: voidtools United States
-// where United States is your region.
 HOME_TITLE = "voidtools"
 TITLE_FORMAT = "{{TITLE}} - voidtools" // {{TITLE}} = current page title
 
@@ -112,10 +110,10 @@ PORTABLE = "휴대용"
 MULTILINGUAL = "[[support/everything/supported_languages|다국어 지원]]"
 KB = "KB"
 
-DOWNLOAD_EVERYTHING_LANGUAGE_PACK_HEADER = "Everything 언어팩 다운로드"
-EVERYTHING_LANGUAGE_PACK_HELP = "[[support/everything/supported_languages/#installing_the_language_pack|도움말]]"
+DOWNLOAD_EVERYTHING_LANGUAGE_PACK_HEADER = "Everything 언어 팩 다운로드"
+EVERYTHING_LANGUAGE_PACK_HELP = "[[support/everything/supported_languages/#언어 팩 설치|도움말]]"
 
-DOWNLOAD_EVERYTHING_COMMAND_LINE_INTERFACE_HEADER = "Everything 커맨드 인터페이스 다운로드"
+DOWNLOAD_EVERYTHING_COMMAND_LINE_INTERFACE_HEADER = "Everything 명령 행 인터페이스 다운로드"
 EVERYTHING_COMMAND_LINE_INTERFACE_HELP = "[[support/everything/command_line_interface|도움말]]"
 
 DOWNLOAD_EVERYTHING_SDK_HEADER = "Everything SDK 다운로드"

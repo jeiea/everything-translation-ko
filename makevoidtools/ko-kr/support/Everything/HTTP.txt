@@ -214,7 +214,7 @@ http://localhost/?search=ABC+123&offset=0&count=100&sort=size&ascending=0
 <pre>
 HTTP Server
 </pre>
-*[[support/everything/options#store_settings_and_data_in_appdata_everything|%APPDATA%\Everything에 설정 저장]]을 껐다면 Everything.exe가 있는 경로에 HTTP Server폴더를 만들어야 합니다.
+*[[support/everything/options#%APPDATA%\Everything 폴더에 설정 저장|%APPDATA%\Everything 폴더에 설정 저장]]을 껐다면 Everything.exe가 있는 경로에 HTTP Server폴더를 만들어야 합니다.
 *'''Everything''' - '''도구''' 메뉴 - '''설정''' - ''' HTTP 서버''' 탭을 클릭합니다.
 *'''HTTP 서버 활성화'''를 체크하고 '''확인'''을 클릭합니다.
 *[[/Everything-HTTP.Server.Files.zip]]를 다운받아 만든 폴더에 풀어줍니다.
@@ -301,7 +301,7 @@ Everything은 스트리밍 지원을 위해 범위 요청을 지원합니다.
 ==볼만한 것==
 <ul>
 *[[support/everything/multiple instances|다중 인스턴스]].
-*[[support/everything/ini#http|HTTP 서버 Everything.ini 옵션]]
-*[[support/everything/options#http server|HTTP 서버 옵션]]
+*[[support/everything/ini#http|HTTP 서버 Everything.ini 설정]].
+*[[support/everything/options#HTTP 서버|HTTP 서버 설정]].
 *[[http://en.wikipedia.org/wiki/HTTP]]
 </ul>

@@ -48,7 +48,7 @@ c:\makevoidtools\voidtools\index.html를 엽니다.
 
 ==위키 페이지==
 위키 페이지를 UTF-8로 저장하시기 바랍니다.
-support 폴더 안에 있는 위키 페이지는 [[#Wiki syntax|위키 마크업]]을 사용합니다.
+support 폴더 안에 있는 위키 페이지는 [[#위키 마크업|위키 마크업]]을 사용합니다.
 위키 페이지 양식 앞에 숫자를 붙이면 다른 위키 페이지보다 위에 순서대로 보입니다. 예를 들어 01-Installing Everything.txt는 첫째 위키 페이지고 02-Using Everything.txt는 둘째 위키 페이지인 식입니다.
 _로 시작하는 위키 페이지 양식은 숨겨집니다. 다음이 그렇습니다: [[/support/everything/db|DB]].
 
@@ -109,17 +109,17 @@ URL 마지막 부분을 표시 텍스트로 쓴다면 [ [URL|텍스트]]에서 |
 [[http://en.wikipedia.org/wiki/]]
 
 <pre>
-[[faq#what_is_everything|What is Everything?]]
+[[faq#Everything이 뭔가요?|Everything이 뭔가요?]]
 </pre>
 
-[[faq/#what_is_everything|What is Everything?]]
+[[faq/#Everything이 뭔가요?|Everything이 뭔가요?]]
 
 ;''이미지''
 <pre>
-[[File:support/everything/Everything.Search.Window.png|alt=Everything Search Window]]
+[[File:support/everything/Everything.Search.Window.png|alt=Everything 검색 창]]
 </pre>
 
-[[File:support/everything/Everything.Search.Window.png|alt=Everything Search Window]]
+[[File:support/everything/Everything.Search.Window.png|alt=Everything 검색 창]]
 
 ;''이미 서식화한 텍스트''
 {{PRE_EXAMPLE}}
