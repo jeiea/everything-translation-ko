@@ -320,8 +320,8 @@ LTR/RTL을 전환합니다. 1이면 전환합니다.
 검색 항목을 여는 방법을 정합니다. 0이면 시스템 기본 설정을 씁니다. 1이면 클릭으로 항목을 엽니다. 2면 더블 클릭으로 항목을 엽니다.
 
 ;''underline_icon_titles''
-Show result text with underlines.
-Set to 0 to use the system default setting for underline icon titles. Set to 1 to always show underlines. Set to 2 to never show underlines. Set to 3 to underline result text when hovering with the mouse cursor.
+검색 결과 이름에 밑줄을 칩니다. [[#single_click_open|클릭으로 항목을 실행]]해야 적용됩니다.
+0이면 시스템 설정을 씁니다. 1이면 항상 밑줄을 칩니다. 2면 밑줄치지 않습니다. 3이면 포인터가 해당 이름 위에 있을 때 밑줄을 칩니다.
 
 ;''wrap_focus''
 결과 목록 양 끝을 방향키로 이동할 때의 설정입니다. 다음 중 하나를 쓸 수 있습니다.
@@ -374,10 +374,10 @@ Set to 0 to use the system default setting for underline icon titles. Set to 1 t
 1이면 항목을 선택했을 때도 전체 항목 개수를 보여줍니다. 0이면 선택 항목 개수만 보여줍니다.
 
 ;''date_descending_first''
-Show dates in descending order first.
+0이면 머리 행을 클릭해 날짜순 정렬할 때 새 것부터 보여줍니다. 2면 오래된 것부터 보여줍니다.
 
 ;''size_descending_first''
-Show sizes in descending order first.
+0이면 머리 행을 클릭해 크기순 정렬할 때 큰 것부터 보여줍니다. 2면 작은 것부터 보여줍니다.
 
 ;''size_format''
 크기 형식입니다. 다음 중 하나를 쓸 수 있습니다.
