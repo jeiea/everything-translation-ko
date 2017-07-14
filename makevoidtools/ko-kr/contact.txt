@@ -1,7 +1,10 @@
-﻿=voidtools에 연락하기=
+﻿=voidtools 연락처=
 ==이메일==
 David Carpenter
 [[mailto:david@voidtools.com|david@voidtools.com]]
 
 ==David Carpenter에게 메시지==
 {{CONTACT_FORM}}
+
+=번역자 연락처=
+오역 등 번역 문의는 [[http://ddwroom.tistory.com/33|번역자 jeiea 홈페이지]]에서 받고 있습니다.
