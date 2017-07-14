@@ -95,7 +95,7 @@ NTFS 볼륨을 색인할 방법을 선택합니다.
 | 폴더 우클릭 메뉴 생성
 | 폴더를 우클릭 했을 때 "Everything 검색..." 메뉴가 뜨도록 추가합니다. 이 메뉴를 클릭하면 그 폴더 경로를 검색어로 설정한 Everything 창이 뜹니다.
 |-
-| 시작메뉴 바로가기 생성
+| 시작 메뉴 바로가기 생성
 | Creates the Search Everything and Uninstall Everything shortcuts in the Start menu.
 |-
 | 바탕화면 바로가기 생성

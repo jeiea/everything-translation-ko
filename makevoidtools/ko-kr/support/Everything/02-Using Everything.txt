@@ -43,7 +43,7 @@ Everything 검색 창을 보려면
 
 * [[support/everything/Keyboard Shortcuts#핫키|핫키]]를 쓰거나.
 
-* Everything 바탕화면, 시작메뉴, 빠른 실행 바로가기에 단축키를 할당해 실행하는 방법이 있습니다.
+* Everything 바탕화면, 시작 메뉴, 빠른 실행 바로가기에 단축키를 할당해 실행하는 방법이 있습니다.
 
 </ul>
 
