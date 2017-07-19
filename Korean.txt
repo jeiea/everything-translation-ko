@@ -2059,7 +2059,7 @@ UNDERLINE_ALWAYS = "항상"
 UNDERLINE_NEVER = "끄기"
 UNDERLINE_HOVER = "포인터 위치 시"
 
-FULL_ROW_SELECT = "전체 행 선택"
+FULL_ROW_SELECT = "전체 행 선택(&F)"
 FULL_ROW_SELECT_HELP = "항목 선택 영역이 전체 행으로 늘어납니다."
 
 INDEXING_FORMAT = "%s 색인 중..."
