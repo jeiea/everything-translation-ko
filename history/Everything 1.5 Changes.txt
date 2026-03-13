@@ -1,0 +1,1107 @@
+// Changes from Everything 1.4 to Everything 1.5
+// Please find the old string in your existing translation and update with the new string.
+// Please do not modify this file
+
+// Old:
+LOADING_DATABASE = "Loading database..."
+// New: (removed " database")
+LOADING_DATABASE = "Loading..."
+
+// Old:
+UPDATING_DATABASE = "Updating database..."
+// New: (removed " database")
+UPDATING_DATABASE = "Updating..."
+
+// Old:
+CREATING_DATABASE = "Creating database..."
+// New: (removed " database")
+CREATING_DATABASE = "Indexing..."
+
+// Old:
+TEXT_FILES = "Text Files"
+// New: (added extension prefix)
+TEXT_FILES = "TXT Text Files"
+
+// Old:
+TRAY_NEW_SEARCH_WINDOW = "&New Search Window"
+// New: (removed "Search")
+TRAY_NEW_SEARCH_WINDOW = "&New Window"
+
+// Old:
+ONE_OBJECT_SELECTED = "1 object selected"
+// New: (changed "object" to "item")
+ONE_OBJECT_SELECTED = "1 item selected"
+
+// Old:
+OBJECTS_SELECTED_FORMAT = "%s objects selected"
+// New: (changed "objects" to "items")
+OBJECTS_SELECTED_FORMAT = "%s items selected"
+
+// Old:
+ONE_OBJECT = "1 object"
+// New: (changed "object" to "item")
+ONE_OBJECT = "1 item"
+
+// Old:
+OBJECTS_FORMAT = "%s objects"
+// New: (changed "objects" to "items")
+OBJECTS_FORMAT = "%s items"
+
+// Old:
+MENU_NEW_SEARCH_WINDOW = "&New Search Window"
+// New: (removed "Search")
+MENU_NEW_SEARCH_WINDOW = "&New Window"
+
+// Old:
+MENU_CLOSE = "&Close"
+// New: (added "Window")
+MENU_CLOSE = "Close Win&dow"
+
+// Old:
+MENU_MATCH_WHOLE_WORD = "Match &Whole Word"
+// New: (changed "word" to "words")
+MENU_MATCH_WHOLE_WORD = "Match &Whole Words"
+
+// Old:
+MENU_MATCH_REGEX = "Enable &Regex"
+// New: (changed "regex" to "regular expressions", removed "enable")
+MENU_MATCH_REGEX = "&Regular Expressions"
+
+// Old:
+MENU_ABOUT_EVERYTHING = "&About Everything..."
+// New: (added "..." to indicate a dialog)
+MENU_ABOUT_EVERYTHING = "&About Everything"
+
+// Old:
+MENU_COPY_PATH_TO_CLIPBOARD = "Copy &Path to Clipboard"
+// New: (removed " to Clipboard")
+MENU_COPY_PATH_TO_CLIPBOARD = "Copy Path"
+
+// Old:
+MENU_COPY_FULL_NAME_TO_CLIPBOARD = "Copy &Full Name to Clipboard"
+// New: (removed " to Clipboard")
+MENU_COPY_FULL_NAME_TO_CLIPBOARD = "Copy Full Path"
+
+// Old:
+ARE_YOU_SURE_YOU_WISH_TO_OPEN_FILES_FORMAT = "Are you sure you wish to open %d files?"
+// New: (changed "wish" to "want")
+ARE_YOU_SURE_YOU_WISH_TO_OPEN_FILES_FORMAT = "Are you sure you want to open %d files?"
+
+// Old:
+START_EVERYTHING_ON_SYSTEM_STARTUP = "Start Everything on system &startup"
+// New: (moved alt + S mnemonic to start)
+START_EVERYTHING_ON_SYSTEM_STARTUP = "&Start Everything on system startup"
+
+// Old:
+START_MENU_SHORTCUTS = "S&tart menu shortcuts"
+// New: (changed "shorcuts" to "shortcut")
+START_MENU_SHORTCUTS = "S&tart menu shortcut"
+
+// Old:
+AUTO_SCROLL_VIEW_HELP = "Periodically scroll the window when the mouse is dragged outside the visible area."
+// New: (changed "mouse" to "cursor")
+AUTO_SCROLL_VIEW_HELP = "Periodically scroll the window when the cursor is dragged outside the visible area."
+
+// Old:
+DATABASE_LOCATION_HELP = "Specify the location of the database file.\nLeave empty to store the database file in the default location for local application data.\n"
+// New: (removed trailing newline)
+DATABASE_LOCATION_HELP = "Specify the location of the database file.\nLeave empty to store the database file in the default location for local application data."
+
+// Old:
+ENABLE_USN_JOURNAL_LOGGING_HELP = "Enable or disable the Update Sequence Number (USN) Journal on this volume."
+// New: (added "\nThe USN Journal is managed by the NTFS driver.\nThe USN Journal is required to monitor changes to this volume." )
+ENABLE_USN_JOURNAL_LOGGING_HELP = "Enable or disable the Update Sequence Number (USN) Journal on this volume.\nThe USN Journal is managed by the NTFS driver.\nThe USN Journal is required to monitor changes to this volume."
+
+// Old:
+CHANGE_JOURNAL_MAX_SIZE_HELP = "Target maximum size of the change journal in kilobytes."
+// New: (change "kilobytes" to "KB", added "\n1 KB = 1024 bytes.\nRecommended: 32768 KB or larger.\nChanging this value might not be immediate.\nThe USN Journal will eventually grow or shrink to the requested size.")
+CHANGE_JOURNAL_MAX_SIZE_HELP = "Target maximum size of the change journal in KB.\n1 KB = 1024 bytes.\nRecommended: 32768 KB or larger.\nChanging this value might not be immediate.\nThe USN Journal will eventually grow or shrink to the requested size."
+
+// Old:
+CHANGE_JOURNAL_DELTA_SIZE_HELP = "Size of memory allocation that is added to the end and removed from the beginning of the change journal in kilobytes."
+// New: (change "kilobytes" to "KB", added "\n1 KB = 1024 bytes.\nRecommended: 4096 KB - 8192 KB." )
+CHANGE_JOURNAL_DELTA_SIZE_HELP = "Size of memory allocation that is added to the end and removed from the beginning of the change journal in KB.\n1 KB = 1024 bytes.\nRecommended: 4096 KB - 8192 KB."
+
+// Old:
+INCLUDE_IN_DATABASE_HELP = "Include this volume in the Everything database."
+// New: (added "\nIf unchecked, Everything will not automatically include this volume." )
+INCLUDE_IN_DATABASE_HELP = "Include this volume in the Everything database.\nIf unchecked, Everything will not automatically include this volume."
+
+// Old:
+MONITOR_CHANGES_HELP = "Monitor file name changes on this volume."
+// New: (rewrite and added "\nRequires a USN Journal.")
+MONITOR_CHANGES_HELP = "Monitor changes to this volume to keep the Everything index up to date.\nRequires a USN Journal."
+
+// Old:
+CONTAINS_COMMANDS_FOR_WORKING_WITH_EVERYTHING = "Contains commands for working with everything."
+// New: (capitalize "Everything")
+CONTAINS_COMMANDS_FOR_WORKING_WITH_EVERYTHING = "Contains commands for working with Everything."
+
+// Old:
+TOGGLES_THE_SEARCH_TO_INCLUDE_THE_FULL_PATH_AND_FILE_NAME_OR_JUST_THE_FILE_NAME = "Toggles the search to include the full path and file name or just the file name."
+// New: (changed "include the full path and file name" to "match the full path")
+TOGGLES_THE_SEARCH_TO_INCLUDE_THE_FULL_PATH_AND_FILE_NAME_OR_JUST_THE_FILE_NAME = "Toggles the search to match the full path or just the name."
+
+// Old:
+ENABLE_REGEX_SEARCHING = "Enable regular expressions."
+// New: (added "Perl Compatible" )
+ENABLE_REGEX_SEARCHING = "Enable Perl Compatible Regular Expressions."
+
+// New: (added more translators and testers -please add your name to this list)
+CREDIT_LIST = 
+	"!Created by\nvoidtools\n\n!Programming\nDavid Carpenter\n\n!Localization and Testing\n"
+	"Piotr J. Balwierz\n"
+	"Michael Banz\n"
+	"Zsolt Péter Basák (Shiki)\n"
+	"Karl Beneder\n"
+	"Sacher Collado Benitez (ScB)\n"
+	"Eric Binet\n"
+	"Poul Bundgaard\n"
+	"Mateus Scherer Cardoso\n"
+	"Qasim Chireh\n"
+	"Colok and Pierre le Lidgeu\n"
+	"Cynikal\n"
+	"daspud\n"
+	"Lê Sỹ Đạt\n"
+	"Sonam Dawa\n"
+	"de4dcod3\n"
+	"DinoTechno\n"
+	"dis1\n"
+	"Downzen\n"
+	"alyzeedus dwadeh\n"
+	"Imre Kristoffer Eilertsen\n"
+	"Åke Engelbrektson\n"
+	"Egyed Ferenc\n"
+	"geogeo.gr\n"
+	"Irshat Ghalip\n"
+	"shai horn\n"
+	"horst.epp\n"
+	"jeiea\n"
+	"jekovcar\n"
+	"Reza Jelodar\n"
+	"Jikoo\n"
+	"jvh\n"
+	"Sazan Kërçuku\n"
+	"Koray KIRCAOGLU\n"
+	"Thomas Knoop\n"
+	"koga\n"
+	"Nedim Laletovic\n"
+	"Olav Mägi\n"
+	"miyano\n"
+	"Alexandru Bogdan Munteanu\n"
+	"Samuel Murray\n"
+	"nagan\n"
+	"NotNull\n"
+	"Odyssey\n"
+	"ozzii\n"
+	"Stefano Piccardi\n"
+	"Marko Puskaric\n"
+	"rexx\n"
+	"Ricardo A. Rivas\n"
+	"Igor R�ckert\n"
+	"Jadran Rudec\n"
+	"Sam\n"
+	"Julian Seward\n"
+	"Zafar Shamsiddinov\n"
+	"Denis Sjostrom\n"
+	"Henry Spencer\n"
+	"Stamimail\n"
+	"superjohn\n"
+	"Zoltán Szabó (Bird)\n"
+	"TekLord\n"
+	"therube\n"
+	"Tom\n"
+	"University of Cambridge\n"
+	"VeikkoM\n"
+	"01 Vlatce\n"
+	"WanderMax\n"
+	"GT Wang\n"
+	"Jeroen Westera\n"
+	"Sepp Winkler\n"
+	"xbeta\n"
+	"Xisterion\n"
+	"Burak Yavuz (BouRock)\n"
+	"Dmitry Yerokhin\n"
+	"Carl Yuan\n"
+	"Zubair Ibn Zamir\n"
+	"Zbigniew Zienko\n"
+	"அனிஷ் பிரபு தி.(Anish Prabu T.), Ashwin and Aarthi\n"
+	"นิติกร คำภักดี\n"
+	"\n\n\n\n\nThanks for using Everything!"
+
+// Old: 
+ENABLE_EXCLUDE_HELP = "Enable the exclude list."
+// New: (added "\nManually rebuilding the database may be necessary to find files/folders moved from an excluded folder." )
+ENABLE_EXCLUDE_HELP = "Enable the exclude list.\nManually rebuilding the database may be necessary to find files/folders moved from an excluded folder."
+
+// Old: 
+EXCLUDE_HIDDEN_FILES_AND_FOLDERS_HELP = "Exclude hidden files and folders from the database.\nRebuilding the database may be necessary when unhiding a folder."
+// New: (clarify hidden file attribute)
+EXCLUDE_HIDDEN_FILES_AND_FOLDERS_HELP = "Exclude files and folders with the hidden file attribute from the database.\nRebuilding the database may be necessary to find files/folders that have the hidden attribute removed."
+
+// Old: 
+EXCLUDE_SYSTEM_FILES_AND_FOLDERS_HELP = "Exclude system files and folders from the database.\nRebuilding the database may be necessary when removing the system attribute from a folder."
+// New: (clarify system file attribute)
+EXCLUDE_SYSTEM_FILES_AND_FOLDERS_HELP = "Exclude files and folders with the system file attribute from the database.\nRebuilding the database may be necessary to find files/folders that have the system attribute removed."
+
+// Old:
+EXPORT_THE_RESULT_LIST_TO_A_TEXT_FILE = "Export the current result list to a file."
+// New: (changed "the current result list" to "results")
+EXPORT_THE_RESULT_LIST_TO_A_TEXT_FILE = "Export results to a file."
+
+// Old: 
+MENU_COPY_FULL_NAME_TO_CLIPBOARD_HELP = "Copy the full path and file name to the clipboard."
+// New: (change "full path and file name" to just "full path")
+MENU_COPY_FULL_NAME_TO_CLIPBOARD_HELP = "Copy the full path to the clipboard."
+
+// Old: 
+MENU_COPY_PATH_TO_CLIPBOARD_HELP = "Copy the full path to the clipboard."
+// New: (change "full path" to just "path")
+MENU_COPY_PATH_TO_CLIPBOARD_HELP = "Copy the path to the clipboard."
+
+// Old: 
+KEYBOARD_RESTORE_DEFAULTS_BUTTON = "Restore Defaults"
+// New: (add Alt + R mnemonic)
+KEYBOARD_RESTORE_DEFAULTS_BUTTON = "&Restore Defaults"
+
+// Old: 
+SHOW_TRAY_ICON_HELP = "Show or hide the Everything icon in the taskbar notification area."
+// New: (change "show or hide" to "shows or hides")
+SHOW_TRAY_ICON_HELP = "Shows or hides the Everything icon in the taskbar notification area."
+
+// Old: 
+DOUBLE_QUOTE_NAME_COPY_HELP = "Include a starting double quote and trailing double quote when copying the path."
+// New: (change "starting" to "leading")
+DOUBLE_QUOTE_NAME_COPY_HELP = "Include a leading double quote and trailing double quote when copying the path."
+
+// Old: 
+SIZE_FORMAT_BYTES = "Bytes"
+// New: (made all lowercase)
+SIZE_FORMAT_BYTES = "bytes"
+
+// Old: 
+DOUBLE_CLICK_PATH_HELP = "Open a path in the path column by double clicking."
+// New: (rewrite)
+DOUBLE_CLICK_PATH_HELP = "Open the path when double clicking in the path column."
+
+// Old: 
+AUTO_INCLUDE_NEW_REMOVABLE_VOLUMES = "Automatically include new &removable volumes"
+// New: (changed Alt + R mnemonic to Alt + Y mnemonic)
+AUTO_INCLUDE_NEW_REMOVABLE_VOLUMES = "Automaticall&y include new removable volumes"
+
+// Old: 
+FOCUS_SEARCH_ON_ACTIVATE = "Focus search on &activate"
+// New: (changed Alt + A mnemonic to Alt + V mnemonic) 
+FOCUS_SEARCH_ON_ACTIVATE = "Focus search on acti&vate"
+
+// Old: 
+VIEW_RESTORE_DEFAULTS = "Restore Defaults"
+// New: (added Alt + R mnemonic)
+VIEW_RESTORE_DEFAULTS = "&Restore Defaults"
+
+// Old: 
+CSV_FILES = "CSV Files"
+// New: (changed "Files" to "Comma Separated Values")
+CSV_FILES = "CSV Comma Separated Values"
+
+// Old: 
+URL_PROTOCOL = "URL &protocol"
+// New: (added "es:" )
+URL_PROTOCOL = "es: URL &protocol"
+
+// Old: 
+URL_PROTOCOL_HELP = "Open \"Everything\" from ES: URLs."
+// New: (made es: lowercase)
+URL_PROTOCOL_HELP = "Open \"Everything\" from es: URLs."
+
+// Old: 
+EFU_ASSOCIATION = "EFU file &association"
+// New: (changed Alt + A mnemonic to Alt + F mnemonic) 
+EFU_ASSOCIATION = "EFU &file association"
+
+// Old: 
+EXPORT_CREATEFILE_FAILED = "Failed to create %s"
+// New: (changed "Failed" to "Unable" )
+EXPORT_CREATEFILE_FAILED = "Unable to create %s"
+
+// Old: 
+EXPORT_WRITE_FAILED = "Failed to write to %s"
+// New: (changed "Failed" to "Unable" )
+EXPORT_WRITE_FAILED = "Unable to write to %s"
+
+// Old: 
+COLOR_HIGHLIGHTED = "Highlighted"
+// New: (rewrite)
+COLOR_HIGHLIGHTED = "Normal (Highlighted)"
+
+// Old: 
+COLOR_MOUSEOVER = "Mouseover"
+// New: (added "Row")
+COLOR_MOUSEOVER = "Mouseover Row"
+
+// Old: 
+COLOR_MOUSEOVER_HIGHLIGHTED = "Mouseover (Highlighted)"
+// New: (added "Row")
+COLOR_MOUSEOVER_HIGHLIGHTED = "Mouseover Row (Highlighted)"
+
+// Old: 
+COLOR_CURRENT_SORT_MOUSEOVER = "Current Sort Mouseover"
+// New: (added "Row")
+COLOR_CURRENT_SORT_MOUSEOVER = "Current Sort Mouseover Row"
+
+// Old: 
+COLOR_CURRENT_SORT_MOUSEOVER_HIGHLIGHTED = "Current Sort Mouseover (Highlighted)"
+// New: (added "Row")
+COLOR_CURRENT_SORT_MOUSEOVER_HIGHLIGHTED = "Current Sort Mouseover Row (Highlighted)"
+
+// Old: 
+FONTS_AND_COLORS_RESTORE_DEFAULTS_BUTTON = "Restore Defaults"
+// New: (added Alt + R mnemonic)
+FONTS_AND_COLORS_RESTORE_DEFAULTS_BUTTON = "&Restore Defaults"
+
+// Old: 
+EMAIL = "david@voidtools.com"
+// New: (change "david" to "support" )
+EMAIL = "support@voidtools.com"
+
+// Old: 
+EXCLUDE_INCLUDE_ONLY_FILE_EDIT_HELP = "semicolon delimited wildcard filters for which files to include.\nEmpty = Include all files."
+// New: (added "(;)", added "\nThe whole filename is matched.\nInclude a path separator (\\) to match the full path.\nregex: = Regular expressions.\nExample: *.mp3;*.jpg")
+EXCLUDE_INCLUDE_ONLY_FILE_EDIT_HELP = "Semicolon (;) delimited list of wildcard filters for which files to include.\nEmpty = Include all files.\nThe whole filename is matched.\nInclude a path separator (\\) to match the full path.\nregex: = Regular expressions.\nExample: *.mp3;*.jpg"
+
+// Old: 
+EXCLUDE_FILE_EDIT_HELP = "semicolon delimited wildcard filters for which files to exclude.\nEmpty = No files excluded."
+// New: (added "(;)", added "\nThe whole filename is matched.\nInclude a path separator (\\) to match the full path.\nregex: = Regular expressions.\nExample: *.lnk;*.tmp;c:\\pagefile.sys" )
+EXCLUDE_FILE_EDIT_HELP = "Semicolon (;) delimited list of wildcard filters for which files to exclude.\nEmpty = No files excluded.\nThe whole filename is matched.\nInclude a path separator (\\) to match the full path.\nregex: = Regular expressions.\nExample: *.lnk;*.tmp;c:\\pagefile.sys"
+
+// Old: 
+EXCLUDE_FILTER_EDIT_HELP = "Type in a filter\n* = match zero or more characters\n? = match one character\nIncluding a backslash (\\) in your filter will match full paths."
+// New: (rewrite)
+EXCLUDE_FILTER_EDIT_HELP = "Type in a wildcard filter.\n** = match any character any number of times.\n* = match any character except \\ any number of times.\nThe whole filename is matched.\nInclude a path separator (\\) to match the full path.\nregex: = match a regular expression."
+
+// Old: 
+NTFS_INCLUDE_ONLY_EDIT_HELP = "semicolon delimited list of folders on this volume to include.\nEmpty = Include all folders."
+// New: (added "(;)", added "\nExample: C:\\Windows;C:\\Program Files" )
+NTFS_INCLUDE_ONLY_EDIT_HELP = "Semicolon (;) delimited list of folders on this volume to include.\nEmpty = Include all folders.\nExample: C:\\Windows;C:\\Program Files"
+
+// Old: 
+BOOKMARK_ADD_MENU = "&Add to Bookmarks..."
+// New: (removed Alt + A mnemonic -conflicts with bookmark names)
+BOOKMARK_ADD_MENU = "Add to Bookmarks..."
+
+// Old: 
+BOOKMARK_ORGANIZE_MENU = "&Organize Bookmarks..."
+// New: (removed Alt + O mnemonic -conflicts with bookmark names)
+BOOKMARK_ORGANIZE_MENU = "Organize Bookmarks..."
+
+// Old: 
+BOOKMARK_MOVEUP_BUTTON = "Move &Up"
+// New: (changed Alt + U mnemonic to Alt + V mnemonic)
+BOOKMARK_MOVEUP_BUTTON = "Mo&ve Up"
+
+// Old: 
+BOOKMARK_WHOLEWORD_HELP = "Match or ignore whole word when this bookmark is opened."
+// New: (changed "word" to "words")
+BOOKMARK_WHOLEWORD_HELP = "Match or ignore whole words when this bookmark is opened."
+
+// Old: 
+BOOKMARK_REGEX_HELP = "Enable or disable regex when this bookmark is opened."
+// New: (changed "regex" to "regular expressions")
+BOOKMARK_REGEX_HELP = "Enable or disable regular expressions when this bookmark is opened."
+
+// Old: 
+BOOKMARK_MACRO_HELP = "When typing this phrase in the search edit followed by a colon (:) the phrase is replaced by this bookmark's search.\nEmpty = No macro."
+// New: (rewrite)
+BOOKMARK_MACRO_HELP = "Type this phrase followed by a colon (:) in the search box to replace it with the search from this bookmark.\nEmpty = No macro."
+
+// Old: 
+BOOKMARK_MOVEUP_HELP = "Move the selected bookmark up one position."
+// New: (added "\n(Alt + Up Arrow)" )
+BOOKMARK_MOVEUP_HELP = "Move the selected bookmark up one position.\n(Alt + Up Arrow)"
+
+// Old: 
+BOOKMARK_MOVEDOWN_HELP = "Move the selected bookmark down one position."
+// New: (added "\n(Alt + Down Arrow)" )
+BOOKMARK_MOVEDOWN_HELP = "Move the selected bookmark down one position.\n(Alt + Down Arrow)"
+
+// Old: 
+BOOKMARK_EXPORT_HELP = "Export the bookmarks to a Comma Separated Values (CSV) file."
+// New: (removed "the" )
+BOOKMARK_EXPORT_HELP = "Export bookmarks to a Comma Separated Values (CSV) file."
+
+// Old: 
+TOOLS_CONSOLE_MENU = "Console"
+// New: (added Alt + C mnemonic )
+TOOLS_CONSOLE_MENU = "&Console"
+
+// Old: 
+NEXT_WINDOW_MENU = "Next Everything Window"
+// New: (removed "Everything" )
+NEXT_WINDOW_MENU = "Next Window"
+
+// Old: 
+PREV_WINDOW_MENU = "Previous Everything Window"
+// New: (removed "Everything" )
+PREV_WINDOW_MENU = "Previous Window"
+
+// Old: 
+INDEXES_RESTORE_DEFAULTS = "Restore Defaults"
+// New: (added Alt + R mnemonic)
+INDEXES_RESTORE_DEFAULTS = "&Restore Defaults"
+
+// Old: 
+EDITOR_SELECT_FOLDER_TO_ADD = "Select folder to add to the file list."
+// New: (added "a" )
+EDITOR_SELECT_FOLDER_TO_ADD = "Select a folder to add to the file list."
+
+// Old: 
+TRAY_SHOW_SEARCH_WINDOW = "&Show Search Window"
+// New: (removed "Search" )
+TRAY_SHOW_SEARCH_WINDOW = "&Show Window"
+
+// Old: 
+GENERAL_RESTORE_DEFAULTS = "Restore Defaults"
+// New: (added Alt + R mnemonic)
+GENERAL_RESTORE_DEFAULTS = "&Restore Defaults"
+
+// Old: 
+UI_RESTORE_DEFAULTS = "Restore Defaults"
+// New: (added Alt + R mnemonic)
+UI_RESTORE_DEFAULTS = "&Restore Defaults"
+
+// Old: 
+ALLOW_LITERAL_OPERATORS_HELP = "Allow AND, OR and NOT to be used as operators."
+// New: (added "<space> = AND, | = OR and ! = NOT." )
+ALLOW_LITERAL_OPERATORS_HELP = "<space> = AND, | = OR and ! = NOT.\nEnabling allows literal AND, OR and NOT to be used as operators."
+
+// Old: 
+SEARCH_RESTORE_DEFAULTS = "Restore Defaults"
+// New: (added Alt + R mnemonic)
+SEARCH_RESTORE_DEFAULTS = "&Restore Defaults"
+
+// Old: 
+HELP_REGEX_SYNTAX_MENU = "&Regex Syntax"
+// New: (changed "Regex" to "Regular Expression" )
+HELP_REGEX_SYNTAX_MENU = "&Regular Expression Syntax"
+
+// Old: 
+HELP_REGEX_SYNTAX_MENU_HELP = "Show regex syntax help."
+// New: (changed "Regex" to "Regular Expression" )
+HELP_REGEX_SYNTAX_MENU_HELP = "Show regular expression syntax help."
+
+// New: (change "Regex" to "Regular Expression", added more syntax after "\\\tEscape special character\r\n" )
+HELP_REGEX_SYNTAX_TEXT = "\r\n"
+	"Regular Expression Syntax:\r\n"
+	"\r\n"
+	"a|b\tMatches a or b\r\n"
+	"gr(a|e)y\tMatches gray or grey\r\n"
+	".\tMatches any single character\r\n"
+	"[abc]\tMatches a single character a, b or c\r\n"
+	"[^abc]\tMatches any single character except a, b or c\r\n"
+	"[a-z]\tMatches a single character in the range a to z\r\n"
+	"[a-zA-Z]\tMatches a single character in the range a to z or A to Z\r\n"
+	"^\tMatches the start of the filename\r\n"
+	"$\tMatches the end of the filename\r\n"
+	"( )\tDefines a marked subexpression\r\n"
+	"\\1 - \\9\tMatches what the nth marked subexpression matched\r\n"
+	"*\tMatches the preceding element zero or more times\r\n"
+	"?\tMatches the preceding element zero or one times\r\n"
+	"+\tMatches the preceding element one or more times\r\n"
+	"*?\tLazily matches the preceding element zero or more times\r\n"
+	"+?\tLazily matches the preceding element one or more times\r\n"
+	"{x}\tMatches the preceding element x times\r\n"
+	"{x,}\tMatches the preceding element x or more times\r\n"
+	"{x,y}\tMatches the preceding element between x and y times\r\n"
+	"\\\tEscape special character\r\n"
+	"\\Q...\\E\tLiteral sequence ...\r\n"
+	"\\a\tAlarm, that is, the BEL character (hex 07)\r\n"
+	"\\cx\t\"Control-x\", where x is any ASCII character\r\n"
+	"\\e\tEscape (hex 1B)\r\n"
+	"\\f\tForm feed (hex 0C)\r\n"
+	"\\n\tLinefeed (hex 0A)\r\n"
+	"\\r\tCarriage return (hex 0D)\r\n"
+	"\\t\tTab (hex 09)\r\n"
+	"\\0dd\tCharacter with octal code 0dd\r\n"
+	"\\ddd\tCharacter with octal code ddd, or back reference\r\n"
+	"\\o{ddd..}\tCharacter with octal code ddd..\r\n"
+	"\\xhh\tCharacter with hex code hh\r\n"
+	"\\x{hhh..}\tCharacter with hex code hhh..\r\n"
+	"\\d\tAny decimal digit\r\n"
+	"\\D\tAny character that is not a decimal digit\r\n"
+	"\\h\tAny horizontal white space character\r\n"
+	"\\H\tAny character that is not a horizontal white space character\r\n"
+	"\\s\tAny white space character\r\n"
+	"\\S\tAny character that is not a white space character\r\n"
+	"\\v\tAny vertical white space character\r\n"
+	"\\V\tAny character that is not a vertical white space character\r\n"
+	"\\w\tAny \"word\" character\r\n"
+	"\\W\tAny \"non-word\" character\r\n"
+	"\\p{xx}\tA character with the xx property\r\n"
+	"\\P{xx}\tA character without the xx property\r\n"
+	"\\X\tA Unicode extended grapheme cluster\r\n"
+	"\\b\tMatches at a word boundary\r\n"
+	"\\B\tMatches when not at a word boundary\r\n"
+	"\\A\tMatches at the start of the subject\r\n"
+	"\\Z\tMatches at the end of the subject also matches before a newline at the end of the subject\r\n"
+	"\\z\tMatches only at the end of the subject\r\n"
+	"\\G\tMatches at the first matching position in the subject\r\n"
+
+// Old: 
+VIEW_SORT_BY_MENU = "S&ort by"
+// New: (capitalized "By")
+VIEW_SORT_BY_MENU = "S&ort By"
+
+// Old: 
+SEARCH_FILTER_ADD_MENU = "&Add to Filters..."
+// New: (removed Alt + A mnemonic -conflicts with filter names)
+SEARCH_FILTER_ADD_MENU = "Add to Filters..."
+
+// Old: 
+SEARCH_FILTER_ADD_MENU_HELP = "Adds the current search to your Filters."
+// New: (uncapitalized "filters")
+SEARCH_FILTER_ADD_MENU_HELP = "Adds the current search to your filters."
+
+// Old: 
+SEARCH_FILTER_ORGANIZE_MENU = "&Organize Filters..."
+// New: (removed Alt + O mnemonic -conflicts with filter names)
+SEARCH_FILTER_ORGANIZE_MENU = "Organize Filters..."
+
+// Old: 
+FILTER_MATCH_WHOLEWORD_BUTTON = "Match &whole word"
+// New: (changed "word" to "words")
+FILTER_MATCH_WHOLEWORD_BUTTON = "Match &whole words"
+
+// Old: 
+FILTER_REGEX_BUTTON = "&Regex"
+// New: (changed "&Regex" to "&Regular Expressions")
+FILTER_REGEX_BUTTON = "&Regular expressions"
+
+// Old: 
+FILTER_MOVEUP_BUTTON = "Move &Up"
+// New: (Change Alt + U mnemonic to Alt + V mnemonic)
+FILTER_MOVEUP_BUTTON = "Mo&ve Up"
+
+// Old: 
+FILTER_WHOLEWORD_HELP = "Match or ignore whole word."
+// New: (Changed "word" to "words")
+FILTER_WHOLEWORD_HELP = "Match or ignore whole words."
+
+// Old: 
+FILTER_REGEX_HELP = "Enable or disable regex."
+// New: (changed "regex" to "regular expressions")
+FILTER_REGEX_HELP = "Enable or disable regular expressions."
+
+// Old: 
+FILTER_MACRO_HELP = "When typing this phrase in the search edit followed by a colon (:) the phrase is replaced by this filter's search.\nAppend the macro with <name> to replace all occurrences of name: in the search with the parameters passed to the macro call.\nEmpty = No macro."
+// New: (rewrite)
+FILTER_MACRO_HELP = "Type this phrase followed by a colon (:) in the search box to replace it with the search from this filter.\nEmpty = No macro."
+
+// Old: 
+FILTER_MOVEUP_HELP = "Move the selected filter up one position."
+// New: (added "\n(Alt + Up Arrow)" )
+FILTER_MOVEUP_HELP = "Move the selected filter up one position.\n(Alt + Up Arrow)"
+
+// Old: 
+FILTER_MOVEDOWN_HELP = "Move the selected filter down one position."
+// New: (added "\n(Alt + Down Arrow)" )
+FILTER_MOVEDOWN_HELP = "Move the selected filter down one position.\n(Alt + Down Arrow)"
+
+// Old: 
+FILTER_EXPORT_HELP = "Export the filters to a Comma Separated Values (CSV) file."
+// New: (removed "the" )
+FILTER_EXPORT_HELP = "Export filters to a Comma Separated Values (CSV) file."
+
+// Old: 
+NAV_BACK = "&Back"
+// New: (removed Alt + B mnemonic -conflicts with history)
+NAV_BACK = "Back"
+
+// Old: 
+NAV_FORWARD = "&Forward"
+// New: (removed Alt + F mnemonic -conflicts with history)
+NAV_FORWARD = "Forward"
+
+// Old: 
+SIZE_RESULT_LIST_TO_FIT = "Size Result List to Fit"
+// New: (changed "Result list" to "All Columns", added "Window" )
+SIZE_RESULT_LIST_TO_FIT = "Size All Columns to Fit Window"
+
+// Old: 
+SEARCH_HISTORY_CLEAR_NOW_ARE_YOU_SURE = "Are you sure you wish to delete all search history?\n\nThis action can not be undone."
+// New: (changed "wish" to "want" and changed "can not" to "cannot" )
+SEARCH_HISTORY_CLEAR_NOW_ARE_YOU_SURE = "Are you sure you want to delete all search history?\n\nThis action cannot be undone."
+
+// Old: 
+HISTORY_RESTORE_DEFAULTS = "Restore Defaults"
+// New: (added Alt + R mnemonic)
+HISTORY_RESTORE_DEFAULTS = "&Restore Defaults"
+
+// Old: 
+CONTEXT_MENU_RESTORE_DEFAULTS = "Restore Defaults"
+// New: (added Alt + R mnemonic)
+CONTEXT_MENU_RESTORE_DEFAULTS = "&Restore Defaults"
+
+// Old: 
+RESULTS_RESTORE_DEFAULTS = "Restore Defaults"
+// New: (added Alt + R mnemonic)
+RESULTS_RESTORE_DEFAULTS = "&Restore Defaults"
+
+// Old: 
+FILE_LIST_FILENAME = "File List Filename"
+// New: (change "Filename" to "Name" )
+FILE_LIST_FILENAME = "File List Name"
+
+// Old: 
+BOOKMARK_INDEX_BROWSE = "Browse..."
+// New: (added Alt + B mnemonic)
+BOOKMARK_INDEX_BROWSE = "&Browse..."
+
+// Old: 
+BOOKMARK_INDEX_LINK_TYPE = "Link type:"
+// New: (added Alt + Y mnemonic)
+BOOKMARK_INDEX_LINK_TYPE = "Link t&ype:"
+
+// Old: 
+CLEAR_SELECTION_ON_SEARCH = "Cle&ar selection on search"
+// New: (changed Alt + A mnemonic to Alt + N mnemonic)
+CLEAR_SELECTION_ON_SEARCH = "Clear selectio&n on search"
+
+// Old: 
+LOAD_USN_JOURNAL_RECENT_CHANGES = "Load recent &changes from USN journal"
+// New: (rewrite)
+LOAD_USN_JOURNAL_RECENT_CHANGES = "Load USN Journal into the Recent &Changes database"
+
+// Old: 
+LOAD_USN_JOURNAL_RECENT_CHANGES_HELP = "Load all files and folders from the USN change journal into the recent change database.\nEnabling may decrease \"Everything\" startup performance.\nIndex recent changes must be enabled."
+// New: (added "\nRequires a USN Journal." )
+LOAD_USN_JOURNAL_RECENT_CHANGES_HELP = "Load all files and folders from the USN change journal into the recent change database.\nEnabling may decrease \"Everything\" startup performance.\nIndex recent changes must be enabled.\nRequires a USN Journal."
+
+// Old: 
+RUN_HISTORY_CLEAR_NOW_ARE_YOU_SURE = "Are you sure you wish to delete all run history?\n\nThis action can not be undone."
+// New: (changed "wish" to "want" )
+RUN_HISTORY_CLEAR_NOW_ARE_YOU_SURE = "Are you sure you want to delete all run history?\n\nThis action can not be undone."
+
+// Old: 
+HOME_USE_LAST_VALUE = "Use last value"
+// New: (added "(" and ")" )
+HOME_USE_LAST_VALUE = "(Use last value)"
+
+// Old: 
+HOME_MATCH_WHOLE_WORD = "Match &whole word:"
+// New: (changed "word" to "words" )
+HOME_MATCH_WHOLE_WORD = "Match &whole words:"
+
+// Old: 
+HOME_MATCH_WHOLE_WORD_HELP = "Match whole word when opening a new search window."
+// New: (changed "word" to "words")
+HOME_MATCH_WHOLE_WORD_HELP = "Match whole words when opening a new search window."
+
+// Old: 
+HOME_REGEX = "Match &regex:"
+// New: (rewrite and change Alt + R mnemonic to Alt + X mnemonic)
+HOME_REGEX = "Regular e&xpressions:"
+
+// Old: 
+HOME_REGEX_HELP = "Match regex when opening a new search window."
+// New: (rewrite)
+HOME_REGEX_HELP = "Enable or disable regular expressions when opening a new search window."
+
+// Old: 
+HOME_SORT_HELP = "Use this sort when opening a new search window.\nOnly fast sorts will be used for the last value."
+// New: (added "\nFast sorts can be enabled from the Indexes option page." )
+HOME_SORT_HELP = "Use this sort when opening a new search window.\nOnly fast sorts will be used for the last value.\nFast sorts can be enabled from the Indexes option page."
+
+// Old: 
+HOME_RESTORE_DEFAULTS = "Restore Defaults"
+// New: (added Alt + R mnemonic)
+HOME_RESTORE_DEFAULTS = "&Restore Defaults"
+
+// Old: 
+NAV_HOME = "&Home"
+// New: (Removed Alt + H mnemonic)
+NAV_HOME = "Home"
+
+// Old: 
+RUN_AS_ADMIN_HELP = "Ensure Everything is running as Administrator.\nThe \"Everything\" service is not required when running as administrator.\nWarning: When enabled, Applications run from \"Everything\" will also be run as administrator.\nRequires restart."
+// New: (rewrite, added Indeterminate state )
+RUN_AS_ADMIN_HELP = "Run Everything as an administrator when launching Everything.\nEnabling might show user account control prompt when launching Everything.\nThe \"Everything\" service is not required when running as administrator.\nWarning: When enabled, Applications run from \"Everything\" will also run as administrator.\nRequires restart.\nUnchecked = run as a standard user.\nTick-checked = run as an administrator.\nIndeterminate = run as standard user. (currently running as administrator because \"Everything\" was started with elevated privileges.)"
+
+// Old: 
+ACCESS_DENIED_REQUIRES_ADMIN = "\"Everything\" requires administrative privileges to index NTFS volumes. Run as administrator or install the Everything service to index NTFS volumes."
+// New: (rewrite and added "system" NTFS volume)
+ACCESS_DENIED_REQUIRES_ADMIN = "\"Everything\" requires administrative privileges to index system NTFS volumes.\n\nInstall the Everything service or run as administrator to index NTFS volumes."
+
+// Old: 
+ACCESS_DENIED_DO_NOT_INDEX_NTFS = "&Do not index NTFS volumes"
+// New: (rewrite and added "system" NTFS volume)
+ACCESS_DENIED_DO_NOT_INDEX_NTFS = "&No system NTFS volume indexing"
+
+// Old: 
+SINGLE_CLICK_OPEN_HELP = "Open an item with a single or double click."
+// New: (change "single" to "single click" )
+SINGLE_CLICK_OPEN_HELP = "Open an item with a single click or double click."
+
+// Old: 
+UNDERLINE_HELP = "Specify when to underline the icon titles. Single click open must be enabled."
+// New: (added newline)
+UNDERLINE_HELP = "Specify when to underline the icon titles.\nSingle click open must be enabled."
+
+// Old: 
+REFS_INCLUDE_ONLY_EDIT_HELP = "semicolon delimited list of folders on this volume to include.\nEmpty = Include all folders."
+// New: (added "(;)" and added "Example: C:\\Windows;C:\\Program Files" )
+REFS_INCLUDE_ONLY_EDIT_HELP = "Semicolon (;) delimited list of folders on this volume to include.\nEmpty = Include all folders.\nExample: C:\\Windows;C:\\Program Files"
+
+// Old: 
+REFS_AUTO_INCLUDE_NEW_REMOVABLE_VOLUMES = "Automatically include new &removable volumes"
+// New: (change Alt + R mnemonic to Alt + Y mnemonic)
+REFS_AUTO_INCLUDE_NEW_REMOVABLE_VOLUMES = "Automaticall&y include new removable volumes"
+
+// Old: 
+REFS_ENABLE_USN_JOURNAL_LOGGING_HELP = "Enable or disable the Update Sequence Number (USN) Journal on this volume."
+// New: (added "The USN Journal is managed by the ReFS driver.\nThe USN Journal is required to monitor changes to this volume." )
+REFS_ENABLE_USN_JOURNAL_LOGGING_HELP = "Enable or disable the Update Sequence Number (USN) Journal on this volume.\nThe USN Journal is managed by the ReFS driver.\nThe USN Journal is required to monitor changes to this volume."
+
+// Old: 
+REFS_CHANGE_JOURNAL_MAX_SIZE_HELP = "Target maximum size of the change journal in kilobytes."
+// New: (change kilobytes to KB, added "\n1 KB = 1024 bytes.\nRecommended: 32768 KB or larger.\nChanging this value might not be immediate.\nThe USN Journal will eventually grow or shrink to the requested size.")
+REFS_CHANGE_JOURNAL_MAX_SIZE_HELP = "Target maximum size of the change journal in KB.\n1 KB = 1024 bytes.\nRecommended: 32768 KB or larger.\nChanging this value might not be immediate.\nThe USN Journal will eventually grow or shrink to the requested size."
+
+// Old: 
+REFS_CHANGE_JOURNAL_DELTA_SIZE_HELP = "Size of memory allocation that is added to the end and removed from the beginning of the change journal in kilobytes."
+// New: (change kilobytes to KB, added "\n1 KB = 1024 bytes.\nRecommended: 4096 KB - 8192 KB.")
+REFS_CHANGE_JOURNAL_DELTA_SIZE_HELP = "Size of memory allocation that is added to the end and removed from the beginning of the change journal in KB.\n1 KB = 1024 bytes.\nRecommended: 4096 KB - 8192 KB."
+
+// Old: 
+REFS_INCLUDE_IN_DATABASE_HELP = "Include this volume in the Everything database."
+// New: (added "\nIf unchecked, Everything will not automatically include this volume." )
+REFS_INCLUDE_IN_DATABASE_HELP = "Include this volume in the Everything database.\nIf unchecked, Everything will not automatically include this volume."
+
+// Old: 
+REFS_MONITOR_CHANGES_HELP = "Monitor file name changes on this volume."
+// New: (rewrite and added "\nRequires a USN Journal.")
+REFS_MONITOR_CHANGES_HELP = "Monitor changes to this volume to keep the Everything index up to date.\nRequires a USN Journal."
+
+// Old: 
+REFS_LOAD_USN_JOURNAL_RECENT_CHANGES = "Include USN Journal in recent &changes"
+// New: (rewrite)
+REFS_LOAD_USN_JOURNAL_RECENT_CHANGES = "Load USN Journal into the Recent &Changes database"
+
+// Old: 
+REFS_LOAD_USN_JOURNAL_RECENT_CHANGES_HELP = "Include all the files and folders in the USN Journal on this volume in recent changes.\nEnabling may decrease \"Everything\" startup performance.\nIndex recent changes must be enabled."
+// New: (rewrite and added "\nRequires a USN Journal." )
+REFS_LOAD_USN_JOURNAL_RECENT_CHANGES_HELP = "Load all files and folders from the USN change journal into the recent change database.\nEnabling may decrease \"Everything\" startup performance.\nIndex recent changes must be enabled.\nRequires a USN Journal."
+
+// Old: 
+SHOW_SIZE_IN_STATUSBAR = "Show si&ze in status bar"
+// New: (added "total")
+SHOW_SIZE_IN_STATUSBAR = "Show total si&ze in status bar"
+
+// Old: 
+SHOW_SIZE_IN_STATUSBAR_HELP = "Show the total file selection size in the status bar. Size indexing must be enabled. Enabling will reduce the performance of Everything."
+// New: (changed "performance" to "search performance")
+SHOW_SIZE_IN_STATUSBAR_HELP = "Show the total file selection size in the status bar. Size indexing must be enabled. Enabling will reduce the search performance of Everything."
+
+// Old: 
+SEARCH_HISTORY_SEARCH_STATIC = "Search:"
+// New: (added Alt + S mnemonic)
+SEARCH_HISTORY_SEARCH_STATIC = "&Search:"
+
+// Old: 
+SEARCH_HISTORY_DELETE_ALL_HELP = "Delete all searches."
+// New: (changed "searches" to "results")
+SEARCH_HISTORY_DELETE_ALL_HELP = "Delete all results."
+
+// Old: 
+SEARCH_HISTORY_IMPORT_HELP = "Import searches from a csv file. Existing searches will be updated."
+// New: (changed "csv" to "Comma Separated Values (CSV)")
+SEARCH_HISTORY_IMPORT_HELP = "Import searches from a Comma Separated Values (CSV) file. Existing searches will be updated."
+
+// Old: 
+SEARCH_HISTORY_EXPORT_BUTTON = "&Export..."
+// New: (changed Alt + E mnemonic to Alt + X mnemonic)
+SEARCH_HISTORY_EXPORT_BUTTON = "E&xport..."
+
+// Old: 
+VIEW_GOTO_SHOW_ALL_HISTORY_MENU = "Show &All History"
+// New: (rewrite and removed Alt + A mnemonic )
+VIEW_GOTO_SHOW_ALL_HISTORY_MENU = "Organize Search History..."
+
+// Old: 
+INDEX_FILE_SIZE_HELP = "Store and maintain size information for files in the index. Requires an additional %d bytes of memory for each file."
+// New: (removed "in the index")
+INDEX_FILE_SIZE_HELP = "Store and maintain size information for files. Requires an additional %d bytes of memory for each file."
+
+// Old: 
+INDEX_FOLDER_SIZE_HELP = "Store and maintain size information for folders in the index. Enabling can reduce the performance of Everything. Requires an additional %d bytes of memory for each folder."
+// New: (removed "in the index")
+INDEX_FOLDER_SIZE_HELP = "Store and maintain size information for folders. Enabling can reduce the performance of Everything. Requires an additional %d bytes of memory for each folder."
+
+// Old: 
+FAST_SIZE_SORT_HELP = "Allow instant sorting by size. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by size."
+// New: (removed "\nThe search performance of Everything is reduced when sorting by size." )
+FAST_SIZE_SORT_HELP = "Allow instant sorting by size. Requires an additional %d bytes of memory for each file and folder."
+
+// Old: 
+FAST_DATE_CREATED_SORT_HELP = "Allow instant sorting by date created. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by date created."
+// New: (removed "\nThe search performance of Everything is reduced when sorting by date created.")
+FAST_DATE_CREATED_SORT_HELP = "Allow instant sorting by date created. Requires an additional %d bytes of memory for each file and folder."
+
+// Old: 
+FAST_DATE_MODIFIED_SORT_HELP = "Allow instant sorting by date modified. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by date modified."
+// New: (removed "\nThe search performance of Everything is reduced when sorting by date modified.")
+FAST_DATE_MODIFIED_SORT_HELP = "Allow instant sorting by date modified. Requires an additional %d bytes of memory for each file and folder."
+
+// Old: 
+FAST_DATE_ACCESSED_SORT_HELP = "Allow instant sorting by date accessed. Requires an additional %d bytes of memory for each file and folder\nThe search performance of Everything is reduced when sorting by date accessed."
+// New: (removed "\nThe search performance of Everything is reduced when sorting by date accessed." )
+FAST_DATE_ACCESSED_SORT_HELP = "Allow instant sorting by date accessed. Requires an additional %d bytes of memory for each file and folder."
+
+// Old: 
+FAST_ATTRIBUTES_SORT_HELP = "Allow instant sorting by attributes. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by attributes."
+// New: (removed "\nThe search performance of Everything is reduced when sorting by attributes.")
+FAST_ATTRIBUTES_SORT_HELP = "Allow instant sorting by attributes. Requires an additional %d bytes of memory for each file and folder."
+
+// Old: 
+FAST_EXTENSION_SORT_HELP = "Allow instant sorting by extension. Requires an additional %d bytes of memory for each file and folder.\nThe search performance of Everything is reduced when sorting by extension."
+// New: (removed "\nThe search performance of Everything is reduced when sorting by extension.")
+FAST_EXTENSION_SORT_HELP = "Allow instant sorting by extension. Requires an additional %d bytes of memory for each file and folder."
+
+// Old: 
+RENAME_OLD_FORMAT = "Old &Format:"
+// New: (uncapitalized "format")
+RENAME_OLD_FORMAT = "Old &format:"
+
+// Old: 
+RENAME_NEW_FORMAT = "New For&mat:"
+// New: (uncapitalized "format")
+RENAME_NEW_FORMAT = "New for&mat:"
+
+// Old: 
+RENAME_NEW_FORMAT_HELP = "Format for the new filenames.\nFilenames that do not match the old format are not affected by the new format.\nChanging the new format will generate new filenames."
+// New: (rewrite)
+RENAME_NEW_FORMAT_HELP = "Format for the new filenames.\nOnly filenames that match the old format are renamed.\nChanging the new format will generate new filenames."
+
+// Old: 
+RENAME_OLD_FILENAMES = "&Old Filenames:"
+// New: (uncapitalized "filenames")
+RENAME_OLD_FILENAMES = "&Old filenames:"
+
+// Old: 
+RENAME_NEW_FILENAMES = "&New Filenames:"
+// New: (uncapitalized "filenames")
+RENAME_NEW_FILENAMES = "&New filenames:"
+
+// Old: 
+SEARCH_ADVANCED_SEARCH_MENU = "&Advanced Search..."
+// New: (Change Alt + A mnemonic to Alt + S mnemonic)
+SEARCH_ADVANCED_SEARCH_MENU = "Advanced &Search..."
+
+// Old: 
+SEARCH_ADVANCED_SEARCH_MENU_HELP = "Perform more complex searches, such as searching file content, sizes, dates and types."
+// New: (changed "sizes" to "size", "dates" to "date" and "types" to "type")
+SEARCH_ADVANCED_SEARCH_MENU_HELP = "Perform more complex searches, such as searching file content, size, date and type."
+
+// Old: 
+ADVANCED_SEARCH_CONTENT_HELP = "Search file contents for the word or phrase."
+// New: (added "\nFile content is not indexed.\nCombine with other filters for the best performance." )
+ADVANCED_SEARCH_CONTENT_HELP = "Search file contents for the word or phrase.\nFile content is not indexed.\nCombine with other filters for the best performance."
+
+// Old: 
+ADVANCED_SEARCH_CONTENT_WARNING = "File content is not indexed. Combine with other filters for the best performance."
+// New: (added newline)
+ADVANCED_SEARCH_CONTENT_WARNING = "File content is not indexed.\nCombine with other filters for the best performance."
+
+// Old: 
+ADVANCED_SEARCH_CONTENT_TYPE_UTF16 = "UTF-16"
+// New: (changed "UTF-16" to "Unicode")
+ADVANCED_SEARCH_CONTENT_TYPE_UTF16 = "Unicode"
+
+// Old: 
+ADVANCED_SEARCH_CONTENT_TYPE_UTF16BE = "UTF-16 big endian"
+// New: (changed "UTF-16" to "Unicode")
+ADVANCED_SEARCH_CONTENT_TYPE_UTF16BE = "Unicode big endian"
+
+// Old: 
+ADVANCED_SEARCH_LOCATED_IN_HELP = "Limit results to a specific path."
+// New: (changed "path" to "folder")
+ADVANCED_SEARCH_LOCATED_IN_HELP = "Limit results to a specific folder."
+
+// Old: 
+ADVANCED_SEARCH_LOCATED_IN_BROWSE_HELP = "Browse for a path..."
+// New: (changed "path" to "folder")
+ADVANCED_SEARCH_LOCATED_IN_BROWSE_HELP = "Browse for a folder..."
+
+// Old: 
+ADVANCED_SEARCH_DATE_MODIFIED_WARNING = "Date modified is not indexed. Combine with other filters for the best performance or enable date modified indexing."
+// New: (added newline)
+ADVANCED_SEARCH_DATE_MODIFIED_WARNING = "Date modified is not indexed.\nCombine with other filters for the best performance or enable date modified indexing."
+
+// Old: 
+ADVANCED_SEARCH_DATE_CREATED_WARNING = "Date created is not indexed. Combine with other filters for the best performance or enable date created indexing."
+// New: (added newline)
+ADVANCED_SEARCH_DATE_CREATED_WARNING = "Date created is not indexed.\nCombine with other filters for the best performance or enable date created indexing."
+
+// Old: 
+ADVANCED_SEARCH_DATE_ACCESSED_WARNING = "Date accessed is not indexed. Combine with other filters for the best performance or enable date accessed indexing."
+// New: (added newline)
+ADVANCED_SEARCH_DATE_ACCESSED_WARNING = "Date accessed is not indexed.\nCombine with other filters for the best performance or enable date accessed indexing."
+
+// Old: 
+ADVANCED_SEARCH_TYPE_ALL_FILES_TYPES = "All Files Types"
+// New: (changed "Files" to "file")
+ADVANCED_SEARCH_TYPE_ALL_FILES_TYPES = "All File Types"
+
+// Old: 
+ADVANCED_SEARCH_EXTENSION_HELP = "Search for a list of extensions.\nSeparate extensions (excluding the dot) with a semicolon (;)."
+// New: (rewrite)
+ADVANCED_SEARCH_EXTENSION_HELP = "Search for a semicolon (;) delimited list of extensions without the dot."
+
+// Old: 
+ADVANCED_SEARCH_SIZE_WARNING = "Size is not indexed. Combine with other filters for the best performance or enable size indexing."
+// New: (added newline)
+ADVANCED_SEARCH_SIZE_WARNING = "Size is not indexed.\nCombine with other filters for the best performance or enable size indexing."
+
+// Old: 
+ADVANCED_SEARCH_SIZE_BYTES = "Bytes"
+// New: (uncapitalized "bytes")
+ADVANCED_SEARCH_SIZE_BYTES = "bytes"
+
+// Old: 
+ADVANCED_SEARCH_SIZE_FORMAT_HELP = "Select the size format.\nKB = 1024 bytes.\nMB = 1024 KB.\nGB = 1024 MB.\n"
+// New: (removed trailing newline)
+ADVANCED_SEARCH_SIZE_FORMAT_HELP = "Select the size format.\nKB = 1024 bytes.\nMB = 1024 KB.\nGB = 1024 MB."
+
+// Old: 
+ADVANCED_SEARCH_ATTRIBUTES_HELP = "Check the desired attributes.\nLeave all attributes unchecked to search for all files.\n"
+// New: (removed trailing newline)
+ADVANCED_SEARCH_ATTRIBUTES_HELP = "Check the desired attributes.\nLeave all attributes unchecked to search for all files."
+
+// Old: 
+ADVANCED_SEARCH_ATTRIBUTES_WARNING = "This information is not indexed and will take some time to gather, combine with other filters for the best performance or enable indexing of this information."
+// New: (added newline)
+ADVANCED_SEARCH_ATTRIBUTES_WARNING = "This information is not indexed and will take some time to gather.\nCombine with other filters for the best performance or enable indexing of this information."
+
+// Old: 
+ADVANCED_SEARCH_REGEX_HELP = "Search for a basic regular expression.\n"
+// New: (removed "basic")
+ADVANCED_SEARCH_REGEX_HELP = "Search for a regular expression."
+
+// Old: 
+ADVANCED_SEARCH_FILE_NAME_LENGTH_INCLUDE_PATH_HELP = "Use the length of the full path and filename."
+// New: (rewrite)
+ADVANCED_SEARCH_FILE_NAME_LENGTH_INCLUDE_PATH_HELP = "Search the length of the full path."
+
+// Old: 
+ADVANCED_SEARCH_CHILD_STATIC = "Folders with a &child subfolder or file name containing:"
+// New: (rewrite)
+ADVANCED_SEARCH_CHILD_STATIC = "Folders where the name of a &child subfolder or file contains:"
+
+// Old: 
+ADVANCED_SEARCH_FILELIST_HELP = "Search for a list of file names.\nSeparate file names with a vertical bar (|).\nInclude a backslash (\\) to match the full path and file name."
+// New: (rewrite)
+ADVANCED_SEARCH_FILELIST_HELP = "Search for a list of filenames from the specified file."
+
+// Old: 
+ADVANCED_SEARCH_FILELIST_BROWSE_HELP = "Select a file to populate the list of file names.\nEvery line in a txt file describes a file name.\nEvery row under the Filename column in an efu or csv file describes a file name."
+// New: (rewrite)
+ADVANCED_SEARCH_FILELIST_BROWSE_HELP = "Browse for a file list."
+
+// Old: 
+ADVANCED_SEARCH_FILELIST_BROWSE_CAPTION = "Browse For File List"
+// New: (rewrite)
+ADVANCED_SEARCH_FILELIST_BROWSE_CAPTION = "Select File List"
+
+// Old: 
+MENU_COPY_NAME_TO_CLIPBOARD = "Copy Name to Clipboard"
+// New: (removed "to Clipboard")
+MENU_COPY_NAME_TO_CLIPBOARD = "Copy Name"
+
+// Old: 
+MENU_COPY_NAME_TO_CLIPBOARD_HELP = "Copy the file name part only to the clipboard."
+// New: (changed "file name part only" to "name")
+MENU_COPY_NAME_TO_CLIPBOARD_HELP = "Copy the name to the clipboard."
+
+// Old: 
+FILE_OPEN_MOST_RUN = "Open most run"
+// New: (titlecase)
+FILE_OPEN_MOST_RUN = "Open Most Run"
+
+// Old: 
+DB_ENABLE_RECENT_CHANGES_HELP = "Keep a list of changes to the Everything database.\nAllows searching and sorting by Date recently changed.\nEnabling may reduce the performance of Everything.\nRecent changes indexing is similar to Date Modified indexing except only recently modified files are indexed.\n"
+// New: (removed trailing newline)
+DB_ENABLE_RECENT_CHANGES_HELP = "Keep a list of changes to the Everything database.\nAllows searching and sorting by Date recently changed.\nEnabling may reduce the performance of Everything.\nRecent changes indexing is similar to Date Modified indexing except only recently modified files are indexed."
+
+// Old: 
+EDIT_COPY_TO = "Copy to &Folder..."
+// New: (Change Alt + F mnemonic to Alt + Y mnemonic)
+EDIT_COPY_TO = "Cop&y to Folder..."
+
+// Old:
+RENAME_REPLACE_MATCH_CASE_HELP = "Match case or ignore case.\nThe generated old format is always case sensitive."
+// New: (added " in the old format.")
+RENAME_REPLACE_MATCH_CASE_HELP = "Match case or ignore case in the old format.\nThe generated old format is always case sensitive."
+
+// Old:
+RENAME_REPLACE_REGEX = "&Regex"
+// New: (changed "Regex" to "Regular expressions")
+RENAME_REPLACE_REGEX = "&Regular expressions"
+
+// Old:
+RENAME_OLD_FORMAT_REGEX_HELP = "Regular expression to match old filenames.\nAll matches in the filename will be replaced.\n"
+// New: (removed trailing newline)
+RENAME_OLD_FORMAT_REGEX_HELP = "Regular expression to match old filenames.\nAll matches in the filename will be replaced."
+
+// Old:
+RENAME_NEW_FORMAT_REGEX_HELP = "Filenames that match the expression in old format are replaced with this expression.\nChanging the new format will generate new filenames.\n"
+// New: (removed trailing newline)
+RENAME_NEW_FORMAT_REGEX_HELP = "Filenames that match the expression in old format are replaced with this expression.\nChanging the new format will generate new filenames."
+
+// Old:
+FOLDERS_BUFFER_SIZE = "Buffer &size:"
+// New: (changed Alt + S mnemonic to Alt + Z mnemonic)
+FOLDERS_BUFFER_SIZE = "Buffer si&ze:"
+
+// Old:
+FOLDERS_BUFFER_SIZE_HELP = "The size of the buffer for storing changes made to this folder, subfolder and files.\nChanges will be missed if Everything is unable to process this buffer fast enough.\nNetwork drives are limited to 64 KB."
+// New: (added "\n1 KB = 1024 bytes.")
+FOLDERS_BUFFER_SIZE_HELP = "The size of the buffer for storing changes made to this folder, subfolder and files.\nChanges will be missed if Everything is unable to process this buffer fast enough.\nNetwork drives are limited to 64 KB.\n1 KB = 1024 bytes."
+
+// Old:
+FOLDERS_RESCAN_FULL_BUFFER_HELP = "Rescan the entire folder, subfolders and files if the change buffer is full because too many changes occurred too quickly."
+// New: (removed " because too many changes occurred too quickly.")
+FOLDERS_RESCAN_FULL_BUFFER_HELP = "Rescan the entire folder, subfolders and files if the change buffer is full."
+
+// Old:
+FILE_OPEN_LAST_RUN = "Open last run"
+// New: (titlecase)
+FILE_OPEN_LAST_RUN = "Open Last Run"
+
+// Old:
+ADVANCED_COPYMOVE_TO_OLD_FORMAT_HELP = "Format to match old full paths and filenames.\nThe whole full paths and filename is matched"
+// New: (rewrite)
+ADVANCED_COPYMOVE_TO_OLD_FORMAT_HELP = "Format to match old filenames.\nThe whole filename is matched when using a variable."
+
+// Old:
+ADVANCED_COPYMOVE_TO_NEW_FORMAT_HELP = "Format for the new full paths and filenames.\nFull paths and filenames that do not match the old format are not affected by the new format.\nChanging the new format will generate new full paths and filenames."
+// New: (rewrite)
+ADVANCED_COPYMOVE_TO_NEW_FORMAT_HELP = "Format for the new filenames.\nOnly filenames that match the old format are moved or copied.\nChanging the new format will generate new filenames."
+
+// Old:
+ADVANCED_COPYMOVE_TO_OLD_FILENAMES = "&Old full paths and filenames:"
+// New: (removed "full paths and ")
+ADVANCED_COPYMOVE_TO_OLD_FILENAMES = "&Old filenames:"
+
+// Old:
+ADVANCED_COPYMOVE_TO_NEW_FILENAMES = "&New full paths and filenames:"
+// New: (removed "full paths and ")
+ADVANCED_COPYMOVE_TO_NEW_FILENAMES = "&New filenames:"
+
+// Old:
+LOCALIZATION_SIZE_RESULT_LIST_TO_FIT = "Size All Columns to Fit Window"
+// New: (added Alt + W mnemonic)
+LOCALIZATION_SIZE_RESULT_LIST_TO_FIT = "Size All Columns to Fit &Window"
+
+// Old:
+SEARCH_HISTORY_EXPORT_HELP = "Export all searches to a csv file."
+// New: (changed "csv" to "Comma Separated Values (CSV)" and changed "all results" to "searches")
+SEARCH_HISTORY_EXPORT_HELP = "Export search history to a Comma Separated Values (CSV) file."
