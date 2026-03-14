@@ -10,14 +10,13 @@ set "E15=C:\Program Files\Everything 1.5a"
 @echo on
 cd /D "%~dp0"
 makelng
-if exist "%E%\Everything.exe" (
-    "%E%\Everything.exe" -exit
-    copy /y "%~dp0Everything.lng" "%E%\Everything.lng"
-    start "" "%E%\Everything.exe" -startup
-)
 if exist "%E15%\Everything.exe" (
     "%E15%\Everything.exe" -exit
     copy /y "%~dp0Everything.lng" "%E15%\Everything.lng"
     start "" "%E15%\Everything.exe" -startup
+) else if exist "%E%\Everything.exe" (
+    "%E%\Everything.exe" -exit
+    copy /y "%~dp0Everything.lng" "%E%\Everything.lng"
+    start "" "%E%\Everything.exe" -startup
 )
 pause
