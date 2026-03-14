@@ -230,13 +230,13 @@ Everything.db에서 파일 이름 목록을 복구하려면
 ==파일 시스템 감시 정지==
 NTFS, ReFS, 폴더, 파일 목록 감시를 정지하려면
 <ul>
-*'''Everything''' 검색 줄에 다음을 입력하고 엔터를 칩니다.
+*'''Everything''' 검색 상자에 다음을 입력하고 엔터를 칩니다.
 /monitor_pause
 </ul>
 
 NTFS, ReFS, 폴더, 파일 목록 감시를 시작하려면
 <ul>
-*'''Everything''' 검색 줄에 다음을 입력하고 엔터를 칩니다.
+*'''Everything''' 검색 상자에 다음을 입력하고 엔터를 칩니다.
 /monitor_resume
 </ul>
 

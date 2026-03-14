@@ -202,7 +202,7 @@ Everything.ini를 저장하고 Everything을 재시작합니다.
 
 ==글꼴과 색상==
 검색 결과 글꼴을 바꾸려면 [[support/everything/options#글꼴과 색상|글꼴과 색상]]
-검색 줄 글꼴을 바꾸려면 [[support/everything/ini#search_edit_font|search_edit_font_size]] and [[support/everything/ini#search_edit_font|search_edit_font_size]]
+검색 상자 글꼴을 바꾸려면 [[support/everything/ini#search_edit_font|search_edit_font_size]] and [[support/everything/ini#search_edit_font|search_edit_font_size]]
 상태 표시줄 글꼴을 바꾸려면 [[support/everything/ini#status_bar_font|status_bar_font]] and [[support/everything/ini#status_bar_font_size|status_bar_font_size]]
 검색 결과 헤더 글꼴을 바꾸려면 [[support/everything/ini#header_font|header_font]] and [[support/everything/ini#header_font_size|header_font_size]]
 
