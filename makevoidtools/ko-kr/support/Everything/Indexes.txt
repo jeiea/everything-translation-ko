@@ -184,7 +184,7 @@ thumbs.db;desktop.ini;*.tmp
 *'''확인'''을 클릭합니다.
 </ul>
 
-==Everything.db에서 파일이름 복구하기==
+==Everything.db에서 파일 이름 복구하기==
 Everything.db에서 파일 이름 목록을 복구하려면
 <ul>
 *Everything.db을 백업합니다.

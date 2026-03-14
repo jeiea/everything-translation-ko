@@ -22,7 +22,7 @@
 ==어떻게 명령 행으로 efu 파일 목록을 만드나요?==
 명령 행으로 파일 목록을 생성하려면
 <pre>
-Everything.exe -create-filelist <출력파일이름> <스캔할 경로>
+Everything.exe -create-filelist <출력파일 이름> <스캔할 경로>
 </pre>
 
 파일을 제외하려면 [[support/everything/command_line_options#-create-file-list-exclude-files|-create-file-list-exclude-files]] <필터>를,

@@ -50,7 +50,7 @@
 | 1개 이상 문자에 대응.
 |}
 
-와일드카드는 ''전체'' 파일이름에 대응합니다. 와일드카드를 써도 일부분만 일치하는 결과도 찾으려면 [[support/everything/options#와일드카드를 사용할 때 이름 전체와 비교|와일드카드를 사용할 때 이름 전체와 비교]]를 끄세요.
+와일드카드는 ''전체'' 파일 이름에 대응합니다. 와일드카드를 써도 일부분만 일치하는 결과도 찾으려면 [[support/everything/options#와일드카드를 사용할 때 이름 전체와 비교|와일드카드를 사용할 때 이름 전체와 비교]]를 끄세요.
 
 ;syntax_macros|상용구
 {|
@@ -118,7 +118,7 @@
 | 정규식을 사용하거나 쓰지 않습니다.
 |-
 | <code>wfn:<br>wholefilename:<br>nowfn:<br>nowholefilename:</code>
-| 전체 파일이름과 비교하거나 일부만 일치해도 인정합니다.
+| 전체 파일 이름과 비교하거나 일부만 일치해도 인정합니다.
 |-
 | <code>wholeword:<br>ww:<br>nowholeword:<br>noww:</code>
 | 단어 전체가 일치해야만 인정하거나 그러지 않습니다.
@@ -141,8 +141,8 @@
 | <code>bitdepth:<비트></code>
 | 지정한 픽셀 당 비트 수가 일치하는 이미지를 검색합니다.
 |-
-| <code>child:<파일이름></code>
-| 지정한 조건(파일이름)에 일치하는 항목을 가진 폴더를 검색합니다.
+| <code>child:<파일 이름></code>
+| 지정한 조건(파일 이름)에 일치하는 항목을 가진 폴더를 검색합니다.
 |-
 | <code>childcount:<개수></code>
 | 하위 파일 및 폴더가 일정 개수인 폴더를 검색합니다.
@@ -195,7 +195,7 @@
 | <code>filelist:<목록></code>
 | |로 나뉜 파일 이름 목록을 전부 검색합니다.
 |-
-| <code>filelistfilename:<파일이름></code>
+| <code>filelistfilename:<파일 이름></code>
 | 해당 파일 이름의 파일 목록에서 검색합니다. filelistfilename:.이면 열었거나 색인에 포함된 모든 파일목록에서만 검색합니다.
 |-
 | <code>frn:<번호목록></code>
@@ -634,10 +634,10 @@ foo
 | a~z, A~Z까지의 한 글자에 대응
 |-
 | <code>^</code>
-| 파일이름 시작에 대응
+| 파일 이름 시작에 대응
 |-
 | <code>$</code>
-| 파일이름 끝에 대응
+| 파일 이름 끝에 대응
 |-
 | <code>*</code>
 | 앞 요소가 0번 이상 나옴
@@ -695,13 +695,13 @@ foo
 | <code>/config_save</code>
 | [[support/Everything/INI|Everything.ini]] 백업 대화상자 열기.
 |-
-| <code>/config_save <파일이름></code>
+| <code>/config_save <파일 이름></code>
 | [[support/Everything/INI|Everything.ini]]를 지정한 경로에 백업.
 |-
 | <code>/config_load</code>
 | [[support/Everything/INI|Everything.ini]] 복원 대화상자 열기.
 |-
-| <code>/config_load <파일이름></code>
+| <code>/config_load <파일 이름></code>
 | [[support/Everything/INI|Everything.ini]]를 지정한 경로에서 복원.
 |-
 | <code>/debug<br>/console</code>
@@ -857,7 +857,7 @@ D:\music 폴더에서 mp3 파일이 없는 폴더 검색:
 d:\music\ !child:mp3
 </pre>
 
-ASCII 문자가 아닌 문자를 포함한 파일이름 검색:
+ASCII 문자가 아닌 문자를 포함한 파일 이름 검색:
 <pre>
 regex:[^\x00-\x7f]
 </pre>
