@@ -1,5 +1,10 @@
-
-*.bz2
+# WinMerge backup file
 *.bak
 
+# makelng artifacts
+*.bz2
+/installer_license_*.txt
+*.lng
+
+# makevoidtools artifacts
 /makevoidtools/build
