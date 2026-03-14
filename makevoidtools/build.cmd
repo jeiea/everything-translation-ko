@@ -1,1 +1,1 @@
-makevoidtools.exe build file://D:/Jeiea/Project/2014/08/EverythingTranslation/makevoidtools/build
+makevoidtools.exe build %~dp0build

@@ -2,8 +2,8 @@
 
 <project>
    <paths>
-      <left>D:\Jeiea\Project\2014\08\EverythingTranslation\Template.txt</left>
-      <right>D:\Jeiea\Project\2014\08\EverythingTranslation\Korean.txt</right>
+      <left>.\Template.txt</left>
+      <right>.\Korean.txt</right>
       <filter>*.*</filter>
       <subfolders>0</subfolders>
       <left-readonly>0</left-readonly>

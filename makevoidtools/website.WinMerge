@@ -2,8 +2,8 @@
 
 <project>
    <paths>
-      <left>\\?\D:\Jeiea\Project\2014\08\EverythingTranslation\makevoidtools\en-us\</left>
-      <right>\\?\D:\Jeiea\Project\2014\08\EverythingTranslation\makevoidtools\ko-kr\</right>
+      <left>.\en-us\</left>
+      <right>.\ko-kr\</right>
       <filter>*.*</filter>
       <subfolders>1</subfolders>
       <left-readonly>0</left-readonly>
