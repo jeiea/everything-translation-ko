@@ -9,7 +9,7 @@ set "E15=C:\Program Files\Everything 1.5a"
 
 @echo on
 cd /D "%~dp0"
-makelng
+makelng -s
 if exist "%E15%\Everything.exe" (
     "%E15%\Everything.exe" -exit
     copy /y "%~dp0Everything.lng" "%E15%\Everything.lng"
