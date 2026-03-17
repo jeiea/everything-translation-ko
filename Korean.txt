@@ -2418,7 +2418,7 @@ COLOR_SELECTED_INACTIVE_HOT = "비활성화된 선택한 링크"
 COLOR_SELECTED_INACTIVE_HOT_HIGHLIGHTED = "비활성화된 선택한 링크 검색어 일치부분"
 
 BOOKMARK_REMEMBER_VIEW_BUTTON = "보기 종류 기억(&V):"
-BOOKMARK_REMEMBER_VIEW_HELP = "보기 종류를 이 책갈피에 기록합니다. 이 책갈피를 열 때 현재 보기로 보려면 켜세요. 끄면 기본값으로 보게 됩니다."
+BOOKMARK_REMEMBER_VIEW_HELP = "보기 종류를 이 책갈피에 기록합니다. 이 책갈피를 열 때 현재 보기로 보려면 켜세요. 끄면 기본값으로 봅니다."
 BOOKMARK_VIEW_HELP = "이 책갈피를 열 때 사용할 보기입니다."
 BOOKMARK_VIEW_DETAILS = "자세히"
 BOOKMARK_VIEW_THUMBNAILS_FORMAT = "섬네일 (%d x %d)"
@@ -2620,7 +2620,7 @@ ADVANCED_COPYMOVE_TO_OLD_FORMAT	="이전 형식(&F):"
 ADVANCED_COPYMOVE_TO_OLD_FORMAT_HELP = "기존 파일 이름에 일치시킬 형식.\n변수를 사용하면 파일 이름 전체와 비교합니다."
 
 ADVANCED_COPYMOVE_TO_NEW_FORMAT	= "새 형식(&F):"
-ADVANCED_COPYMOVE_TO_NEW_FORMAT_HELP = "새 파일 이름 형식.\n기존 형식과 일치하는 파일 이름만 이동 또는 복사됩니다.\n새 형식을 바꾸면 새 파일 이름을 생성합니다."
+ADVANCED_COPYMOVE_TO_NEW_FORMAT_HELP = "새 파일 이름 형식.\n기존 형식과 일치하는 파일 이름만 이동 또는 복사합니다.\n새 형식을 바꾸면 새 파일 이름을 생성합니다."
 
 ADVANCED_COPYMOVE_TO_OLD_FILENAMES = "기존 파일 이름(&O):"
 ADVANCED_COPYMOVE_TO_OLD_FILENAMES_HELP = "기존 전체 경로와 파일 이름 목록."
