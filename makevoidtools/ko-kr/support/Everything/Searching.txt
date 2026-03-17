@@ -196,7 +196,7 @@
 | |로 나뉜 파일 이름 목록을 전부 검색합니다.
 |-
 | <code>filelistfilename:<파일 이름></code>
-| 해당 파일 이름의 파일 목록에서 검색합니다. filelistfilename:.이면 열었거나 색인에 포함된 모든 파일목록에서만 검색합니다.
+| 해당 파일 이름의 파일 목록에서 검색합니다. filelistfilename:.이면 열었거나 색인에 포함된 모든 파일 목록에서만 검색합니다.
 |-
 | <code>frn:<번호목록></code>
 | ;로 나뉜 File Reference Number 목록을 겅색합니다.

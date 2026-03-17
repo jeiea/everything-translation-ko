@@ -15,7 +15,7 @@
 현재 검색 결과를 efu 파일 목록으로 만들려면
 <ul>
 *'''Everything''' - '''파일''' 메뉴 - '''내보내기...'''를 클릭합니다.
-*'''파일 형식'''을 '''efu Everything 파일목록 (*.efu)'''로 바꿉니다.
+*'''파일 형식'''을 '''efu Everything 파일 목록 (*.efu)'''로 바꿉니다.
 *파일 이름을 입력하고 '''확인'''을 클릭합니다.
 </ul>
 
@@ -30,7 +30,7 @@ Everything.exe -create-filelist <출력파일 이름> <스캔할 경로>
 지정한 파일만 포함하려면  [[support/everything/command_line_options#-create-file-list-include-only-files|-create-file-list-include-only-files]] <필터>를 사용하면 됩니다.
 
 예제
-tmp 파일을 제외한 파일목록을 만들려면
+tmp 파일을 제외한 파일 목록을 만들려면
 <pre>
 Everything.exe -create-file-list "myfilelist.efu" "c:\" -create-file-list-exclude-files "*.tmp"
 </pre>
