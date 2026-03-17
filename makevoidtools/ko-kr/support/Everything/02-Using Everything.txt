@@ -24,7 +24,7 @@ Everything 검색 창은 여러 부분으로 나뉩니다.
 열을 숨기거나 표시하려면 우클릭하면 됩니다.
 
 ;검색 결과
-항목을 열려면 더블클릭하거나 선택한 상태에서 엔터를 누르면 됩니다.
+항목을 열려면 더블 클릭하거나 선택한 상태에서 엔터를 누르면 됩니다.
 항목은 다른 프로그램으로 드래그할 수 있습니다.
 선택한 항목에 쓸 수 있는 기능을 보고 싶으면 그 항목을 우클릭하면 됩니다.
 
@@ -39,7 +39,7 @@ Everything의 현재 상태와 검색 옵션을 보여줍니다.
 ==Everything 검색 창 띄우기==
 Everything 검색 창을 보려면
 <ul>
-* [[support/everything/options#트레이 아이콘 보기|Everything 트레이 아이콘]]을 더블클릭하거나.
+* [[support/everything/options#트레이 아이콘 보기|Everything 트레이 아이콘]]을 더블 클릭하거나.
 
 * [[support/everything/Keyboard Shortcuts#핫키|핫키]]를 쓰거나.
 
