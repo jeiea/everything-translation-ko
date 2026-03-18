@@ -23,7 +23,7 @@
 *[[support/everything/Search History|검색 히스토리]]
 *[[support/everything/File Lists|파일 목록]]
 *[[support/everything/Folder Indexing|폴더 색인]]
-*[[support/everything/Searching#발음 구별 기호 구분|발음 구별 기호 구분]]
+*[[support/everything/Searching#구별 기호 구분|구별 기호 구분]]
 *[[support/everything/Searching#필터|필터]]
 *[[support/everything/Searching#책갈피|책갈피]]
 *[[support/everything/Searching#필터|필터 칸]]

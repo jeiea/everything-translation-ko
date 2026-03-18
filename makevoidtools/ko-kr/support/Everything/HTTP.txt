@@ -70,7 +70,7 @@ http://localhost/?s=&o=0&c=32&j=0&i=0&w=0&p=0&r=0&m=0&path_column=0&size_column=
 0이 아니면 정규식 검색
 ;''m''
 ;''diacritics''
-0이 아니면 발음구별기호 구분
+0이 아니면 구별 기호 구분
 ;''path_column''
 0이 아니면 JSON 결과에 경로를 추가
 ;''size_column''
