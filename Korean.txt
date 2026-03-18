@@ -228,7 +228,7 @@ MENU_NORMAL = "초기화(&R)"
 MENU_MATCH_CASE = "대소문자 구분(&C)"
 MENU_MATCH_WHOLE_WORD = "전체 단어 일치(&W)"
 MENU_MATCH_PATH = "전체 경로 검색(&P)"
-MENU_MATCH_REGEX = "정규표현식 검색(&R)"
+MENU_MATCH_REGEX = "정규표현식(&R)"
 
 MENU_START_HTTP_SERVER = "HTTP 서버 가동(&H)"
 MENU_START_ETP_SERVER = "ETP/FTP서버 가동(&E)"
