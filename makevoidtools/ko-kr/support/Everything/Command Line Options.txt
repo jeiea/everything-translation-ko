@@ -429,7 +429,7 @@ ABC나 123 검색:
 Everything.exe -s "ABC|123"
 </pre>
 
-ETP 서버에 접속:
+ETP 서버에 연결:
 <pre>
 Everything.exe -connect "ComputerName" -drive-links
 </pre>
