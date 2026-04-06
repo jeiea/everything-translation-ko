@@ -1,0 +1,56 @@
+name: Build Everything.lng
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  build:
+    name: Build and attest Everything.lng
+    runs-on: windows-latest
+    permissions:
+      contents: write
+      id-token: write
+      attestations: write
+
+    steps:
+      - uses: actions/checkout@v6
+
+      - name: Build Everything.lng
+        shell: pwsh
+        run: .\makelng.exe -s
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: Everything.lng-${{ github.ref_name }}
+          path: Everything.lng
+          if-no-files-found: error
+
+      - uses: actions/attest@v4
+        if: github.event.repository.visibility == 'public'
+        with:
+          subject-path: ${{ github.workspace }}/Everything.lng
+
+      - name: Create or update GitHub release
+        if: github.ref_type == 'tag'
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $tag = "${{ github.ref_name }}"
+          $asset = "Everything.lng"
+
+          gh release view $tag | Out-Null
+          if ($LASTEXITCODE -ne 0) {
+            gh release create $tag $asset --verify-tag --generate-notes
+            if ($LASTEXITCODE -ne 0) {
+              throw "Failed to create release for tag $tag."
+            }
+            exit 0
+          }
+
+          gh release upload $tag $asset --clobber
+          if ($LASTEXITCODE -ne 0) {
+            throw "Failed to upload release asset for tag $tag."
+          }
