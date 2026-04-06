@@ -14,7 +14,8 @@ if exist "%E15%\Everything.exe" (
     "%E15%\Everything.exe" -exit
     copy /y "%~dp0Everything.lng" "%E15%\Everything.lng"
     start "" "%E15%\Everything.exe" -startup
-) else if exist "%E%\Everything.exe" (
+)
+if exist "%E%\Everything.exe" (
     "%E%\Everything.exe" -exit
     copy /y "%~dp0Everything.lng" "%E%\Everything.lng"
     start "" "%E%\Everything.exe" -startup
