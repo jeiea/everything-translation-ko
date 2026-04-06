@@ -2565,7 +2565,7 @@ EDIT_ADVANCED_MOVE_TO_HELP = "선택한 항목을 다른 위치로 고급지게 
 
 FOLDERS_BUFFER_SIZE = "버퍼 크기(&Z):"
 FOLDERS_BUFFER_SIZE_HELP = "해당 폴더와 하위 폴더 및 파일의 변경사항을 저장할 버퍼의 크기.\n이 버퍼의 자료를 빨리 처리하지 못하면 변경사항을 놓칩니다.\n네트워크 드라이브는 64KiB가 최대입니다."
-FOLDERS_RESCAN_FULL_BUFFER = "버퍼가 찼을 때 재검사(&B)"
+FOLDERS_RESCAN_FULL_BUFFER = "버퍼 초과 시 재검사(&B)"
 FOLDERS_RESCAN_FULL_BUFFER_HELP = "버퍼가 찼을 때 해당 폴더와 하위 폴더 및 파일을 재검사합니다."
 
 RENAME_BROWSE_FOR_FOLDER_CATPION = "폴더를 탐색합니다"
