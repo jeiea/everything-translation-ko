@@ -22,6 +22,9 @@ _LANGUAGE_READING_ORDER = "LTR"
 // Put your name here so I can credit you.
 _LANGUAGE_TRANSLATOR = "David Carpenter"
 
+// Your name will be linked to this address or email
+_LANGUAGE_LINK = "https://www.voidtools.com/contact/"
+
 // Don't forget to save as UTF-8
 // Please contact david@voidtools.com if you need help
 
@@ -81,11 +84,11 @@ QUERY_DATABASE = "Query database..."
 FAILED_TO_LOAD_CREATED_DATABASE_FORMAT = "Failed to load created database: %s"
 THE_DATABASE_PATH_DOES_NOT_EXIST = "The database path does not exist"
 THE_DATABASE_FILE_DOES_NOT_EXIST = "The database file does not exist"
-CAN_NOT_OPEN_THE_DATABASE_FILE_FOR_READING = "Can not open the database file for reading"
-CAN_NOT_COMPRESS_DATABASE_STREAM = "Can not compress database stream"
+CAN_NOT_OPEN_THE_DATABASE_FILE_FOR_READING = "Unable to open the database file for reading"
+CAN_NOT_COMPRESS_DATABASE_STREAM = "Unable to compress database stream"
 THE_DATABASE_IS_NOT_A_VALID_EVERYTHING_DATABASE = "The database is not a valid Everything database"
 UNSUPPORTED_DATABASE_VERSION_FORMAT = "Unsupported database version %08x"
-CAN_NOT_READ_THE_DATABASE_FILE = "Can not read the database file"
+CAN_NOT_READ_THE_DATABASE_FILE = "Unable to read the database file"
 DATABASE_IS_OUT_OF_DATE = "Database is out of date"
 DATABASE_IS_CORRUPT = "Database is corrupt"
 
@@ -127,9 +130,9 @@ SAVING = "Saving to disk..."
 SORTING = "Sorting..."
 CONNECTING_TO_ETP_SERVER = "Connecting to ETP Server..."
 STARTING_WINSOCK = "Starting Winsock..."
-CONNECT_TO_ETP_SERVER_CAPTION = "Connect To ETP Server"
+CONNECT_TO_ETP_SERVER_CAPTION = "Connect to ETP Server"
 FAILED_TO_CONNECT_TO_FORMAT = "Failed to connect to %s.\n%s"
-FAILED_TO_STARTUP_WINSOCK = "Failed to startup Winsock."
+FAILED_TO_STARTUP_WINSOCK = "Failed to start Winsock."
 GETTING_HOST_NAME = "Getting host name..."
 FAILED_TO_GET_LOCAL_HOST_NAME = "Failed to get local host name."
 CREATING_SOCKET = "Creating socket..."
@@ -493,7 +496,9 @@ CREDIT_LIST =
 	"alyzeedus dwadeh\n"
 	"Imre Kristoffer Eilertsen\n"
 	"Åke Engelbrektson\n"
+	"Abdulhamid Fadavi\n"
 	"Egyed Ferenc\n"
+	"Christian Arellano Garc�a\n"
 	"geogeo.gr\n"
 	"Irshat Ghalip\n"
 	"shai horn\n"
@@ -506,7 +511,7 @@ CREDIT_LIST =
 	"Sazan Kërçuku\n"
 	"Koray KIRCAOGLU\n"
 	"Thomas Knoop\n"
-	"koga\n"
+	"Takuma Koga (koga2020)\n"
 	"Nedim Laletovic\n"
 	"Olav Mägi\n"
 	"miyano\n"
@@ -520,7 +525,7 @@ CREDIT_LIST =
 	"Marko Puskaric\n"
 	"rexx\n"
 	"Ricardo A. Rivas\n"
-	"Igor R�ckert\n"
+	"Igor Rückert\n"
 	"Jadran Rudec\n"
 	"Sam\n"
 	"Julian Seward\n"
@@ -809,7 +814,7 @@ OPTIONS_FOLDERS = "Folders"
 DEFAULT_TITLE_FORMAT_WINDOW = "$s?{$s - }$t$i?{ ($i)}"
 DEFAULT_TITLE_FORMAT_TASKBAR_NOTIFICATION = "$t$i?{ ($i)}"
 
-TOO_MANY_DB_CREATE_ERRORS = "Too many db create errors"
+TOO_MANY_DB_CREATE_ERRORS = "Too many DB create errors"
 
 EXPORT_CREATEFILE_FAILED = "Unable to create %s"
 EXPORT_WRITE_FAILED = "Unable to write to %s"
@@ -1160,7 +1165,7 @@ SNAP_PIXELS = "pixels"
 SNAP_LENGTH_HELP = "The number of pixels before the search window is snapped to the desktop edge."
 
 RESULT_LIST_FOCUS = "Result &list focus:"
-RESULT_LIST_FOCUS_HELP = "Clamp: The focus can not be moved above the first item, or lower than the last item.\nRepeat: Moving the focus above the first item will wrap to the bottom item, moving the focus below the last item will wrap to the top item.\nRepeat with search: Moving the focus above the first item, or below the last item will focus the search edit."
+RESULT_LIST_FOCUS_HELP = "Clamp: The focus cannot be moved above the first item, or lower than the last item.\nRepeat: Moving the focus above the first item will wrap to the bottom item, moving the focus below the last item will wrap to the top item.\nRepeat with search: Moving the focus above the first item, or below the last item will focus the search edit."
 
 RESULT_LIST_FOCUS_CLAMP = "Clamp"
 RESULT_LIST_FOCUS_REPEAT = "Repeat"
@@ -1324,8 +1329,8 @@ HELP_SEARCH_SYNTAX_TEXT = "\r\n"
 	"\tamp:\tLiteral ampersand (&)\r\n"
 	"\tlt:\tLiteral less than (<)\r\n"
 	"\tgt:\tLiteral greater than (>)\r\n"
-	"\t#<n>:\tLiteral unicode character <n> in decimal.\r\n"
-	"\t#x<n>:\tLiteral unicode character <n> in hexadecimal.\r\n"
+	"\t#<n>:\tLiteral Unicode character <n> in decimal.\r\n"
+	"\t#x<n>:\tLiteral Unicode character <n> in hexadecimal.\r\n"
 	"\taudio:\tSearch for audio files.\r\n"
 	"\tzip:\tSearch for compressed files.\r\n"
 	"\tdoc:\tSearch for document files.\r\n"
@@ -1725,7 +1730,7 @@ NAV_BACK_HELP = "Go to the previous search."
 NAV_FORWARD = "Forward"
 NAV_FORWARD_HELP = "Go to the next search."
 
-SIZE_RESULT_LIST_TO_FIT = "Size All Columns to Fit Window"
+SIZE_RESULT_LIST_TO_FIT = "Size All Columns to Fit &Window"
 SIZE_COLUMN_TO_FIT = "&Size Column to Fit"
 
 SEARCH_HISTORY_GROUPBOX = "Search History"
@@ -1928,7 +1933,7 @@ RUN_HISTORY_DAYS = "days"
 RUN_HISTORY_KEEP_FOR_DAYS_HELP = "Keep run history for the specified number of days before it is deleted."
 RUN_HISTORY_CLEAR_NOW = "Clear &Now"
 RUN_HISTORY_CLEAR_NOW_HELP = "Delete all run history on disk and in memory."
-RUN_HISTORY_CLEAR_NOW_ARE_YOU_SURE = "Are you sure you want to delete all run history?\n\nThis action can not be undone."
+RUN_HISTORY_CLEAR_NOW_ARE_YOU_SURE = "Are you sure you want to delete all run history?\n\nThis action cannot be undone."
 
 // ui run history.
 
@@ -2689,7 +2694,7 @@ EDIT_ADVANCED_SET_FILE_TIME_HELP = "Set the date modified, date created and/or t
 // View Menu
 
 VIEW_TOGGLE_MENU_MENUITEM = "Menu Bar"
-VIEW_TOGGLE_MENU_HELP = "Shows or hides the main menu bar. If shown the menu bar can be reshown by right clicking the toolbar or status bar."
+VIEW_TOGGLE_MENU_HELP = "Shows or hides the main menu bar. If hidden, it can be restored by right-clicking the toolbar or title bar."
 VIEW_FILTER_BAR_MENUITEM = "Filt&er Bar"
 VIEW_FOLDERS_SIDEBAR_MENUITEM = "&Folders"
 VIEW_FOLDERS_SIDEBAR_HELP = "Shows or hides the folders sidebar."
@@ -2810,7 +2815,7 @@ TOOLS_IMPORT_AND_EXPORT_SETTINGS_HELP = "Backup, restore or reset settings."
 HELP_TROUBLESHOOTING_INFORMATION_MENUITEM = "&Troubleshooting Information"
 HELP_TROUBLESHOOTING_INFORMATION_HELP = "Show technical information that might be useful to solve a problem."
 HELP_BUG_REPORT_MENUITEM = "&Bug Report..."
-HELP_BUG_REPORT_HELP = "Send voidtools an anonymous bug report from your webbrowser."
+HELP_BUG_REPORT_HELP = "Send voidtools an anonymous bug report from your web browser."
 
 // Commands (for Tools -> Options -> Keyboard shortcuts)
 
@@ -2889,7 +2894,7 @@ HISTORY_RESTORE_RECENTLY_CLOSED_TAB_MENUITEM = "Restore Recently Closed Tab"
 HISTORY_RESTORE_RECENTLY_CLOSED_WINDOW_MENUITEM = "Restore Recently Closed Window"
 
 BOOKMARK_NEXT_MENUITEM = "Next Bookmark"
-BOOKMARK_PREVIOUS_MENUITEM = "Prev Bookmark"
+BOOKMARK_PREVIOUS_MENUITEM = "Previous Bookmark"
 
 WINDOW_MENU = "&Window"
 WINDOW_NEXT_FRAME_MENUITEM = "Next Frame"
@@ -2914,7 +2919,7 @@ ACCESS_DENIED_INSTALL_SERVICE_HELP = "Install and start the Everything Service."
 ACCESS_DENIED_RUN_INDEXING_PROCESS_AS_ADMINISTRATOR_BUTTON = "Run inde&xing process as administrator"
 ACCESS_DENIED_RUN_INDEXING_PROCESS_AS_ADMINISTRATOR_HELP = "Run an additional Everything indexing process as an administrator.\nThe main Everything UI process will keep running as a standard user."
 ACCESS_DENIED_RUN_AS_ADMIN_HELP = "Run Everything as an administrator."
-ACCESS_DENIED_DO_NOT_INDEX_NTFS_HELP = "Disable automatic indexing of NTFS volumes.\nManully index NTFS volumes from the Everything options."
+ACCESS_DENIED_DO_NOT_INDEX_NTFS_HELP = "Disable automatic indexing of NTFS volumes.\nManually index NTFS volumes from the Everything options."
 
 // Advanced Search
 
@@ -3174,9 +3179,9 @@ EVERYTHING_SERVER_UNABLE_TO_START_EVERYTHING_SERVER_TASK = "Unable to start Ever
 EVERYTHING_SERVER_EMPTY_USER = "(empty)"
 EVERYTHING_SERVER_INCLUDE_ONLY_PATH_MOUNT_AS_TEMPLATE = "{{PATH}} ({{MOUNT}})"
 EVERYTHING_SERVER_UNLICENSED_STATIC = "Unlicensed"
-EVERYTHING_SERVER_LICENSED_TO_NAME_FORMAT_STATIC = "Licensed to: {{NAME}}"
-EVERYTHING_SERVER_LICENSE_EXPIRES_DATE_FORMAT_STATIC = "Valid until: {{DATE}}"
-EVERYTHING_SERVER_LICENSE_EXPIRED_DATE_FORMAT_STATIC = "License expired: {{DATE}}"
+EVERYTHING_SERVER_LICENSED_TO_NAME_TEMPLATE_STATIC = "Licensed to: {{NAME}}"
+EVERYTHING_SERVER_LICENSE_EXPIRES_DATE_TEMPLATE_STATIC = "Valid until: {{DATE}}"
+EVERYTHING_SERVER_LICENSE_EXPIRED_DATE_TEMPLATE_STATIC = "License expired: {{DATE}}"
 EVERYTHING_SERVER_REGISTER_BUTTON = "Register..."
 EVERYTHING_SERVER_REGISTER_HELP = "Enter license information."
 EVERYTHING_SERVER_CHANGE_BUTTON = "Change..."
@@ -3197,7 +3202,7 @@ EVERYTHING_SERVER_REGISTER_ORGANIZATION_HELP = "Enter the company, enterprise or
 EVERYTHING_SERVER_REGISTER_KEY_STATIC = "&Key:"
 EVERYTHING_SERVER_REGISTER_KEY_HELP = "Enter the license key."
 EVERYTHING_SERVER_BUY_BUTTON = "Buy Site License"
-EVERYTHING_SERVER_BUY_HELP = "Open the voidtools site to purchase an Everything Site License"
+EVERYTHING_SERVER_BUY_HELP = "Open the voidtools site to purchase an Everything Server Site License"
 
 // Filelist Slot
 
@@ -3248,9 +3253,9 @@ FILTER_EDIT_MATCH_PREFIX_HELP = "Match only the start of filenames."
 FILTER_EDIT_MATCH_SUFFIX_STATIC = "Matc&h suffix"
 FILTER_EDIT_MATCH_SUFFIX_HELP = "Match only the end of filenames."
 FILTER_EDIT_IGNORE_PUNCTUATION_STATIC = "I&gnore punctuation"
-FILTER_EDIT_IGNORE_PUNCTUATION_HELP = "Ingore punctuation characters in filenames."
+FILTER_EDIT_IGNORE_PUNCTUATION_HELP = "Ignore punctuation characters in filenames."
 FILTER_EDIT_IGNORE_WHITESPACE_STATIC = "Ign&ore white-space"
-FILTER_EDIT_IGNORE_WHITESPACE_HELP = "Ingore white-space characters in filenames."
+FILTER_EDIT_IGNORE_WHITESPACE_HELP = "Ignore white-space characters in filenames."
 FILTER_EDIT_COLUMNS_SELECT_BUTTON = "Select..."
 FILTER_EDIT_COLUMNS_STATIC = "Col&umns:"
 FILTER_EDIT_COLUMNS_HELP = "Temporarily add these columns while this filter is active."
@@ -3386,7 +3391,7 @@ HELP_BUG_REPORT_LINK = "https://www.voidtools.com/bugreport/"
 
 // HTTP Server
 
-HTTP_SERVER_DESCRIPTION = "Allow users to search and access your files from a webbrowser"
+HTTP_SERVER_DESCRIPTION = "Allow users to search and access your files from a web browser"
 
 // Index Journal
 
@@ -3671,9 +3676,9 @@ OPTIONS_INDEXES_UNABLE_TO_WRITE_TO_DATABASE_LOCATION_TEMPLATE_MESSAGE = "Unable 
 
 OPTIONS_FAT_VOLUMES_TREEVIEWITEM = "FAT"
 OPTIONS_FAT_AUTOMATICALLY_INCLUDE_NEW_FIXED_VOLUMES_CHECKBOX = "Automatically include new &fixed volumes"
-OPTIONS_FAT_AUTOMATICALLY_INCLUDE_NEW_FIXED_VOLUMES_HELP = "Everything will rebuild the database to include a new removable volume."
+OPTIONS_FAT_AUTOMATICALLY_INCLUDE_NEW_FIXED_VOLUMES_HELP = "Everything will rebuild the database to include a new fixed volume."
 OPTIONS_FAT_AUTOMATICALLY_INCLUDE_NEW_REMOVABLE_VOLUMES_CHECKBOX = "Automaticall&y include new removable volumes"
-OPTIONS_FAT_AUTOMATICALLY_INCLUDE_NEW_REMOVABLE_VOLUMES_HELP = "Everything will rebuild the database to include a new fixed volume."
+OPTIONS_FAT_AUTOMATICALLY_INCLUDE_NEW_REMOVABLE_VOLUMES_HELP = "Everything will rebuild the database to include a new removable volume."
 OPTIONS_FAT_AUTOMATICALLY_REMOVE_OFFLINE_VOLUMES_CHECKBOX = "Automatically remo&ve offline volumes"
 OPTIONS_FAT_AUTOMATICALLY_REMOVE_OFFLINE_VOLUMES_HELP = "Automatically remove included volumes from the index when they go offline."
 OPTIONS_FAT_LOCAL_FAT_VOLUMES_STATIC = "&Local FAT/FAT32/exFAT volumes:"
@@ -3850,7 +3855,7 @@ OPTIONS_PROPERTIES_EXCLUDE_RECALL_ON_DATA_ACCESS_HELP = "Exclude files and folde
 OPTIONS_PROPERTIES_MAXIMUM_SIZE_STATIC = "Maximum si&ze:"
 OPTIONS_PROPERTIES_MAXIMUM_SIZE_HELP = "Properties will be ignored for files with a size larger than specified.\n0 = Include all.\n1 KB = 1024 bytes.\n1 MB = 1024 KB.\n1 GB = 1024 MB."
 OPTIONS_PROPERTIES_FAST_SORT_CHECKBOX = "Fast &sort"
-OPTIONS_PROPERTIES_FAST_SORT_HELP = "Toggle fast sorting for this property type.\nWhen enabled, sorting by this property will be instant and persistant."
+OPTIONS_PROPERTIES_FAST_SORT_HELP = "Toggle fast sorting for this property type.\nWhen enabled, sorting by this property will be instant and persistent."
 OPTIONS_PROPERTIES_INDEXING_TEMPLATE_STATIC = "Indexing: {{FILENAME}}"
 OPTIONS_PROPERTIES_UNABLE_TO_ADD_PROPERTY_TASK = "Unable to add property"
 OPTIONS_PROPERTIES_NAME_AND_PATH_PROPERTIES_ARE_ALWAYS_INDEXED_MESSAGE = "Name and path properties are always indexed."
@@ -3923,7 +3928,7 @@ OPTIONS_ADVANCED_TOGGLE_MENUITEM = "Toggl&e"
 OPTIONS_ADVANCED_COPY_BUTTON = "&Copy"
 OPTIONS_ADVANCED_VALUE_FOR_TEMPLATE_GROUPBOX = "Value for {{NAME}}"
 OPTIONS_ADVANCED_VALUE_FOR_NO_SELECTION_GROUPBOX = "Value for selected setting"
-OPTIONS_ADVANCED_LINK = "https://www.voidtools.com/everything/plugins/"
+OPTIONS_ADVANCED_LINK = "https://www.voidtools.com/everything/options/advanced/"
 
 // Options Edit Volume
 
@@ -5085,7 +5090,7 @@ ARE_YOU_SURE_YOU_WANT_TO_PASTE_TEMPLATE_MESSAGE = "Are you sure you want to past
 
 RELOAD_CONFIGURATION_FILE_TASK = "Reload configuration file?"
 THE_EVERYTHING_CONFIGURATION_FILE_HAS_BEEN_MODIFIED_OUTSIDE_OF_EVERYTHING_TEMPLATE_MESSAGE = "{{FILENAME}}\n\nThe Everything configuration file has been modified outside of Everything.\nDo you want to reload the modified configuration file?\n\nEverything will restart to reload the modified configuration file."
-ARE_YOU_SURE_YOU_WANT_TO_DELETE_ALL_RECENT_FILE_LIST_HISTORY_MESSAGE = "Are you sure you want to delete all recent file list history?\n\nThis action can not be undone."
+ARE_YOU_SURE_YOU_WANT_TO_DELETE_ALL_RECENT_FILE_LIST_HISTORY_MESSAGE = "Are you sure you want to delete all recent file list history?\n\nThis action cannot be undone."
 
 TERMINATE_THE_EXISTING_EVERYTHING_INSTANCE_TASK = "Terminate the existing Everything instance?"
 EVERYTHING_IS_STILL_SHUTTING_DOWN_MESSAGE = "Everything is still shutting down.\nIt might take a few seconds to finish."
@@ -5132,8 +5137,8 @@ HELP_SEARCH_SYNTAX_TEXT2 = "\r\n"
 	"\t&lt:\tLiteral less than (<)\r\n"
 	"\t&gt:\tLiteral greater than (>)\r\n"
 	"\t&quot:\tLiteral double quote (\")\r\n"
-	"\t&#<n>:\tLiteral unicode character <n> in decimal.\r\n"
-	"\t&#x<n>:\tLiteral unicode character <n> in hexadecimal.\r\n"
+	"\t&#<n>:\tLiteral Unicode character <n> in decimal.\r\n"
+	"\t&#x<n>:\tLiteral Unicode character <n> in hexadecimal.\r\n"
 	"\r\n"
 	"Macros:\r\n"
 	"\r\n"

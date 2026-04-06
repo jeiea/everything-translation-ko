@@ -1,4 +1,4 @@
-// Changes from Everything 1.4 to Everything 1.5
+﻿// Changes from Everything 1.4 to Everything 1.5
 // Please find the old string in your existing translation and update with the new string.
 // Please do not modify this file
 
@@ -14,7 +14,7 @@ UPDATING_DATABASE = "Updating..."
 
 // Old:
 CREATING_DATABASE = "Creating database..."
-// New: (removed " database")
+// New: (changed "Creating" to "Indexing" and removed " database")
 CREATING_DATABASE = "Indexing..."
 
 // Old:
@@ -171,7 +171,9 @@ CREDIT_LIST =
 	"alyzeedus dwadeh\n"
 	"Imre Kristoffer Eilertsen\n"
 	"Åke Engelbrektson\n"
+	"Abdulhamid Fadavi\n"
 	"Egyed Ferenc\n"
+	"Christian Arellano Garc�a\n"
 	"geogeo.gr\n"
 	"Irshat Ghalip\n"
 	"shai horn\n"
@@ -184,7 +186,7 @@ CREDIT_LIST =
 	"Sazan Kërçuku\n"
 	"Koray KIRCAOGLU\n"
 	"Thomas Knoop\n"
-	"koga\n"
+	"Takuma Koga (koga2020)\n"
 	"Nedim Laletovic\n"
 	"Olav Mägi\n"
 	"miyano\n"
@@ -198,7 +200,7 @@ CREDIT_LIST =
 	"Marko Puskaric\n"
 	"rexx\n"
 	"Ricardo A. Rivas\n"
-	"Igor R�ckert\n"
+	"Igor Rückert\n"
 	"Jadran Rudec\n"
 	"Sam\n"
 	"Julian Seward\n"
@@ -620,11 +622,6 @@ NAV_BACK = "Back"
 NAV_FORWARD = "&Forward"
 // New: (removed Alt + F mnemonic -conflicts with history)
 NAV_FORWARD = "Forward"
-
-// Old: 
-SIZE_RESULT_LIST_TO_FIT = "Size Result List to Fit"
-// New: (changed "Result list" to "All Columns", added "Window" )
-SIZE_RESULT_LIST_TO_FIT = "Size All Columns to Fit Window"
 
 // Old: 
 SEARCH_HISTORY_CLEAR_NOW_ARE_YOU_SURE = "Are you sure you wish to delete all search history?\n\nThis action can not be undone."
@@ -1097,9 +1094,9 @@ ADVANCED_COPYMOVE_TO_NEW_FILENAMES = "&New full paths and filenames:"
 ADVANCED_COPYMOVE_TO_NEW_FILENAMES = "&New filenames:"
 
 // Old:
-LOCALIZATION_SIZE_RESULT_LIST_TO_FIT = "Size All Columns to Fit Window"
+SIZE_RESULT_LIST_TO_FIT = "Size All Columns to Fit"
 // New: (added Alt + W mnemonic)
-LOCALIZATION_SIZE_RESULT_LIST_TO_FIT = "Size All Columns to Fit &Window"
+SIZE_RESULT_LIST_TO_FIT = "Size All Columns to Fit &Window"
 
 // Old:
 SEARCH_HISTORY_EXPORT_HELP = "Export all searches to a csv file."

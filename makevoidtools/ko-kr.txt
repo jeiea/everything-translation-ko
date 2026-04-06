@@ -16,7 +16,7 @@ _LANGUAGE_ENGLISH_NAME = "Korean (Korea, Republic of)"
 _LANGUAGE_TRANSLATOR = "jeiea"
 
 // a link to your email or website [optional]
-_LANGUAGE_TRANSLATOR_LINK = "http://ddwroom.tistory.com"
+_LANGUAGE_TRANSLATOR_LINK = "https://github.com/jeiea/everything-translation-ko"
 
 // Syntax.
 // key = "value"

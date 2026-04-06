@@ -7,4 +7,4 @@ David Carpenter
 {{CONTACT_FORM}}
 
 =번역자 연락처=
-오역 등 번역 문의는 [[http://ddwroom.tistory.com/33|번역자 jeiea 홈페이지]]에서 받고 있습니다.
+오역 등 번역 문의는 [[https://github.com/jeiea/everything-translation-ko|깃헙]]을 확인해주세요.
