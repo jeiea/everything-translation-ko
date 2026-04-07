@@ -498,7 +498,7 @@ CREDIT_LIST =
 	"Åke Engelbrektson\n"
 	"Abdulhamid Fadavi\n"
 	"Egyed Ferenc\n"
-	"Christian Arellano Garc�a\n"
+	"Christian Arellano García\n"
 	"geogeo.gr\n"
 	"Irshat Ghalip\n"
 	"shai horn\n"
