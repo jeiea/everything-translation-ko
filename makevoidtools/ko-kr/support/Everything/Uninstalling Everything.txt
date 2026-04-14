@@ -39,7 +39,7 @@ Everything.exe -uninstall
 *'''일반''' 탭을 클릭합니다.
 </ul>
 
-Everything을 제거할 때 모든 Everything 시스템 변경사항도 제거합니다.
+Everything을 제거할 때 모든 Everything 시스템 변경 사항도 제거합니다.
 
 ==Everything이 생성하는 파일==
 Everything이 아래 파일을 %APPDATA%\Everything에 만들 수 있습니다.

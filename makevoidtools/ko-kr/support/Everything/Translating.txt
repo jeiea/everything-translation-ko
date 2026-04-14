@@ -126,7 +126,7 @@ LOADING_DATABASE = "데이터베이스 불러오는 중..."
 ==도움말 및 지원==
 도움이 필요하면 [[mailto:david@voidtools.com|David Carpenter]]에게 연락해보세요.
 
-==Everything 1.4 변경사항==
+==Everything 1.4 변경 사항==
 최신 양식을 [[/Template.zip]]에서 받아 1.3 버전에서 바뀐 점을 확인하세요. 그런 문자열은 번역 양식에서 반드시 갱신해야 합니다.
 
 ==웹사이트==
