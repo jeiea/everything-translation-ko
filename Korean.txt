@@ -2169,8 +2169,8 @@ PREVIEW_WINDOW_TITLE = "미리보기"
 SHOW_SIZE_IN_STATUSBAR = "전체 크기를 상태 표시줄에 표시(&Z)"
 SHOW_SIZE_IN_STATUSBAR_HELP = "선택한 파일 전체 크기를 상태 표시줄에 표시합니다. 크기 색인을 활성화해야 합니다. 활성화하면 Everything 검색이 느려집니다."
 
-RESULT_LIST_FOCUS_MOST_RUN_MENU = "최다 실행항목 이동"
-RESULT_LIST_FOCUS_LAST_RUN_MENU = "마지막 실행항목 이동"
+RESULT_LIST_FOCUS_MOST_RUN_MENU = "최다 실행 항목 선택"
+RESULT_LIST_FOCUS_LAST_RUN_MENU = "마지막 실행 항목 선택"
 
 VIEW_SORT_BY_NAME_HELP = "이름 순으로 정렬합니다."
 VIEW_SORT_BY_PATH_HELP = "경로 순으로 정렬합니다."
