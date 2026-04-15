@@ -90,5 +90,5 @@
 ==볼만한 것==
 <ul>
 *[[support/everything/options#검색 결과|검색 결과 설정]]
-*[[support/everything/options#글꼴과 색상|글꼴과 색상 설정]]
+*[[support/everything/options#폰트와 색상|폰트와 색상 설정]]
 </ul>

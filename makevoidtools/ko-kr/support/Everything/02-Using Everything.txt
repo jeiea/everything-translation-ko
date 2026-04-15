@@ -90,9 +90,9 @@ Everything은 각각의 항목 실행횟수를 기억합니다.
 다른 컴퓨터에서 파일을 볼 수 있도록 ETP 서버를 돌릴 수 있습니다.
 자세한 건 [[support/everything/ETP|ETP 서버]]를 참고하세요.
 
-==글꼴 및 색상 변경==
-검색 결과의 글꼴과 색은 [[support/everything/options#글꼴과 색상|Everything 설정]]에서 바꿀 수 있습니다.
-더 많은 폰트와 색상을 바꾸려면 [[support/everything/ini#글꼴과 색상|Everything.ini]]를 참고하세요.
+==폰트 및 색상 변경==
+검색 결과의 폰트와 색은 [[support/everything/options#폰트와 색상|Everything 설정]]에서 바꿀 수 있습니다.
+더 많은 폰트와 색상을 바꾸려면 [[support/everything/ini#폰트와 색상|Everything.ini]]를 참고하세요.
 
 ==외부 파일 관리자==
 토탈 커맨더같은 프로그램으로 폴더를 열고 싶다면  [[support/everything/customizing#외부 파일 관리자|외부 파일 관리자]]를 참고하세요.
@@ -111,7 +111,7 @@ NAS, CD, DVD, 블루레이에 있는 파일 목록을 떠서 색인에 추가합
 자세한 건 [[support/everything/file lists|파일 목록]]을 참고하세요.
 
 ==설정==
-Everything 설치 옵션이나 UI, 처음 검색화면, 검색 설정, 결과 표시 방식, 우클릭 메뉴, 글꼴 및 색상, 단축키, 검색 및 실행 히스토리, NTFS 볼륨, 폴더 색인, 파일 목록, 폴더나 파일 형식 제외, ETP/HTTP 서버를 설정하려면 [[support/everything/options|Everything 설정]]을 참고하세요.
+Everything 설치 옵션이나 UI, 처음 검색화면, 검색 설정, 결과 표시 방식, 우클릭 메뉴, 폰트 및 색상, 단축키, 검색 및 실행 히스토리, NTFS 볼륨, 폴더 색인, 파일 목록, 폴더나 파일 형식 제외, ETP/HTTP 서버를 설정하려면 [[support/everything/options|Everything 설정]]을 참고하세요.
 
 ==Everything 종료==
 Everything 창을 닫으면 백그라운드에서 계속 돌아갑니다.

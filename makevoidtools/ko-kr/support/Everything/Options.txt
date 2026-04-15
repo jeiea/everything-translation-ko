@@ -16,7 +16,7 @@ Everything 설정 창을 열려면:
 *[[#검색 결과|검색 결과]]
 *[[#보기|보기]]
 *[[#우클릭 메뉴|우클릭 메뉴]]
-*[[#글꼴과 색상|글꼴과 색상]]
+*[[#폰트와 색상|폰트와 색상]]
 *[[#키보드|키보드]]
 </ul>
 *[[#히스토리|히스토리]]
@@ -394,15 +394,15 @@ Everything 설정 창에서 각 설정에 포인터를 갖다대고 기다리면
 자세한 건 [[support/everything/customizing#외부 파일 관리자|입맛 맞추기]]를 참고하세요.
 </dl>
 
-==글꼴과 색상==
-[[File:support/everything/Everything.Options.Fonts.And.Colors.png|alt=Everything 글꼴과 색상 설정]]
+==폰트와 색상==
+[[File:support/everything/Everything.Options.Fonts.And.Colors.png|alt=Everything 폰트와 색상 설정]]
 
-''Everything'' 글꼴과 색상 관련 설정입니다.
+''Everything'' 폰트와 색상 관련 설정입니다.
 
 <dl>
 ;''폰트''
 ;''크기''
-검색 결과 폰트와 크기입니다. (기본)은 윈도 아이콘 폰트를 의미합니다. 다른 폰트를 수정하려면 [[support/everything/ini#글꼴과 색상|Everything.ini]]를 참고하세요.
+검색 결과 폰트와 크기입니다. (기본)은 윈도 아이콘 폰트를 의미합니다. 다른 폰트를 수정하려면 [[support/everything/ini#폰트와 색상|Everything.ini]]를 참고하세요.
 
 ;''글씨색''
 선택한 항목의 글씨색입니다. 색상 버튼을 클릭해 임의 색상을 고를 수 있습니다.
