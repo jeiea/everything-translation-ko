@@ -723,7 +723,7 @@ foo
 | Everything 종료.
 |-
 | <code>/rebuild<br>/reindex</code>
-| 색인 재구축.
+| 색인 재생성.
 |-
 | <code>/restart</code>
 | Everything 재시작.
