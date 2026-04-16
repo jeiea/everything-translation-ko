@@ -391,7 +391,7 @@ Everything 설정 창에서 각 설정에 포인터를 갖다대고 기다리면
 | ) 문자입니다.
 |}
 
-자세한 건 [[support/everything/customizing#외부 파일 관리자|입맛 맞추기]]를 참고하세요.
+자세한 건 [[support/everything/customizing#외부 파일 관리자|맞춤 설정]]을 참고하세요.
 </dl>
 
 ==폰트와 색상==
