@@ -111,7 +111,7 @@ NAS, CD, DVD, 블루레이에 있는 파일 목록을 떠서 색인에 추가합
 자세한 건 [[support/everything/file lists|파일 목록]]을 참고하세요.
 
 ==설정==
-Everything 설치 옵션이나 UI, 처음 검색화면, 검색 설정, 결과 표시 방식, 우클릭 메뉴, 폰트 및 색상, 단축키, 검색 및 실행 히스토리, NTFS 볼륨, 폴더 색인, 파일 목록, 폴더나 파일 형식 제외, ETP/HTTP 서버를 설정하려면 [[support/everything/options|Everything 설정]]을 참고하세요.
+Everything 설치 옵션이나 UI, 초기 화면, 검색 설정, 결과 표시 방식, 우클릭 메뉴, 폰트 및 색상, 단축키, 검색 및 실행 기록, NTFS 볼륨, 폴더 색인, 파일 목록, 폴더나 파일 형식 제외, ETP/HTTP 서버를 설정하려면 [[support/everything/options|Everything 설정]]을 참고하세요.
 
 ==Everything 종료==
 Everything 창을 닫으면 백그라운드에서 계속 돌아갑니다.

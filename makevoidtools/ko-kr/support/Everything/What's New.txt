@@ -19,8 +19,8 @@
 <ul>
 *[[support/everything/Everything service|Everything 서비스]]
 *[[support/everything/Recent changes|최근 변경 목록]]
-*[[support/everything/Run History|실행 히스토리]]
-*[[support/everything/Search History|검색 히스토리]]
+*[[support/everything/Run History|실행 기록]]
+*[[support/everything/Search History|검색 기록]]
 *[[support/everything/File Lists|파일 목록]]
 *[[support/everything/Folder Indexing|폴더 색인]]
 *[[support/everything/Searching#구별 기호 구분|구별 기호 구분]]
