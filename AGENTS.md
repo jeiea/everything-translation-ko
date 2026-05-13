@@ -1,6 +1,10 @@
 - 사람 번역 작업 흐름은 [README](README.md)를 참고합니다.
 - 번역 용어는 [용어집](docs/glossaries.md)을 참고합니다.
-- Template.txt와 Korean.txt는 줄 단위로 대응합니다.
+- Template.txt와 Korean.txt는 줄 단위로 대응합니다. 아래는 Template.txt의 몇 라인 아래가
+  대응하는 Korean.txt의 줄 번호인지를 나타냅니다. 불일치를 발견하면 즉시 알립니다.
+  - 1~2044: +0
+  - 2045~2467: +11
+  - 2468~: +29
 
 # 템플릿 갱신 방법
 
