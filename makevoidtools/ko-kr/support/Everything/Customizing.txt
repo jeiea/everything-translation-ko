@@ -70,7 +70,7 @@ Everything을 완전히 종료하고 재시작하면 적용됩니다.
 작업 표시줄 그룹 아이콘을 바꾸는 건 Everything 설정이 아니라 탐색기 설정입니다.
 <ul>
 * Everything 작업 표시줄 버튼은 우클릭합니다.
-* Everything Search를 시프트 우클릭합니다.
+* Everything Search를 Shift 우클릭합니다.
 * '''속성'''을 클릭합니다.
 [[File:support/everything/right.click.taskbar.shift.right.click.search.everything.properties.png|alt=위를 따라한 그림]]
 

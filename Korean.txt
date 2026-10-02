@@ -305,7 +305,7 @@ UNLOAD_DATABASE_WHEN_INACTIVE_HELP = "Everything 창이 하나라도 켜져 있�
 CONFIRM_LARGE_SORT = "대용량 정렬하기 전 확인(&C)"
 CONFIRM_LARGE_SORT_HELP = "시간이 걸리는 많은 항목 정렬 작업 시 확인 창을 띄웁니다."
 NEW_WINDOW_HOTKEY_MODIFIER = "새 검색 창 단축키 조합 키(&H):"
-NEW_WINDOW_HOTKEY_MODIFIER_HELP = "같이 쓸 조합 키를 윈도, 컨트롤, 알트, 시프트 중에 골라주세요."
+NEW_WINDOW_HOTKEY_MODIFIER_HELP = "같이 쓸 조합 키를 Win, Ctrl, Alt, Shift 중에 골라주세요."
 NEW_WINDOW_HOTKEY_KEY = "새 검색 창 단축키(&K):"
 NEW_WINDOW_HOTKEY_KEY_HELP = "단축키 가상 키 코드."
 
@@ -1159,7 +1159,7 @@ SORT_SIZE_DESCENDING_FIRST = "크기 내림차순부터 정렬(&S)"
 SORT_SIZE_DESCENDING_FIRST_HELP = "머리 행을 클릭해 정렬할 때 큰 것부터 작은 것 순으로 먼저 정렬합니다."
 
 SNAP_TO_DESKTOP_EDGES_AT = "화면 모서리에 다음보다 가까우면 달라붙기(&G)"
-SNAP_TO_DESKTOP_EDGES_AT_HELP = "검색 창을 옮기거나 크기를 조절할 때 바탕 화면 가장자리에 붙입니다.\n시프트를 눌러서 일시적으로 이 기능을 전환할 수 있습니다."
+SNAP_TO_DESKTOP_EDGES_AT_HELP = "검색 창을 옮기거나 크기를 조절할 때 바탕 화면 가장자리에 붙입니다.\nShift를 눌러 일시적으로 이 기능을 전환할 수 있습니다."
 
 SNAP_PIXELS = "픽셀"
 SNAP_LENGTH_HELP = "지정한 픽셀보다 가까우면 달라붙습니다."
@@ -1784,8 +1784,8 @@ CONTEXT_MENU_RESTORE_DEFAULTS_HELP = "이 페이지를 전부 기본값으로 �
 
 CONTEXT_MENU_SHOW = "이 명령을 우클릭 메뉴에 추가(&S)"
 CONTEXT_MENU_SHOW_HELP = "이 항목을 Everything 우클릭 메뉴에 보여줍니다."
-CONTEXT_MENU_SHOW_SHIFT = "시프트를 눌렀을 때만 보기(&K)"
-CONTEXT_MENU_SHOW_SHIFT_HELP = "시프트를 누르고 우클릭을 해야 메뉴에 나타납니다."
+CONTEXT_MENU_SHOW_SHIFT = "Shift를 눌렀을 때만 보기(&K)"
+CONTEXT_MENU_SHOW_SHIFT_HELP = "Shift를 누르고 우클릭을 해야 메뉴에 나타납니다."
 CONTEXT_MENU_HIDE = "이 명령을 메뉴에서 빼기(&H)"
 CONTEXT_MENU_HIDE_HELP = "이 명령을 우클릭 메뉴에 보여주지 않습니다."
 CONTEXT_MENU_COMMAND = "명령(&C):"
